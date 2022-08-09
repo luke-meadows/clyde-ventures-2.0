@@ -8,7 +8,7 @@ export default function Title({ children }) {
   );
 }
 
-const StyledTitle = styled.h2`
+const StyledTitle = styled.h1`
   display: flex;
   flex-direction: column;
   align-items: center;

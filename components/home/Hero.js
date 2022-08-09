@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import styled from 'styled-components';
-import hero from '../../public/hero2.jpg';
+import hero from '../../public/hero.jpg';
 import MissionBanner from './MissionBanner';
 export default function Hero() {
   return (
@@ -19,7 +19,7 @@ export default function Hero() {
 
 const StyledHero = styled.div`
   position: relative;
-  height: calc(100vh - 13rem);
+  height: calc(100vh - 14rem);
 `;
 
 const LearnMore = styled.button`

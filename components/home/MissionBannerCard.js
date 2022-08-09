@@ -29,6 +29,9 @@ const StyledBannerCard = styled.div`
     margin: 0rem;
     color: var(--dark-grey);
   }
+  @media only screen and (min-width: 1600px) {
+    padding: 4rem 10rem;
+  }
 `;
 
 const TickContainer = styled.div`

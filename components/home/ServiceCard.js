@@ -38,7 +38,7 @@ const StyledServiceCard = styled.div`
     }
     h4 {
       margin: 1rem;
-      font-size: 1.8rem;
+      font-size: 1.5rem;
     }
     p {
       text-align: center;

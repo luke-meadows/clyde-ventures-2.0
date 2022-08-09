@@ -19,4 +19,7 @@ const StyledHeader = styled.header`
   align-content: center;
   padding: 0 5rem;
   height: 10rem;
+  @media only screen and (min-width: 1600px) {
+    padding: 0 10rem;
+  }
 `;
