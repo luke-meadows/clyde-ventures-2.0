@@ -15,7 +15,7 @@ const StyledNav = styled.nav`
   display: flex;
   align-items: center;
   flex: 2;
-  font-size: 0.9rem;
+
   a,
   .services-dropdown {
     margin-right: 2.5rem;

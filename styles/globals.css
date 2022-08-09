@@ -10,11 +10,14 @@ body {
 
 body {
   /* VARS */
-  --grey: #ededed;
-  --medium-grey: #f8f8f8;
+
+  --grey: #f7f7f7;
+  --medium-grey: #767676;
   --dark-grey: #404040;
-  --white: #f5f5f5;
+  --black: #050505;
+  --white: #ffffff;
   --yellow: #f5cb85;
+  --yellow2: #f9bc58;
   /* -- */
   font-weight: 400;
   line-height: 1.75;

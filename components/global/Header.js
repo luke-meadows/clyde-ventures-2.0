@@ -17,5 +17,11 @@ const StyledHeader = styled.header`
   display: flex;
   justify-content: space-between;
   align-content: center;
-  padding: 2rem 5rem;
+  padding: 0 5rem;
+  height: 10rem;
+  /* position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%; */
 `;
