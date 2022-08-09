@@ -32,7 +32,6 @@ const StyledServiceCard = styled.div`
     color: var(--black);
   }
   @media only screen and (min-width: 1600px) {
-    padding: 3rem;
     i {
       font-size: 4rem;
     }
