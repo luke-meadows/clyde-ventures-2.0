@@ -29,7 +29,6 @@ const StyledServiceCard = styled.div`
   p {
     text-align: center;
     font-size: 0.9rem;
-    color: var(--black);
   }
   @media only screen and (min-width: 1600px) {
     i {
@@ -42,7 +41,6 @@ const StyledServiceCard = styled.div`
     p {
       text-align: center;
       font-size: 1rem;
-      color: var(--black);
     }
   }
 `;
