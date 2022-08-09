@@ -20,7 +20,7 @@ const StyledBannerCard = styled.div`
   flex-direction: column;
   align-items: center;
   padding: 2.5rem 4rem;
-  font-size: 1.2rem;
+
   i {
     color: var(--yellow);
     font-size: 3rem;
