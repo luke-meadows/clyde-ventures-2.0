@@ -13,19 +13,18 @@ export default function MissionBanner() {
 }
 
 const StyledMissionBanner = styled.div`
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: var(--grey);
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
   display: flex;
   justify-content: space-evenly;
-
   .spacer {
-    height: 120px;
+    height: 90px;
     width: 2px;
-    background: var(--dark-grey);
-    opacity: 0.3;
+    background: var(--medium-grey);
+    opacity: 0.5;
     margin: auto 0;
   }
 `;

@@ -14,12 +14,15 @@ export default function MissionBannerCard({ blurb }) {
 
 const StyledBannerCard = styled.div`
   flex: 1;
-  text-align: center;
   display: inline-block;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 2.5rem 4rem;
+  padding: 4rem;
+  @media only screen and (min-width: 1600px) {
+    padding: 3rem 5rem;
+    font-size: 1.1rem;
+  }
 
   i {
     color: var(--yellow);
@@ -27,11 +30,16 @@ const StyledBannerCard = styled.div`
   }
   p {
     text-align: center;
+    margin-bottom: 0rem;
+    color: var(--dark-grey);
   }
 `;
 
 const TickContainer = styled.div`
   position: relative;
   width: 40px;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
+  @media only screen and (min-width: 1600px) {
+    margin-bottom: 1.5rem;
+  }
 `;
