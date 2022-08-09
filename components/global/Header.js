@@ -19,9 +19,4 @@ const StyledHeader = styled.header`
   align-content: center;
   padding: 0 5rem;
   height: 10rem;
-  /* position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 2;
-  width: 100%; */
 `;

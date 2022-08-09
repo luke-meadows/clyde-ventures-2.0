@@ -4,5 +4,5 @@ export default function Container({ children }) {
 }
 
 const StyledContainer = styled.section`
-  padding: 10rem 5rem;
+  padding: 5rem;
 `;

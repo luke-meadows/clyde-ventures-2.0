@@ -31,6 +31,7 @@ export default function ServiceCards() {
 }
 
 const StyledServiceCards = styled.div`
+  margin-top: 5rem;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 2.5rem;

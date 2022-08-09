@@ -19,10 +19,6 @@ const StyledBannerCard = styled.div`
   flex-direction: column;
   align-items: center;
   padding: 4rem;
-  @media only screen and (min-width: 1600px) {
-    padding: 3rem 5rem;
-    font-size: 1.1rem;
-  }
 
   i {
     color: var(--yellow);
@@ -30,7 +26,7 @@ const StyledBannerCard = styled.div`
   }
   p {
     text-align: center;
-    margin-bottom: 0rem;
+    margin: 0rem;
     color: var(--dark-grey);
   }
 `;
