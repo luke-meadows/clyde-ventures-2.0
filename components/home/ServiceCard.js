@@ -6,10 +6,8 @@ export default function ServiceCard({ icon, title, blurb }) {
       <i className={icon} />
       <h4>{title}</h4>
       <p>{blurb}</p>
-      <Link href="/" passHref>
-        <a href="/" className="learn">
-          Learn More
-        </a>
+      <Link href="/" className="learn">
+        Learn More
       </Link>
     </StyledServiceCard>
   );
