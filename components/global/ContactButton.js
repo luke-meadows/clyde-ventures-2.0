@@ -15,7 +15,6 @@ const StyledContactButton = styled.div`
   button {
     background: var(--yellow2);
     border: 1px solid var(--yellow2);
-    color: var(--dark-grey);
     font-size: 1rem;
   }
 `;

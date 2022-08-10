@@ -2,6 +2,7 @@ import '../styles/globals.css';
 import '../public/fontello/css/fontello.css';
 import Header from '../components/global/Header';
 import styled from 'styled-components';
+import Footer from '../components/global/Footer';
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -10,6 +11,7 @@ function MyApp({ Component, pageProps }) {
       <InnerPage>
         <Component {...pageProps} />
       </InnerPage>
+      <Footer />
     </Page>
   );
 }

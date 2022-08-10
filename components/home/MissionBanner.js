@@ -20,7 +20,7 @@ const StyledMissionBanner = styled.div`
   width: 100%;
   display: flex;
   .spacer {
-    height: 100px;
+    height: 120px;
     width: 2px;
     background: var(--medium-grey);
     opacity: 0.5;

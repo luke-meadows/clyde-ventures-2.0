@@ -13,12 +13,14 @@ export default function Header() {
 }
 
 const StyledHeader = styled.header`
-  background: var(--white);
   display: flex;
   justify-content: space-between;
-  align-content: center;
-  padding: 0 6rem;
+  align-items: center;
+  padding: 5rem 3rem;
   height: 8rem;
+  position: absolute;
+  z-index: 2;
+  width: 100%;
   @media only screen and (min-width: 1600px) {
     padding: 0 6rem;
     height: 10rem;

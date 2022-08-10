@@ -26,16 +26,18 @@ export default function ContactForm() {
 }
 
 const StyledContactForm = styled.form`
+  max-width: 60rem;
+  margin: 0 auto;
   input,
   textarea {
     border: none;
     outline: none;
-    border-bottom: 1px solid var(--dark-grey);
+    border-bottom: 1px solid var(--medium-grey);
     width: 100%;
     resize: none;
   }
   input {
-    padding: 0.2rem;
+    padding: 0 0.2rem 1.1rem 0.2rem;
   }
   textarea {
     padding: 0 0.2rem;
@@ -51,6 +53,10 @@ const StyledContactForm = styled.form`
   button {
     background: var(--yellow2);
     border: 1px solid var(--yellow2);
-    color: var(--dark-grey);
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+  @media only screen and (min-width: 1600px) {
+    max-width: 80rem;
   }
 `;

@@ -28,10 +28,10 @@ export default function Hero() {
 
 const StyledHero = styled.div`
   position: relative;
-  height: calc(100vh - 11rem);
-  @media only screen and (min-width: 1600px) {
+  height: calc(100vh - 3rem);
+  /* @media only screen and (min-width: 1600px) {
     height: calc(100vh - 13rem);
-  }
+  } */
 `;
 
 const HeroVideo = styled.video`
@@ -46,12 +46,8 @@ const LearnMore = styled.button`
   bottom: 0;
   left: 50%;
   transform: translateX(-50%) translateY(50%);
-  background: var(--white);
-  border: 2px solid var(--yellow2);
-  color: var(--yellow2);
   background: var(--yellow2);
   border: 2px solid var(--yellow2);
-  color: var(--dark-grey);
   font-size: 1rem;
   transition: all 0.2s ease-in-out;
   &:hover {

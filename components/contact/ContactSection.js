@@ -27,6 +27,6 @@ const StyledContactSection = styled.section`
     font-size: 1.2rem;
     text-align: center;
     width: 70ch;
-    margin: 3rem 0;
+    margin: 3rem auto;
   }
 `;

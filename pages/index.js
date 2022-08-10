@@ -1,7 +1,6 @@
 import Head from 'next/head';
 import ContactSection from '../components/contact/ContactSection';
 import Hero from '../components/home/Hero';
-import MeetTheTeam from '../components/home/MeetTheTeam';
 import ServiceCards from '../components/home/ServiceCards';
 
 export default function Home() {
@@ -14,7 +13,6 @@ export default function Home() {
       </Head>
       <Hero />
       <ServiceCards />
-      <MeetTheTeam />
       <ContactSection />
     </div>
   );

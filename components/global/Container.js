@@ -4,6 +4,7 @@ export default function Container({ children }) {
 }
 
 const StyledContainer = styled.section`
+  width: 100%;
   padding: 4rem 5rem;
   @media only screen and (min-width: 1600px) {
     padding: 4rem 10rem;

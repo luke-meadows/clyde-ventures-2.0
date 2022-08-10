@@ -11,9 +11,12 @@ body {
 body {
   /* VARS */
   --white: #ffffff;
-  --white-transparent: rgba(255, 255, 255, 0.85);
+  --white-transparent: rgba(255, 255, 255, 0.8);
+  --white-transparent2: rgba(255, 255, 255, 0.3);
   --grey: #f0f0f0;
   --medium-grey: #767676;
+  --light-grey: #a9a9a9;
+
   --dark-grey: #404040;
   --black: #050505;
   --yellow: #f5cb85;
@@ -78,6 +81,7 @@ small,
 a {
   color: inherit;
   text-decoration: none;
+  cursor: pointer;
 }
 
 * {
@@ -90,11 +94,14 @@ button {
   padding: 0.8rem 2.5rem;
   border-radius: 2rem;
   font-family: 'Poppins', sans-serif;
-  font-size: 0.9rem;
+  font-size: 1rem;
   cursor: pointer;
+  color: var(--dark-grey);
+  color: var(--black);
 }
 
 input,
 textarea {
   font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
 }

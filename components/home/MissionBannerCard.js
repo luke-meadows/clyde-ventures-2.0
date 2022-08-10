@@ -18,11 +18,8 @@ const StyledBannerCard = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 3rem 4rem;
-  i {
-    color: var(--yellow);
-    font-size: 3rem 4rem 4rem 4rem;
-  }
+  padding: 3rem 5rem;
+
   p {
     text-align: center;
     margin: 0.5rem 0 0 0;
@@ -38,7 +35,7 @@ const StyledBannerCard = styled.div`
 
 const TickContainer = styled.div`
   position: relative;
-  width: 40px;
+  width: 50px;
   margin-bottom: 1rem;
   @media only screen and (min-width: 1600px) {
     margin-bottom: 1.5rem;

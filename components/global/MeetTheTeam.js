@@ -1,6 +1,6 @@
 import styled from 'styled-components';
-import Container from '../global/Container';
-import Title from '../global/Title';
+import Container from './Container';
+import Title from './Title';
 export default function MeetTheTeam() {
   return (
     <Container>
