@@ -13,9 +13,9 @@ const StyledContactButton = styled.div`
   align-items: center;
   justify-content: flex-end;
   button {
-    background: var(--yellow);
-    border: 1px solid var(--yellow);
-    color: black;
+    background: var(--yellow2);
+    border: 1px solid var(--yellow2);
+    color: var(--dark-grey);
     font-size: 1rem;
   }
 `;

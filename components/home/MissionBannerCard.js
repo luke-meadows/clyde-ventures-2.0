@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import styled from 'styled-components';
-import tick from '../../public/output-onlinepngtools.png';
+import tick from '../../public/tick.png';
 export default function MissionBannerCard({ blurb }) {
   return (
     <StyledBannerCard>
@@ -18,19 +18,21 @@ const StyledBannerCard = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 4rem;
-
+  padding: 3rem 4rem;
   i {
     color: var(--yellow);
-    font-size: 3rem;
+    font-size: 3rem 4rem 4rem 4rem;
   }
   p {
     text-align: center;
-    margin: 0rem;
+    margin: 0.5rem 0 0 0;
     color: var(--dark-grey);
   }
   @media only screen and (min-width: 1600px) {
-    padding: 4rem 10rem;
+    padding: 3rem 10rem 4rem 10rem;
+    p {
+      font-size: 1.2rem;
+    }
   }
 `;
 

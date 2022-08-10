@@ -21,4 +21,8 @@ const StyledLogo = styled.div`
 const ImageContainer = styled.div`
   position: relative;
   width: 7rem;
+
+  @media only screen and (min-width: 1600px) {
+    width: 8rem;
+  }
 `;

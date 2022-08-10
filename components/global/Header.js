@@ -13,13 +13,14 @@ export default function Header() {
 }
 
 const StyledHeader = styled.header`
-  background: var(--grey);
+  background: var(--white);
   display: flex;
   justify-content: space-between;
   align-content: center;
-  padding: 0 5rem;
-  height: 10rem;
+  padding: 0 6rem;
+  height: 8rem;
   @media only screen and (min-width: 1600px) {
-    padding: 0 10rem;
+    padding: 0 6rem;
+    height: 10rem;
   }
 `;
