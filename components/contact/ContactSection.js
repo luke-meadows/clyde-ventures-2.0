@@ -24,9 +24,14 @@ const StyledContactSection = styled.section`
   flex-direction: column;
   align-items: center;
   p {
-    font-size: 1.2rem;
+    font-size: 1rem;
     text-align: center;
     width: 70ch;
     margin: 3rem auto;
+  }
+  @media only screen and (min-width: 1600px) {
+    p {
+      font-size: 1.2rem;
+    }
   }
 `;
