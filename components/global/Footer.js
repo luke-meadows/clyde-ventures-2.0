@@ -48,9 +48,8 @@ export default function Footer() {
 
 const StyledFooter = styled.footer`
   background: var(--white);
-  padding: 5rem 3rem 1rem 3rem;
+  padding: 2rem 3rem;
   font-weight: 300;
-
   .top {
     display: flex;
     justify-content: space-between;
@@ -91,6 +90,6 @@ const StyledFooter = styled.footer`
     }
   }
   @media only screen and (min-width: 1600px) {
-    padding: 5rem 6rem 2rem 6rem;
+    padding: 2rem 6rem;
   }
 `;

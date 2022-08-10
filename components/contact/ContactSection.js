@@ -19,10 +19,10 @@ export default function ContactSection() {
 }
 
 const StyledContactSection = styled.section`
-  background: var(--white);
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 4rem;
   p {
     font-size: 1rem;
     text-align: center;

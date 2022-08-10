@@ -26,8 +26,13 @@ export default function ContactForm() {
 }
 
 const StyledContactForm = styled.form`
-  max-width: 60rem;
+  max-width: 65rem;
   margin: 0 auto;
+  background: var(--white);
+  padding: 4rem;
+  border-radius: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+
   input,
   textarea {
     border: none;
@@ -45,10 +50,10 @@ const StyledContactForm = styled.form`
   .top {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
+    gap: 3rem;
   }
   .message {
-    margin: 2rem 0;
+    margin: 3rem 0;
   }
   button {
     background: var(--yellow2);
