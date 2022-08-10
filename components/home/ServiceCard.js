@@ -6,8 +6,8 @@ export default function ServiceCard({ icon, title, blurb }) {
       <i className={icon} />
       <h4>{title}</h4>
       <p>{blurb}</p>
-      <Link href="/" className="learn">
-        Learn More
+      <Link href="/">
+        <a className="learn">Learn More</a>
       </Link>
     </StyledServiceCard>
   );
@@ -34,7 +34,7 @@ const StyledServiceCard = styled.div`
     text-align: center;
     font-size: 0.9rem;
   }
-  .learn {
+  a {
     color: var(--dark-grey);
     font-size: 0.8rem;
     border: 1px solid var(--yellow2);
