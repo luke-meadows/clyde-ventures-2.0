@@ -17,17 +17,20 @@ export default function Nav() {
 
 const NavOuter = styled.div`
   flex: 2;
+  display: flex;
+  align-items: center;
 `;
 
 const StyledNav = styled.nav`
   display: flex;
   align-items: center;
+  justify-content: center;
   padding: 0.8rem 2rem;
   border-radius: 2rem;
   height: fit-content;
   width: fit-content;
   background: var(--white-transparent2);
-  border: 1px solid var(--white-transparent2);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 
   a,
   .services-dropdown {
