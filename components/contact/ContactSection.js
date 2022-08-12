@@ -27,7 +27,7 @@ const StyledContactSection = styled.section`
     font-size: 1rem;
     text-align: center;
     width: 70ch;
-    margin: 3rem auto;
+    margin: 2rem auto;
   }
   @media only screen and (min-width: 1600px) {
     p {

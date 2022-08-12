@@ -13,11 +13,13 @@ body {
   --white: #ffffff;
   --white-transparent: rgba(255, 255, 255, 0.8);
   --white-transparent2: rgba(255, 255, 255, 0.3);
+  --sky-blue: #a4c4d9;
   --grey: #f0f0f0;
   --medium-grey: #767676;
   --light-grey: #a9a9a9;
   --dark-grey: #404040;
   --black: #050505;
+  --black-transparent: rgba(5, 5, 5, 0.9);
   --yellow: #f5cb85;
   --yellow2: #f9c156;
 
