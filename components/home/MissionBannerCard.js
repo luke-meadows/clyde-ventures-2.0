@@ -5,7 +5,8 @@ export default function MissionBannerCard({ blurb }) {
   return (
     <StyledBannerCard>
       <TickContainer>
-        <Image src={tick} layout="responsive" objectFit="contain" />
+        {/* <Image src={tick} layout="responsive" objectFit="contain" /> */}
+        <i className="icon-check" />
       </TickContainer>
       <p>{blurb}</p>
     </StyledBannerCard>
@@ -18,12 +19,13 @@ const StyledBannerCard = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+
   padding: 3rem 5rem;
 
   p {
     text-align: center;
-    margin: 0.5rem 0 0 0;
-    color: var(--dark-grey);
+    margin: 0rem 0 0 0;
+    color: var(--black);
   }
   @media only screen and (min-width: 1600px) {
     padding: 3rem 10rem 4rem 10rem;
@@ -37,6 +39,12 @@ const TickContainer = styled.div`
   position: relative;
   width: 50px;
   margin-bottom: 1rem;
+  i {
+    font-size: 1.2rem;
+    background: var(--yellow2);
+    border-radius: 10rem;
+    padding: 0.5rem;
+  }
   @media only screen and (min-width: 1600px) {
     margin-bottom: 1.5rem;
   }

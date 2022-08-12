@@ -21,23 +21,24 @@ const StyledSubNav = styled.div`
   bottom: 0;
   transform: translateY(100%);
   nav {
+    border-top: 1px solid var(--white-transparent);
+    padding: 1rem 0;
     display: flex;
     flex-direction: column;
     background: var(--sky-blue);
     border-bottom-left-radius: 1rem;
     border-bottom-right-radius: 1rem;
-    padding: 0rem 1rem 0.5rem 1rem;
+    padding: 0.5rem 1rem 0.5rem 1rem;
     box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
 
     /* border-right: 2px solid var(--white-transparent2);
     border-bottom: 2px solid var(--white-transparent2);
     border-left: 2px solid var(--white-transparent2); */
     a {
-      margin: 0rem 2rem;
-      padding: 0.5rem 0;
-      font-size: 0.8rem;
+      margin: 0rem 1rem;
+      padding: 0rem 0;
       color: var(--black);
-      font-weight: 300;
+      font-size: 0.8rem;
       &:hover {
         color: var(--yellow);
       }

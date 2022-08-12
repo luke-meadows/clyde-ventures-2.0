@@ -41,7 +41,7 @@ const StyledNav = styled.nav`
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0.8rem 2rem;
+  padding: 0.8rem 1rem;
   border-radius: ${(props) => (props.subNavActive ? '' : '2rem')};
   border-top-left-radius: 2rem;
   border-top-right-radius: 2rem;
@@ -56,22 +56,25 @@ const StyledNav = styled.nav`
     margin: 0 1rem;
     font-size: 0.9rem;
     color: var(--black);
-    font-weight: 300;
   }
+
   .services-dropdown {
     cursor: default;
     display: flex;
     align-items: center;
     i {
+      color: ${(props) =>
+        props.subNavActive ? 'var(--medium-grey)' : 'var(--black)'};
       margin-right: -10px;
     }
   }
+
   .underlay {
     position: absolute;
     left: 0;
     bottom: 0;
     height: 50%;
-    width: 10%;
+    width: 2rem;
     background: var(--sky-blue);
   }
 `;
