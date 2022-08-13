@@ -38,6 +38,7 @@ export default function Header({ setShowSidebar, showSidebar }) {
             path={router.asPath}
             setShowSidebar={setShowSidebar}
             showSidebar={showSidebar}
+            key="header"
           />
         )}
       </AnimatePresence>

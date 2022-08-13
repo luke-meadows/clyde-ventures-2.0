@@ -42,8 +42,8 @@ const StyledNavIcon = styled.div`
     position: absolute;
     height: 3px;
     width: 100%;
-    background: var(--black);
-    border-radius: 9px;
+    background: var(--dark-grey);
+    border-radius: 9rem;
     opacity: 1;
     left: 0;
     -webkit-transform: rotate(0deg);

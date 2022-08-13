@@ -10,16 +10,27 @@ export default function HeaderSecondary({ setShowSidebar, showSidebar, path }) {
     setIsOnHomepage(path === '/');
   }, []);
   return (
-    <StyledHeaderSecondary
-      variants={headerVariant}
-      initial="initial"
-      animate="enter"
-      exit="exit"
-    >
-      <Logo width="8rem" variant={2} />
+    <div>
+      {isOnHomepage && (
+        <StyledHeaderSecondary
+          variants={headerVariant}
+          initial="initial"
+          animate="enter"
+          exit="exit"
+        >
+          <Logo width="8rem" variant={2} />
 
-      <NavIcon setShowSidebar={setShowSidebar} showSidebar={showSidebar} />
-    </StyledHeaderSecondary>
+          <NavIcon setShowSidebar={setShowSidebar} showSidebar={showSidebar} />
+        </StyledHeaderSecondary>
+      )}
+      {!isOnHomepage && (
+        <StyledHeaderSecondary>
+          <Logo width="8rem" variant={2} />
+
+          <NavIcon setShowSidebar={setShowSidebar} showSidebar={showSidebar} />
+        </StyledHeaderSecondary>
+      )}
+    </div>
   );
 }
 

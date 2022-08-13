@@ -8,7 +8,7 @@ import {
 import Link from 'next/link';
 import { useEffect } from 'react';
 
-export default function SideBar() {
+export default function SideBar({ setShowSidebar }) {
   useEffect(() => {
     disableScroll();
     return () => enableScroll();
@@ -30,27 +30,27 @@ export default function SideBar() {
         <h1>Menu</h1>
         <nav>
           <Link href="/">
-            <a href="">
+            <a href="" onClick={() => setShowSidebar(false)}>
               Services <i className="icon-plus-squared-alt" />
             </a>
           </Link>
           <Link href="/">
-            <a href="">
+            <a href="" onClick={() => setShowSidebar(false)}>
               About us <i className="icon-angle-right" />
             </a>
           </Link>
           <Link href="/">
-            <a href="">
+            <a href="" onClick={() => setShowSidebar(false)}>
               Blog <i className="icon-angle-right" />
             </a>
           </Link>
           <Link href="/people">
-            <a href="">
+            <a href="" onClick={() => setShowSidebar(false)}>
               People <i className="icon-angle-right" />
             </a>
           </Link>
           <Link href="/">
-            <a href="">
+            <a href="" onClick={() => setShowSidebar(false)}>
               Contact us <i className="icon-angle-right" />
             </a>
           </Link>
