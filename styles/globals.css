@@ -1,11 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
     Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 body {
@@ -13,7 +15,7 @@ body {
   --white: #ffffff;
   --white-transparent: rgba(255, 255, 255, 0.8);
   --white-transparent2: rgba(255, 255, 255, 0.3);
-  --white-banner: rgba(255, 255, 255, 0.65);
+  --white-banner: rgba(255, 255, 255, 0.7);
   --sky-blue: #a4c4d9;
   --grey: #f0f0f0;
   --medium-grey: #767676;
@@ -23,7 +25,7 @@ body {
   --black-transparent: rgba(5, 5, 5, 0.9);
   --yellow: #f5cb85;
   --yellow2: #f9c156;
-  --yellow3: #ecaa31;
+  --yellow3: #f7b741;
 
   /* -- */
   font-weight: 400;
@@ -51,7 +53,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   line-height: 1.3;
 }
@@ -96,7 +98,7 @@ a {
 button {
   padding: 0.8rem 2.5rem;
   border-radius: 2rem;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 1rem;
   cursor: pointer;
   color: var(--dark-grey);
@@ -105,6 +107,6 @@ button {
 
 input,
 textarea {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 1rem;
 }

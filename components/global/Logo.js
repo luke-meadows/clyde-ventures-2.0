@@ -1,10 +1,10 @@
 import Image from 'next/image';
 import styled from 'styled-components';
 import logo from '../../public/logo.png';
-export default function Logo() {
+export default function Logo({ width }) {
   return (
     <StyledLogo>
-      <ImageContainer>
+      <ImageContainer width={width}>
         <Image src={logo} layout="responsive" objectFit="contain" />
       </ImageContainer>
     </StyledLogo>
@@ -20,9 +20,9 @@ const StyledLogo = styled.div`
 
 const ImageContainer = styled.div`
   position: relative;
-  width: 7rem;
+  width: ${(props) => props.width};
 
   @media only screen and (min-width: 1600px) {
-    width: 8rem;
+    width: ${(props) => props.width * 1.15};
   }
 `;

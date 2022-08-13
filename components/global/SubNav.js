@@ -38,7 +38,7 @@ const StyledSubNav = styled.div`
       margin: 0rem 1rem;
       padding: 0rem 0;
       color: var(--black);
-      font-size: 0.8rem;
+      /* font-size: 0.8rem; */
       &:hover {
         color: var(--yellow);
       }

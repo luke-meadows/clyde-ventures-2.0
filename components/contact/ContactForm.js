@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import Logo from '../global/Logo';
 export default function ContactForm() {
   return (
     <StyledContactForm>
@@ -32,7 +33,7 @@ const StyledContactForm = styled.form`
   padding: 4rem;
   border-radius: 2rem;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-
+  position: relative;
   input,
   textarea {
     border: none;
@@ -61,6 +62,7 @@ const StyledContactForm = styled.form`
     padding-left: 4rem;
     padding-right: 4rem;
   }
+
   @media only screen and (min-width: 1600px) {
     max-width: 80rem;
   }

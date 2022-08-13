@@ -14,6 +14,7 @@ export default function MissionBanner() {
 
 const StyledMissionBanner = styled.div`
   background-color: var(--white-banner);
+
   position: absolute;
   bottom: 0;
   left: 0;

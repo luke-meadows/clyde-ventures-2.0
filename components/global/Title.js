@@ -13,9 +13,9 @@ const StyledTitle = styled.h1`
   flex-direction: column;
   align-items: center;
   .underline {
-    background-color: var(--yellow);
+    background-color: var(--yellow2);
     height: 2px;
     width: 8rem;
-    margin-top: 1rem;
+    margin-top: 0.5rem;
   }
 `;

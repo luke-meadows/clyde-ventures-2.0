@@ -6,7 +6,7 @@ export default function Header() {
   return (
     <StyledHeader>
       <Nav />
-      <Logo />
+      <Logo width="7rem" />
       <ContactButton />
     </StyledHeader>
   );

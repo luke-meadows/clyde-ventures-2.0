@@ -17,7 +17,7 @@ export default function Nav() {
           Services <i className="icon-angle-down" />
         </div>
         <Link href="/">About us</Link>
-        <Link href="/">Careers</Link>
+        <Link href="/">Blog</Link>
         <Link href="/">People</Link>
         {subNavActive && (
           <>
