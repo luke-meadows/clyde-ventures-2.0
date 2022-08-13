@@ -9,4 +9,5 @@ export default function People() {
 
 const PageContainer = styled.main`
   margin-top: 6rem;
+  border: 1px solid blue;
 `;

@@ -1,8 +1,14 @@
 import { motion } from 'framer-motion';
+import { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import { headerVariant } from '../../framer-motion/variants';
 import Logo from './Logo';
-export default function HeaderSecondary({ setShowSidebar, showSidebar }) {
+import NavIcon from './NavIcon';
+export default function HeaderSecondary({ setShowSidebar, showSidebar, path }) {
+  const [isOnHomepage, setIsOnHomepage] = useState(false);
+  useEffect(() => {
+    setIsOnHomepage(path === '/');
+  }, []);
   return (
     <StyledHeaderSecondary
       variants={headerVariant}
@@ -11,7 +17,8 @@ export default function HeaderSecondary({ setShowSidebar, showSidebar }) {
       exit="exit"
     >
       <Logo width="8rem" variant={2} />
-      <i className="icon-menu" onClick={() => setShowSidebar(!showSidebar)} />
+
+      <NavIcon setShowSidebar={setShowSidebar} showSidebar={showSidebar} />
     </StyledHeaderSecondary>
   );
 }

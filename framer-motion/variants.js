@@ -36,6 +36,9 @@ export const sidebarInnerVariant = {
 };
 
 export const headerVariant = {
+  static: {
+    y: '0',
+  },
   initial: {
     y: '-100%',
   },

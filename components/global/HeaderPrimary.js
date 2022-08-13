@@ -2,13 +2,16 @@ import styled from 'styled-components';
 import Nav from './Nav';
 import Logo from './Logo';
 import ContactButton from './ContactButton';
+import Link from 'next/link';
 export default function HeaderPrimary() {
   return (
     <StyledHeaderPrimary>
       <Nav />
       {/* <Logo width="7rem" style={{ flex: 1 }} /> */}
-      <Logo width="11rem" style={{ flex: 1 }} variant={2} />
 
+      <Link href="/">
+        <Logo width="11rem" style={{ flex: 1 }} variant={2} />
+      </Link>
       <ContactButton />
     </StyledHeaderPrimary>
   );

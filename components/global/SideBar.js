@@ -8,7 +8,7 @@ import {
 import Link from 'next/link';
 import { useEffect } from 'react';
 
-export default function SideBar({ setShowSidebar }) {
+export default function SideBar() {
   useEffect(() => {
     disableScroll();
     return () => enableScroll();
