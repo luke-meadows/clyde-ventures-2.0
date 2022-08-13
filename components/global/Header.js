@@ -1,28 +1,33 @@
-import styled from 'styled-components';
-import Nav from './Nav';
-import Logo from './Logo';
-import ContactButton from './ContactButton';
-export default function Header() {
+import { AnimatePresence } from 'framer-motion';
+import { useEffect, useState } from 'react';
+import HeaderPrimary from './HeaderPrimary';
+import HeaderSecondary from './HeaderSecondary';
+import { useRouter } from 'next/router';
+export default function Header({ setShowSidebar, showSidebar }) {
+  const [showHeaderSecondary, setShowHeaderSecondary] = useState(false);
+  const handleScroll = () => {
+    console.log('scrollTop: ', window.scrollY);
+    if (window.scrollY > 150) setShowHeaderSecondary(true);
+    else setShowHeaderSecondary(false);
+  };
+  const router = useRouter();
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    console.log(router.asPath);
+    return () => window.removeEventListener('scroll', handleScroll);
+  });
   return (
-    <StyledHeader>
-      <Nav />
-      <Logo width="7rem" />
-      <ContactButton />
-    </StyledHeader>
+    <>
+      <HeaderPrimary />
+
+      <AnimatePresence initial={false}>
+        {showHeaderSecondary && (
+          <HeaderSecondary
+            setShowSidebar={setShowSidebar}
+            showSidebar={showSidebar}
+          />
+        )}
+      </AnimatePresence>
+    </>
   );
 }
-
-const StyledHeader = styled.header`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 5rem 3rem;
-  height: 8rem;
-  position: absolute;
-  z-index: 2;
-  width: 100%;
-  @media only screen and (min-width: 1600px) {
-    padding: 0 6rem;
-    height: 10rem;
-  }
-`;

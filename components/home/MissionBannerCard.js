@@ -1,11 +1,10 @@
 import Image from 'next/image';
 import styled from 'styled-components';
-import tick from '../../public/tick.png';
+
 export default function MissionBannerCard({ blurb }) {
   return (
     <StyledBannerCard>
       <TickContainer>
-        {/* <Image src={tick} layout="responsive" objectFit="contain" /> */}
         <i className="icon-check" />
       </TickContainer>
       <p>{blurb}</p>

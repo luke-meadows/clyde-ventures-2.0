@@ -18,7 +18,7 @@ export default function Nav() {
         </div>
         <Link href="/">About us</Link>
         <Link href="/">Blog</Link>
-        <Link href="/">People</Link>
+        <Link href="/people">People</Link>
         {subNavActive && (
           <>
             <SubNav />

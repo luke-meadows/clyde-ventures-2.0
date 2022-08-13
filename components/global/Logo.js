@@ -1,18 +1,23 @@
 import Image from 'next/image';
 import styled from 'styled-components';
 import logo from '../../public/logo.png';
-export default function Logo({ width }) {
+import logo2 from '../../public/logo2.png';
+export default function Logo({ width, variant = 1 }) {
   return (
     <StyledLogo>
       <ImageContainer width={width}>
-        <Image src={logo} layout="responsive" objectFit="contain" />
+        <Image
+          src={variant === 1 ? logo : logo2}
+          layout="responsive"
+          objectFit="contain"
+        />
       </ImageContainer>
     </StyledLogo>
   );
 }
 
 const StyledLogo = styled.div`
-  flex: 1;
+  /* flex: 1; */
   display: flex;
   align-items: center;
   justify-content: center;
