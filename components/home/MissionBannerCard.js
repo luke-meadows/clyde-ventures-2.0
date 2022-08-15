@@ -39,10 +39,11 @@ const TickContainer = styled.div`
   margin-bottom: 1rem;
   i {
     font-size: 1.2rem;
-    background: var(--yellow2);
+    background: var(--dark-grey);
     border-radius: 10rem;
     padding: 0.5rem;
     margin-bottom: 1rem;
+    color: var(--grey);
   }
   @media only screen and (min-width: 1600px) {
     margin-bottom: 1.5rem;
