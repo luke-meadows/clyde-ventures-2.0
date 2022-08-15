@@ -52,10 +52,14 @@ const StyledNav = styled.nav`
 
   a,
   .services-dropdown {
-    margin-right: 2rem;
-    font-size: 1rem;
+    margin-right: 1.6rem;
+    font-size: 0.9rem;
     color: var(--black);
     font-weight: 500;
+    @media only screen and (min-width: 1600px) {
+      font-size: 1rem;
+      margin-right: 2rem;
+    }
   }
 
   .services-dropdown {
@@ -68,13 +72,4 @@ const StyledNav = styled.nav`
       margin-right: -10px;
     }
   }
-
-  /* .underlay {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    height: 50%;
-    width: 2rem;
-    background: var(--sky-blue);
-  } */
 `;
