@@ -41,7 +41,7 @@ const StyledSubNav = styled.div`
   bottom: 0;
   transform: translateY(100%);
   nav {
-    padding: 1rem 0;
+    padding: 0.5rem 0 2rem 0;
     display: flex;
     width: fit-content;
     a {

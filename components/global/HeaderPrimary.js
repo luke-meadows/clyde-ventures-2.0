@@ -27,5 +27,6 @@ const StyledHeaderPrimary = styled.header`
   @media only screen and (min-width: 1600px) {
     padding: 0 6rem;
     height: 10rem;
+    align-items: center;
   }
 `;
