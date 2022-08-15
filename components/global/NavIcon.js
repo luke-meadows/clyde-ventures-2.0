@@ -1,7 +1,11 @@
 import styled from 'styled-components';
-export default function NavIcon({ setShowSidebar, showSidebar }) {
+export default function NavIcon({
+  setShowSidebar,
+  showSidebar,
+  operatingSystem,
+}) {
   return (
-    <StyledNavIcon>
+    <StyledNavIcon operatingSystem={operatingSystem}>
       <div
         id="nav-icon3"
         onClick={() => setShowSidebar(!showSidebar)}

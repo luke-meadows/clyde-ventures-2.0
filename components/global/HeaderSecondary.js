@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import { headerVariant } from '../../framer-motion/variants';
@@ -6,21 +7,32 @@ import Logo from './Logo';
 import NavIcon from './NavIcon';
 export default function HeaderSecondary({ setShowSidebar, showSidebar, path }) {
   const [isOnHomepage, setIsOnHomepage] = useState(false);
+  const [operatingSystem, setOperatingSystem] = useState('mac');
+
   useEffect(() => {
     setIsOnHomepage(path === '/');
+    if (navigator.userAgentData?.platform === 'macOS') {
+      setOperatingSystem('mac');
+    } else {
+      setOperatingSystem('windows');
+    }
   }, []);
   return (
-    <div>
+    <Container operatingSystem={operatingSystem}>
       {isOnHomepage && (
         <StyledHeaderSecondary
           variants={headerVariant}
           initial="initial"
           animate="enter"
           exit="exit"
+          operatingSystem={operatingSystem}
         >
           <Logo width="8rem" variant={2} />
-
-          <NavIcon setShowSidebar={setShowSidebar} showSidebar={showSidebar} />
+          <NavIcon
+            setShowSidebar={setShowSidebar}
+            showSidebar={showSidebar}
+            operatingSystem={operatingSystem}
+          />
         </StyledHeaderSecondary>
       )}
       {!isOnHomepage && (
@@ -30,9 +42,11 @@ export default function HeaderSecondary({ setShowSidebar, showSidebar, path }) {
           <NavIcon setShowSidebar={setShowSidebar} showSidebar={showSidebar} />
         </StyledHeaderSecondary>
       )}
-    </div>
+    </Container>
   );
 }
+
+const Container = styled.div``;
 
 const StyledHeaderSecondary = styled(motion.header)`
   height: 5rem;
@@ -45,7 +59,8 @@ const StyledHeaderSecondary = styled(motion.header)`
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
+  width: ${(props) =>
+    props.operatingSystem === 'mac' ? '100%' : 'calc(100vw - 17px)'};
   z-index: 2;
   border-bottom: var(--dark-grey);
   box-shadow: rgba(0, 0, 0, 0.05) 0px 4px 12px;

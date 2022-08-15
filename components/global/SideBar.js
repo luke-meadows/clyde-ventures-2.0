@@ -64,16 +64,16 @@ const StyledSideBar = styled(motion.div)`
   position: fixed;
   right: 0;
   top: 6rem;
-  height: calc(100vh - 6rem);
-  width: 30vw;
-
+  height: calc(100vh - 5rem);
+  width: 30rem;
   /* CHANGE */
   /* width: fit-content; */
   background: var(--white);
   z-index: 2;
   color: var(--dark-grey);
   overflow-y: scroll;
-  padding: 2rem;
+  padding: 2rem 3rem;
+  overflow: hidden;
   i {
     margin-left: -0.2rem;
     font-size: 1.2rem;

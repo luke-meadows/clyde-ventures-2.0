@@ -19,5 +19,6 @@ const StyledContactButton = styled.div`
     font-size: 1rem;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
     font-size: 0.9rem;
+    font-weight: 500;
   }
 `;

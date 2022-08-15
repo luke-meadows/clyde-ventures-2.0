@@ -11,7 +11,6 @@ export default function Header({ setShowSidebar, showSidebar }) {
 
   const handleScroll = () => {
     if (!isOnHomepage) return;
-    console.log('scrollTop: ', window.scrollY);
     if (window.scrollY > 150) setShowHeaderSecondary(true);
     else setShowHeaderSecondary(false);
   };

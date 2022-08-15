@@ -1,17 +1,22 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import styled from 'styled-components';
 import logo from '../../public/logo.png';
 import logo2 from '../../public/logo2.png';
 export default function Logo({ width, variant = 1 }) {
   return (
     <StyledLogo>
-      <ImageContainer width={width}>
-        <Image
-          src={variant === 1 ? logo : logo2}
-          layout="responsive"
-          objectFit="contain"
-        />
-      </ImageContainer>
+      <Link href="/">
+        <a href="">
+          <ImageContainer width={width}>
+            <Image
+              src={variant === 1 ? logo : logo2}
+              layout="responsive"
+              objectFit="contain"
+            />
+          </ImageContainer>
+        </a>
+      </Link>
     </StyledLogo>
   );
 }
