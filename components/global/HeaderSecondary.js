@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import styled from 'styled-components';
-import { headerVariant } from '../../framer-motion/variants';
+import { headerVariant, headerVariant2 } from '../../framer-motion/variants';
 import Logo from './Logo';
 import NavIcon from './NavIcon';
 export default function HeaderSecondary({ setShowSidebar, showSidebar, path }) {
@@ -42,7 +42,13 @@ export default function HeaderSecondary({ setShowSidebar, showSidebar, path }) {
           <NavIcon setShowSidebar={setShowSidebar} showSidebar={showSidebar} />
         </StyledHeaderSecondary>
       )}
-      <div className="box" />
+      <motion.div
+        className="box"
+        variants={headerVariant2}
+        initial="initial"
+        animate="enter"
+        exit="exit"
+      />
     </Container>
   );
 }

@@ -1,16 +1,8 @@
-import Image from 'next/image';
 import styled from 'styled-components';
-import hero from '../../public/hero.jpg';
 import MissionBanner from './MissionBanner';
 export default function Hero() {
   return (
     <StyledHero>
-      {/* <Image
-        src={hero}
-        layout="fill"
-        objectFit="cover"
-        objectPosition="center"
-      /> */}
       <HeroVideo
         autoPlay
         muted
@@ -29,9 +21,6 @@ export default function Hero() {
 const StyledHero = styled.div`
   position: relative;
   height: calc(100vh - 3rem);
-  /* @media only screen and (min-width: 1600px) {
-    height: calc(100vh - 13rem);
-  } */
 `;
 
 const HeroVideo = styled.video`

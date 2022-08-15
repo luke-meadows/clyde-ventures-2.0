@@ -3,6 +3,7 @@ import Link from 'next/link';
 import styled from 'styled-components';
 import logo from '../../public/logo.png';
 import logo2 from '../../public/logo2.png';
+import logo3 from '../../public/logo3.png';
 export default function Logo({ width, variant = 1 }) {
   return (
     <StyledLogo>
@@ -10,7 +11,7 @@ export default function Logo({ width, variant = 1 }) {
         <a href="">
           <ImageContainer width={width}>
             <Image
-              src={variant === 1 ? logo : logo2}
+              src={variant === 1 ? logo : logo3}
               layout="responsive"
               objectFit="contain"
             />

@@ -54,3 +54,19 @@ export const headerVariant = {
     transition: { duration: 0.3 },
   },
 };
+export const headerVariant2 = {
+  initial: {
+    y: '-100%',
+  },
+  enter: {
+    y: '0',
+    transition: {
+      duration: 1,
+      when: 'beforeChildren',
+    },
+  },
+  exit: {
+    y: '-100%',
+    transition: { duration: 0.1 },
+  },
+};
