@@ -31,27 +31,31 @@ export default function SideBar({ setShowSidebar }) {
         <nav>
           <Link href="/">
             <a href="" onClick={() => setShowSidebar(false)}>
-              Services <i className="icon-plus-squared-alt" />
+              Services <i className="icon-angle-down" />
             </a>
           </Link>
           <Link href="/">
             <a href="" onClick={() => setShowSidebar(false)}>
-              About us <i className="icon-angle-right" />
+              About us
+              {/* <i className="icon-angle-right" /> */}
             </a>
           </Link>
           <Link href="/">
             <a href="" onClick={() => setShowSidebar(false)}>
-              Blog <i className="icon-angle-right" />
+              Blog
+              {/* <i className="icon-angle-right" /> */}
             </a>
           </Link>
           <Link href="/people">
             <a href="" onClick={() => setShowSidebar(false)}>
-              People <i className="icon-angle-right" />
+              People
+              {/* <i className="icon-angle-right" /> */}
             </a>
           </Link>
           <Link href="/">
             <a href="" onClick={() => setShowSidebar(false)}>
-              Contact us <i className="icon-angle-right" />
+              Contact us
+              {/* <i className="icon-angle-right" /> */}
             </a>
           </Link>
         </nav>
@@ -91,6 +95,7 @@ const StyledSideBar = styled(motion.div)`
     margin-top: 2rem;
     a {
       font-size: 1.4rem;
+      margin: 0.25rem 0;
     }
   }
 `;

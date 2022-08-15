@@ -4,9 +4,8 @@ import Header from '../components/global/Header';
 import styled from 'styled-components';
 import Footer from '../components/global/Footer';
 import SideBar from '../components/global/SideBar';
-import HeaderSecondary from '../components/global/HeaderSecondary';
 import { AnimatePresence } from 'framer-motion';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 
 function MyApp({ Component, pageProps }) {
   const [showSidebar, setShowSidebar] = useState(false);

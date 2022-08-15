@@ -19,7 +19,7 @@ const StyledHeaderPrimary = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  padding: 5rem 3rem;
+  padding: 5rem 5rem;
   height: 8rem;
   position: absolute;
   z-index: 2;

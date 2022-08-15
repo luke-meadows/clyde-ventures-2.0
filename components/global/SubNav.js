@@ -7,25 +7,25 @@ export default function SubNav() {
         <Link href="/people">
           <a href="">
             Consultancy
-            {/* <i className="icon-angle-right" /> */}
+            <i className="icon-angle-right" />
           </a>
         </Link>
         <Link href="/">
           <a href="">
             Integration
-            {/* <i className="icon-angle-right" /> */}
+            <i className="icon-angle-right" />
           </a>
         </Link>
         <Link href="/">
           <a href="">
             Manufacturing
-            {/* <i className="icon-angle-right" /> */}
+            <i className="icon-angle-right" />
           </a>
         </Link>
         <Link href="/">
           <a href="">
             Education
-            {/* <i className="icon-angle-right" /> */}
+            <i className="icon-angle-right" />
           </a>
         </Link>
       </nav>
@@ -44,22 +44,21 @@ const StyledSubNav = styled.div`
     padding: 0.5rem 0 2rem 0;
     display: flex;
     width: fit-content;
+    flex-direction: column;
     a {
-      margin-right: 1.6rem;
+      margin-right: 1.2rem;
+      margin-left: 0.2rem;
       width: fit-content;
       display: flex;
       align-items: center;
       color: var(--white);
-      /* border: 2px solid var(--white); */
-      /* padding: 0.2rem 1.5rem; */
       font-weight: 500;
-      font-size: 1rem;
+      font-size: 0.8rem;
       border-radius: 2rem;
       i {
       }
       &:hover {
         color: var(--yellow);
-        /* border: 2px solid var(--black); */
       }
     }
   }

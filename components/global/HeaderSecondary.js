@@ -77,7 +77,7 @@ const StyledHeaderSecondary = styled(motion.header)`
   top: 0;
   left: 0;
   width: ${(props) =>
-    props.operatingSystem === 'mac' ? '100%' : 'calc(100vw - 17px)'};
+    props.operatingSystem === 'mac' ? '100vw' : 'calc(100vw - 17px)'};
   z-index: 2;
   border-bottom: var(--dark-grey);
   box-shadow: rgba(0, 0, 0, 0.05) 0px 4px 12px;

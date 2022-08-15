@@ -61,6 +61,7 @@ const StyledContactForm = styled.form`
     border: 1px solid var(--yellow2);
     padding-left: 4rem;
     padding-right: 4rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   }
 
   @media only screen and (min-width: 1600px) {
