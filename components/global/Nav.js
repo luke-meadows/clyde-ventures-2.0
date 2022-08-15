@@ -53,7 +53,7 @@ const StyledNav = styled.nav`
   a,
   .services-dropdown {
     margin-right: 2rem;
-    font-size: 0.9rem;
+    font-size: 1rem;
     color: var(--black);
     font-weight: 500;
   }

@@ -45,21 +45,21 @@ const StyledSubNav = styled.div`
     display: flex;
     width: fit-content;
     a {
-      margin: 0;
+      margin-right: 1rem;
       width: fit-content;
       display: flex;
       align-items: center;
-      margin-right: 0.8rem;
       color: var(--white);
-      border: 1px solid var(--white);
-      padding: 0.1rem 1rem;
+      /* border: 2px solid var(--white); */
+      /* padding: 0.2rem 1.5rem; */
       font-weight: 500;
-      font-size: 0.8rem;
+      font-size: 1rem;
       border-radius: 2rem;
       i {
       }
       &:hover {
-        color: var(--white);
+        color: var(--yellow);
+        /* border: 2px solid var(--black); */
       }
     }
   }

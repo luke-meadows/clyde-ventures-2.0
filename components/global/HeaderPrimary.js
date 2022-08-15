@@ -18,7 +18,7 @@ export default function HeaderPrimary() {
 const StyledHeaderPrimary = styled.header`
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-end;
   padding: 5rem 3rem;
   height: 8rem;
   position: absolute;
