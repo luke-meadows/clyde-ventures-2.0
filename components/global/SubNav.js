@@ -45,7 +45,7 @@ const StyledSubNav = styled.div`
     display: flex;
     width: fit-content;
     a {
-      margin-right: 1rem;
+      margin-right: 1.6rem;
       width: fit-content;
       display: flex;
       align-items: center;

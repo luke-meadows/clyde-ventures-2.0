@@ -3,7 +3,7 @@ import { useState } from 'react';
 import styled from 'styled-components';
 import SubNav from './SubNav';
 export default function Nav() {
-  const [subNavActive, setSubNavActive] = useState(true);
+  const [subNavActive, setSubNavActive] = useState(false);
   return (
     <NavOuter
       subNavActive={subNavActive}
