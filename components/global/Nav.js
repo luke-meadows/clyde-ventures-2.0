@@ -3,7 +3,7 @@ import { useState } from 'react';
 import styled from 'styled-components';
 import SubNav from './SubNav';
 export default function Nav() {
-  const [subNavActive, setSubNavActive] = useState(false);
+  const [subNavActive, setSubNavActive] = useState(true);
   return (
     <NavOuter
       subNavActive={subNavActive}
@@ -14,7 +14,7 @@ export default function Nav() {
           className="services-dropdown"
           onMouseEnter={() => setSubNavActive(true)}
         >
-          Services <i className="icon-angle-down" />
+          What we do <i className="icon-angle-down" />
         </div>
         <Link href="/">About us</Link>
         <Link href="/">Blog</Link>
@@ -22,7 +22,6 @@ export default function Nav() {
         {subNavActive && (
           <>
             <SubNav />
-            <div className="underlay"></div>
           </>
         )}
       </StyledNav>
@@ -41,19 +40,19 @@ const StyledNav = styled.nav`
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0.8rem 1rem;
+  /* padding: 0.8rem 1rem; */
   border-radius: ${(props) => (props.subNavActive ? '' : '2rem')};
   border-top-left-radius: 2rem;
   border-top-right-radius: 2rem;
   border-radius: 2rem;
   height: fit-content;
   width: fit-content;
-  background: var(--sky-blue);
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  /* background: var(--sky-blue); */
+  /* box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; */
 
   a,
   .services-dropdown {
-    margin: 0 1rem;
+    margin-right: 2rem;
     font-size: 0.9rem;
     color: var(--black);
     font-weight: 500;
@@ -65,17 +64,17 @@ const StyledNav = styled.nav`
     align-items: center;
     i {
       color: ${(props) =>
-        props.subNavActive ? 'var(--medium-grey)' : 'var(--black)'};
+        props.subNavActive ? 'var(--white)' : 'var(--black)'};
       margin-right: -10px;
     }
   }
 
-  .underlay {
+  /* .underlay {
     position: absolute;
     left: 0;
     bottom: 0;
     height: 50%;
     width: 2rem;
     background: var(--sky-blue);
-  }
+  } */
 `;

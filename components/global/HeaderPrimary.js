@@ -7,8 +7,6 @@ export default function HeaderPrimary() {
   return (
     <StyledHeaderPrimary>
       <Nav />
-      {/* <Logo width="7rem" style={{ flex: 1 }} /> */}
-
       <Link href="/">
         <Logo width="11rem" style={{ flex: 1 }} variant={2} />
       </Link>

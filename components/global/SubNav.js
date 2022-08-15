@@ -6,22 +6,26 @@ export default function SubNav() {
       <nav>
         <Link href="/people">
           <a href="">
-            Consultancy <i className="icon-angle-right" />
+            Consultancy
+            {/* <i className="icon-angle-right" /> */}
           </a>
         </Link>
         <Link href="/">
           <a href="">
-            Integration <i className="icon-angle-right" />
+            Integration
+            {/* <i className="icon-angle-right" /> */}
           </a>
         </Link>
         <Link href="/">
           <a href="">
-            Manufacturing <i className="icon-angle-right" />
+            Manufacturing
+            {/* <i className="icon-angle-right" /> */}
           </a>
         </Link>
         <Link href="/">
           <a href="">
-            Education <i className="icon-angle-right" />
+            Education
+            {/* <i className="icon-angle-right" /> */}
           </a>
         </Link>
       </nav>
@@ -32,29 +36,30 @@ export default function SubNav() {
 const StyledSubNav = styled.div`
   position: absolute;
   width: fit-content;
-  height: 1px;
-
+  height: fit-content;
   left: 0;
   bottom: 0;
   transform: translateY(100%);
   nav {
+    padding: 1rem 0;
     display: flex;
-    flex-direction: column;
-    background: var(--sky-blue);
-    border-bottom-left-radius: 1rem;
-    border-bottom-right-radius: 1rem;
-    padding: 0.5rem 0 1rem 1rem;
-    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+    width: fit-content;
     a {
-      margin: 0.25rem 1rem;
-      padding: 0rem 0;
-      color: var(--black);
-      font-weight: 400;
+      margin: 0;
+      width: fit-content;
+      display: flex;
+      align-items: center;
+      margin-right: 0.8rem;
+      color: var(--white);
+      border: 1px solid var(--white);
+      padding: 0.1rem 1rem;
+      font-weight: 500;
+      font-size: 0.8rem;
+      border-radius: 2rem;
       i {
-        margin-left: -3px;
       }
       &:hover {
-        color: var(--yellow);
+        color: var(--white);
       }
     }
   }
