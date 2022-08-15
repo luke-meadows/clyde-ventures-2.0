@@ -42,11 +42,22 @@ export default function HeaderSecondary({ setShowSidebar, showSidebar, path }) {
           <NavIcon setShowSidebar={setShowSidebar} showSidebar={showSidebar} />
         </StyledHeaderSecondary>
       )}
+      <div className="box" />
     </Container>
   );
 }
 
-const Container = styled.div``;
+const Container = styled.div`
+  .box {
+    height: 6rem;
+    width: 17px;
+    position: fixed;
+    top: 0;
+    right: 0px;
+    z-index: 3;
+    background: var(--white);
+  }
+`;
 
 const StyledHeaderSecondary = styled(motion.header)`
   height: 5rem;
