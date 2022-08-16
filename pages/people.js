@@ -8,8 +8,8 @@ export default function People() {
           Meet <br /> The Team
         </h1>
         <p>
-          Get to know us and learn what we're about. We are serious about our
-          work and love to get stuck into a challenge.
+          Get to know us and learn what we&apos;re about. We are serious about
+          our work and love to get stuck into a challenge.
         </p>
       </div>
       <TeamGrid />
