@@ -14,6 +14,22 @@ export const sidebarVariant = {
     transition: { duration: 0.5 },
   },
 };
+export const sidebarImageVariant = {
+  initial: {
+    x: '-100%',
+  },
+  enter: {
+    x: '0',
+    transition: {
+      duration: 0.5,
+      when: 'beforeChildren',
+    },
+  },
+  exit: {
+    x: '-100%',
+    transition: { duration: 0.5 },
+  },
+};
 
 export const sidebarInnerVariant = {
   initial: {

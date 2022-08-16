@@ -10,8 +10,7 @@ export default function ContactSection() {
           <Title>Talk To Us</Title>
           <p>
             If you have a project in mind we&apos;d love to hear from you.
-            Please fill in the details below and a team member will get back to
-            you shortly.
+            Please fill in your details or call us using the number below.
           </p>
           <div className="contact-info">
             <i className="icon-mail" />
@@ -45,7 +44,7 @@ const StyledContactSection = styled.section`
   .contact-info {
     display: flex;
     align-items: center;
-    margin: 1rem 0;
+    margin: 1rem 0 0 0;
     p {
       margin: 0;
       font-weight: 500;

@@ -18,6 +18,7 @@ export default function People() {
 }
 
 const PageContainer = styled.main`
+  z-index: 10;
   padding: 12rem 5rem;
   background: var(--white);
   .hero {
