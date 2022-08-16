@@ -23,6 +23,6 @@ const StyledTeamGrid = styled.section`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 4rem;
-  margin: 10rem auto 0 auto;
+  margin: 6rem auto 0 auto;
   max-width: 1100px;
 `;
