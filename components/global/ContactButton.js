@@ -1,7 +1,11 @@
+import { useRouter } from 'next/router';
 import styled from 'styled-components';
 export default function ContactButton() {
+  const router = useRouter();
+  const isOnHomepage = router.asPath === '/';
+
   return (
-    <StyledContactButton>
+    <StyledContactButton isOnHomepage={isOnHomepage}>
       <button>Contact us</button>
     </StyledContactButton>
   );
@@ -14,11 +18,14 @@ const StyledContactButton = styled.div`
   justify-content: flex-end;
 
   button {
-    background: var(--yellow2);
+    color: ${(props) =>
+      props.isOnHomepage ? 'var(--black)' : 'var(--yellow2)'};
+    background: ${(props) => (props.isOnHomepage ? 'var(--yellow2)' : 'none')};
     border: 1px solid var(--yellow2);
     font-size: 1rem;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    box-shadow: ${(props) =>
+      props.isOnHomepage ? 'rgba(0, 0, 0, 0.1) 0px 4px 12px' : 'none'};
     font-size: 0.9rem;
-    font-weight: 500;
+    font-weight: ${(props) => (props.isOnHomepage ? '500' : '400')};
   }
 `;

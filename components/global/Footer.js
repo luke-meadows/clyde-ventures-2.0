@@ -90,6 +90,6 @@ const StyledFooter = styled.footer`
     }
   }
   @media only screen and (min-width: 1600px) {
-    padding: 2rem 6rem;
+    padding: 2rem 5rem;
   }
 `;

@@ -46,17 +46,13 @@ const StyledSubNav = styled.div`
     width: fit-content;
     flex-direction: column;
     a {
-      margin-right: 1.2rem;
-      margin-left: 0.2rem;
+      margin: 0 1.2rem 0.2rem 0.2rem;
       width: fit-content;
       display: flex;
       align-items: center;
-      color: var(--white);
+      color: var(--black);
       font-weight: 500;
       font-size: 0.8rem;
-      border-radius: 2rem;
-      i {
-      }
       &:hover {
         color: var(--yellow);
       }

@@ -73,6 +73,7 @@ const StyledHeaderSecondary = styled(motion.header)`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: ${(props) => (props.isOnHomepage ? 'fixed' : 'relative')};
   position: fixed;
   top: 0;
   left: 0;
@@ -80,7 +81,9 @@ const StyledHeaderSecondary = styled(motion.header)`
     props.operatingSystem === 'mac' ? '100vw' : 'calc(100vw - 17px)'};
   z-index: 2;
   border-bottom: var(--dark-grey);
-  box-shadow: rgba(0, 0, 0, 0.05) 0px 4px 12px;
+  box-shadow: ${(props) =>
+    props.isOnHomepage ? 'rgba(0, 0, 0, 0.05) 0px 4px 12px;' : ''};
+  /* box-shadow: rgba(0, 0, 0, 0.02) 0px 4px 12px; */
   p {
     margin-bottom: 0;
   }

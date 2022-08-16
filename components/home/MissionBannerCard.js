@@ -23,7 +23,8 @@ const StyledBannerCard = styled.div`
   p {
     text-align: center;
     margin: 0rem 0 0 0;
-    color: var(--dar-grey);
+    color: var(--dark-grey);
+    font-weight: 500;
   }
   @media only screen and (min-width: 1600px) {
     padding: 3rem 10rem 4rem 10rem;
@@ -36,12 +37,16 @@ const StyledBannerCard = styled.div`
 const TickContainer = styled.div`
   position: relative;
   margin-bottom: 1rem;
+  border: 2px solid var(--dark-grey);
+  background: var(--dark-grey);
+  border-radius: 50%;
+  height: 2.25rem;
+  width: 2.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   i {
-    font-size: 1.2rem;
-    background: var(--dark-grey);
-    border-radius: 10rem;
-    padding: 0.5rem;
-    margin-bottom: 0.75rem;
+    font-size: 1.1rem;
     color: var(--grey);
   }
   @media only screen and (min-width: 1600px) {
