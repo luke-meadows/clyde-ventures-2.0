@@ -3,9 +3,6 @@ import TeamGrid from '../components/people/TeamGrid';
 export default function People() {
   return (
     <PageContainer>
-      {/* <h1>
-        Our <br /> People
-      </h1> */}
       <div className="hero">
         <h1>
           Meet <br /> The Team
@@ -21,7 +18,7 @@ export default function People() {
 }
 
 const PageContainer = styled.main`
-  padding: 14rem 5rem;
+  padding: 12rem 5rem;
   background: var(--white);
   .hero {
     padding: 0 0 0 21rem;

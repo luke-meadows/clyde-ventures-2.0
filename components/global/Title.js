@@ -3,15 +3,18 @@ export default function Title({ children }) {
   return (
     <StyledTitle>
       {children}
-      <div className="underline" />
+      {/* <div className="underline" /> */}
     </StyledTitle>
   );
 }
 
 const StyledTitle = styled.h1`
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: center; */
+  font-size: 4rem;
+  font-weight: 500;
+
   .underline {
     background-color: var(--yellow2);
     height: 2px;
