@@ -1,49 +1,40 @@
 import { motion } from 'framer-motion';
-import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import { headerVariant, headerVariant2 } from '../../framer-motion/variants';
 import Logo from './Logo';
 import NavIcon from './NavIcon';
-export default function HeaderSecondary({ setShowSidebar, showSidebar, path }) {
-  const [isOnHomepage, setIsOnHomepage] = useState(false);
+
+export default function HeaderSecondary({ setShowSidebar, showSidebar }) {
   const [operatingSystem, setOperatingSystem] = useState('mac');
 
   useEffect(() => {
-    setIsOnHomepage(path === '/');
     if (navigator.userAgentData?.platform === 'macOS') {
       setOperatingSystem('mac');
     } else {
       setOperatingSystem('windows');
     }
   }, []);
+
   return (
     <Container operatingSystem={operatingSystem}>
-      {isOnHomepage && (
-        <StyledHeaderSecondary
-          variants={headerVariant}
-          initial="initial"
-          animate="enter"
-          exit="exit"
+      <StyledHeaderSecondary
+        variants={headerVariant}
+        initial="initial"
+        animate="enter"
+        exit="exit"
+        operatingSystem={operatingSystem}
+      >
+        <Logo width="8rem" variant={2} />
+        <NavIcon
+          setShowSidebar={setShowSidebar}
+          showSidebar={showSidebar}
           operatingSystem={operatingSystem}
-        >
-          <Logo width="8rem" variant={2} />
-          <NavIcon
-            setShowSidebar={setShowSidebar}
-            showSidebar={showSidebar}
-            operatingSystem={operatingSystem}
-          />
-        </StyledHeaderSecondary>
-      )}
-      {!isOnHomepage && (
-        <StyledHeaderSecondary>
-          <Logo width="8rem" variant={2} />
+        />
+      </StyledHeaderSecondary>
 
-          <NavIcon setShowSidebar={setShowSidebar} showSidebar={showSidebar} />
-        </StyledHeaderSecondary>
-      )}
       <motion.div
-        className="box"
+        className="box-to-cover-scrollbar"
         variants={headerVariant2}
         initial="initial"
         animate="enter"
@@ -54,7 +45,7 @@ export default function HeaderSecondary({ setShowSidebar, showSidebar, path }) {
 }
 
 const Container = styled.div`
-  .box {
+  .box-to-cover-scrollbar {
     height: 6rem;
     width: 17px;
     position: fixed;
@@ -67,7 +58,7 @@ const Container = styled.div`
 
 const StyledHeaderSecondary = styled(motion.header)`
   height: 5rem;
-  background: white;
+  background: var(--white);
   padding: 0 5rem;
   height: 6rem;
   display: flex;

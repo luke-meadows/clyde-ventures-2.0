@@ -131,6 +131,12 @@
       "css": "plus",
       "code": 59392,
       "src": "entypo"
+    },
+    {
+      "uid": "9f7e588c66cfd6891f6f507cf6f6596b",
+      "css": "phone",
+      "code": 59399,
+      "src": "fontawesome"
     }
   ]
 }

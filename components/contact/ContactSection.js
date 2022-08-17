@@ -7,7 +7,7 @@ export default function ContactSection() {
     <Container>
       <StyledContactSection>
         <div>
-          <Title>Talk To Us</Title>
+          <h1>Talk To Us</h1>
           <p>
             If you have a project in mind we&apos;d love to hear from you.
             Please fill in your details or call us using the number below.
@@ -32,6 +32,11 @@ const StyledContactSection = styled.section`
   margin: 0 4rem;
   max-width: 1300px;
   margin: 6rem auto 6rem auto;
+  h1 {
+    font-size: 4rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+  }
   p {
     font-size: 1.2rem;
     margin-bottom: 0;
@@ -44,7 +49,7 @@ const StyledContactSection = styled.section`
   .contact-info {
     display: flex;
     align-items: center;
-    margin: 1rem 0 0 0;
+    margin: 0.5rem 0 0 0;
     p {
       margin: 0;
       font-weight: 500;

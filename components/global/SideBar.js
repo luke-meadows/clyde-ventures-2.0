@@ -31,7 +31,13 @@ export default function SideBar({ setShowSidebar }) {
         animate="enter"
         exit="exit"
       >
-        <Image src={SidebarImage} layout="fill" objectFit="cover" priority />
+        <Image
+          src={SidebarImage}
+          layout="fill"
+          objectFit="cover"
+          priority
+          placeholder="blur"
+        />
       </motion.div>
       <motion.div
         variants={sidebarInnerVariant}
