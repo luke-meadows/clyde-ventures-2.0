@@ -74,7 +74,7 @@ const StyledNav = styled.nav`
     align-items: center;
     i {
       color: ${(props) =>
-        props.subNavActive ? 'var(--yellow2)' : 'var(--black)'};
+        props.subNavActive ? 'var(--medium-grey)' : 'var(--black)'};
       margin-right: -10px;
     }
   }

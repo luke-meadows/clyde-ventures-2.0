@@ -50,7 +50,7 @@ export default function SideBar({ setShowSidebar }) {
         <nav>
           <Link href="/">
             <a href="" onClick={() => setShowSidebar(false)}>
-              Services <i className="icon-angle-down" />
+              What we do <i className="icon-angle-down" />
             </a>
           </Link>
           <Link href="/">
@@ -78,6 +78,9 @@ export default function SideBar({ setShowSidebar }) {
             </a>
           </Link>
         </nav>
+        <div className="socials">
+          <i className="icon-linkedin" />
+        </div>
       </motion.div>
     </StyledSideBar>
   );
@@ -120,10 +123,18 @@ const StyledSideBar = styled(motion.div)`
   .image-container {
     position: relative;
     height: calc(100vh - 5rem);
-    width: 50%;
+    width: 35%;
+    border-top-right-radius: 2rem;
   }
   .sidebar-inner {
-    width: 50%;
-    padding: 0rem 5rem;
+    width: 65%;
+    padding: 0rem 4rem;
+    position: relative;
+
+    .socials {
+      position: absolute;
+      left: 4rem;
+      bottom: 2rem;
+    }
   }
 `;

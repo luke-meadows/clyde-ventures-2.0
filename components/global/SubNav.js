@@ -54,7 +54,7 @@ const StyledSubNav = styled.div`
       font-weight: 500;
       font-size: 0.8rem;
       &:hover {
-        color: var(--yellow);
+        font-weight: 600;
       }
     }
   }

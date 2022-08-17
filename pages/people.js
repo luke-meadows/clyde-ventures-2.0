@@ -21,7 +21,7 @@ const PageContainer = styled.main`
   .hero {
     margin: 0 auto;
     max-width: 1600px;
-    padding: 6rem 0;
+    padding: 6rem 0 4.5rem;
     h1 {
       font-size: 4rem;
       margin-bottom: 1rem;
@@ -37,7 +37,7 @@ const PageContainer = styled.main`
   }
   @media only screen and (min-width: 1600px) {
     .hero {
-      padding: 10rem 0;
+      padding: 8rem 0 6rem 0;
     }
   }
 `;
