@@ -35,7 +35,7 @@ export default function SideBar({ setShowSidebar }) {
           src={SidebarImage}
           layout="fill"
           objectFit="cover"
-          priority
+          priority={true}
           placeholder="blur"
         />
       </motion.div>
