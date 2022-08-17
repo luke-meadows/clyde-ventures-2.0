@@ -36,7 +36,6 @@ export default function SideBar({ setShowSidebar }) {
           layout="fill"
           objectFit="cover"
           priority={true}
-          placeholder="blur"
         />
       </motion.div>
       <motion.div
@@ -104,13 +103,13 @@ const StyledSideBar = styled(motion.div)`
   }
   h1 {
     margin-left: 0;
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: 500;
   }
   nav {
     display: flex;
     flex-direction: column;
-    margin-top: 2rem;
+    margin-top: 1rem;
     a {
       font-size: 1.4rem;
       margin: 0.25rem 0;
@@ -124,6 +123,6 @@ const StyledSideBar = styled(motion.div)`
   }
   .sidebar-inner {
     width: 50%;
-    padding: 2rem 5rem;
+    padding: 0rem 5rem;
   }
 `;
