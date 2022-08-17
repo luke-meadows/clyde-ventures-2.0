@@ -36,6 +36,7 @@ export default function SideBar({ setShowSidebar }) {
           layout="fill"
           objectFit="cover"
           priority={true}
+          loading="eager"
         />
       </motion.div>
       <motion.div
