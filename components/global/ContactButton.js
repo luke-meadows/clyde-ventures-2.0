@@ -2,7 +2,8 @@ import { useRouter } from 'next/router';
 import styled from 'styled-components';
 export default function ContactButton() {
   const router = useRouter();
-  const isOnHomepage = router.asPath === '/';
+  // const isOnHomepage = router.asPath === '/';
+  const isOnHomepage = true;
 
   return (
     <StyledContactButton isOnHomepage={isOnHomepage}>

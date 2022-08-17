@@ -31,7 +31,7 @@ const StyledContactSection = styled.section`
   display: flex;
   margin: 0 4rem;
   max-width: 1300px;
-  margin: 4rem 0 6rem 0;
+  margin: 6rem auto 6rem auto;
   p {
     font-size: 1.2rem;
     margin-bottom: 0;

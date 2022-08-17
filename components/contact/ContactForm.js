@@ -29,7 +29,7 @@ export default function ContactForm() {
 
 const StyledContactForm = styled.form`
   width: 50rem;
-  margin-left: 3rem;
+  margin-left: 5rem;
   background: var(--white);
   padding: 2rem;
   border-radius: 0.5rem;

@@ -18,11 +18,11 @@ export default function People() {
 }
 
 const PageContainer = styled.main`
-  z-index: 10;
-  padding: 12rem 5rem;
+  padding: 14rem 5rem 12rem 5rem;
   background: var(--white);
   .hero {
-    padding: 0 0 0 21rem;
+    margin: 0 auto;
+    max-width: 1600px;
     h1 {
       font-size: 5rem;
       margin-bottom: 1rem;

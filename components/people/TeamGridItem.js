@@ -8,8 +8,8 @@ export default function TeamGridItem() {
         <Image src={TeamPhoto} layout="fill" objectFit="cover" />
       </div>
       <div className="text">
-        <h3>Luke Meadows</h3>
         <p>Salesforce Administrator</p>
+        <h3>Luke Meadows</h3>
       </div>
     </StyledTeamGridItem>
   );
@@ -30,18 +30,19 @@ const StyledTeamGridItem = styled.div`
     border-bottom: none;
     border-top-right-radius: 0.5rem;
     border-top-left-radius: 0.5rem;
-    border-radius: 0.5rem;
+    border-radius: 0;
   }
   .text {
-    padding: 1rem;
-
+    padding: 0.5rem 0;
     border-bottom-right-radius: 0.5rem;
     border-bottom-left-radius: 0.5rem;
   }
   h3 {
-    font-weight: 500;
+    font-weight: 400;
   }
   p {
     margin-bottom: 0;
+    font-size: 0.9rem;
+    color: grey;
   }
 `;

@@ -21,8 +21,8 @@ export default function TeamGrid() {
 
 const StyledTeamGrid = styled.section`
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 4rem;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5rem 3rem;
   margin: 6rem auto 0 auto;
-  max-width: 1100px;
+  max-width: 1600px;
 `;
