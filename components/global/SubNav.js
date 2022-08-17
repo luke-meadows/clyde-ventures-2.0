@@ -4,19 +4,19 @@ export default function SubNav() {
   return (
     <StyledSubNav>
       <nav>
-        <Link href="/people">
+        <Link href="/service">
           <a href="">
             Consultancy
             <i className="icon-angle-right" />
           </a>
         </Link>
-        <Link href="/">
+        <Link href="/service">
           <a href="">
             Integration
             <i className="icon-angle-right" />
           </a>
         </Link>
-        <Link href="/">
+        <Link href="/service">
           <a href="">
             Manufacturing
             <i className="icon-angle-right" />

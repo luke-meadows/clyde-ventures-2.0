@@ -8,6 +8,7 @@ import {
 } from '../../framer-motion/variants';
 import Link from 'next/link';
 import { useEffect } from 'react';
+
 import SidebarImage from '../../public/sidebar-image.jpg';
 import Image from 'next/image';
 
@@ -107,33 +108,41 @@ const StyledSideBar = styled(motion.div)`
   }
   h1 {
     margin-left: 0;
-    font-size: 3rem;
+    font-size: 4rem;
+
     font-weight: 500;
   }
   nav {
     display: flex;
     flex-direction: column;
     margin-top: 1rem;
+    height: calc(100% - 10rem);
+    overflow-y: scroll;
     a {
-      font-size: 1.4rem;
+      font-size: 1.6rem;
       margin: 0.25rem 0;
+      text-align: right;
     }
   }
 
   .image-container {
     position: relative;
     height: calc(100vh - 5rem);
-    width: 35%;
-    border-top-right-radius: 2rem;
+    width: 50%;
+    border-top-right-radius: 0.4rem;
+    overflow: hidden;
   }
   .sidebar-inner {
-    width: 65%;
-    padding: 0rem 4rem;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-right: 5rem;
     position: relative;
-
+    text-align: right;
     .socials {
       position: absolute;
-      left: 4rem;
+      right: 5rem;
       bottom: 2rem;
     }
   }
