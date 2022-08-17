@@ -42,7 +42,7 @@ const StyledTeamGridItem = styled.div`
   }
   p {
     margin-bottom: 0;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     color: grey;
   }
 `;
