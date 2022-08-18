@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import styled from 'styled-components';
-import img from '../../public/pexels-alexander-suhorucov-6457490.jpg';
+import img from '../../public/consultancy.jpg';
 export default function Consultancy() {
   return (
     <StyledService>
@@ -96,7 +96,6 @@ const StyledService = styled.section`
     position: relative;
     height: 45rem;
     width: 100%;
-    opacity: 0.6;
   }
   @media only screen and (min-width: 1600px) {
     .hero {

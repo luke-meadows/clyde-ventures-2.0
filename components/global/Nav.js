@@ -14,6 +14,10 @@ export default function Nav() {
       setIsOnHomepage(false);
     }
   });
+  useEffect(() => {
+    setSubNavActive(false);
+  }, [router.asPath]);
+
   return (
     <NavOuter
       subNavActive={subNavActive}
