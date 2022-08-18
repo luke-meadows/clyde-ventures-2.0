@@ -28,7 +28,7 @@ export default function ContactForm() {
 }
 
 const StyledContactForm = styled.form`
-  width: 50rem;
+  width: 30rem;
   margin-left: 5rem;
   background: var(--white);
   padding: 2rem;

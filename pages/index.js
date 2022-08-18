@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import ContactSection from '../components/contact/ContactSection';
+import GetToKnowOurPeople from '../components/home/GetToKnowOurPeople';
 import Hero from '../components/home/Hero';
 import ServiceCards from '../components/home/ServiceCards';
 
@@ -13,7 +14,9 @@ export default function Home() {
       </Head>
       <Hero />
       <ServiceCards />
+
       <ContactSection />
+      <GetToKnowOurPeople />
     </div>
   );
 }
