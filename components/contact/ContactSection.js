@@ -37,13 +37,15 @@ export default function ContactSection() {
 }
 
 const StyledContactSection = styled.section`
-  position: relative;
   display: flex;
-  margin: 6rem auto 6rem auto;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 2.5rem 5rem;
+
   h1 {
     font-size: 4rem;
     font-weight: 500;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
   }
   p {
     font-size: 1.2rem;
@@ -84,7 +86,7 @@ const StyledContactSection = styled.section`
   }
 
   @media only screen and (min-width: 1600px) {
-    margin: 12rem auto 12rem auto;
+    margin: 6rem auto 6rem auto;
 
     p {
       font-size: 1.2rem;

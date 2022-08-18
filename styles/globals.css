@@ -28,6 +28,7 @@ body {
   --medium-grey: #767676;
   --light-grey: #a9a9a9;
   --dark-grey: #404040;
+  --dark-grey-transparent: rgba(51, 51, 51, 0.9);
   --black: #080808;
   --black-transparent: rgba(5, 5, 5, 0.9);
   --yellow: #f5cb85;

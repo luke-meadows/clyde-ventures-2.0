@@ -29,12 +29,14 @@ export default function ContactForm() {
 
 const StyledContactForm = styled.form`
   width: 30rem;
-  margin-left: 5rem;
+  height: fit-content;
+  margin: auto 0 auto 5rem;
   background: var(--white);
   padding: 2rem;
   border-radius: 0.5rem;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   position: relative;
+
   input,
   textarea {
     border: none;
@@ -72,7 +74,8 @@ const StyledContactForm = styled.form`
     padding-right: 3rem;
     transition: background 0.5s ease;
     &:hover {
-      background: var(--yellow2);
+      background: var(--dark-grey);
+      color: var(--yellow2);
     }
   }
 
