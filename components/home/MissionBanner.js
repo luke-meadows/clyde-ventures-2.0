@@ -39,7 +39,7 @@ const StyledMissionBanner = styled.div`
   @media only screen and (min-width: 1600px) {
     .text-container {
       h1 {
-        font-size: 2rem;
+        font-size: 2.8rem;
       }
     }
   }

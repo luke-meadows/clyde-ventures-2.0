@@ -11,6 +11,7 @@ export default function Hero() {
         playsInline={true}
         src={require('../../public/HERO.mp4')}
         type="video/mp4"
+        reverse
       />
       <MissionBanner />
       <LearnMore>Learn More</LearnMore>

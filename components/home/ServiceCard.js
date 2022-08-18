@@ -18,9 +18,10 @@ const StyledServiceCard = styled.div`
   flex-direction: column;
 
   padding: 1rem 1.5rem 2rem 1.5rem;
-  background: var(--white);
+  padding: 0;
+  /* background: var(--white); */
   border-radius: 0.5rem;
-  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1); */
   color: var(--grey);
   i {
     color: var(--yellow2);

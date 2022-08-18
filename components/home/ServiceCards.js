@@ -35,8 +35,8 @@ export default function ServiceCards() {
 const StyledServiceCards = styled.div`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 2.5rem;
+  gap: 4rem;
   @media only screen and (min-width: 1600px) {
-    gap: 3rem;
+    gap: 5rem;
   }
 `;

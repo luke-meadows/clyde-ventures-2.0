@@ -27,6 +27,6 @@ const StyledServiceSection = styled.section`
   p {
     font-size: 1.2rem;
     max-width: 90ch;
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
   }
 `;
