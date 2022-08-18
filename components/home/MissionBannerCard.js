@@ -35,8 +35,8 @@ const StyledBannerCard = styled.div`
 
 const TickContainer = styled.div`
   position: relative;
-  margin-bottom: 0.1rem;
-
+  margin-bottom: 0.5rem;
+  background: var(--dark-grey);
   border-radius: 50%;
   height: 2.25rem;
   width: 2.25rem;
@@ -45,13 +45,13 @@ const TickContainer = styled.div`
   justify-content: center;
   i {
     font-size: 1.2rem;
-    color: var(--dark-grey);
+    color: var(--grey);
   }
   @media only screen and (min-width: 1600px) {
-    margin-bottom: 0.1rem;
+    margin-bottom: 0.75rem;
 
     i {
-      font-size: 1.6rem;
+      font-size: 1.2rem;
     }
   }
 `;
