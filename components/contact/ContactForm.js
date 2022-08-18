@@ -22,7 +22,7 @@ export default function ContactForm() {
           type="text"
         />
       </div>
-      <button type="submit">Submit</button>
+      <button type="submit">Send</button>
     </StyledContactForm>
   );
 }

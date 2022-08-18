@@ -117,7 +117,6 @@ const StyledSideBar = styled(motion.div)`
     flex-direction: column;
     margin-top: 1rem;
     height: calc(100% - 10rem);
-    overflow-y: scroll;
     a {
       font-size: 1.6rem;
       margin: 0.25rem 0;

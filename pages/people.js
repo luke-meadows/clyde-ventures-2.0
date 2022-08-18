@@ -30,7 +30,7 @@ const PageContainer = styled.main`
     p {
       font-size: 1.2rem;
       margin-bottom: 0;
-      max-width: 50ch;
+      max-width: 60ch;
       color: var(--dark-grey);
       margin-left: 0.2rem;
     }
