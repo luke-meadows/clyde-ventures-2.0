@@ -8,7 +8,7 @@ export default function Logo({ width, variant = 1 }) {
   return (
     <StyledLogo>
       <Link href="/">
-        <a href="">
+        <a>
           <ImageContainer width={width}>
             <Image
               src={variant === 1 ? logo : logo3}

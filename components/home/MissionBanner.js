@@ -14,14 +14,13 @@ export default function MissionBanner() {
 
 const StyledMissionBanner = styled.div`
   background-color: var(--white-banner);
-
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
   display: flex;
   .spacer {
-    height: 90px;
+    height: 50px;
     width: 1px;
     background: var(--dark-grey);
     opacity: 0.5;

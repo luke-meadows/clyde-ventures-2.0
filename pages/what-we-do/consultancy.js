@@ -132,7 +132,7 @@ export const StyledService = styled.section`
   }
   .lower-section {
     display: flex;
-    padding: 3rem 0;
+    padding: 6rem 0;
 
     .text,
     .img-container {
@@ -193,6 +193,7 @@ export const StyledService = styled.section`
   @media only screen and (min-width: 1600px) {
     .lower-section {
       margin-left: 4.1rem;
+      padding: 10rem 0;
     }
     .hero {
       padding: 8rem 5rem 3rem 5rem;

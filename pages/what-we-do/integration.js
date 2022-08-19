@@ -2,6 +2,8 @@ import Image from 'next/image';
 import styled from 'styled-components';
 import img from '../../public/integration.jpg';
 import { StyledService } from './consultancy';
+import GetToKnowOurPeople from '../../components/home/GetToKnowOurPeople';
+
 export default function Integration() {
   return (
     <StyledService>
@@ -43,6 +45,7 @@ export default function Integration() {
           </p>
         </div>
       </div>
+      <GetToKnowOurPeople />
       <div className="lower-section">
         <div className="text">
           <h2>The Process</h2>
