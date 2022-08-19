@@ -92,14 +92,14 @@ const StyledContactSection = styled.section`
   }
 
   @media only screen and (min-width: 1600px) {
-    margin: 6rem auto 6rem auto;
+    margin: 2rem auto 2rem auto;
 
     p {
       font-size: 1.2rem;
     }
     .map {
-      height: 20rem;
-      width: 40rem;
+      height: 16rem;
+      width: 32rem;
     }
   }
 `;
