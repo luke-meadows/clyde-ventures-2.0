@@ -44,14 +44,10 @@ const TickContainer = styled.div`
   align-items: center;
   justify-content: center;
   i {
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: var(--dark-grey);
   }
   @media only screen and (min-width: 1600px) {
     margin-bottom: 0.75rem;
-
-    i {
-      font-size: 1.2rem;
-    }
   }
 `;

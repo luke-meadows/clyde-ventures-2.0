@@ -42,14 +42,53 @@ export default function Consultancy() {
           </p>
         </div>
       </div>
-      <div className="img-container">
-        <Image src={img} layout="fill" objectFit="cover" />
+      <div className="lower-section">
+        <div className="text">
+          <h2>The Process</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
+            exercitationem blanditiis deserunt iste! Dolorum voluptatem totam
+            tenetur molestiae dolore corporis voluptatum sint cumque quae
+            possimus accusantium qui libero, nulla iusto aliquid vitae sunt
+            impedit officiis non! Incidunt non amet accusamus vel, est cumque
+            fugit voluptas voluptates qui dolores eos nostrum?
+          </p>
+          <div className="benefits">
+            <div className="benefit-container">
+              <div className="i-container">
+                <i className="icon-check" />
+              </div>
+              <p>Benefit of the service</p>
+            </div>
+            <div className="benefit-container">
+              <div className="i-container">
+                <i className="icon-check" />
+              </div>
+              <p>Benefit</p>
+            </div>
+            <div className="benefit-container">
+              <div className="i-container">
+                <i className="icon-check" />
+              </div>
+              <p>Benefit</p>
+            </div>
+            <div className="benefit-container">
+              <div className="i-container">
+                <i className="icon-check" />
+              </div>
+              <p>Unique selling point</p>
+            </div>
+          </div>
+        </div>
+        <div className="img-container">
+          <Image src={img} layout="fill" objectFit="cover" />
+        </div>
       </div>
     </StyledService>
   );
 }
 
-const StyledService = styled.section`
+export const StyledService = styled.section`
   background: var(--white);
   overflow: hidden;
   position: relative;
@@ -58,7 +97,7 @@ const StyledService = styled.section`
     padding: 6rem 5rem 3rem 5rem;
     position: relative;
     width: 100%;
-    max-width: 1600px;
+    max-width: 1800px;
     margin: 6rem auto;
     h1 {
       z-index: 1;
@@ -91,15 +130,72 @@ const StyledService = styled.section`
       }
     }
   }
+  .lower-section {
+    display: flex;
+    padding: 3rem 0;
 
-  .img-container {
-    position: relative;
-    height: 45rem;
-    width: 100%;
+    .text,
+    .img-container {
+      width: 50%;
+    }
+    .text {
+      padding: 0 5rem;
+      h2 {
+        font-weight: 500;
+        font-size: 2.4rem;
+        margin-bottom: 1.2rem;
+      }
+      p {
+        font-size: 1.2rem;
+      }
+    }
+    .img-container {
+      position: relative;
+      height: 40rem;
+      width: 50%;
+      float: right;
+    }
+    .benefits {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      padding: 1rem 0;
+    }
+
+    .benefit-container {
+      display: flex;
+      align-items: center;
+      margin: 1rem 4rem 1rem 0;
+      .i-container {
+        background: var(--yellow2);
+        border-radius: 50%;
+        /* height: 2rem;
+        width: 2rem; */
+        height: 1.8rem;
+        width: 1.8rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 0.75rem;
+        i {
+          color: var(--dark-grey);
+          margin: 0;
+          padding: 0;
+        }
+      }
+      p {
+        margin-bottom: 0;
+        font-weight: 500;
+        font-size: 1rem;
+      }
+    }
   }
   @media only screen and (min-width: 1600px) {
+    .lower-section {
+      margin-left: 4.1rem;
+    }
     .hero {
-      padding: 8rem 0rem 3rem 0rem;
+      padding: 8rem 5rem 3rem 5rem;
     }
   }
 `;

@@ -3,9 +3,11 @@ import styled from 'styled-components';
 export default function ServiceCard({ icon, title, blurb, link }) {
   return (
     <StyledServiceCard>
-      <i className={icon} />
-      <h4>{title}</h4>
-      <p>{blurb}</p>
+      <div>
+        <i className={icon} />
+        <h4>{title}</h4>
+        <p>{blurb}</p>
+      </div>
       <Link href={link}>
         <a className="learn">Learn More</a>
       </Link>
@@ -16,15 +18,10 @@ export default function ServiceCard({ icon, title, blurb, link }) {
 const StyledServiceCard = styled.div`
   display: flex;
   flex-direction: column;
-
-  padding: 1rem 1.5rem 2rem 1.5rem;
-  padding: 0;
-  /* background: var(--white); */
-  border-radius: 0.5rem;
-  /* box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1); */
-  color: var(--grey);
+  justify-content: space-between;
+  padding: 1rem;
   i {
-    color: var(--yellow2);
+    color: var(--dark-grey);
     font-size: 2.4rem;
   }
   h4 {
@@ -33,7 +30,6 @@ const StyledServiceCard = styled.div`
     color: var(--dark-grey);
   }
   p {
-    text-align: left;
     font-size: 0.9rem !important;
     margin-bottom: 1rem;
     color: var(--dark-grey);
@@ -53,11 +49,7 @@ const StyledServiceCard = styled.div`
       font-size: 3rem;
     }
     h4 {
-      margin: 0 0.75rem 0.75rem 0;
       font-size: 1.5rem;
-    }
-    p {
-      font-size: 1rem;
     }
   }
 `;

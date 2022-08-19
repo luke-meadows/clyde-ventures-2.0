@@ -11,6 +11,12 @@ export default function ServiceCards() {
         link="/what-we-do/consultancy"
       />
       <ServiceCard
+        icon="icon-graduation-cap"
+        title="Educate"
+        blurb="Bringing research led institutions and global brands together to develop tomorrow's leaders"
+        link="/what-we-do/education"
+      />
+      <ServiceCard
         icon="icon-network"
         title="Integrate"
         blurb="Architecting technology solutions to reduce costs, improve service and deliver growth"
@@ -22,12 +28,6 @@ export default function ServiceCards() {
         blurb="Producing lightweight solutions for a cleaner future in the construction industry"
         link="/what-we-do/manufacturing"
       />
-      <ServiceCard
-        icon="icon-graduation-cap"
-        title="Educate"
-        blurb="Bringing research led institutions and global brands together to develop tomorrow's leaders"
-        link="/what-we-do/education"
-      />
     </StyledServiceCards>
   );
 }
@@ -35,8 +35,8 @@ export default function ServiceCards() {
 const StyledServiceCards = styled.div`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 4rem;
+  gap: 3rem;
   @media only screen and (min-width: 1600px) {
-    gap: 5rem;
+    gap: 4rem;
   }
 `;

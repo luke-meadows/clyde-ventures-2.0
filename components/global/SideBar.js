@@ -80,7 +80,9 @@ export default function SideBar({ setShowSidebar }) {
           </Link>
         </nav>
         <div className="socials">
-          <i className="icon-linkedin" />
+          <div className="i-container">
+            <i className="icon-linkedin" />
+          </div>
         </div>
       </motion.div>
     </StyledSideBar>
@@ -128,7 +130,7 @@ const StyledSideBar = styled(motion.div)`
     position: relative;
     height: calc(100vh - 5rem);
     width: 50%;
-    border-top-right-radius: 0.4rem;
+    border-top-right-radius: 0.2rem;
     overflow: hidden;
   }
   .sidebar-inner {
@@ -143,6 +145,21 @@ const StyledSideBar = styled(motion.div)`
       position: absolute;
       right: 5rem;
       bottom: 2rem;
+      .i-container {
+        background: var(--yellow2);
+        border-radius: 50%;
+        height: 2.4rem;
+        width: 2.4rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        i {
+          font-size: 1.1rem;
+          color: var(--dark-grey);
+          margin: 0;
+          margin-left: 0.15rem;
+        }
+      }
     }
   }
 `;

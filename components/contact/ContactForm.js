@@ -32,9 +32,9 @@ const StyledContactForm = styled.form`
   height: fit-content;
   margin: auto 0 auto 5rem;
   background: var(--white);
-  padding: 2rem;
+  padding: 3rem 2rem 3rem 2rem;
   border-radius: 0.5rem;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 12px;
   position: relative;
 
   input,
@@ -72,7 +72,7 @@ const StyledContactForm = styled.form`
     color: var(--dark-grey);
     padding-left: 3rem;
     padding-right: 3rem;
-    transition: background 0.5s ease;
+    transition: background 0.1s ease;
     &:hover {
       background: var(--dark-grey);
       color: var(--yellow2);
