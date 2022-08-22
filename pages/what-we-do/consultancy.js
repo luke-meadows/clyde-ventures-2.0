@@ -132,14 +132,14 @@ export const StyledService = styled.section`
   }
   .lower-section {
     display: flex;
-    padding: 6rem 0;
-
+    padding: 5rem;
+    max-width: 1800px;
+    margin: 0 auto;
     .text,
     .img-container {
       width: 50%;
     }
     .text {
-      padding: 0 5rem;
       h2 {
         font-weight: 500;
         font-size: 2.4rem;
@@ -152,7 +152,7 @@ export const StyledService = styled.section`
     .img-container {
       position: relative;
       height: 30rem;
-      width: calc(50% - 2.5rem);
+      width: calc(50%);
       float: right;
       margin-left: 2.5rem;
     }
@@ -192,10 +192,6 @@ export const StyledService = styled.section`
     }
   }
   @media only screen and (min-width: 1600px) {
-    .lower-section {
-      margin-left: 4.1rem;
-      padding: 10rem 0;
-    }
     .hero {
       padding: 8rem 5rem 3rem 5rem;
     }

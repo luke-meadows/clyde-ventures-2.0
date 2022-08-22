@@ -47,7 +47,7 @@ const StyledServiceCard = styled.div`
   }
   @media only screen and (min-width: 1600px) {
     i {
-      font-size: 3rem;
+      font-size: 2.4rem;
     }
     h4 {
       font-size: 1.5rem;
