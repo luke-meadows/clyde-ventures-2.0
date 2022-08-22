@@ -1,8 +1,7 @@
 import Image from 'next/image';
-import styled from 'styled-components';
 import img from '../../public/integration.jpg';
 import { StyledService } from './consultancy';
-import GetToKnowOurPeople from '../../components/home/GetToKnowOurPeople';
+import ContactSection from '../../components/contact/ContactSection';
 
 export default function Integration() {
   return (
@@ -88,6 +87,7 @@ export default function Integration() {
           <Image src={img} layout="fill" objectFit="cover" />
         </div>
       </div>
+      <ContactSection />
     </StyledService>
   );
 }

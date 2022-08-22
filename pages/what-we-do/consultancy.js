@@ -111,7 +111,6 @@ export const StyledService = styled.section`
       margin-bottom: 0;
       max-width: 90ch;
       color: var(--dark-grey);
-
       margin-left: 0.2rem;
     }
     .grid {
@@ -133,13 +132,12 @@ export const StyledService = styled.section`
   .lower-section {
     display: flex;
     padding: 6rem 0;
-
     .text,
     .img-container {
       width: 50%;
     }
     .text {
-      padding: 0 5rem;
+      padding: 0 2.5rem 0 5rem;
       h2 {
         font-weight: 500;
         font-size: 2.4rem;
@@ -152,8 +150,9 @@ export const StyledService = styled.section`
     .img-container {
       position: relative;
       height: 40rem;
-      width: 50%;
+      width: calc(50% - 2.5rem);
       float: right;
+      margin-left: 2.5rem;
     }
     .benefits {
       display: flex;

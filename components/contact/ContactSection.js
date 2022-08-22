@@ -51,7 +51,7 @@ const StyledContactSection = styled.section`
   display: flex;
   max-width: 1800px;
   margin: 0 auto;
-  padding: 6rem 5rem 0 5rem;
+  padding: 6rem 5rem 1.2rem 5rem;
   h1 {
     font-weight: 500;
     margin-bottom: 1.2rem;
@@ -80,8 +80,8 @@ const StyledContactSection = styled.section`
       .i-container {
         background: var(--yellow2);
         border-radius: 50%;
-        height: 2.4rem;
-        width: 2.4rem;
+        height: 2.2rem;
+        width: 2.2rem;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -92,9 +92,11 @@ const StyledContactSection = styled.section`
           font-size: 1rem;
           padding: 0;
           margin: 0;
+          margin-bottom: 0.12rem;
         }
         .phone {
           font-size: 1.1rem;
+          margin-bottom: 0rem;
           margin-top: 0.2rem;
         }
       }
@@ -124,7 +126,7 @@ const StyledContactSection = styled.section`
     }
     i {
       font-size: 1.3rem;
-      padding-bottom: 1rem;
+      margin-bottom: 0;
     }
     p {
       padding-top: 0.25rem;
