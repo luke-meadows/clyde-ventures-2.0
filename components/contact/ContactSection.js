@@ -61,7 +61,7 @@ const StyledContactSection = styled.section`
     font-size: 1.2rem;
     margin-bottom: 0;
 
-    max-width: 65ch;
+    max-width: 55ch;
     color: var(--dark-grey);
     margin-left: 0.2rem;
     margin-bottom: 1.2rem;
@@ -140,7 +140,7 @@ const StyledContactSection = styled.section`
     justify-content: center;
 
     p {
-      font-size: 1.2rem;
+      max-width: 65ch;
     }
   }
 `;

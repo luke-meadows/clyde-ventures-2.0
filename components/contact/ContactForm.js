@@ -31,10 +31,10 @@ const StyledContactForm = styled.form`
   width: 30rem;
   height: fit-content;
   /* margin: auto 0 auto 6rem; */
-  /* background: var(--dark-grey); */
+  background: white;
   padding: 3rem 2rem 3rem 2rem;
   border-radius: 0.5rem;
-  /* box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 20px; */
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 4px 20px;
   position: relative;
 
   input,
@@ -43,8 +43,7 @@ const StyledContactForm = styled.form`
     outline: none;
     width: 100%;
     resize: none;
-    /* background: var(--grey); */
-    border-bottom: 2px solid var(--light-grey);
+    border-bottom: 1px solid var(--light-grey);
     color: var(--grey);
     font-size: 0.9rem;
     ::placeholder {

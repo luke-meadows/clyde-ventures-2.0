@@ -45,7 +45,7 @@ export default function Integration() {
           </p>
         </div>
       </div>
-      <GetToKnowOurPeople />
+      {/* <GetToKnowOurPeople /> */}
       <div className="lower-section">
         <div className="text">
           <h2>The Process</h2>

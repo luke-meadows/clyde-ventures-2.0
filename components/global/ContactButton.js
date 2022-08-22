@@ -21,7 +21,7 @@ const StyledContactButton = styled.div`
   button {
     color: ${(props) => (props.isOnHomepage ? 'var(--black)' : 'var(--black)')};
     background: ${(props) =>
-      props.isOnHomepage ? 'var(--yellow2)' : 'var(--yellow3)'};
+      props.isOnHomepage ? 'var(--yellow2)' : 'var(--yellow2)'};
     border: ${(props) =>
       props.isOnHomepage
         ? '1px solid var(--yellow2)'
