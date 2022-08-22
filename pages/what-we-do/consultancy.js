@@ -131,13 +131,13 @@ export const StyledService = styled.section`
   }
   .lower-section {
     display: flex;
-    padding: 6rem 0;
+    padding: 5rem;
     .text,
     .img-container {
       width: 50%;
     }
     .text {
-      padding: 0 2.5rem 0 5rem;
+      margin-right: 2.5rem;
       h2 {
         font-weight: 500;
         font-size: 2.4rem;
@@ -149,9 +149,7 @@ export const StyledService = styled.section`
     }
     .img-container {
       position: relative;
-      height: 40rem;
-      width: calc(50% - 2.5rem);
-      float: right;
+      height: 60vh;
       margin-left: 2.5rem;
     }
     .benefits {

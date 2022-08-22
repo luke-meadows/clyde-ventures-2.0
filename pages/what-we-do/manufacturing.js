@@ -12,34 +12,15 @@ export default function Manufacturing() {
           officia incidunt cumque deserunt numquam velit?
         </p>
         <div className="grid">
-          <p>
-            Content Marketing <i className="icon-angle-right" />
-          </p>
-          <p>
-            Lead Generation <i className="icon-angle-right" />
-          </p>
-          <p>
-            Conversion Rate Optimization (CRO){' '}
-            <i className="icon-angle-right" />
-          </p>
-          <p>
-            Inbound Marketing <i className="icon-angle-right" />
-          </p>
-          <p>
-            Search Engine Optimization (SEO) <i className="icon-angle-right" />
-          </p>
-          <p>
-            Mobile App Marketing <i className="icon-angle-right" />
-          </p>
-          <p>
-            Search Engine Optimization (SEO) <i className="icon-angle-right" />
-          </p>
-          <p>
-            Inbound Marketing <i className="icon-angle-right" />
-          </p>
-          <p>
-            Mobile App Marketing <i className="icon-angle-right" />
-          </p>
+          <p>Content Marketing</p>
+          <p>Lead Generation</p>
+          <p>Conversion Rate Optimization (CRO) </p>
+          <p>Inbound Marketing</p>
+          <p>Search Engine Optimization (SEO)</p>
+          <p>Mobile App Marketing</p>
+          <p>Search Engine Optimization (SEO)</p>
+          <p>Inbound Marketing</p>
+          <p>Mobile App Marketing</p>
         </div>
       </div>
       <div className="lower-section">

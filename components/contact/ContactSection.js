@@ -88,14 +88,10 @@ const StyledContactSection = styled.section`
         margin-right: 0.65rem;
         margin-bottom: 0.12rem;
         i {
-          margin: 0;
-          font-size: 1rem;
-          padding: 0;
-          margin: 0;
-          margin-bottom: 0.12rem;
+          font-size: 0.85rem;
         }
         .phone {
-          font-size: 1.1rem;
+          font-size: 1rem;
           margin-bottom: 0rem;
           margin-top: 0.2rem;
         }

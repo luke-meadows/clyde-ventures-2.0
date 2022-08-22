@@ -19,6 +19,7 @@ const StyledMissionBanner = styled.div`
   left: 0;
   width: 100%;
   display: flex;
+  /* padding: 0.5rem 0; */
   .spacer {
     height: 50px;
     width: 1px;

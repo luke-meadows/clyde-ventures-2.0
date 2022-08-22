@@ -40,7 +40,7 @@ const PageContainer = styled.main`
   }
   @media only screen and (min-width: 1600px) {
     .hero {
-      padding: 8rem 0 6rem 0;
+      padding: 14rem 0 6rem 0;
     }
   }
 `;
@@ -54,10 +54,7 @@ const LearnMore = styled.button`
   border: 2px solid var(--yellow2);
   font-size: 1rem;
   transition: all 0.2s ease-in-out;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 12px;
   font-size: 0.9rem;
   font-weight: 500;
-  &:hover {
-    transform: translateX(-50%) translateY(45%);
-  }
 `;
