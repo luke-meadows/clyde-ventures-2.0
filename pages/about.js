@@ -5,12 +5,14 @@ export default function About() {
   return (
     <PageContainer>
       <div className="hero">
-        <h1>About us</h1>
-        <p>
-          Curiosity is a trademark of all learners, and we believe there is no
-          point in doing anything without it.
-        </p>
-        <LearnMore>Meet the team</LearnMore>
+        <div className="hero-inner">
+          <h1>About us</h1>
+          <p>
+            Curiosity is a trademark of all learners, and we believe there is no
+            point in doing anything without it.
+          </p>
+          <LearnMore>Meet the team</LearnMore>
+        </div>
       </div>
       <OurStory />
       <ContactSection />
@@ -22,10 +24,13 @@ const PageContainer = styled.main`
   background: var(--white);
   .hero {
     padding: 12rem 5rem 5rem 5rem;
-    margin: 0 auto;
-    max-width: 1600px;
     position: relative;
+    .hero-inner {
+      max-width: 1600px;
+      margin: 0 auto;
+    }
     h1 {
+      margin: 0 auto;
       font-size: 4rem;
       margin-bottom: 1rem;
       font-weight: 500;
