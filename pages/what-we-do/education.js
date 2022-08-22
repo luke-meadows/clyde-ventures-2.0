@@ -45,7 +45,7 @@ export default function Education() {
       </div>
       <div className="lower-section">
         <div className="text">
-          <h2>The Process</h2>
+          <h2>The Qualification</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
             exercitationem blanditiis deserunt iste! Dolorum voluptatem totam

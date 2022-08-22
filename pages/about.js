@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import OurStory from '../components/about/OurStory';
+import ContactSection from '../components/contact/ContactSection';
 export default function About() {
   return (
     <PageContainer>
@@ -12,6 +13,7 @@ export default function About() {
         <LearnMore>Meet the team</LearnMore>
       </div>
       <OurStory />
+      <ContactSection />
     </PageContainer>
   );
 }
