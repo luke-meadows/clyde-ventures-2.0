@@ -22,12 +22,13 @@ const StyledServiceCard = styled.div`
   padding: 1rem 0;
   i {
     color: var(--dark-grey);
-    font-size: 2.4rem;
+    font-size: 2rem;
   }
   h4 {
     margin: 0 0.75rem 0.75rem 0;
     font-weight: 500;
     color: var(--dark-grey);
+    font-size: 1.2rem;
   }
   p {
     font-size: 0.9rem !important;

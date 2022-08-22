@@ -30,7 +30,7 @@ export default function ContactForm() {
 const StyledContactForm = styled.form`
   width: 30rem;
   height: fit-content;
-  /* margin: auto 0 auto 6rem; */
+  margin: auto 0 auto 6rem;
   background: white;
   padding: 3rem 2rem 3rem 2rem;
   border-radius: 0.5rem;

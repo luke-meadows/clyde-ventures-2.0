@@ -25,12 +25,12 @@ const StyledContactButton = styled.div`
     border: ${(props) =>
       props.isOnHomepage
         ? '1px solid var(--yellow2)'
-        : '1px solid var(--yellow3)'};
+        : '1px solid var(--yellow2)'};
 
     font-size: 1rem;
     box-shadow: ${(props) =>
       props.isOnHomepage ? 'rgba(0, 0, 0, 0.1) 0px 4px 12px' : 'none'};
     font-size: 0.9rem;
-    font-weight: ${(props) => (props.isOnHomepage ? '500' : '500')};
+    font-weight: 500;
   }
 `;

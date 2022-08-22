@@ -125,7 +125,6 @@ const StyledContactSection = styled.section`
     i {
       font-size: 1.3rem;
       padding-bottom: 1rem;
-      margin-left: -0.2rem;
     }
     p {
       padding-top: 0.25rem;

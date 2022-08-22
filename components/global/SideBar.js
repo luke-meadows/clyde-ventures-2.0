@@ -54,7 +54,7 @@ export default function SideBar({ setShowSidebar }) {
               What we do <i className="icon-angle-down" />
             </a>
           </Link>
-          <Link href="/">
+          <Link href="/about">
             <a href="" onClick={() => setShowSidebar(false)}>
               About us
               {/* <i className="icon-angle-right" /> */}
