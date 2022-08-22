@@ -57,25 +57,21 @@ export default function SideBar({ setShowSidebar }) {
           <Link href="/about">
             <a href="" onClick={() => setShowSidebar(false)}>
               About us
-              {/* <i className="icon-angle-right" /> */}
             </a>
           </Link>
           <Link href="/">
             <a href="" onClick={() => setShowSidebar(false)}>
               Blog
-              {/* <i className="icon-angle-right" /> */}
             </a>
           </Link>
           <Link href="/people">
             <a href="" onClick={() => setShowSidebar(false)}>
               People
-              {/* <i className="icon-angle-right" /> */}
             </a>
           </Link>
           <Link href="/">
             <a href="" onClick={() => setShowSidebar(false)}>
               Contact us
-              {/* <i className="icon-angle-right" /> */}
             </a>
           </Link>
         </nav>
@@ -144,7 +140,7 @@ const StyledSideBar = styled(motion.div)`
     .socials {
       position: absolute;
       right: 5rem;
-      bottom: 2rem;
+      bottom: 3rem;
       .i-container {
         background: var(--yellow2);
         border-radius: 50%;

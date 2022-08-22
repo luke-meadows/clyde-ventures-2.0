@@ -40,7 +40,7 @@ const PageContainer = styled.main`
   }
   @media only screen and (min-width: 1600px) {
     .hero {
-      padding: 14rem 0 6rem 0;
+      padding: 14rem 5rem 6rem 5rem;
     }
   }
 `;
