@@ -52,9 +52,9 @@ export default function Consultancy() {
           <h2>The Process</h2>
           <p>
             Our team have deep expertise and are accredited across multiple
-            domains of tools and methodologies. We don't believe in a cookie
-            cutter approach, but across the team we have accreditations in the
-            following approaches:
+            domains of tools and methodologies. We don&apos;t believe in a
+            cookie cutter approach, but across the team we have accreditations
+            in the following approaches:
           </p>
           <div className="benefits">
             <div className="benefit-container">
@@ -101,8 +101,8 @@ export default function Consultancy() {
             </div>
           </div>
           <p>
-            We are not evangelists in any way, and are happy to adapt an "a la
-            carte" menu to suit your needs and skills gaps
+            We are not evangelists in any way, and are happy to adapt an &quot;a
+            la carte&quot; menu to suit your needs and skills gaps
           </p>
         </div>
         <div className="img-container">

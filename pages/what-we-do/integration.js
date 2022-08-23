@@ -9,7 +9,7 @@ export default function Integration() {
       <div className="hero">
         <h1>Integration</h1>
         <p>
-          We're an accredited salesforce partner, we will deliver quick and
+          We&apos;re an accredited salesforce partner, we will deliver quick and
           meaningful results that will expedite the roi in your strategic
           decision to use the salesforce platform. We operate in the following
           sectors: Professional and legal service, energy utilities and water,
