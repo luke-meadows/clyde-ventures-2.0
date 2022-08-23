@@ -8,8 +8,8 @@ export default function ContactSection() {
       <div>
         <h1>Talk To Us</h1>
         <p>
-          If you have a project in mind we&apos;d love to hear from you. Please
-          fill in your details or call us using the number below.
+          To find out more please fill in your details or call us using the
+          number below.
         </p>
 
         <div className="contact-info">
@@ -87,6 +87,7 @@ const StyledContactSection = styled.section`
         justify-content: center;
         margin-right: 0.65rem;
         margin-bottom: 0.12rem;
+        aspect-ratio: 1;
         i {
           font-size: 0.85rem;
         }

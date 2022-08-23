@@ -7,38 +7,24 @@ export default function Consultancy() {
       <div className="hero">
         <h1>Consultancy</h1>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
-          iusto obcaecati minus magni, vero molestias ab facilis sapiente qui
-          officia incidunt cumque deserunt numquam velit?
+          We approach each stage of an engagement with the following values at
+          the forefront:
         </p>
         <div className="grid">
           <p>
-            Content Marketing <i className="icon-angle-right" />
-          </p>
-          <p>
-            Lead Generation <i className="icon-angle-right" />
-          </p>
-          <p>
-            Conversion Rate Optimization (CRO){' '}
+            Speed
             <i className="icon-angle-right" />
           </p>
           <p>
-            Inbound Marketing <i className="icon-angle-right" />
+            Agility
+            <i className="icon-angle-right" />
           </p>
           <p>
-            Search Engine Optimization (SEO) <i className="icon-angle-right" />
+            Authenticity
+            <i className="icon-angle-right" />
           </p>
           <p>
-            Mobile App Marketing <i className="icon-angle-right" />
-          </p>
-          <p>
-            Search Engine Optimization (SEO) <i className="icon-angle-right" />
-          </p>
-          <p>
-            Inbound Marketing <i className="icon-angle-right" />
-          </p>
-          <p>
-            Mobile App Marketing <i className="icon-angle-right" />
+            Empathy <i className="icon-angle-right" />
           </p>
         </div>
       </div>

@@ -5,9 +5,8 @@ export default function ServiceSection() {
     <StyledServiceSection>
       <h1>What we do</h1>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias
-        pariatur magnam ipsum perferendis? Ratione velit voluptatibus incidunt
-        et nisi.
+        We unlock revenue opportunities for our customers through deep sector
+        and technical expertise.
       </p>
       <ServiceCards />
     </StyledServiceSection>
