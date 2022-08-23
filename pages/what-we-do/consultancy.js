@@ -8,23 +8,41 @@ export default function Consultancy() {
         <h1>Consultancy</h1>
         <p>
           We approach each stage of an engagement with the following values at
-          the forefront:
+          the forefront: Speed, Agility, Authenticity, Empathy.
         </p>
         <div className="grid">
           <p>
-            Speed
+            Product Design
             <i className="icon-angle-right" />
           </p>
           <p>
-            Agility
+            Regulatory Strategies
             <i className="icon-angle-right" />
           </p>
           <p>
-            Authenticity
+            Debt Management
+            <i className="icon-angle-right" />
+          </p>
+
+          <p>
+            Customer acquisition to cash optimisation
             <i className="icon-angle-right" />
           </p>
           <p>
-            Empathy <i className="icon-angle-right" />
+            Target operating models
+            <i className="icon-angle-right" />
+          </p>
+          <p>
+            OPEX reduction
+            <i className="icon-angle-right" />
+          </p>
+          <p>
+            Short and long term business planning
+            <i className="icon-angle-right" />
+          </p>
+          <p>
+            Cashflow management
+            <i className="icon-angle-right" />
           </p>
         </div>
       </div>
@@ -32,37 +50,59 @@ export default function Consultancy() {
         <div className="text">
           <h2>The Process</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
-            exercitationem blanditiis deserunt iste! Dolorum voluptatem totam
-            tenetur molestiae dolore corporis voluptatum sint cumque quae
-            possimus accusantium qui libero, nulla iusto aliquid vitae sunt
-            impedit officiis non! Incidunt non amet accusamus vel, est cumque
-            fugit voluptas voluptates qui dolores eos nostrum?
+            Our team have deep expertise and are accredited across multiple
+            domains of tools and methodologies. We don't believe in a cookie
+            cutter approach, but across the team we have accreditations in the
+            following approaches:
           </p>
           <div className="benefits">
             <div className="benefit-container">
               <div className="i-container">
                 <i className="icon-check" />
               </div>
-              <p>Benefit of the service</p>
+              <p>Lean</p>
             </div>
             <div className="benefit-container">
               <div className="i-container">
                 <i className="icon-check" />
               </div>
-              <p>Benefit</p>
+              <p>Six Sigma</p>
             </div>
             <div className="benefit-container">
               <div className="i-container">
                 <i className="icon-check" />
               </div>
-              <p>Benefit</p>
+              <p>Agile</p>
             </div>
             <div className="benefit-container">
               <div className="i-container">
                 <i className="icon-check" />
               </div>
-              <p>Unique selling point</p>
+              <p>Scrum-master</p>
+            </div>
+            <div className="benefit-container">
+              <div className="i-container">
+                <i className="icon-check" />
+              </div>
+              <p>Scrum-master</p>
+            </div>
+            <div className="benefit-container">
+              <div className="i-container">
+                <i className="icon-check" />
+              </div>
+              <p>Salesforce</p>
+            </div>
+            <div className="benefit-container">
+              <div className="i-container">
+                <i className="icon-check" />
+              </div>
+              <p>AWS</p>
+            </div>
+            <div className="benefit-container">
+              <div className="i-container">
+                <i className="icon-check" />
+              </div>
+              <p>Prince II</p>
             </div>
           </div>
         </div>
@@ -104,7 +144,7 @@ export const StyledService = styled.section`
       margin-top: 6rem;
       width: fit-content;
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(4, 1fr);
       gap: 2rem 4rem;
       p {
         color: var(--black);
@@ -113,9 +153,11 @@ export const StyledService = styled.section`
         border-bottom: 2px solid var(--yellow2);
         padding-bottom: 0.25rem;
         width: fit-content;
+        height: fit-content;
       }
     }
   }
+
   .lower-section {
     display: flex;
     padding: 5rem;
