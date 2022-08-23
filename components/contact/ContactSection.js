@@ -5,7 +5,7 @@ import ContactForm from './ContactForm';
 export default function ContactSection() {
   return (
     <StyledContactSection>
-      <div>
+      <div className="container">
         <h1>Talk To Us</h1>
         <p>
           To find out more please fill in your details or call us using the
@@ -23,7 +23,7 @@ export default function ContactSection() {
             <div className="i-container">
               <i className="icon-phone phone" />
             </div>
-            <p>0280 400 3000</p>
+            <p>0141 375 1472</p>
           </div>
         </div>
 
@@ -52,6 +52,10 @@ const StyledContactSection = styled.section`
   max-width: 1800px;
   margin: 0 auto;
   padding: 6rem 5rem;
+  .container {
+    margin-right: 2.5rem;
+    width: 50%;
+  }
   h1 {
     font-weight: 500;
     margin-bottom: 1.2rem;
@@ -133,7 +137,6 @@ const StyledContactSection = styled.section`
 
   @media only screen and (min-width: 1600px) {
     display: flex;
-    justify-content: center;
     p {
       max-width: 65ch;
     }

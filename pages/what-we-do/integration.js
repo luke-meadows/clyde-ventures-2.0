@@ -10,7 +10,7 @@ export default function Integration() {
         <h1>Integration</h1>
         <p>
           We&apos;re an accredited salesforce partner, we will deliver quick and
-          meaningful results that will expedite the roi in your strategic
+          meaningful results that will expedite the ROI in your strategic
           decision to use the salesforce platform. We operate in the following
           sectors: Professional and legal service, energy utilities and water,
           third sector.
@@ -51,37 +51,54 @@ export default function Integration() {
         <div className="text">
           <h2>The Process</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
-            exercitationem blanditiis deserunt iste! Dolorum voluptatem totam
-            tenetur molestiae dolore corporis voluptatum sint cumque quae
-            possimus accusantium qui libero, nulla iusto aliquid vitae sunt
-            impedit officiis non! Incidunt non amet accusamus vel, est cumque
-            fugit voluptas voluptates qui dolores eos nostrum?
+            Born from operations our Salesforce team all have user experience of
+            the platform in both Business to Business and customer service
+            roles.
+          </p>
+          <p>
+            Our proven delivery approach will have you benefitting from the
+            platform within weeks. Our existing clients score us highly in the
+            following domains of delivery
           </p>
           <div className="benefits">
             <div className="benefit-container">
               <div className="i-container">
                 <i className="icon-check" />
               </div>
-              <p>Benefit of the service</p>
+              <p>C-suite reporting and efficiency tracking</p>
             </div>
             <div className="benefit-container">
               <div className="i-container">
                 <i className="icon-check" />
               </div>
-              <p>Benefit</p>
+              <p>Delivering the system to front line staff</p>
             </div>
             <div className="benefit-container">
               <div className="i-container">
                 <i className="icon-check" />
               </div>
-              <p>Benefit</p>
+              <p>
+                Business process reviews and ensuring we aren't designing
+                inefficient processes into your tech solution
+              </p>
             </div>
             <div className="benefit-container">
               <div className="i-container">
                 <i className="icon-check" />
               </div>
-              <p>Unique selling point</p>
+              <p>
+                Authentic and empathetic roll out to staff who struggle with
+                change
+              </p>
+            </div>
+            <div className="benefit-container">
+              <div className="i-container">
+                <i className="icon-check" />
+              </div>
+              <p>
+                Ensuring your roll out plan is scoped in a frugal and cost
+                effective manner
+              </p>
             </div>
           </div>
         </div>

@@ -158,6 +158,7 @@ export const StyledService = styled.section`
 
   .lower-section {
     display: flex;
+    align-items: center;
     padding: 5rem;
     max-width: 1800px;
     margin: 0 auto;
@@ -179,8 +180,9 @@ export const StyledService = styled.section`
       position: relative;
       height: 30rem;
       width: calc(50%);
-      float: right;
       margin-left: 5rem;
+      border-radius: 1rem;
+      overflow: hidden;
     }
     .benefits {
       display: flex;
@@ -198,6 +200,7 @@ export const StyledService = styled.section`
         border-radius: 50%;
         /* height: 2rem;
         width: 2rem; */
+        aspect-ratio: 1;
         height: 1.8rem;
         width: 1.8rem;
         display: flex;

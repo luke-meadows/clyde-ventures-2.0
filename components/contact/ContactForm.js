@@ -1,8 +1,12 @@
+import Image from 'next/image';
 import styled from 'styled-components';
-import Logo from '../global/Logo';
+import Logo from '../../public/1.png';
 export default function ContactForm() {
   return (
     <StyledContactForm>
+      <div className="logo-container">
+        <Image src={Logo} layout="responsive" objectFit="contain" />
+      </div>
       <div className="top">
         <input name="name" value="" placeholder="Name" type="text" />
         <input name="email" value="" placeholder="Email" type="text" />
@@ -13,64 +17,68 @@ export default function ContactForm() {
           type="text"
         />
         <input name="subject" value="" placeholder="Subject" type="text" />
-
-        <textarea
-          name="message"
-          value=""
-          placeholder="Type your message here"
-          className="message"
-          type="text"
-        />
       </div>
+      <textarea
+        name="message"
+        value=""
+        placeholder="Type your message here"
+        className="message"
+        type="text"
+      />
       <button type="submit">Send</button>
     </StyledContactForm>
   );
 }
 
 const StyledContactForm = styled.form`
-  width: 30rem;
-  height: fit-content;
-  margin: auto 0 auto 6rem;
-  background: white;
-  padding: 3rem 2rem 3rem 2rem;
-  border-radius: 0.5rem;
-  box-shadow: rgba(0, 0, 0, 0.12) 0px 4px 20px;
+  width: 50%;
+  margin: auto 0 auto 2.5rem;
+  background: var(--dark-grey);
+  padding: 1.4rem 2rem 1.4rem 2rem;
+  border-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 20px;
   position: relative;
+  .logo-container {
+    position: relative;
+    width: 4rem;
 
+    margin: 0 0 1.4rem 0;
+  }
   input,
   textarea {
     border: none;
     outline: none;
     width: 100%;
     resize: none;
-    border-bottom: 1px solid var(--light-grey);
-    color: var(--grey);
+    border: 1px solid var(--light-grey);
+    background: var(--light-grey);
+    color: var(--dark-grey);
     font-size: 0.9rem;
+    border-radius: 2rem;
     ::placeholder {
       /* Chrome, Firefox, Opera, Safari 10.1+ */
-      color: var(--dark-grey);
+      color: var(--grey);
       opacity: 1; /* Firefox */
     }
   }
   input {
     /* padding: 0 0.2rem 1.1rem 0.2rem; */
-    padding: 0.5rem 0;
+    padding: 0.5rem 1rem;
   }
   textarea {
-    margin-top: 8rem;
-    padding: 0.5rem -1rem;
+    margin: 0;
+    padding: 1rem;
+    height: 12rem;
+    border-radius: 1.2rem;
   }
   .top {
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 1rem;
-  }
-  .message {
-    margin: 0rem 0;
-    padding: 1rem 0;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.4rem;
+    margin-bottom: 1.4rem;
   }
   button {
-    margin-top: 1.5rem;
+    margin-top: 1.1rem;
     background: var(--yellow2);
     border: none;
     font-size: 0.9rem;
@@ -78,15 +86,9 @@ const StyledContactForm = styled.form`
     color: var(--black);
     padding: 0.55rem 3rem;
     transition: background 0.1s ease;
-
     &:hover {
-      background: var(--dark-grey);
-      color: var(--yellow2);
+      background: var(--grey);
+      /* color: var(--); */
     }
-  }
-
-  @media only screen and (min-width: 1600px) {
-    margin-left: 6rem;
-    max-width: 80rem;
   }
 `;

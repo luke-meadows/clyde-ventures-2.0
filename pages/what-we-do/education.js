@@ -8,9 +8,39 @@ export default function Education() {
       <div className="hero">
         <h1>Education</h1>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
-          iusto obcaecati minus magni, vero molestias ab facilis sapiente qui
-          officia incidunt cumque deserunt numquam velit?
+          We are proud to have supported the university delivering a first of
+          it's kind collaborative executive MBA programme that focuses on
+          delivering future leaders equipped to deal with the challenges of
+          delivering net zero and reversing global warming.
+        </p>
+        <br />
+        <p>
+          We have partnered with industry leaders who are trailblazing new and
+          innovative strategies to create a better world, this course is aimed
+          at the following professionals:
+          <br />
+          <br />
+          <p>
+            Entrepreneurs who want to deliver new and interesting products that
+            address the climate crisis.
+          </p>
+          <br />
+          <p>
+            Innovators within large corporations who need the toolkit to deliver
+            change.
+          </p>
+          <br />
+          <p>
+            Those who work in charities, think tanks and government bodies, who
+            are responsible for setting regualtion and want to develop
+            meaningful dialogue with corporations desgining climate change
+            strategies
+          </p>
+          <br />
+          <p>
+            Innovators within large corporations who need the toolkit to deliver
+            change.
+          </p>
         </p>
         <div className="grid">
           <p>
