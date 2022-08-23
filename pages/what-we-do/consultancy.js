@@ -84,12 +84,6 @@ export default function Consultancy() {
               <div className="i-container">
                 <i className="icon-check" />
               </div>
-              <p>Scrum-master</p>
-            </div>
-            <div className="benefit-container">
-              <div className="i-container">
-                <i className="icon-check" />
-              </div>
               <p>Salesforce</p>
             </div>
             <div className="benefit-container">
