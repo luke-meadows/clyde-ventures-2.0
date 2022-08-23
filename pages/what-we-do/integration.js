@@ -78,7 +78,7 @@ export default function Integration() {
                 <i className="icon-check" />
               </div>
               <p>
-                Business process reviews and ensuring we aren't designing
+                Business process reviews and ensuring we aren&apos;t designing
                 inefficient processes into your tech solution
               </p>
             </div>

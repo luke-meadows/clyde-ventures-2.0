@@ -9,7 +9,7 @@ export default function Education() {
         <h1>Education</h1>
         <p>
           We are proud to have supported the university delivering a first of
-          it's kind collaborative executive MBA programme that focuses on
+          it&apos;s kind collaborative executive MBA programme that focuses on
           delivering future leaders equipped to deal with the challenges of
           delivering net zero and reversing global warming.
         </p>
