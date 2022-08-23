@@ -105,6 +105,10 @@ export default function Consultancy() {
               <p>Prince II</p>
             </div>
           </div>
+          <p>
+            We are not evangelists in any way, and are happy to adapt an "a la
+            carte" menu to suit your needs and skills gaps
+          </p>
         </div>
         <div className="img-container">
           <Image src={img} layout="fill" objectFit="cover" />
