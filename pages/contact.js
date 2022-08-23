@@ -27,7 +27,9 @@ export default function Contact() {
           </LearnMore>
         </div>
       </div>
-      <ContactSection />
+      <div className="section-container">
+        <ContactSection />
+      </div>
     </PageContainer>
   );
 }
@@ -55,6 +57,9 @@ const PageContainer = styled.main`
       /* color: var(--dark-grey); */
       margin-left: 0.2rem;
     }
+  }
+  .section-container {
+    padding: 5rem 0;
   }
   @media only screen and (min-width: 1600px) {
     .hero {

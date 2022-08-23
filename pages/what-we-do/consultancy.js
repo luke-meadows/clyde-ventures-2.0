@@ -102,7 +102,7 @@ export default function Consultancy() {
           </div>
           <p>
             We are not evangelists in any way, and are happy to adapt an &quot;a
-            la carte&quot; menu to suit your needs and skills gaps
+            la carte&quot; menu to suit your needs and skill gaps.
           </p>
         </div>
         <div className="img-container">
@@ -194,16 +194,16 @@ export const StyledService = styled.section`
     .benefit-container {
       display: flex;
       align-items: center;
-      margin: 1rem 4rem 1rem 0;
+      margin: 0rem 4rem 1rem 0;
       .i-container {
         background: var(--yellow2);
         border-radius: 50%;
         /* height: 2rem;
         width: 2rem; */
-        aspect-ratio: 1;
         height: 1.8rem;
         width: 1.8rem;
         display: flex;
+        aspect-ratio: 1;
         align-items: center;
         justify-content: center;
         margin-right: 0.75rem;
@@ -211,6 +211,7 @@ export const StyledService = styled.section`
           color: var(--dark-grey);
           margin: 0;
           padding: 0;
+          font-size: 0.9rem;
         }
       }
       p {

@@ -59,6 +59,7 @@ const StyledContactSection = styled.section`
   h1 {
     font-weight: 500;
     margin-bottom: 1.2rem;
+    padding-top: 1rem;
   }
 
   p {

@@ -32,16 +32,16 @@ export default function ContactForm() {
 
 const StyledContactForm = styled.form`
   width: 50%;
-  margin: auto 0 auto 2.5rem;
-  background: var(--dark-grey);
+  margin-left: 2.5rem;
+  background: var(--grey2);
   padding: 1.4rem 2rem 1.4rem 2rem;
+  padding: 2rem;
   border-radius: 1rem;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 20px;
+  /* box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 20px; */
   position: relative;
   .logo-container {
     position: relative;
     width: 4rem;
-
     margin: 0 0 1.4rem 0;
   }
   input,
@@ -50,14 +50,15 @@ const StyledContactForm = styled.form`
     outline: none;
     width: 100%;
     resize: none;
-    border: 1px solid var(--light-grey);
-    background: var(--light-grey);
+    border: 1px solid var(--grey2);
+    background: var(--white);
     color: var(--dark-grey);
     font-size: 0.9rem;
     border-radius: 2rem;
     ::placeholder {
       /* Chrome, Firefox, Opera, Safari 10.1+ */
-      color: var(--grey);
+      color: var(--medium-grey);
+      /* font-weight: 500; */
       opacity: 1; /* Firefox */
     }
   }
