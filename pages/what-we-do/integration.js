@@ -9,9 +9,11 @@ export default function Integration() {
       <div className="hero">
         <h1>Integration</h1>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
-          iusto obcaecati minus magni, vero molestias ab facilis sapiente qui
-          officia incidunt cumque deserunt numquam velit?
+          We're an accredited salesforce partner, we will deliver quick and
+          meaningful results that will expedite the roi in your strategic
+          decision to use the salesforce platform. We operate in the following
+          sectors: Professional and legal service, energy utilities and water,
+          third sector.
         </p>
         <div className="grid">
           <p>

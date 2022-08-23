@@ -29,6 +29,10 @@ export default function Consultancy() {
             <i className="icon-angle-right" />
           </p>
           <p>
+            Short and long term business planning
+            <i className="icon-angle-right" />
+          </p>
+          <p>
             Target operating models
             <i className="icon-angle-right" />
           </p>
@@ -36,10 +40,7 @@ export default function Consultancy() {
             OPEX reduction
             <i className="icon-angle-right" />
           </p>
-          <p>
-            Short and long term business planning
-            <i className="icon-angle-right" />
-          </p>
+
           <p>
             Cashflow management
             <i className="icon-angle-right" />
@@ -142,7 +143,7 @@ export const StyledService = styled.section`
       margin-top: 6rem;
       width: fit-content;
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(3, 1fr);
       gap: 2rem 4rem;
       p {
         color: var(--black);
@@ -151,7 +152,6 @@ export const StyledService = styled.section`
         border-bottom: 2px solid var(--yellow2);
         padding-bottom: 0.25rem;
         width: fit-content;
-        height: fit-content;
       }
     }
   }
