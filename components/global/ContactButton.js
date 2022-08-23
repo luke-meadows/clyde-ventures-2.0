@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { useRouter } from 'next/router';
 import styled from 'styled-components';
 export default function ContactButton() {
@@ -7,7 +8,9 @@ export default function ContactButton() {
 
   return (
     <StyledContactButton isOnHomepage={isOnHomepage}>
-      <button>Contact us</button>
+      <Link href="/contact">
+        <button>Contact us</button>
+      </Link>
     </StyledContactButton>
   );
 }

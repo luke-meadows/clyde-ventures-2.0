@@ -8,7 +8,7 @@ export default function Nav() {
   const [isOnHomepage, setIsOnHomepage] = useState();
   const router = useRouter();
   useEffect(() => {
-    if (router.asPath === '/') {
+    if (router.asPath === '/' || router.asPath === '/contact') {
       setIsOnHomepage(true);
     } else {
       setIsOnHomepage(false);

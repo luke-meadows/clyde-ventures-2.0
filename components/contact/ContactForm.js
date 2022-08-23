@@ -73,9 +73,9 @@ const StyledContactForm = styled.form`
     margin-top: 1.5rem;
     background: var(--yellow2);
     border: none;
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-weight: 500;
-    color: var(--dark-grey);
+    color: var(--black);
     padding: 0.55rem 3rem;
     transition: background 0.1s ease;
 

@@ -51,7 +51,7 @@ const StyledContactSection = styled.section`
   display: flex;
   max-width: 1800px;
   margin: 0 auto;
-  padding: 6rem 5rem 1.2rem 5rem;
+  padding: 6rem 5rem;
   h1 {
     font-weight: 500;
     margin-bottom: 1.2rem;
@@ -131,11 +131,8 @@ const StyledContactSection = styled.section`
   }
 
   @media only screen and (min-width: 1600px) {
-    margin: 2rem auto 0 auto;
     display: flex;
-    padding: 6rem 5rem 0 5rem;
     justify-content: center;
-
     p {
       max-width: 65ch;
     }

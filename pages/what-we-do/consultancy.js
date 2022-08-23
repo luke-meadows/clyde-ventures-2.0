@@ -154,7 +154,7 @@ export const StyledService = styled.section`
       height: 30rem;
       width: calc(50%);
       float: right;
-      margin-left: 2.5rem;
+      margin-left: 5rem;
     }
     .benefits {
       display: flex;
