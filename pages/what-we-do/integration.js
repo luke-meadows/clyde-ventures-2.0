@@ -5,30 +5,64 @@ import ContactSection from '../../components/contact/ContactSection';
 
 export default function Integration() {
   return (
-    <StyledService>
+    <StyledService processGridCols={1}>
       <div className="hero">
         <h1>Integration</h1>
         <p>
-          {/* We&apos;re an accredited salesforce partner;  */}
-          We will deliver quick and meaningful results that will expedite the
-          ROI in your strategic decision to use the salesforce platform. We
-          operate in the following sectors: Professional and legal service,
-          energy utilities and water, third sector.
+          We integrate your business processes into modern technology platforms
+          in order to maximise customer engagement. Clyde Ventures will deliver
+          quick and meaningful results that will expedite the ROI in your
+          strategic decision to use a CRM platform. We are specialists of
+          implementation in the following domains:
         </p>
+
+        <br />
+        <br />
+        <div className="benefit-container">
+          <div className="i-container">
+            <i className="icon-check" />
+          </div>
+          <p>Professional and legal service</p>
+        </div>
+        <div className="benefit-container">
+          <div className="i-container">
+            <i className="icon-check" />
+          </div>
+          <p>Energy, utilities and water</p>
+        </div>
+        <div className="benefit-container">
+          <div className="i-container">
+            <i className="icon-check" />
+          </div>
+          <p>Third sector</p>
+        </div>
         <div className="grid">
-          <p>
-            Sales Cloud <i className="icon-angle-right" />
-          </p>
-          <p>
-            Lead Generation <i className="icon-angle-right" />
-          </p>
-          <p>
-            Service Cloud
-            <i className="icon-angle-right" />
-          </p>
-          <p>
-            Pardot <i className="icon-angle-right" />
-          </p>
+          <div>
+            <p>
+              Implementation <i className="icon-angle-right" />
+            </p>
+          </div>
+          <div>
+            <p>
+              Migration
+              <i className="icon-angle-right" />
+            </p>
+          </div>
+          <div>
+            <p>
+              Automation <i className="icon-angle-right" />
+            </p>
+          </div>
+          <div>
+            <p>
+              Consulting <i className="icon-angle-right" />
+            </p>
+          </div>
+          <div>
+            <p>
+              Support <i className="icon-angle-right" />
+            </p>
+          </div>
         </div>
       </div>
       {/* <GetToKnowOurPeople /> */}
@@ -36,14 +70,15 @@ export default function Integration() {
         <div className="text">
           <h2>The Process</h2>
           <p>
-            Born from operations our Salesforce team all have user experience of
-            the platform in both Business to Business and customer service
-            roles.
+            We deliver custom solutions to manage the flow of data across your
+            business. Born from operations our implementation team all have user
+            experience of market leading platforms in both Business to Business
+            and customer service roles.
           </p>
           <p>
-            Our proven delivery approach will have you benefitting from the
-            platform within weeks. Our existing clients score us highly in the
-            following domains of delivery
+            Our proven delivery approach will have you benefitting from your CRM
+            within weeks. Our existing clients score us highly in the following
+            domains of delivery
           </p>
           <div className="benefits">
             <div className="benefit-container">
@@ -63,7 +98,7 @@ export default function Integration() {
                 <i className="icon-check" />
               </div>
               <p>
-                Business process reviews and ensuring we aren&apos;t designing
+                Business process reviews ensuring we aren&apos;t designing
                 inefficient processes into your tech solution
               </p>
             </div>

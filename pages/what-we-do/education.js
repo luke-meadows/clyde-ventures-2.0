@@ -4,7 +4,7 @@ import img from '../../public/education.jpg';
 import { StyledService } from './consultancy';
 export default function Education() {
   return (
-    <StyledService>
+    <StyledService processGridCols={1}>
       <div className="hero">
         <h1>Education</h1>
         <p>

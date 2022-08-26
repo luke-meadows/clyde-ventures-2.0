@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import img from '../../public/consultancy.jpg';
 export default function Consultancy() {
   return (
-    <StyledService>
+    <StyledService processGridCols={3}>
       <div className="hero">
         <h1>Consultancy</h1>
         <p>
@@ -21,6 +21,7 @@ export default function Consultancy() {
             Product Design
             <i className="icon-angle-right" />
           </p>
+
           <p>
             Regulatory Strategies
             <i className="icon-angle-right" />
@@ -38,10 +39,12 @@ export default function Consultancy() {
             Short and long term business planning
             <i className="icon-angle-right" />
           </p>
+
           <p>
             Target operating models
             <i className="icon-angle-right" />
           </p>
+
           <p>
             OPEX reduction
             <i className="icon-angle-right" />
@@ -169,10 +172,10 @@ export const StyledService = styled.section`
     }
     .grid {
       margin-top: 6rem;
-      width: fit-content;
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 2rem 4rem;
+
       p {
         color: var(--black);
         font-size: 1rem;
@@ -242,8 +245,9 @@ export const StyledService = styled.section`
     }
     .benefits {
       display: grid;
-      /* flex-wrap: wrap; */
-      grid-template-columns: repeat(1, 1fr);
+
+      grid-template-columns: ${(props) =>
+        'repeat(' + props.processGridCols + ', 1fr)'};
       align-items: center;
       padding: 1rem 0;
     }

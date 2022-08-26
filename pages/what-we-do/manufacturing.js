@@ -3,7 +3,7 @@ import img from '../../public/manufacturing.jpg';
 import { StyledService } from './consultancy';
 export default function Manufacturing() {
   return (
-    <StyledService>
+    <StyledService processGridCols={2}>
       <div className="hero">
         <h1>Manufacturing</h1>
         <p>

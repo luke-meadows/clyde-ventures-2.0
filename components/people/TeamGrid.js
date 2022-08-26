@@ -1,15 +1,15 @@
 import styled from 'styled-components';
 import TeamGridItem from './TeamGridItem';
-import TeamGridItem2 from './TeamGridItem2';
 import { teamData } from '../../lib/teamData';
+
 export default function TeamGrid() {
   return (
     <StyledTeamGrid>
-      <TeamGridItem2 teamMember={teamData.paulRichards} />
-      <TeamGridItem2 teamMember={teamData.rossBern} />
-      <TeamGridItem2 teamMember={teamData.joshMontgomery} />
-      <TeamGridItem2 teamMember={teamData.amberMorton} />
-      <TeamGridItem2 teamMember={teamData.leanneMcguigan} />
+      <TeamGridItem teamMember={teamData.paulRichards} />
+      <TeamGridItem teamMember={teamData.rossBern} />
+      <TeamGridItem teamMember={teamData.joshMontgomery} />
+      <TeamGridItem teamMember={teamData.amberMorton} />
+      <TeamGridItem teamMember={teamData.leanneMcguigan} />
     </StyledTeamGrid>
   );
 }
