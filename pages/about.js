@@ -8,8 +8,8 @@ export default function About() {
         <div className="hero-inner">
           <h1>About us</h1>
           <p>
-            Curiosity is a trademark of all learners, and we believe there is no
-            point in doing anything without it.
+            Born from operations. Our team comes from multiple sectors and have
+            delivered large scale project transformations and tangable value.
           </p>
           <LearnMore>Meet the team</LearnMore>
         </div>

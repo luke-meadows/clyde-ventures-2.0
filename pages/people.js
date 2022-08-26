@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import TeamGrid from '../components/people/TeamGrid';
 export default function People() {
   return (
-    <PageContainer>
+    <PageContainer className="people-page">
       <div className="hero">
         <h1>Meet The Team</h1>
         <p>
@@ -18,6 +18,7 @@ export default function People() {
 const PageContainer = styled.main`
   padding: 6rem 5rem;
   background: var(--white);
+  position: relative;
   .hero {
     margin: 0 auto;
     max-width: 1600px;

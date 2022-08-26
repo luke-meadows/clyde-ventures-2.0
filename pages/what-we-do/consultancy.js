@@ -7,6 +7,12 @@ export default function Consultancy() {
       <div className="hero">
         <h1>Consultancy</h1>
         <p>
+          We don't believe in career consultants. Born from operations, our team
+          are experienced in managing complex P&L's, delivering multi faceted
+          change projects and developing high potential teams often in
+          challenging environments.
+          <br />
+          <br />
           We approach each stage of an engagement with the following values at
           the forefront: Speed, Agility, Authenticity, Empathy.
         </p>
@@ -25,7 +31,7 @@ export default function Consultancy() {
           </p>
 
           <p>
-            Customer acquisition to cash optimisation
+            Customer acquisition to profit
             <i className="icon-angle-right" />
           </p>
           <p>
@@ -45,6 +51,18 @@ export default function Consultancy() {
             Cashflow management
             <i className="icon-angle-right" />
           </p>
+          <p>
+            Scaling products globally
+            <i className="icon-angle-right" />
+          </p>
+          <p>
+            Entering new markets
+            <i className="icon-angle-right" />
+          </p>
+          <p>
+            Fundraising
+            <i className="icon-angle-right" />
+          </p>
         </div>
       </div>
       <div className="lower-section">
@@ -53,39 +71,16 @@ export default function Consultancy() {
           <p>
             Our team have deep expertise and are accredited across multiple
             domains of tools and methodologies. We don&apos;t believe in a
-            cookie cutter approach, but across the team we have accreditations
+            cookie cutter approach, but across the team we have certifications
             in the following approaches:
           </p>
+
           <div className="benefits">
             <div className="benefit-container">
               <div className="i-container">
                 <i className="icon-check" />
               </div>
-              <p>Lean</p>
-            </div>
-            <div className="benefit-container">
-              <div className="i-container">
-                <i className="icon-check" />
-              </div>
-              <p>Six Sigma</p>
-            </div>
-            <div className="benefit-container">
-              <div className="i-container">
-                <i className="icon-check" />
-              </div>
               <p>Agile</p>
-            </div>
-            <div className="benefit-container">
-              <div className="i-container">
-                <i className="icon-check" />
-              </div>
-              <p>Scrum-master</p>
-            </div>
-            <div className="benefit-container">
-              <div className="i-container">
-                <i className="icon-check" />
-              </div>
-              <p>Salesforce</p>
             </div>
             <div className="benefit-container">
               <div className="i-container">
@@ -97,12 +92,45 @@ export default function Consultancy() {
               <div className="i-container">
                 <i className="icon-check" />
               </div>
+              <p>Lean </p>
+            </div>
+
+            <div className="benefit-container">
+              <div className="i-container">
+                <i className="icon-check" />
+              </div>
+              <p>MSP</p>
+            </div>
+            <div className="benefit-container">
+              <div className="i-container">
+                <i className="icon-check" />
+              </div>
               <p>Prince II</p>
+            </div>
+            <div className="benefit-container">
+              <div className="i-container">
+                <i className="icon-check" />
+              </div>
+              <p>Six Sigma</p>
+            </div>
+            <div className="benefit-container">
+              <div className="i-container">
+                <i className="icon-check" />
+              </div>
+              <p>Salesforce</p>
+            </div>
+            <div className="benefit-container">
+              <div className="i-container">
+                <i className="icon-check" />
+              </div>
+              <p>Scrum-master</p>
             </div>
           </div>
           <p>
-            We are not evangelists in any way, and are happy to adapt an &quot;a
-            la carte&quot; menu to suit your needs and skill gaps.
+            We are not evangelists in any way. We are happy to blend our
+            expertise and tailor an approach that suits the needs and culture of
+            your business. Our approach is always geared towards the fastest
+            results and the best ROI.
           </p>
         </div>
         <div className="img-container">
@@ -154,12 +182,40 @@ export const StyledService = styled.section`
         width: fit-content;
       }
     }
+
+    .benefit-container {
+      display: flex;
+      margin: 0rem 4rem 1.2rem 0;
+      .i-container {
+        background: var(--yellow2);
+        border-radius: 50%;
+        /* height: 2rem;
+        width: 2rem; */
+        height: 1.8rem;
+        width: 1.8rem;
+        display: flex;
+        aspect-ratio: 1;
+        align-items: center;
+        justify-content: center;
+        margin-right: 0.75rem;
+        i {
+          color: var(--dark-grey);
+          margin: 0;
+          padding: 0;
+          font-size: 0.9rem;
+        }
+      }
+      p {
+        margin-bottom: 0;
+        font-size: 1.2rem;
+      }
+    }
   }
 
   .lower-section {
     display: flex;
     align-items: center;
-    padding: 5rem;
+    padding: 0 5rem 5rem 5rem;
     max-width: 1800px;
     margin: 0 auto;
     .text,
@@ -185,21 +241,20 @@ export const StyledService = styled.section`
       overflow: hidden;
     }
     .benefits {
-      display: flex;
-      flex-wrap: wrap;
+      display: grid;
+      /* flex-wrap: wrap; */
+      grid-template-columns: repeat(2, 1fr);
       align-items: center;
       padding: 1rem 0;
     }
 
     .benefit-container {
       display: flex;
-      align-items: center;
+      /* align-items: center; */
       margin: 0rem 4rem 1rem 0;
       .i-container {
         background: var(--yellow2);
         border-radius: 50%;
-        /* height: 2rem;
-        width: 2rem; */
         height: 1.8rem;
         width: 1.8rem;
         display: flex;
@@ -218,6 +273,18 @@ export const StyledService = styled.section`
         margin-bottom: 0;
         font-weight: 500;
         font-size: 1rem;
+      }
+    }
+    button {
+      background: var(--yellow2);
+      border: 2px solid var(--yellow2);
+      font-size: 1rem;
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+      font-size: 0.9rem;
+      font-weight: 500;
+      margin-top: 1rem;
+      i {
+        margin-right: -0.6rem;
       }
     }
   }

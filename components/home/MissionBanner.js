@@ -3,11 +3,11 @@ import MissionBannerCard from './MissionBannerCard';
 export default function MissionBanner() {
   return (
     <StyledMissionBanner>
-      <MissionBannerCard blurb="Creating sustainable value from waste..." />
+      <MissionBannerCard blurb="Designing and delivering innovative revenue streams..." />
       <div className="spacer" />
       <MissionBannerCard blurb="Opening new markets..." />
       <div className="spacer" />
-      <MissionBannerCard blurb="Designing and delivering innovative revenue streams..." />
+      <MissionBannerCard blurb="Creating sustainable value from waste..." />
     </StyledMissionBanner>
   );
 }

@@ -59,14 +59,19 @@ export default function SideBar({ setShowSidebar }) {
               About us
             </a>
           </Link>
-          <Link href="/">
+          {/* <Link href="/">
             <a href="" onClick={() => setShowSidebar(false)}>
               Blog
+            </a>
+          </Link> */}
+          <Link href="/people">
+            <a href="" onClick={() => setShowSidebar(false)}>
+              People
             </a>
           </Link>
           <Link href="/people">
             <a href="" onClick={() => setShowSidebar(false)}>
-              People
+              Community
             </a>
           </Link>
           <Link href="/">

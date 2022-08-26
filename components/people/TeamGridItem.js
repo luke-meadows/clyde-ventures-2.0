@@ -1,15 +1,15 @@
 import Image from 'next/image';
 import styled from 'styled-components';
-import TeamPhoto from '../../public/sample-team-photo.jpg';
-export default function TeamGridItem() {
+export default function TeamGridItem({ teamMember }) {
+  const { name, role, image, description } = teamMember;
   return (
     <StyledTeamGridItem>
       <div className="img-container">
-        <Image src={TeamPhoto} layout="fill" objectFit="cover" />
+        <Image src={image} layout="fill" objectFit="cover" />
       </div>
       <div className="text">
-        <p>Salesforce Administrator</p>
-        <h3>Luke Meadows</h3>
+        <h4>{name}</h4>
+        <p>{role}</p>
       </div>
     </StyledTeamGridItem>
   );

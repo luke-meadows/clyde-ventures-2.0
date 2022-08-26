@@ -9,40 +9,25 @@ export default function Integration() {
       <div className="hero">
         <h1>Integration</h1>
         <p>
-          We&apos;re an accredited salesforce partner, we will deliver quick and
-          meaningful results that will expedite the ROI in your strategic
-          decision to use the salesforce platform. We operate in the following
-          sectors: Professional and legal service, energy utilities and water,
-          third sector.
+          {/* We&apos;re an accredited salesforce partner;  */}
+          We will deliver quick and meaningful results that will expedite the
+          ROI in your strategic decision to use the salesforce platform. We
+          operate in the following sectors: Professional and legal service,
+          energy utilities and water, third sector.
         </p>
         <div className="grid">
           <p>
-            Content Marketing <i className="icon-angle-right" />
+            Sales Cloud <i className="icon-angle-right" />
           </p>
           <p>
             Lead Generation <i className="icon-angle-right" />
           </p>
           <p>
-            Conversion Rate Optimization (CRO){' '}
+            Service Cloud
             <i className="icon-angle-right" />
           </p>
           <p>
-            Inbound Marketing <i className="icon-angle-right" />
-          </p>
-          <p>
-            Search Engine Optimization (SEO) <i className="icon-angle-right" />
-          </p>
-          <p>
-            Mobile App Marketing <i className="icon-angle-right" />
-          </p>
-          <p>
-            Search Engine Optimization (SEO) <i className="icon-angle-right" />
-          </p>
-          <p>
-            Inbound Marketing <i className="icon-angle-right" />
-          </p>
-          <p>
-            Mobile App Marketing <i className="icon-angle-right" />
+            Pardot <i className="icon-angle-right" />
           </p>
         </div>
       </div>
