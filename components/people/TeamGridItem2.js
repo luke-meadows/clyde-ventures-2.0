@@ -8,13 +8,13 @@ export default function TeamGridItem2({ teamMember }) {
     top: 0,
     left: 0,
   });
-  // useEffect(() => {
-  //   const rect = teamMemberRef.current.getBoundingClientRect();
-  //   setContainerCoordinates({ top: rect.top, left: rect.left });
-  // }, []);
+  useEffect(() => {
+    const rect = teamMemberRef.current.getBoundingClientRect();
+    setContainerCoordinates({ top: rect.y, left: rect.x });
+  });
   function handleClick() {
     const rect = teamMemberRef.current.getBoundingClientRect();
-    setContainerCoordinates({ top: rect.top, left: rect.left });
+    setContainerCoordinates({ top: rect.y, left: rect.x });
     console.log(containerCoordinates);
     setTeamMemberActive(true);
   }
@@ -47,8 +47,10 @@ export default function TeamGridItem2({ teamMember }) {
           </div>
           {teamMemberActive && (
             <div style={{ marginTop: '2rem' }}>
-              {description.map((p) => (
-                <p style={{ marginBottom: '1rem' }}>{p}</p>
+              {description.map((p, i) => (
+                <p key={i} style={{ marginBottom: '1rem' }}>
+                  {p}
+                </p>
               ))}
             </div>
           )}
@@ -70,7 +72,7 @@ const StyledTeamGridItem = styled.div`
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 2;
+    z-index: 3;
     opacity: ${(props) => (props.teamMemberActive ? '1' : '0')};
     pointer-events: ${(props) => (props.teamMemberActive ? 'initial' : 'none')};
   }

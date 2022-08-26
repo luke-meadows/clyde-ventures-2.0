@@ -7,9 +7,9 @@ export default function Consultancy() {
       <div className="hero">
         <h1>Consultancy</h1>
         <p>
-          We don't believe in career consultants. Born from operations, our team
-          are experienced in managing complex P&L's, delivering multi faceted
-          change projects and developing high potential teams often in
+          We don&apos;t believe in career consultants. Born from operations, our
+          team are experienced in managing complex P&L&apos;s, delivering multi
+          faceted change projects and developing high potential teams often in
           challenging environments.
           <br />
           <br />
@@ -243,7 +243,7 @@ export const StyledService = styled.section`
     .benefits {
       display: grid;
       /* flex-wrap: wrap; */
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(1, 1fr);
       align-items: center;
       padding: 1rem 0;
     }
@@ -251,7 +251,7 @@ export const StyledService = styled.section`
     .benefit-container {
       display: flex;
       /* align-items: center; */
-      margin: 0rem 4rem 1rem 0;
+      margin: 0rem 4rem 1.5rem 0;
       .i-container {
         background: var(--yellow2);
         border-radius: 50%;
