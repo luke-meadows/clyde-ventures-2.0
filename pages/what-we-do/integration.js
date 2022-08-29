@@ -65,7 +65,6 @@ export default function Integration() {
           </div>
         </div>
       </div>
-      {/* <GetToKnowOurPeople /> */}
       <div className="lower-section">
         <div className="text">
           <h2>The Process</h2>
@@ -98,8 +97,8 @@ export default function Integration() {
                 <i className="icon-check" />
               </div>
               <p>
-                Business process reviews ensuring we aren&apos;t designing
-                inefficient processes into your tech solution
+                Business process reviews ensuring an efficient process design
+                into your tech solution
               </p>
             </div>
             <div className="benefit-container">

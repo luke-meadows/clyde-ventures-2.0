@@ -110,23 +110,24 @@ export default function Consultancy() {
               </div>
               <p>Prince II</p>
             </div>
-            <div className="benefit-container">
-              <div className="i-container">
-                <i className="icon-check" />
-              </div>
-              <p>Six Sigma</p>
-            </div>
-            <div className="benefit-container">
+
+            {/* <div className="benefit-container">
               <div className="i-container">
                 <i className="icon-check" />
               </div>
               <p>Salesforce</p>
-            </div>
+            </div> */}
             <div className="benefit-container">
               <div className="i-container">
                 <i className="icon-check" />
               </div>
               <p>Scrum-master</p>
+            </div>
+            <div className="benefit-container">
+              <div className="i-container">
+                <i className="icon-check" />
+              </div>
+              <p>Six Sigma</p>
             </div>
           </div>
           <p>
@@ -218,7 +219,7 @@ export const StyledService = styled.section`
   .lower-section {
     display: flex;
     align-items: center;
-    padding: 0 5rem 5rem 5rem;
+    padding: 2.5rem 5rem 5rem 5rem;
     max-width: 1800px;
     margin: 0 auto;
     .text,

@@ -35,15 +35,6 @@ export default function Education() {
               <i className="icon-check" />
             </div>
             <p>
-              Innovators within large corporations who need the toolkit to
-              deliver change.
-            </p>
-          </div>
-          <div className="benefit-container">
-            <div className="i-container">
-              <i className="icon-check" />
-            </div>
-            <p>
               Those who work in charities, think tanks and government bodies,
               who are responsible for setting regualtion and want to develop
               meaningful dialogue with corporations desgining climate change
