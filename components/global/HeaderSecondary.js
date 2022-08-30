@@ -25,7 +25,10 @@ export default function HeaderSecondary({ setShowSidebar, showSidebar }) {
         exit="exit"
         operatingSystem={operatingSystem}
       >
-        <Logo width="8rem" variant={2} />
+        <div onClick={() => setShowSidebar(false)}>
+          <Logo width="8rem" variant={2} />
+        </div>
+
         <NavIcon
           setShowSidebar={setShowSidebar}
           showSidebar={showSidebar}
@@ -72,9 +75,7 @@ const StyledHeaderSecondary = styled(motion.header)`
     props.operatingSystem === 'mac' ? '100vw' : 'calc(100vw - 17px)'};
   z-index: 2;
   border-bottom: var(--dark-grey);
-  box-shadow: ${(props) =>
-    props.isOnHomepage ? 'rgba(0, 0, 0, 0.05) 0px 4px 12px;' : ''};
-  box-shadow: rgba(0, 0, 0, 0.02) 0px 4px 12px;
+  box-shadow: rgba(0, 0, 0, 0.075) 0px 4px 12px;
   p {
     margin-bottom: 0;
   }

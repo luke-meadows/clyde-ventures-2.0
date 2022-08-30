@@ -39,6 +39,7 @@ const StyledContactForm = styled.form`
   border-radius: 1rem;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 20px;
   position: relative;
+  height: fit-content;
   .logo-container {
     position: relative;
     width: 4rem;

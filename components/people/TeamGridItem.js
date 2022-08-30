@@ -1,9 +1,11 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import { disableScrollTeam, enableScrollTeam } from '../../lib/scroll';
+import LinkedInLogo from '../../public/linked-in.png';
 export default function TeamGridItem({ teamMember }) {
-  const { name, role, image, description } = teamMember;
+  const { name, role, image, description, linkedIn } = teamMember;
   const [teamMemberActive, setTeamMemberActive] = useState(false);
   useEffect(() => {
     if (teamMemberActive) {
@@ -24,10 +26,22 @@ export default function TeamGridItem({ teamMember }) {
       <div className="inner team-item">
         <div className="container">
           {teamMemberActive && (
-            <i
-              className="icon-cancel"
-              onClick={() => setTeamMemberActive(false)}
-            />
+            <>
+              <i
+                className="icon-cancel exit"
+                onClick={() => setTeamMemberActive(false)}
+              />
+
+              <a target="blank" href={linkedIn}>
+                <div className="linked-in">
+                  <Image
+                    src={LinkedInLogo}
+                    layout="responsive"
+                    objectFit="contain"
+                  />
+                </div>
+              </a>
+            </>
           )}
           <div onClick={handleClick}>
             <div className="img-container">
@@ -39,7 +53,7 @@ export default function TeamGridItem({ teamMember }) {
             </div>
           </div>
           {teamMemberActive && (
-            <div style={{ marginTop: '2rem' }}>
+            <div style={{ marginTop: '1.5rem' }}>
               {description.map((p, i) => (
                 <p key={i} style={{ marginBottom: '1rem' }}>
                   {p}
@@ -87,12 +101,28 @@ const StyledTeamGridItem = styled.div`
   .container {
     position: relative;
     display: ${(props) => (props.teamMemberActive ? 'flex' : 'block')};
-    gap: 5rem;
-    i {
+    gap: 2.5rem;
+    .exit {
       position: absolute;
       top: -1.6rem;
       right: -1.2rem;
       font-size: 1.2rem;
+    }
+  }
+
+  .linked-in {
+    position: absolute;
+    bottom: -1.6rem;
+    right: -0.85rem;
+    width: 5rem;
+    a {
+      width: fit-content;
+      margin: 0 0 0 auto;
+      display: flex;
+      align-items: center;
+      i {
+        font-size: 1.2rem;
+      }
     }
   }
   .img-container {
@@ -102,14 +132,12 @@ const StyledTeamGridItem = styled.div`
     border-bottom: none;
     border-top-right-radius: 0.5rem;
     border-top-left-radius: 0.5rem;
-
     width: ${(props) => (props.teamMemberActive ? '20rem' : '100%')};
   }
   .text {
     padding: 0.75rem;
     border-bottom-right-radius: 0.5rem;
     border-bottom-left-radius: 0.5rem;
-
     border-top: none;
     text-align: center;
     background: var(--yellow2);

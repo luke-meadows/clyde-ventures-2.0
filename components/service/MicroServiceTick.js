@@ -18,13 +18,13 @@ export default function MicroServiceTicks({ options }) {
 }
 
 const Container = styled.div`
+  padding: 2.5rem 5rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 3rem;
   width: 100%;
   max-width: 1800px;
-  margin: 0 auto 1rem auto;
-  padding: 0rem 5rem 3rem 5rem;
+  margin: 0 auto 0rem auto;
   @media only screen and (min-width: 1600px) {
     gap: 3rem;
   }
@@ -32,14 +32,12 @@ const Container = styled.div`
 const StyledMicroServiceTick = styled.div`
   border: 2px solid var(--yellow);
   background: var(--white2);
-  /* box-shadow: rgba(0, 0, 0, 0.05) 0px 4px 20px; */
   display: flex;
   flex-direction: column;
   padding: 2.5rem 2rem;
   border-radius: 0.4rem;
   .top {
     display: flex;
-    align-items: center;
     margin-bottom: 1rem;
   }
   i {

@@ -1,9 +1,9 @@
 import Image from 'next/image';
 import img from '../../public/integration.jpg';
-import { StyledService } from './consultancy';
 import MicroServicesGrid from '../../components/service/MicroServicesGrid';
 import ServiceBenefits from '../../components/service/ServiceBenefits';
 import { StyledServicePage } from '../../components/service/ServicePage';
+import MicroServiceTicks from '../../components/service/MicroServiceTick';
 
 export default function Integration() {
   return (
@@ -14,16 +14,30 @@ export default function Integration() {
           We integrate your business processes into modern technology platforms
           in order to maximise customer engagement. Clyde Ventures will deliver
           quick and meaningful results that will expedite the ROI in your
-          strategic decision to use a CRM platform. We are specialists of
-          implementation in the following domains:
+          strategic decision to use a CRM platform.
         </p>
+        <p>We are specialists of implementation in the following domains:</p>
       </div>
+
+      <MicroServiceTicks
+        options={[
+          {
+            title: 'Professional and legal service',
+            text: 'Our integration services can impact your sector in these ways. Our integration services can impact your sector in these ways. Our integration services can impact your sector in these ways.',
+          },
+          {
+            title: 'Energy, utilities and water',
+            text: 'Our integration services can impact your sector in these ways. Our integration services can impact your sector in these ways. Our integration services can impact your sector in these ways.',
+          },
+          {
+            title: 'Third sector',
+            text: 'Our integration services can impact your sector in these ways. Our integration services can impact your sector in these ways. Our integration services can impact your sector in these ways.',
+          },
+        ]}
+      />
 
       <MicroServicesGrid
         options={[
-          'Professional and legal service',
-          'Energy, utilities and water',
-          'Third sector',
           'Implementation',
           ' Migration',
           'Automation',

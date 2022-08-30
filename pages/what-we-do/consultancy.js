@@ -22,16 +22,16 @@ export default function Consultancy() {
       </div>
       <MicroServicesGrid
         options={[
+          'Short and long term business planning',
           'Product Design',
           'Regulatory Strategies',
           'Debt Management',
           'Customer acquisition to profit',
-          'Short and long term business planning',
-          'Target operating models',
-          'OPEX reduction',
-          'Cashflow management',
           'Scaling products globally',
           'Entering new markets',
+          'Cashflow management',
+          'Target operating models',
+          'OPEX reduction',
           'Fundraising',
         ]}
       />

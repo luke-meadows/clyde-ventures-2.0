@@ -20,14 +20,14 @@ const StyledServiceSection = styled.section`
 
   margin: 2rem auto 0 auto;
   h1 {
-    font-size: 4rem;
+    font-size: 2.4rem;
     font-weight: 500;
-    margin-bottom: 2rem;
+    margin-bottom: 1.2rem;
   }
   p {
     font-size: 1.2rem;
     max-width: 90ch;
-    margin-bottom: 2rem;
+    margin-bottom: 2.5rem;
   }
 
   @media only screen and (min-width: 1600px) {

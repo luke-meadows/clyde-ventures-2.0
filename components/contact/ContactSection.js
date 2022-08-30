@@ -1,12 +1,15 @@
 import Image from 'next/image';
+import { useState } from 'react';
 import styled from 'styled-components';
 import Container from '../global/Container';
 import ContactForm from './ContactForm';
 export default function ContactSection() {
+  const [showMap, setShowMap] = useState(false);
+
   return (
     <StyledContactSection>
       <div className="container">
-        <h1>Talk To Us</h1>
+        <h2>Talk To Us</h2>
         <p>
           To find out more please fill in your details or call us using the
           number below.
@@ -30,16 +33,25 @@ export default function ContactSection() {
         <div className="location">
           <p className="address">
             <i className="icon-location" /> Suite 505 , Baltic Chambers , 50
-            Wellington Street , Glasgow G2 6HJ.{' '}
+            Wellington Street , Glasgow, G2 6HJ.
           </p>
-          <div className="button">View Map</div>
-          {/* <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2239.1857617219857!2d-4.262758483768697!3d55.85944338058209!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4888469c4ab77db9%3A0x6832134b166626db!2sBaltic%20Chambers!5e0!3m2!1sen!2suk!4v1660838655068!5m2!1sen!2suk"
-            className="map"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe> */}
+          {!showMap && (
+            <div className="button" onClick={() => setShowMap(true)}>
+              View Map
+            </div>
+          )}
+          {showMap && (
+            <div className="map-container">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2239.1857617219857!2d-4.262758483768697!3d55.85944338058209!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4888469c4ab77db9%3A0x6832134b166626db!2sBaltic%20Chambers!5e0!3m2!1sen!2suk!4v1660838655068!5m2!1sen!2suk"
+                className="map"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+              <i className="icon-cancel" onClick={() => setShowMap(false)} />
+            </div>
+          )}
         </div>
       </div>
       <ContactForm />
@@ -51,12 +63,12 @@ const StyledContactSection = styled.section`
   display: flex;
   max-width: 1800px;
   margin: 0 auto;
-  padding: 6rem 5rem;
+  padding: 8rem 5rem;
   .container {
     margin-right: 2.5rem;
     width: 50%;
   }
-  h1 {
+  h2 {
     font-weight: 500;
     margin-bottom: 1.2rem;
     padding-top: 1rem;
@@ -104,13 +116,24 @@ const StyledContactSection = styled.section`
       }
     }
   }
+  .map-container {
+    position: relative;
+    i {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+
+      cursor: pointer;
+    }
+  }
   .map {
-    margin-top: 2rem;
+    margin-top: 0.5rem;
     border: none;
     border-radius: 0.4rem;
     box-sizing: border-box;
-    height: 18rem;
-    width: 40rem;
+    height: 14rem;
+    width: 100%;
+    border: 2px solid var(--yellow2);
   }
 
   .location {
@@ -125,6 +148,7 @@ const StyledContactSection = styled.section`
       width: fit-content;
       margin-left: 0;
       margin-top: 1rem;
+      cursor: pointer;
     }
     i {
       font-size: 1.3rem;
