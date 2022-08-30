@@ -29,13 +29,12 @@ export default function TeamGridItem({ teamMember }) {
               onClick={() => setTeamMemberActive(false)}
             />
           )}
-
           <div onClick={handleClick}>
             <div className="img-container">
               <Image src={image} layout="fill" objectFit="cover" />
             </div>
             <div className="text">
-              <h4>{name}</h4>
+              <h5>{name}</h5>
               <p>{role}</p>
             </div>
           </div>
@@ -103,20 +102,23 @@ const StyledTeamGridItem = styled.div`
     border-bottom: none;
     border-top-right-radius: 0.5rem;
     border-top-left-radius: 0.5rem;
-    border-radius: 0;
+
     width: ${(props) => (props.teamMemberActive ? '20rem' : '100%')};
   }
   .text {
-    padding: 0.5rem 0;
+    padding: 0.75rem;
     border-bottom-right-radius: 0.5rem;
     border-bottom-left-radius: 0.5rem;
-    h3 {
-      font-weight: 400;
+    border: 2px solid var(--light-grey);
+    border-top: none;
+    text-align: center;
+    background: var(--white2);
+    h5 {
+      font-size: 1.3rem;
     }
     p {
       margin-bottom: 0;
-
-      color: grey;
+      color: var(--dark-grey);
     }
   }
   p {
