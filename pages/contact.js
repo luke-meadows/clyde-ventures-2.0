@@ -22,7 +22,6 @@ export default function Contact() {
 }
 
 const PageContainer = styled.main`
-  background: var(--white);
   .hero {
     padding: 12rem 5rem 5rem 5rem;
     position: relative;

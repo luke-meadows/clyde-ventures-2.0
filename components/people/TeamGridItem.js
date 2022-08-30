@@ -109,16 +109,15 @@ const StyledTeamGridItem = styled.div`
     padding: 0.75rem;
     border-bottom-right-radius: 0.5rem;
     border-bottom-left-radius: 0.5rem;
-    border: 2px solid var(--light-grey);
+
     border-top: none;
     text-align: center;
-    background: var(--white2);
+    background: var(--yellow2);
     h5 {
       font-size: 1.3rem;
     }
     p {
       margin-bottom: 0;
-      color: var(--dark-grey);
     }
   }
   p {

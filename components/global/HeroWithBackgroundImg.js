@@ -39,6 +39,31 @@ export default function HeroWithBackgroundImg({
 const StyledHero = styled.div`
   height: 30rem;
   position: relative;
+  .hero {
+    padding: 12rem 5rem 5rem 5rem;
+    position: relative;
+    .hero-inner {
+      max-width: 1600px;
+      margin: 0 auto;
+    }
+    h1 {
+      margin: 0 auto;
+      font-size: 4rem;
+      margin-bottom: 1rem;
+      font-weight: 500;
+    }
+    p {
+      font-size: 1.1rem;
+      margin-bottom: 0;
+      max-width: 90ch;
+      margin-left: 0.2rem;
+    }
+  }
+  @media only screen and (min-width: 1600px) {
+    .hero {
+      padding: 14rem 5rem 6rem 5rem;
+    }
+  }
 `;
 
 const LearnMore = styled.button`
@@ -60,10 +85,9 @@ const BackgroundImage = styled.div`
   left: 0;
   top: 0;
   width: 100%;
-  height: 25.3rem;
+  height: 30rem;
   z-index: 0;
   background: var(--sky-blue);
-
   .inner-background {
     position: relative;
     width: 100%;
