@@ -7,10 +7,9 @@ export default function Footer() {
       <div className="top">
         <div className="top-left">
           <nav>
-            <Link href="/">About Clyde Ventures</Link>
-            <Link href="/">Careers</Link>
-            <Link href="/">People</Link>
-            <Link href="/">Contact Us</Link>
+            <Link href="/about">About Clyde Ventures</Link>
+            <Link href="/people">People</Link>
+            <Link href="/contact">Contact Us</Link>
           </nav>
         </div>
         <div className="top-right">
@@ -22,10 +21,11 @@ export default function Footer() {
         <div className="bottom-left">
           <div className="address">
             <p>Clyde Ventures Ltd</p>
-            <p>Erskine House</p>
-            <p>North Avenue</p>
-            <p>Clydebank</p>
-            <p>G81 2DR</p>
+            <p>Suite 505</p>
+            <p>Baltic Chambers</p>
+            <p>50 Wellington Street</p>
+            <p>Glasgow</p>
+            <p>G2 6HJ</p>
           </div>
           <div className="email">
             <i className="icon-mail" /> help@clydeventures.com
