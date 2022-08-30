@@ -1,17 +1,9 @@
 import styled from 'styled-components';
 export default function Title({ children }) {
-  return (
-    <StyledTitle>
-      {children}
-      {/* <div className="underline" /> */}
-    </StyledTitle>
-  );
+  return <StyledTitle>{children}</StyledTitle>;
 }
 
 const StyledTitle = styled.h1`
-  /* display: flex;
-  flex-direction: column;
-  align-items: center; */
   font-size: 4rem;
   font-weight: 500;
 

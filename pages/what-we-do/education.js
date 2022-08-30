@@ -1,11 +1,8 @@
 import Image from 'next/image';
-import styled from 'styled-components';
 import MicroServiceTicks from '../../components/service/MicroServiceTick';
-import MicroServiceTick from '../../components/service/MicroServiceTick';
 import ServiceBenefits from '../../components/service/ServiceBenefits';
 import { StyledServicePage } from '../../components/service/ServicePage';
 import img from '../../public/education.jpg';
-import { StyledService } from './consultancy';
 export default function Education() {
   return (
     <StyledServicePage processGridCols={1}>
@@ -23,6 +20,7 @@ export default function Education() {
           at the following professionals:
         </p>
       </div>
+
       <MicroServiceTicks
         options={[
           {
@@ -49,7 +47,7 @@ export default function Education() {
             guest speakers, case studies and examples from the business world.
           </p>
           <ServiceBenefits
-            benefitGridCols={3}
+            benefitGridCols={2}
             options={[
               'Industry insight',
               'Networking opportunities',
@@ -57,7 +55,6 @@ export default function Education() {
               'Supports career growth',
             ]}
           />
-
           <button>
             Download brochure <i className="icon-angle-down" />{' '}
           </button>

@@ -1,11 +1,13 @@
 import Image from 'next/image';
 import img from '../../public/integration.jpg';
 import { StyledService } from './consultancy';
-import ContactSection from '../../components/contact/ContactSection';
+import MicroServicesGrid from '../../components/service/MicroServicesGrid';
+import ServiceBenefits from '../../components/service/ServiceBenefits';
+import { StyledServicePage } from '../../components/service/ServicePage';
 
 export default function Integration() {
   return (
-    <StyledService processGridCols={1}>
+    <StyledServicePage processGridCols={1}>
       <div className="hero">
         <h1>Integration</h1>
         <p>
@@ -15,56 +17,21 @@ export default function Integration() {
           strategic decision to use a CRM platform. We are specialists of
           implementation in the following domains:
         </p>
-
-        <br />
-        <br />
-        <div className="benefit-container">
-          <div className="i-container">
-            <i className="icon-check" />
-          </div>
-          <p>Professional and legal service</p>
-        </div>
-        <div className="benefit-container">
-          <div className="i-container">
-            <i className="icon-check" />
-          </div>
-          <p>Energy, utilities and water</p>
-        </div>
-        <div className="benefit-container">
-          <div className="i-container">
-            <i className="icon-check" />
-          </div>
-          <p>Third sector</p>
-        </div>
-        <div className="grid">
-          <div>
-            <p>
-              Implementation <i className="icon-angle-right" />
-            </p>
-          </div>
-          <div>
-            <p>
-              Migration
-              <i className="icon-angle-right" />
-            </p>
-          </div>
-          <div>
-            <p>
-              Automation <i className="icon-angle-right" />
-            </p>
-          </div>
-          <div>
-            <p>
-              Consulting <i className="icon-angle-right" />
-            </p>
-          </div>
-          <div>
-            <p>
-              Support <i className="icon-angle-right" />
-            </p>
-          </div>
-        </div>
       </div>
+
+      <MicroServicesGrid
+        options={[
+          'Professional and legal service',
+          'Energy, utilities and water',
+          'Third sector',
+          'Implementation',
+          ' Migration',
+          'Automation',
+          'Consulting',
+          'Support',
+        ]}
+      />
+
       <div className="lower-section">
         <div className="text">
           <h2>The Process</h2>
@@ -74,58 +41,29 @@ export default function Integration() {
             experience of market leading platforms in both Business to Business
             and customer service roles.
           </p>
+          <ServiceBenefits
+            benefitGridCols={2}
+            options={[
+              'C-suite reporting',
+              'Efficiency tracking',
+              'Front line staff delivery',
+              'Empathetic roll out',
+              'Frugally scoped',
+              'Business process reviews',
+            ]}
+          />
+
           <p>
             Our proven delivery approach will have you benefitting from your CRM
             within weeks. Our existing clients score us highly in the following
-            domains of delivery
+            domains of delivery.
           </p>
-          <div className="benefits">
-            <div className="benefit-container">
-              <div className="i-container">
-                <i className="icon-check" />
-              </div>
-              <p>C-suite reporting and efficiency tracking</p>
-            </div>
-            <div className="benefit-container">
-              <div className="i-container">
-                <i className="icon-check" />
-              </div>
-              <p>Delivering the system to front line staff</p>
-            </div>
-            <div className="benefit-container">
-              <div className="i-container">
-                <i className="icon-check" />
-              </div>
-              <p>
-                Business process reviews ensuring an efficient process design
-                into your tech solution
-              </p>
-            </div>
-            <div className="benefit-container">
-              <div className="i-container">
-                <i className="icon-check" />
-              </div>
-              <p>
-                Authentic and empathetic roll out to staff who struggle with
-                change
-              </p>
-            </div>
-            <div className="benefit-container">
-              <div className="i-container">
-                <i className="icon-check" />
-              </div>
-              <p>
-                Ensuring your roll out plan is scoped in a frugal and cost
-                effective manner
-              </p>
-            </div>
-          </div>
         </div>
+
         <div className="img-container">
           <Image src={img} layout="fill" objectFit="cover" />
         </div>
       </div>
-      <ContactSection />
-    </StyledService>
+    </StyledServicePage>
   );
 }

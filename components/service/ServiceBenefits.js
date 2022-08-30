@@ -4,7 +4,7 @@ export default function ServiceBenefits({ options, benefitGridCols }) {
     <StyledBenefits benefitGridCols={benefitGridCols}>
       {options.map((option) => {
         return (
-          <div key={option} className="benefit-container">
+          <div key={option} className="benefit">
             <div className="i-container">
               <i className="icon-check" />
             </div>
@@ -22,7 +22,12 @@ const StyledBenefits = styled.div`
     'repeat(' + props.benefitGridCols + ', 1fr)'};
   align-items: center;
   padding: 1rem 0;
-
+  margin-bottom: 0.75rem;
+  gap: 1.6rem;
+  .benefit {
+    display: flex;
+    align-items: center;
+  }
   .i-container {
     background: var(--yellow2);
     border-radius: 50%;
@@ -40,10 +45,9 @@ const StyledBenefits = styled.div`
       font-size: 0.9rem;
     }
   }
-
   p {
     margin-bottom: 0;
     font-weight: 500;
-    font-size: 1rem;
+    font-size: 1.1rem !important;
   }
 `;

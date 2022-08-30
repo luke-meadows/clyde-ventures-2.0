@@ -1,9 +1,9 @@
 import Image from 'next/image';
-import styled from 'styled-components';
 import MicroServicesGrid from '../../components/service/MicroServicesGrid';
 import ServiceBenefits from '../../components/service/ServiceBenefits';
 import ServicePage from '../../components/service/ServicePage';
 import img from '../../public/consultancy.jpg';
+
 export default function Consultancy() {
   return (
     <ServicePage processGridCols={3}>

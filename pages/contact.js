@@ -2,31 +2,18 @@ import Image from 'next/image';
 import styled from 'styled-components';
 import OurStory from '../components/about/OurStory';
 import ContactSection from '../components/contact/ContactSection';
+import HeroWithBackgroundImg from '../components/global/HeroWithBackgroundImg';
 import ContactBackground from '../public/contact-background.jpg';
 
 export default function Contact() {
   return (
     <PageContainer>
-      <BackgroundImage>
-        <div className="inner-background">
-          <Image
-            src={ContactBackground}
-            layout="fill"
-            objectFit="cover"
-            objectPosition="center"
-          />
-        </div>
-      </BackgroundImage>
-      <div className="hero">
-        <div className="hero-inner">
-          <h1>Lets Talk</h1>
-          <p>What can we do to help?</p>
-          <LearnMore>
-            Submit your information{' '}
-            <i className="icon-angle-down" style={{ marginRight: '-0.6rem' }} />{' '}
-          </LearnMore>
-        </div>
-      </div>
+      <HeroWithBackgroundImg
+        image={ContactBackground}
+        header="Lets Talk"
+        blurb="What can we do to help?"
+        buttonText={'Submit your information'}
+      />
       <div className="section-container">
         <ContactSection />
       </div>

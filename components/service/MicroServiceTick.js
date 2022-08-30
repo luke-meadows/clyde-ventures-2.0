@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 export default function MicroServiceTicks({ options }) {
   return (
-    <TickContainer>
+    <Container>
       {options.map((option, i) => {
         return (
           <StyledMicroServiceTick key={i}>
@@ -13,11 +13,11 @@ export default function MicroServiceTicks({ options }) {
           </StyledMicroServiceTick>
         );
       })}
-    </TickContainer>
+    </Container>
   );
 }
 
-const TickContainer = styled.div`
+const Container = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 3rem;
@@ -26,12 +26,13 @@ const TickContainer = styled.div`
   margin: 0 auto 1rem auto;
   padding: 0rem 5rem 3rem 5rem;
   @media only screen and (min-width: 1600px) {
-    gap: 4rem;
+    gap: 3rem;
   }
 `;
 const StyledMicroServiceTick = styled.div`
+  border: 2px solid var(--yellow);
   background: var(--white2);
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 20px;
+  /* box-shadow: rgba(0, 0, 0, 0.05) 0px 4px 20px; */
   display: flex;
   flex-direction: column;
   padding: 2.5rem 2rem;

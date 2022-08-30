@@ -42,7 +42,7 @@ const StyledContactForm = styled.form`
   .logo-container {
     position: relative;
     width: 4rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1.2rem;
   }
   input,
   textarea {

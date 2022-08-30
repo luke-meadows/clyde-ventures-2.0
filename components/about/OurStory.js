@@ -11,11 +11,19 @@ export default function OurStory() {
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime hic
           aspernatur quas doloremque a impedit, ipsa ipsum aut soluta sunt
-          aperiam at molestiae omnis rerum vitae!
+          aperiam at molestiae omnis rerum vitae! Lorem ipsum dolor sit amet,
+          consectetur adipisicing elit. Maxime hic aspernatur quas doloremque a
+          impedit, ipsa ipsum aut soluta sunt aperiam at molestiae omnis rerum
+          vitae!
         </p>
-        {/* <div className="image-container">
-          <Image src={OurStoryImage} layout="fill" objectFit="cover" />
-        </div> */}
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime hic
+          aspernatur quas doloremque a impedit, ipsa ipsum aut soluta sunt
+          aperiam at molestiae omnis rerum vitae! Lorem ipsum dolor sit amet,
+          consectetur adipisicing elit. Maxime hic aspernatur quas doloremque a
+          impedit, ipsa ipsum aut soluta sunt aperiam at molestiae omnis rerum
+          vitae!
+        </p>
         <div className="our-story-section-2">
           <div>
             <h4>Subtitle explaining values</h4>
@@ -66,8 +74,8 @@ const StyledOurStory = styled.section`
     margin-bottom: 1rem;
   }
   p {
-    max-width: 90ch;
-    margin-bottom: 3.2rem;
+    max-width: 100ch;
+    margin-bottom: 1.2rem;
     font-size: 1.2rem;
   }
   .image-container {
@@ -94,7 +102,7 @@ const StyledOurStory = styled.section`
   }
   .our-story-section-3 {
     max-width: 1600px;
-    margin: 12rem auto 0 auto;
+    margin: 12rem auto 4rem auto;
     display: flex;
     align-items: center;
     p {

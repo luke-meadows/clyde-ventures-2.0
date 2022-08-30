@@ -20,7 +20,7 @@ const StyledGrid = styled.div`
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 2rem 4rem;
+  gap: 1.2rem;
 
   p {
     color: var(--black);
