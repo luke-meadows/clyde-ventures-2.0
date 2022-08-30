@@ -22,7 +22,8 @@ const StyledContactButton = styled.div`
   justify-content: flex-end;
 
   button {
-    color: ${(props) => (props.isOnHomepage ? 'var(--black)' : 'var(--black)')};
+    color: ${(props) =>
+      props.isOnHomepage ? 'var(--dark-grey)' : 'var(--dark-grey)'};
     background: ${(props) =>
       props.isOnHomepage ? 'var(--yellow2)' : 'var(--yellow2)'};
     border: ${(props) =>

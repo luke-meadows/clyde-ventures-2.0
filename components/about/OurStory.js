@@ -13,9 +13,9 @@ export default function OurStory() {
           aspernatur quas doloremque a impedit, ipsa ipsum aut soluta sunt
           aperiam at molestiae omnis rerum vitae!
         </p>
-        <div className="image-container">
+        {/* <div className="image-container">
           <Image src={OurStoryImage} layout="fill" objectFit="cover" />
-        </div>
+        </div> */}
         <div className="our-story-section-2">
           <div>
             <h4>Subtitle explaining values</h4>
@@ -66,7 +66,7 @@ const StyledOurStory = styled.section`
     margin-bottom: 1rem;
   }
   p {
-    max-width: 70ch;
+    max-width: 90ch;
     margin-bottom: 3.2rem;
     font-size: 1.2rem;
   }

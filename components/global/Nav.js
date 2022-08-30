@@ -60,17 +60,11 @@ const StyledNav = styled.nav`
 
   a,
   .services-dropdown {
-    margin-right: 1.6rem;
+    margin-right: 1.5rem;
     font-size: 0.9rem;
     font-weight: 500;
-    color: var(--white);
-    color: var(--dark-grey);
     color: ${(props) =>
       props.isOnHomepage ? 'var(--black)' : 'var(--dark-grey)'};
-    @media only screen and (min-width: 1600px) {
-      font-size: 0.9rem;
-      margin-right: 1.5rem;
-    }
   }
 
   .services-dropdown {

@@ -33,16 +33,16 @@ export default function ContactForm() {
 const StyledContactForm = styled.form`
   width: 50%;
   margin-left: 2.5rem;
-  background: var(--grey2);
+  background: var(--white2);
   padding: 1.4rem 2rem 1.4rem 2rem;
   padding: 2rem;
   border-radius: 1rem;
-  /* box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 20px; */
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 20px;
   position: relative;
   .logo-container {
     position: relative;
     width: 4rem;
-    margin: 0 0 1.4rem 0;
+    margin-bottom: 1rem;
   }
   input,
   textarea {
