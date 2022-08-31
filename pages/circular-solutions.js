@@ -4,27 +4,29 @@ export default function CircularSolutions() {
   return (
     <CircularSolutionsPage>
       <Container>
-        <h1>Circular Solutions</h1>
         <MainContainer>
           <div className="text">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis,
-              doloribus atque. Expedita recusandae porro, quis ab fuga
-              cupiditate, repellat placeat alias animi assumenda impedit totam
-              quam aliquid odio fugit labore?
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis,
-              doloribus atque. Expedita recusandae porro, quis ab fuga
-              cupiditate, repellat placeat alias animi assumenda impedit totam
-              quam aliquid odio fugit labore?
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis,
-              doloribus atque. Expedita recusandae porro, quis ab fuga
-              cupiditate, repellat placeat alias animi assumenda impedit totam
-              quam aliquid odio fugit labore?
-            </p>
+            <h1>Circular Solutions</h1>
+            <div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis,
+                doloribus atque. Expedita recusandae porro, quis ab fuga
+                cupiditate, repellat placeat alias animi assumenda impedit totam
+                quam aliquid odio fugit labore?
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis,
+                doloribus atque. Expedita recusandae porro, quis ab fuga
+                cupiditate, repellat placeat alias animi assumenda impedit totam
+                quam aliquid odio fugit labore?
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis,
+                doloribus atque. Expedita recusandae porro, quis ab fuga
+                cupiditate, repellat placeat alias animi assumenda impedit totam
+                quam aliquid odio fugit labore?
+              </p>
+            </div>
           </div>
           <div className="graphic">
             <CircularSolutionsGraphic />
@@ -40,7 +42,7 @@ const CircularSolutionsPage = styled.section`
 `;
 
 const Container = styled.section`
-  padding: 2.5rem 0;
+  padding: 0;
   max-width: 1600px;
   margin: 0 auto;
 
@@ -54,10 +56,10 @@ const Container = styled.section`
 
 const MainContainer = styled.div`
   display: flex;
-  gap: 5rem;
+  justify-content: space-between;
   margin-top: 2.5rem;
-  .text,
+  gap: 5rem;
   .graphic {
-    width: 50%;
+    width: 65rem;
   }
 `;
