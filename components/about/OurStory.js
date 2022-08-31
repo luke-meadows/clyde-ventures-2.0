@@ -35,6 +35,14 @@ export default function OurStory() {
               iste consectetur? Ab vitae asperiores temporibus laborum veritatis
               aspernatur in, quis explicabo? Rerum, eaque temporibus.
             </p>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore
+              dignissimos adipisci cum assumenda unde velit fuga! Temporibus
+              repudiandae cum, porro sunt voluptatibus totam facere sequi
+              molestias corporis eum minima hic commodi et dolore at quibusdam
+              iste consectetur? Ab vitae asperiores temporibus laborum veritatis
+              aspernatur in, quis explicabo? Rerum, eaque temporibus.
+            </p>
           </div>
           <div className="image-container">
             <Image src={OurStoryImage2} layout="fill" objectFit="cover" />
@@ -87,9 +95,8 @@ const StyledOurStory = styled.section`
     max-width: 1600px;
     margin: 12rem auto 0 auto;
     display: flex;
-    align-items: center;
     p {
-      font-size: 1.2rem;
+      font-size: 1.1rem;
       margin-right: 2.5rem;
     }
     .image-container {
