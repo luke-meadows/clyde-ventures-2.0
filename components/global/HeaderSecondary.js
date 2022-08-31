@@ -55,13 +55,13 @@ const Container = styled.div`
     top: 0;
     right: 0px;
     z-index: 3;
-    background: var(--white);
+    background: var(--white2);
   }
 `;
 
 const StyledHeaderSecondary = styled(motion.header)`
   height: 5rem;
-  background: var(--white);
+  background: var(--white2);
   padding: 0 5rem;
   height: 6rem;
   display: flex;
@@ -75,7 +75,7 @@ const StyledHeaderSecondary = styled(motion.header)`
     props.operatingSystem === 'mac' ? '100vw' : 'calc(100vw - 17px)'};
   z-index: 2;
   border-bottom: var(--dark-grey);
-  box-shadow: rgba(0, 0, 0, 0.075) 0px 4px 12px;
+  box-shadow: rgba(0, 0, 0, 0.025) 0px 4px 12px;
   p {
     margin-bottom: 0;
   }

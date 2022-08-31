@@ -25,7 +25,7 @@ const StyledBannerCard = styled.div`
     font-weight: 500;
     text-align: center;
   }
-  @media only screen and (min-width: 1600px) {
+  @media only screen and (min-width: 1800px) {
     padding: 3rem 5rem;
     p {
       font-size: 1.2rem;

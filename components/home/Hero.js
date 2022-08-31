@@ -12,7 +12,6 @@ export default function Hero() {
         playsInline={true}
         src={require('../../public/HERO.mp4')}
         type="video/mp4"
-        reverse
       />
       <MissionBanner />
       <Link href="/circular-solutions">

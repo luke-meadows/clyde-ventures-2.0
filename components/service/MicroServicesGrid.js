@@ -26,13 +26,15 @@ export default function MicroServicesGrid({ options }) {
 
 const Container = styled.div`
   padding: 4rem 5rem;
+  max-width: 1800px;
+  margin: 0 auto;
 `;
 const StyledGrid = styled.div`
-  max-width: 1800px;
   width: fit-content;
   display: grid;
   grid-template-columns: repeat(4, auto);
   gap: 1.2rem 5rem;
+
   p {
     color: var(--black);
     font-size: 0.9rem;

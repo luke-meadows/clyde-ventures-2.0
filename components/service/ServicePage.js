@@ -13,11 +13,11 @@ export const StyledServicePage = styled.section`
   position: relative;
   width: 100%;
   .hero {
-    padding: 4rem 5rem;
+    padding: 12rem 5rem 2rem 5rem;
     position: relative;
     width: 100%;
     max-width: 1800px;
-    margin: 8rem auto 0 auto;
+    margin: 0 auto 0 auto;
     h1 {
       z-index: 1;
       font-size: 4rem;
@@ -79,11 +79,6 @@ export const StyledServicePage = styled.section`
       i {
         margin-right: -0.6rem;
       }
-    }
-  }
-  @media only screen and (min-width: 1600px) {
-    .hero {
-      margin-top: 8rem;
     }
   }
 `;

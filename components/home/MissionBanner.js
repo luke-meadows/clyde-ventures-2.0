@@ -3,11 +3,13 @@ import MissionBannerCard from './MissionBannerCard';
 export default function MissionBanner() {
   return (
     <StyledMissionBanner>
-      <MissionBannerCard blurb="Designing and delivering innovative revenue streams..." />
-      <div className="spacer" />
-      <MissionBannerCard blurb="Opening new markets..." />
-      <div className="spacer" />
-      <MissionBannerCard blurb="Creating sustainable value from waste..." />
+      <div className="banner-inner">
+        <MissionBannerCard blurb="Designing and delivering innovative revenue streams..." />
+        <div className="spacer" />
+        <MissionBannerCard blurb="Opening new markets..." />
+        <div className="spacer" />
+        <MissionBannerCard blurb="Creating sustainable value from waste..." />
+      </div>
     </StyledMissionBanner>
   );
 }
@@ -18,8 +20,11 @@ const StyledMissionBanner = styled.div`
   bottom: 0;
   left: 0;
   width: 100%;
-  display: flex;
-  /* padding: 0.5rem 0; */
+  .banner-inner {
+    display: flex;
+    max-width: 1800px;
+    margin: 0 auto;
+  }
   .spacer {
     height: 50px;
     width: 1px;

@@ -24,9 +24,4 @@ const StyledHeaderPrimary = styled.header`
   position: absolute;
   z-index: 2;
   width: 100%;
-  @media only screen and (min-width: 1600px) {
-    padding: 0 5rem;
-    height: 10rem;
-    align-items: center;
-  }
 `;

@@ -53,11 +53,6 @@ export default function SideBar({ setShowSidebar }) {
               About us
             </a>
           </Link>
-          {/* <Link href="/">
-            <a href="" onClick={() => setShowSidebar(false)}>
-              Blog
-            </a>
-          </Link> */}
           <Link href="/people">
             <a href="" onClick={() => setShowSidebar(false)}>
               People
@@ -68,7 +63,7 @@ export default function SideBar({ setShowSidebar }) {
               Community
             </a>
           </Link>
-          <Link href="/">
+          <Link href="/contact">
             <a href="" onClick={() => setShowSidebar(false)}>
               Contact us
             </a>
@@ -91,7 +86,7 @@ const StyledSideBar = styled(motion.div)`
   height: calc(100vh - 5rem);
   width: 100vw;
   display: flex;
-  background: var(--white);
+  background: var(--white2);
   z-index: 2;
   color: var(--dark-grey);
   overflow: hidden;
