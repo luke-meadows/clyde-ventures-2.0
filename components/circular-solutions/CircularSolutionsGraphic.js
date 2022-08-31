@@ -36,14 +36,14 @@ const StyledGraphic = styled.div`
   align-items: center;
 
   .box {
-    width: 28rem;
+    width: 25rem;
     aspect-ratio: 1;
-    border: 8px solid var(--dark-grey);
+    border: 2px solid var(--dark-grey);
     border-radius: 50%;
     position: relative;
   }
 
-  .box::before {
+  /* .box::before {
     content: '';
     width: 30px;
     height: 30px;
@@ -55,8 +55,8 @@ const StyledGraphic = styled.div`
     bottom: 0;
     margin: auto;
     background: var(--yellow2);
-    animation: moveAround 10s linear infinite;
-  }
+    animation: moveAround 20s linear infinite;
+  } */
 
   @keyframes moveAround {
     from {
@@ -69,7 +69,6 @@ const StyledGraphic = styled.div`
 
   .service {
     position: absolute;
-    transform-origin: 10%;
     border-radius: 50%;
     height: 150px;
     width: 150px;
@@ -78,12 +77,13 @@ const StyledGraphic = styled.div`
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    border: 4px solid var(--yellow2);
+    border: 2px solid var(--yellow2);
     background: var(--white);
 
     i {
       margin: 0rem;
       font-size: 1.5rem;
+      color: var(--yellow2);
     }
     h5 {
       text-align: center;
@@ -117,8 +117,8 @@ const StyledGraphic = styled.div`
   .line {
     position: absolute;
     height: 36.5%;
-    width: 4px;
-    background: var(--yellow2);
+    width: 2px;
+    background: var(--dark-grey);
     left: 50%;
     top: 50%;
     transform-origin: 50% 100%;
