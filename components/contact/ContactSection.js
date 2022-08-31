@@ -45,7 +45,7 @@ export default function ContactSection() {
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2239.1857617219857!2d-4.262758483768697!3d55.85944338058209!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4888469c4ab77db9%3A0x6832134b166626db!2sBaltic%20Chambers!5e0!3m2!1sen!2suk!4v1660838655068!5m2!1sen!2suk"
                 className="map"
-                allowFullScreen=""
+                allowfullscreen=""
                 loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"
               ></iframe>
