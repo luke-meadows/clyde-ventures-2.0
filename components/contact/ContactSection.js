@@ -47,7 +47,7 @@ export default function ContactSection() {
                 className="map"
                 allowFullScreen={true}
                 loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
+                referrerPolicy="no-referrer-when-downgrade"
               ></iframe>
               <i className="icon-cancel" onClick={() => setShowMap(false)} />
             </div>
