@@ -1,7 +1,5 @@
-import Image from 'next/image';
 import { useState } from 'react';
 import styled from 'styled-components';
-import Container from '../global/Container';
 import ContactForm from './ContactForm';
 export default function ContactSection() {
   const [showMap, setShowMap] = useState(false);

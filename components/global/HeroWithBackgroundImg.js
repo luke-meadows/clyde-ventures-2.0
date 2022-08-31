@@ -27,15 +27,17 @@ export default function HeroWithBackgroundImg({
           <p>{blurb}</p>
         </div>
       </div>
-      <Link href={buttonUrl}>
-        <LearnMore>
-          {buttonText}
-          <i
-            className={'icon-angle-' + iconDirection}
-            style={{ marginRight: '-0.6rem' }}
-          />
-        </LearnMore>
-      </Link>
+      {buttonUrl && (
+        <Link href={buttonUrl}>
+          <LearnMore>
+            {buttonText}
+            <i
+              className={'icon-angle-' + iconDirection}
+              style={{ marginRight: '-0.6rem' }}
+            />
+          </LearnMore>
+        </Link>
+      )}
     </StyledHero>
   );
 }
