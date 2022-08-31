@@ -38,7 +38,7 @@ const StyledGraphic = styled.div`
   .box {
     width: 28rem;
     aspect-ratio: 1;
-    border: 30px solid var(--dark-grey);
+    border: 8px solid var(--dark-grey);
     border-radius: 50%;
     position: relative;
   }
@@ -60,10 +60,10 @@ const StyledGraphic = styled.div`
 
   @keyframes moveAround {
     from {
-      transform: rotate(0deg) translate(210px);
+      transform: rotate(0deg) translate(220px);
     }
     to {
-      transform: rotate(360deg) translate(210px);
+      transform: rotate(360deg) translate(220px);
     }
   }
 
@@ -78,7 +78,7 @@ const StyledGraphic = styled.div`
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    border: 2px solid var(--yellow2);
+    border: 4px solid var(--yellow2);
     background: var(--white);
 
     i {
@@ -117,7 +117,7 @@ const StyledGraphic = styled.div`
   .line {
     position: absolute;
     height: 36.5%;
-    width: 2px;
+    width: 4px;
     background: var(--yellow2);
     left: 50%;
     top: 50%;
