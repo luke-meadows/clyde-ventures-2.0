@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import styled from 'styled-components';
 import MissionBanner from './MissionBanner';
 export default function Hero() {
@@ -14,7 +15,9 @@ export default function Hero() {
         reverse
       />
       <MissionBanner />
-      <LearnMore>Learn More</LearnMore>
+      <Link href="/circular-solutions">
+        <LearnMore>Learn More</LearnMore>
+      </Link>
     </StyledHero>
   );
 }

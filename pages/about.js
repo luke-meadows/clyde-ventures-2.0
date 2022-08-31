@@ -12,6 +12,7 @@ export default function About() {
         blurb="Born from operations. Our team comes from multiple sectors and have
         delivered large scale project transformations and tangable value."
         buttonText={'Meet the team'}
+        buttonUrl="/people"
         iconDirection="right"
       />
       <OurStory />

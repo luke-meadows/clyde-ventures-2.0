@@ -101,7 +101,6 @@ const StyledTeamGridItem = styled.div`
   .container {
     position: relative;
     display: ${(props) => (props.teamMemberActive ? 'flex' : 'block')};
-    gap: 2.5rem;
     .exit {
       position: absolute;
       top: -1.6rem;
@@ -133,6 +132,7 @@ const StyledTeamGridItem = styled.div`
     border-top-right-radius: 0.5rem;
     border-top-left-radius: 0.5rem;
     width: ${(props) => (props.teamMemberActive ? '20rem' : '100%')};
+    margin-right: ${(props) => (props.teamMemberActive ? '2.5rem' : '0')};
   }
   .text {
     padding: 0.75rem;
@@ -141,6 +141,7 @@ const StyledTeamGridItem = styled.div`
     border-top: none;
     text-align: center;
     background: var(--yellow2);
+    margin-right: ${(props) => (props.teamMemberActive ? '2.5rem' : '0')};
     h5 {
       font-size: 1.3rem;
     }

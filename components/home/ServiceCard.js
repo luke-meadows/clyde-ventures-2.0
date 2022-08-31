@@ -20,6 +20,7 @@ const StyledServiceCard = styled.div`
   flex-direction: column;
   justify-content: space-between;
   padding: 1rem 0;
+
   i {
     color: var(--dark-grey);
     font-size: 2rem;

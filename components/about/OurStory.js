@@ -63,7 +63,7 @@ export default function OurStory() {
 
 const StyledOurStory = styled.section`
   background: var(--grey);
-  padding: 10rem 5rem 5rem 5rem;
+  padding: 5rem 5rem 5rem 5rem;
   .inner-our-story {
     max-width: 1600px;
     margin: 0 auto;

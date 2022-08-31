@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import styled from 'styled-components';
 export default function HeroWithBackgroundImg({
   image,
@@ -6,6 +7,7 @@ export default function HeroWithBackgroundImg({
   header,
   blurb,
   iconDirection = 'down',
+  buttonUrl = null,
 }) {
   return (
     <StyledHero>
@@ -25,13 +27,15 @@ export default function HeroWithBackgroundImg({
           <p>{blurb}</p>
         </div>
       </div>
-      <LearnMore>
-        {buttonText}
-        <i
-          className={'icon-angle-' + iconDirection}
-          style={{ marginRight: '-0.6rem' }}
-        />
-      </LearnMore>
+      <Link href={buttonUrl}>
+        <LearnMore>
+          {buttonText}
+          <i
+            className={'icon-angle-' + iconDirection}
+            style={{ marginRight: '-0.6rem' }}
+          />
+        </LearnMore>
+      </Link>
     </StyledHero>
   );
 }
