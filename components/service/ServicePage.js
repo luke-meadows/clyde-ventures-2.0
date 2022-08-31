@@ -13,11 +13,11 @@ export const StyledServicePage = styled.section`
   position: relative;
   width: 100%;
   .hero {
-    padding: 2.5rem 5rem;
+    padding: 4rem 5rem;
     position: relative;
     width: 100%;
     max-width: 1800px;
-    margin: 9.5rem auto 0 auto;
+    margin: 8rem auto 0 auto;
     h1 {
       z-index: 1;
       font-size: 4rem;

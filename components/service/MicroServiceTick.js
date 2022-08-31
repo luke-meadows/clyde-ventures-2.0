@@ -18,7 +18,7 @@ export default function MicroServiceTicks({ options }) {
 }
 
 const Container = styled.div`
-  padding: 2.5rem 5rem;
+  padding: 4rem 5rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 3rem;
@@ -64,7 +64,5 @@ const StyledMicroServiceTick = styled.div`
     color: var(--dark-grey);
 
     font-weight: 500;
-  }
-  @media only screen and (min-width: 1600px) {
   }
 `;
