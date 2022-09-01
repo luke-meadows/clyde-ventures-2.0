@@ -32,7 +32,6 @@ const Container = styled.div`
   }
   .our-story-section-2 {
     display: flex;
-
     gap: 5rem;
     .space {
       height: 2.5rem;

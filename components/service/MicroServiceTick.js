@@ -1,30 +1,41 @@
 import styled from 'styled-components';
-export default function MicroServiceTicks({ options }) {
+export default function MicroServiceTicks({ options, text = null }) {
   return (
     <Container>
-      {options.map((option, i) => {
-        return (
-          <StyledMicroServiceTick key={i}>
-            <div className="top">
-              <i className="icon-check" />
-              <h4>{option.title}</h4>
-            </div>
-            <p>{option.text}</p>
-          </StyledMicroServiceTick>
-        );
-      })}
+      {text && <p>{text}</p>}
+      <div className="cards">
+        {options.map((option, i) => {
+          return (
+            <StyledMicroServiceTick key={i}>
+              <div className="top">
+                <i className="icon-check" />
+                <h4>{option.title}</h4>
+              </div>
+              <p>{option.text}</p>
+            </StyledMicroServiceTick>
+          );
+        })}
+      </div>
     </Container>
   );
 }
 
 const Container = styled.div`
-  padding: 4rem 5rem;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 3rem;
+  padding: 5rem 5rem;
+
   width: 100%;
   max-width: 1800px;
   margin: 0 auto 0rem auto;
+  p {
+    font-size: 1.2rem;
+    max-width: 100ch;
+    margin-bottom: 2.5rem;
+  }
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+  }
   @media only screen and (min-width: 1600px) {
     gap: 3rem;
   }

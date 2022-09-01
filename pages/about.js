@@ -16,11 +16,8 @@ export default function About() {
         iconDirection="right"
       />
       <OurStory />
-      <ContactSection />
     </PageContainer>
   );
 }
 
-const PageContainer = styled.main`
-  background: var(--white);
-`;
+const PageContainer = styled.main``;

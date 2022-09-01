@@ -24,6 +24,11 @@ const StyledBenefits = styled.div`
   padding: 1rem 0;
   margin-bottom: 0.75rem;
   gap: 1.6rem;
+  p {
+    margin-bottom: 0;
+    font-weight: 500;
+    font-size: 1.1rem !important;
+  }
   .benefit {
     display: flex;
     align-items: center;
@@ -44,10 +49,5 @@ const StyledBenefits = styled.div`
       padding: 0;
       font-size: 0.9rem;
     }
-  }
-  p {
-    margin-bottom: 0;
-    font-weight: 500;
-    font-size: 1.1rem !important;
   }
 `;

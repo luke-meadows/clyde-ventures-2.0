@@ -49,7 +49,7 @@ export default function Footer() {
 const StyledFooter = styled.footer`
   background: var(--dark-grey);
   color: var(--grey);
-  padding: 2rem 3rem;
+  padding: 2.5rem 5rem;
   font-weight: 300;
   .top {
     display: flex;

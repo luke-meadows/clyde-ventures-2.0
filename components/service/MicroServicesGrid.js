@@ -25,7 +25,8 @@ export default function MicroServicesGrid({ options }) {
 }
 
 const Container = styled.div`
-  padding: 4rem 5rem;
+  background: var(--white2);
+  padding: 5rem;
   max-width: 1800px;
   margin: 0 auto;
 `;

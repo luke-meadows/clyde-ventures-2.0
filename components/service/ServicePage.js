@@ -12,8 +12,9 @@ export const StyledServicePage = styled.section`
   overflow: hidden;
   position: relative;
   width: 100%;
+  margin-bottom: 3rem;
   .hero {
-    padding: 12rem 5rem 2rem 5rem;
+    padding: 12rem 5rem 5rem 5rem;
     position: relative;
     width: 100%;
     max-width: 1800px;
@@ -26,17 +27,23 @@ export const StyledServicePage = styled.section`
       color: var(--dark-grey);
     }
     p {
-      font-size: 1.1rem;
-      margin: 1rem 0 0rem 0.2rem;
+      font-size: 1.2rem;
+
+      margin: 1rem 0 1rem 0.2rem;
       max-width: 100ch;
       color: var(--dark-grey);
+    }
+    li {
+      list-style-position: inside;
+      font-size: 1.2rem;
+      font-weight: 500;
     }
   }
 
   .lower-section {
     display: flex;
     align-items: center;
-    padding: 2.5rem 5rem;
+    padding: 5rem 5rem;
     max-width: 1800px;
     margin: 0 auto;
     .text {
@@ -49,7 +56,7 @@ export const StyledServicePage = styled.section`
         margin-bottom: 1.2rem;
       }
       p {
-        font-size: 1.1rem;
+        font-size: 1.2rem;
       }
     }
     .img-container {

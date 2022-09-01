@@ -22,7 +22,7 @@ const PageContainer = styled.main`
   .hero {
     margin: 0 auto;
     max-width: 1600px;
-    padding: 6rem 0 4.5rem;
+    padding: 6rem 0 4rem 0;
     h1 {
       font-size: 4rem;
       margin-bottom: 1rem;
