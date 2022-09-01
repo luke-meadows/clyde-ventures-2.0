@@ -6,10 +6,10 @@ export default function TeamGrid() {
   return (
     <StyledTeamGrid>
       <TeamGridItem teamMember={teamData.paulRichards} />
-      <TeamGridItem teamMember={teamData.rossBern} />
-      <TeamGridItem teamMember={teamData.joshMontgomery} />
       <TeamGridItem teamMember={teamData.amberMorton} />
+      <TeamGridItem teamMember={teamData.rossBern} />
       <TeamGridItem teamMember={teamData.leanneMcguigan} />
+      <TeamGridItem teamMember={teamData.joshMontgomery} />
     </StyledTeamGrid>
   );
 }

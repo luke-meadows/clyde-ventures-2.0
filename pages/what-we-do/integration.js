@@ -16,25 +16,8 @@ export default function Integration() {
           quick and meaningful results that will expedite the ROI in your
           strategic decision to use a CRM platform.
         </p>
-        <p>We are specialists of implementation in the following domains:</p>
+        <p>We are specialists of implementation in the following domains: </p>
       </div>
-
-      <MicroServiceTicks
-        options={[
-          {
-            title: 'Professional and legal service',
-            text: 'Our integration services can impact your sector in these ways. Our integration services can impact your sector in these ways. Our integration services can impact your sector in these ways.',
-          },
-          {
-            title: 'Energy, utilities and water',
-            text: 'Our integration services can impact your sector in these ways. Our integration services can impact your sector in these ways. Our integration services can impact your sector in these ways.',
-          },
-          {
-            title: 'Third sector',
-            text: 'Our integration services can impact your sector in these ways. Our integration services can impact your sector in these ways. Our integration services can impact your sector in these ways.',
-          },
-        ]}
-      />
 
       <MicroServicesGrid
         options={[
@@ -62,7 +45,7 @@ export default function Integration() {
               'Efficiency tracking',
               'Front line staff delivery',
               'Empathetic roll out',
-              'Frugally scoped',
+              'ROI Focused',
               'Business process reviews',
             ]}
           />
@@ -70,8 +53,25 @@ export default function Integration() {
           <p>
             Our proven delivery approach will have you benefitting from your CRM
             within weeks. Our existing clients score us highly in the following
-            domains of delivery.
+            domains of delivery:
           </p>
+
+          <MicroServiceTicks
+            options={[
+              {
+                title: 'Energy, utilities and water',
+                text: 'Our integration services can impact your sector in these ways. Our integration services can impact your sector in these ways. Our integration services can impact your sector in these ways.',
+              },
+              {
+                title: 'Professional and legal services',
+                text: 'Our integration services can impact your sector in these ways. Our integration services can impact your sector in these ways. Our integration services can impact your sector in these ways.',
+              },
+              {
+                title: 'Third sector',
+                text: 'Our integration services can impact your sector in these ways. Our integration services can impact your sector in these ways. Our integration services can impact your sector in these ways.',
+              },
+            ]}
+          />
         </div>
 
         <div className="img-container">
