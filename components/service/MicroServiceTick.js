@@ -1,7 +1,11 @@
 import styled from 'styled-components';
-export default function MicroServiceTicks({ options, text = null }) {
+export default function MicroServiceTicks({
+  options,
+  text = null,
+  withPadding = true,
+}) {
   return (
-    <Container>
+    <Container withPadding={withPadding}>
       {text && <p>{text}</p>}
       <div className="cards">
         {options.map((option, i) => {
@@ -11,6 +15,7 @@ export default function MicroServiceTicks({ options, text = null }) {
                 <i className="icon-check" />
                 <h4>{option.title}</h4>
               </div>
+              {option.lineBreak && <br />}
               <p>{option.text}</p>
             </StyledMicroServiceTick>
           );
@@ -21,8 +26,7 @@ export default function MicroServiceTicks({ options, text = null }) {
 }
 
 const Container = styled.div`
-  padding: 5rem 5rem;
-
+  padding: ${(props) => (props.withPadding ? '5rem 5rem' : '')};
   width: 100%;
   max-width: 1800px;
   margin: 0 auto 0rem auto;
@@ -41,8 +45,8 @@ const Container = styled.div`
   }
 `;
 const StyledMicroServiceTick = styled.div`
-  border: 2px solid var(--yellow);
-  background: var(--white2);
+  border: 2px solid var(--light-grey);
+  background: var(--white);
   display: flex;
   flex-direction: column;
   padding: 2.5rem 2rem;

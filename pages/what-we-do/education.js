@@ -19,24 +19,25 @@ export default function Education() {
           innovative strategies to create a better world, this course is aimed
           at the following professionals:
         </p>
+        <div style={{ padding: ' 1rem 0' }} />
+        <MicroServiceTicks
+          withPadding={false}
+          options={[
+            {
+              title: 'Entrepreneurs',
+              text: 'Entrepreneurs who want to deliver new and interesting products that address the climate crisis.',
+            },
+            {
+              title: 'Non-profit',
+              text: 'Those who work in charities, think tanks and government bodies, who are responsible for setting regualtion and want to develop meaningful dialogue with corporations desgining climate change strategies.',
+            },
+            {
+              title: 'Innovators',
+              text: 'Innovators within large corporations who need the toolkit to deliver change.',
+            },
+          ]}
+        />
       </div>
-
-      <MicroServiceTicks
-        options={[
-          {
-            title: 'Entrepreneurs',
-            text: 'Entrepreneurs who want to deliver new and interesting products that address the climate crisis.',
-          },
-          {
-            title: 'Non-profit',
-            text: 'Those who work in charities, think tanks and government bodies, who are responsible for setting regualtion and want to develop meaningful dialogue with corporations desgining climate change strategies.',
-          },
-          {
-            title: 'Innovators',
-            text: 'Innovators within large corporations who need the toolkit to deliver change.',
-          },
-        ]}
-      />
 
       <div className="lower-section">
         <div className="text">

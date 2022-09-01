@@ -5,22 +5,37 @@ export default function CircularSolutionsGrid() {
     <StyledGrid>
       <ServiceCard
         title="Consult"
-        blurb="Collaboratively opening new markets to create untapped revenue streams"
+        bullets={[
+          'Sustainability MBA',
+          ' Net zero marketplace',
+          'Opt-in value optimisation',
+        ]}
         link="/what-we-do/consultancy"
       />
       <ServiceCard
         title="Educate"
-        blurb="Bringing research led institutions and global brands together to develop tomorrow's leaders"
+        bullets={['Sustainability MBA', ' Diversity recruitment']}
         link="/what-we-do/education"
       />
       <ServiceCard
         title="Integrate"
-        blurb="Architecting technology solutions to reduce costs, improve service and deliver growth"
+        bullets={[
+          'Systems integration',
+          'Automation',
+          'Lean processing',
+          'Data analytics',
+        ]}
         link="/what-we-do/integration"
       />
       <ServiceCard
         title="Manufacture"
-        blurb="Producing lightweight solutions for a cleaner future in the construction industry"
+        bullets={[
+          'Fibre reinforced polymer',
+          'Fire doors',
+          'Panels and cladding',
+          'Structural beams',
+          'Logistic containers',
+        ]}
         link="/what-we-do/manufacturing"
       />
     </StyledGrid>

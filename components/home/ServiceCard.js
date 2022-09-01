@@ -1,12 +1,25 @@
 import Link from 'next/link';
 import styled from 'styled-components';
-export default function ServiceCard({ icon, title, blurb, link }) {
+export default function ServiceCard({
+  icon,
+  title,
+  blurb = null,
+  bullets = null,
+  link,
+}) {
   return (
     <StyledServiceCard>
       <div>
         <i className={icon} />
         <h4>{title}</h4>
-        <p>{blurb}</p>
+        {blurb && <p>{blurb}</p>}
+        {bullets && (
+          <ul>
+            {bullets.map((bullet, i) => (
+              <li key={i}>{bullet}</li>
+            ))}
+          </ul>
+        )}
       </div>
       <Link href={link}>
         <a className="learn">Learn More</a>
@@ -35,6 +48,11 @@ const StyledServiceCard = styled.div`
     font-size: 0.9rem !important;
     margin-bottom: 1rem;
     color: var(--dark-grey);
+  }
+  ul {
+    margin-bottom: 1rem;
+    min-width: 20rem;
+    list-style-position: inside;
   }
   a {
     color: var(--dark-grey);

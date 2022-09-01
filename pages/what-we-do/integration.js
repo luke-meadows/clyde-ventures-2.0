@@ -15,7 +15,7 @@ export default function Integration() {
           in order to maximise customer engagement. Clyde Ventures will deliver
           quick and meaningful results that will expedite the ROI in your
           strategic decision to use a CRM platform. We are specialists of
-          implementation in the following domains:{' '}
+          implementation in the following domains:
         </p>
         <ul>
           <li>Energy, utilities and water</li>
@@ -77,6 +77,7 @@ export default function Integration() {
           {
             title: 'Third sector',
             text: 'Our integration services can impact your sector in these ways. Our integration services can impact your sector in these ways. Our integration services can impact your sector in these ways.',
+            lineBreak: true,
           },
         ]}
       />
