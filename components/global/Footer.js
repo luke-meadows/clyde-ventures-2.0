@@ -47,7 +47,8 @@ export default function Footer() {
 }
 
 const StyledFooter = styled.footer`
-  background: var(--white);
+  background: var(--dark-grey);
+  color: var(--grey);
   padding: 2rem 3rem;
   font-weight: 300;
   .top {
@@ -55,7 +56,7 @@ const StyledFooter = styled.footer`
     justify-content: space-between;
     align-items: center;
     padding: 1rem 0;
-    border-bottom: 1px solid var(--dark-grey);
+    border-bottom: 1px solid var(--grey);
     .top-left {
       a {
         margin-right: 1.6rem;

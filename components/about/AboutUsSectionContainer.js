@@ -35,7 +35,7 @@ const Container = styled.div`
 
     gap: 5rem;
     .space {
-      height: 3rem;
+      height: 2.5rem;
     }
     .image-container {
       width: 50%;
