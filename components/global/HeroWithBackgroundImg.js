@@ -59,7 +59,7 @@ const StyledHero = styled.div`
       font-weight: 500;
     }
     p {
-      font-size: 1.1rem;
+      font-size: 1.2rem;
       margin-bottom: 0;
       max-width: 90ch;
       margin-left: 0.2rem;

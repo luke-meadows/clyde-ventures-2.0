@@ -60,13 +60,6 @@ export const StyledServicePage = styled.section`
       border-radius: 0.3rem;
       overflow: hidden;
     }
-    /* .benefits {
-      display: grid;
-      grid-template-columns: ${(props) =>
-      'repeat(' + props.processGridCols + ', 1fr)'};
-      align-items: center;
-      padding: 1rem 0;
-    } */
 
     button {
       background: var(--yellow2);

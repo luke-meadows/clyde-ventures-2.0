@@ -22,5 +22,5 @@ export default function About() {
 }
 
 const PageContainer = styled.main`
-  background: var(--white2);
+  background: var(--white);
 `;

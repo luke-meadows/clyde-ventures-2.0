@@ -1,4 +1,6 @@
+import Image from 'next/image';
 import styled from 'styled-components';
+
 export default function CircularSolutionsGraphic() {
   return (
     <StyledGraphic>
@@ -29,8 +31,6 @@ export default function CircularSolutionsGraphic() {
 }
 
 const StyledGraphic = styled.div`
-  padding-top: 75px;
-  padding-right: 25px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -38,9 +38,10 @@ const StyledGraphic = styled.div`
   .box {
     width: 25rem;
     aspect-ratio: 1;
-    border: 2px solid var(--dark-grey);
+    border: 3px solid var(--dark-grey);
     border-radius: 50%;
     position: relative;
+    transform: translateY(30px);
   }
 
   /* .box::before {
@@ -54,16 +55,17 @@ const StyledGraphic = styled.div`
     right: 0;
     bottom: 0;
     margin: auto;
-    background: var(--yellow2);
-    animation: moveAround 20s linear infinite;
+    border: 2px solid var(--yellow2);
+    background: var(--white);
+    animation: moveAround 8s linear infinite;
+    z-index: 2;
   } */
-
   @keyframes moveAround {
     from {
-      transform: rotate(0deg) translate(220px);
+      transform: rotate(0deg) translate(98px);
     }
     to {
-      transform: rotate(360deg) translate(220px);
+      transform: rotate(360deg) translate(98px);
     }
   }
 
@@ -77,13 +79,13 @@ const StyledGraphic = styled.div`
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    border: 2px solid var(--yellow2);
+    border: 3px solid var(--yellow2);
     background: var(--white);
 
     i {
       margin: 0rem;
       font-size: 1.5rem;
-      color: var(--yellow2);
+      /* color: var(--yellow2); */
     }
     h5 {
       text-align: center;
@@ -117,7 +119,7 @@ const StyledGraphic = styled.div`
   .line {
     position: absolute;
     height: 36.5%;
-    width: 2px;
+    width: 3px;
     background: var(--dark-grey);
     left: 50%;
     top: 50%;

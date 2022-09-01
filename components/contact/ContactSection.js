@@ -61,7 +61,7 @@ const StyledContactSection = styled.section`
   display: flex;
   max-width: 1800px;
   margin: 0 auto;
-  padding: 8rem 5rem;
+  padding: 5rem;
   .container {
     margin-right: 2.5rem;
     width: 50%;
@@ -70,6 +70,10 @@ const StyledContactSection = styled.section`
     font-weight: 500;
     margin-bottom: 1.2rem;
     padding-top: 1rem;
+    padding-right: 0.25rem;
+    width: fit-content;
+    padding-bottom: 0.25rem;
+    border-bottom: 3px solid var(--yellow2);
   }
 
   p {

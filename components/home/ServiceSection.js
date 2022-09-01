@@ -23,6 +23,10 @@ const StyledServiceSection = styled.section`
     font-size: 2.4rem;
     font-weight: 500;
     margin-bottom: 1.2rem;
+    padding-bottom: 0.25rem;
+    padding-right: 0.25rem;
+    border-bottom: 3px solid var(--yellow2);
+    width: fit-content;
   }
   p {
     font-size: 1.2rem;

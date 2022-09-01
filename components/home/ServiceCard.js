@@ -40,6 +40,7 @@ const StyledServiceCard = styled.div`
     color: var(--dark-grey);
     font-size: 0.8rem;
     background: var(--yellow2);
+    background: var(--yellow2);
     border: 1px solid var(--yellow2);
     padding: 0.3rem 1.2rem;
     border-radius: 2rem;

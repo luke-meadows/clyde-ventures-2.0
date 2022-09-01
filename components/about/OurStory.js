@@ -1,126 +1,83 @@
 import Image from 'next/image';
 import styled from 'styled-components';
-import OurStoryImage from '../../public/our-story.jpg';
-import OurStoryImage2 from '../../public/our-story2.jpg';
-import SalesforceLogo from '../../public/salesforce.png';
+
+import OurStoryImage from '../../public/our-story2.jpg';
+import AboutUsSectionContainer from './AboutUsSectionContainer';
 export default function OurStory() {
   return (
-    <StyledOurStory>
-      <div className="inner-our-story">
+    <div>
+      <AboutUsSectionContainer>
         <h4>Our story</h4>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime hic
-          aspernatur quas doloremque a impedit, ipsa ipsum aut soluta sunt
-          aperiam at molestiae omnis rerum vitae! Lorem ipsum dolor sit amet,
-          consectetur adipisicing elit. Maxime hic aspernatur quas doloremque a
-          impedit, ipsa ipsum aut soluta sunt aperiam at molestiae omnis rerum
-          vitae!
+          We recruit 90% of our staff from the most deprived 10% of postcodes
+          and train them with the necessary skills and behaviours to work as
+          professional management consultants. Many of our staff begin with no
+          formal education: but we are adept at identifying capability and
+          developing potential.
         </p>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime hic
-          aspernatur quas doloremque a impedit, ipsa ipsum aut soluta sunt
-          aperiam at molestiae omnis rerum vitae! Lorem ipsum dolor sit amet,
-          consectetur adipisicing elit. Maxime hic aspernatur quas doloremque a
-          impedit, ipsa ipsum aut soluta sunt aperiam at molestiae omnis rerum
-          vitae!
+        <p style={{ marginBottom: 0 }}>
+          All of our staff own shares in the business. Consequently, we have a
+          team that are engaged, loyal and keen to show our clients that our
+          recruitment model works, we are on a mission to encourage all
+          businesses to assess, build and develop talent like we do.
         </p>
+      </AboutUsSectionContainer>
+
+      <AboutUsSectionContainer background="var(--white2)">
         <div className="our-story-section-2">
           <div>
-            <h4>Subtitle explaining values</h4>
+            <h4>Our Mission</h4>
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore
-              dignissimos adipisci cum assumenda unde velit fuga! Temporibus
-              repudiandae cum, porro sunt voluptatibus totam facere sequi
-              molestias corporis eum minima hic commodi et dolore at quibusdam
-              iste consectetur? Ab vitae asperiores temporibus laborum veritatis
-              aspernatur in, quis explicabo? Rerum, eaque temporibus.
+              Creating social mobility by delivering top line growth for our
+              clients. We teach people how to fish in new waters.
             </p>
+            <div className="space" />
+            <h4>Our Vision</h4>
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore
-              dignissimos adipisci cum assumenda unde velit fuga! Temporibus
-              repudiandae cum, porro sunt voluptatibus totam facere sequi
-              molestias corporis eum minima hic commodi et dolore at quibusdam
-              iste consectetur? Ab vitae asperiores temporibus laborum veritatis
-              aspernatur in, quis explicabo? Rerum, eaque temporibus.
+              Our Vision is to be the world&apos;s go-to consultancy for top
+              line growth. We design and deliver propositions that connect the
+              essence of a business with new markets, people and investors. Our
+              circular propositions will take your business into new markets and
+              attract the brightest people.
             </p>
           </div>
           <div className="image-container">
-            <Image src={OurStoryImage2} layout="fill" objectFit="cover" />
+            <Image src={OurStoryImage} layout="fill" objectFit="cover" />
           </div>
         </div>
+      </AboutUsSectionContainer>
+
+      <AboutUsSectionContainer>
         <div className="our-story-section-3">
           <div>
-            <h4>Salesforce accredited administrator</h4>
+            <h4>A Brief History</h4>
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore
-              dignissimos adipisci cum assumenda unde velit fuga! Temporibus
-              repudiandae cum, porro sunt voluptatibus totam facere sequi
-              molestias corporis eum minima hic commodi et dolore at quibusdam
-              iste consectetur? Ab vitae asperiores temporibus laborum veritatis
-              aspernatur in, quis explicabo? Rerum, eaque temporibus.
+              We believe that hard work and honest endeavours always create
+              value. Our story is testimony to that. Our core team came together
+              in 2021 as the global energy crisis began to bite, the leadership
+              team were concerned about how businesses would respond and we
+              began to develop propositions to companies that would be impacted.
+            </p>
+            <p>
+              We have grown quickly and are now delivering solutions into the
+              energy sector, tech sector, charitable sector and professional
+              services. We take the best values and practices that our clients
+              have and enable them to utilise and open new markets.
+            </p>
+            <p>
+              We have developed a digital solution for a professional services
+              firm to double their growth within 6 months.We have delivered a
+              global route to market strategy for a global tier 1 technology
+              company, we have opened up new sectors and delivered new customers
+              in new continents within 6 months
+            </p>
+            <p>
+              We are digitising charities and supporting them in growing their
+              revenues.
             </p>
           </div>
-          <div className="image-container">
-            <Image src={SalesforceLogo} layout="responsive" objectFit="cover" />
-          </div>
         </div>
-      </div>
-    </StyledOurStory>
+      </AboutUsSectionContainer>
+    </div>
   );
 }
-
-const StyledOurStory = styled.section`
-  background: var(--grey);
-  padding: 5rem 5rem 5rem 5rem;
-  .inner-our-story {
-    max-width: 1600px;
-    margin: 0 auto;
-  }
-  h4 {
-    font-size: 2.488rem;
-    font-weight: 500;
-    margin-bottom: 1rem;
-  }
-  p {
-    max-width: 100ch;
-    margin-bottom: 1.2rem;
-    font-size: 1.2rem;
-  }
-  .image-container {
-    position: relative;
-    height: 60vh;
-    width: 100%;
-  }
-  .our-story-section-2 {
-    max-width: 1600px;
-    margin: 12rem auto 0 auto;
-    display: flex;
-    p {
-      font-size: 1.1rem;
-      margin-right: 2.5rem;
-    }
-    .image-container {
-      margin-left: 2.5rem;
-    }
-
-    .image-container {
-      width: 50%;
-    }
-  }
-  .our-story-section-3 {
-    max-width: 1600px;
-    margin: 12rem auto 4rem auto;
-    display: flex;
-    align-items: center;
-    p {
-      max-width: 100%;
-      font-size: 1.2rem;
-      margin-right: 2.5rem;
-    }
-    .image-container {
-      margin: 0 auto;
-      height: fit-content;
-      max-width: 15rem;
-    }
-  }
-`;
