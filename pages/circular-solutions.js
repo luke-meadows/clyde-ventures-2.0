@@ -37,7 +37,7 @@ const MainContainer = styled.div`
   justify-content: space-between;
   align-items: center;
   gap: 5rem;
-  margin-top: 2rem;
+  margin-top: 5rem;
   .graphic {
     width: 55rem;
   }
