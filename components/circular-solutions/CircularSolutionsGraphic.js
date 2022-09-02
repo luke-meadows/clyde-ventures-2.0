@@ -41,7 +41,7 @@ const StyledGraphic = styled.div`
     border: 3px solid var(--dark-grey);
     border-radius: 50%;
     position: relative;
-    transform: translateY(30px);
+    transform: translateY(40px);
   }
 
   /* .box::before {

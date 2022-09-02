@@ -9,7 +9,10 @@ import {
 import Link from 'next/link';
 import { useEffect } from 'react';
 
-import SidebarImage from '../../public/sidebar-image.jpg';
+import SidebarImageEducation from '../../public/sidebar-image-education.jpg';
+import SidebarImageManufacturing from '../../public/sidebar-image-manufacturing.jpg';
+import SidebarImageIntegration from '../../public/sidebar-image-integration.jpg';
+import SidebarImageConsultation from '../../public/sidebar-image-consultation.jpg';
 import Image from 'next/image';
 
 export default function SideBar({ setShowSidebar }) {
@@ -25,6 +28,15 @@ export default function SideBar({ setShowSidebar }) {
       animate="enter"
       exit="exit"
     >
+      {/* <motion.div
+        className="image-container"
+        variants={sidebarImageVariant}
+        initial="initial"
+        animate="enter"
+        exit="exit"
+      >
+        <Image src={SidebarImageEducation} layout="fill" objectFit="cover" />
+      </motion.div>
       <motion.div
         className="image-container"
         variants={sidebarImageVariant}
@@ -32,8 +44,30 @@ export default function SideBar({ setShowSidebar }) {
         animate="enter"
         exit="exit"
       >
-        <Image src={SidebarImage} layout="fill" objectFit="cover" />
+        <Image
+          src={SidebarImageManufacturing}
+          layout="fill"
+          objectFit="cover"
+        />
       </motion.div>
+      <motion.div
+        className="image-container"
+        variants={sidebarImageVariant}
+        initial="initial"
+        animate="enter"
+        exit="exit"
+      >
+        <Image src={SidebarImageIntegration} layout="fill" objectFit="cover" />
+      </motion.div>
+      <motion.div
+        className="image-container"
+        variants={sidebarImageVariant}
+        initial="initial"
+        animate="enter"
+        exit="exit"
+      >
+        <Image src={SidebarImageConsultation} layout="fill" objectFit="cover" />
+      </motion.div> */}
       <motion.div
         variants={sidebarInnerVariant}
         initial="initial"
@@ -41,7 +75,7 @@ export default function SideBar({ setShowSidebar }) {
         exit="exit"
         className="sidebar-inner"
       >
-        <h1>Menu</h1>
+        <h2>Menu</h2>
         <nav>
           <Link href="/">
             <a href="" onClick={() => setShowSidebar(false)}>
@@ -84,7 +118,8 @@ const StyledSideBar = styled(motion.div)`
   right: 0;
   top: 6rem;
   height: calc(100vh - 5rem);
-  width: 100vw;
+  /* width: 100vw; */
+  width: 25rem;
   display: flex;
   background: var(--white2);
   z-index: 2;
@@ -98,10 +133,8 @@ const StyledSideBar = styled(motion.div)`
       color: var(--teal);
     }
   }
-  h1 {
+  h2 {
     margin-left: 0;
-    font-size: 4rem;
-
     font-weight: 500;
   }
   nav {
@@ -110,7 +143,7 @@ const StyledSideBar = styled(motion.div)`
     margin-top: 1rem;
     height: calc(100% - 10rem);
     a {
-      font-size: 1.6rem;
+      font-size: 1.2rem;
       margin: 0.25rem 0;
       text-align: right;
     }
@@ -119,12 +152,13 @@ const StyledSideBar = styled(motion.div)`
   .image-container {
     position: relative;
     height: calc(100vh - 5rem);
-    width: 50%;
-    border-top-right-radius: 0.2rem;
+    width: 20%;
     overflow: hidden;
+    padding: 0;
+    margin: 0;
   }
   .sidebar-inner {
-    width: 50%;
+    width: 25rem;
     display: flex;
     flex-direction: column;
     align-items: flex-end;

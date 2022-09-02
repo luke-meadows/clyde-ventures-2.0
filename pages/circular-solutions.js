@@ -7,10 +7,10 @@ export default function CircularSolutions() {
       <Container>
         <h1>Circular Solutions</h1>
         <MainContainer>
-          <CircularSolutionsGrid />
           <div className="graphic">
             <CircularSolutionsGraphic />
           </div>
+          <CircularSolutionsGrid />
         </MainContainer>
       </Container>
     </CircularSolutionsPage>
