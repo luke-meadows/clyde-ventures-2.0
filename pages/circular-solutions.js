@@ -24,8 +24,7 @@ const CircularSolutionsPage = styled.section`
 const Container = styled.section`
   padding: 0;
   max-width: 1600px;
-  margin: 0 auto;
-  margin-top: 2.5rem;
+  margin: 2.5rem auto 0 auto;
   h1 {
     margin: 0 auto;
     font-size: 4rem;
