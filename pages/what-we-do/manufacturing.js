@@ -1,26 +1,23 @@
 import Image from 'next/image';
 import MicroServicesGrid from '../../components/service/MicroServicesGrid';
 import ServiceBenefits from '../../components/service/ServiceBenefits';
-import ServicePage from '../../components/service/ServicePage';
 import img from '../../public/manufacturing.jpg';
+import ContactSection from '../../components/contact/ContactSection';
+import ServicePage from '../../components/service/ServicePage';
 export default function Manufacturing() {
   return (
     <ServicePage>
       <div className="hero">
         <h1>Manufacturing</h1>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit
-          perspiciatis facere cupiditate ut, nam enim recusandae ex molestiae
-          doloribus quod voluptatum nesciunt maxime. Cum odit blanditiis quas
-          voluptas saepe cumque.
-        </p>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius
-          laboriosam voluptatibus quod sapiente temporibus fuga velit ipsum
-          omnis nam corporis!
+          We are working on several sustainable and innovative products for the
+          transport and construction industry. We will be testing these products
+          against British Standards in early October. We are excited about
+          sharing more in due course.
         </p>
       </div>
-
+      <ContactSection />
+      {/* 
       <MicroServicesGrid
         options={[
           'Design Process',
@@ -57,7 +54,7 @@ export default function Manufacturing() {
         <div className="img-container">
           <Image src={img} layout="fill" objectFit="cover" />
         </div>
-      </div>
+      </div> */}
     </ServicePage>
   );
 }

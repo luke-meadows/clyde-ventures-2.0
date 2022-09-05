@@ -2,24 +2,26 @@ import styled from 'styled-components';
 export default function MicroServicesGrid({ options }) {
   return (
     <Container>
-      <h3
-        style={{
-          paddingBottom: '2rem',
-          fontWeight: '500',
-        }}
-      >
-        Quick links
-      </h3>
-      <StyledGrid>
-        {options.map((option, i) => {
-          return (
-            <p key={i}>
-              {option}
-              <i className="icon-angle-right" />
-            </p>
-          );
-        })}
-      </StyledGrid>
+      <div className="inner">
+        <h3
+          style={{
+            paddingBottom: '2rem',
+            fontWeight: '500',
+          }}
+        >
+          Scope
+        </h3>
+        <StyledGrid>
+          {options.map((option, i) => {
+            return (
+              <p key={i}>
+                {option}
+                <i className="icon-angle-right" />
+              </p>
+            );
+          })}
+        </StyledGrid>
+      </div>
     </Container>
   );
 }
@@ -27,8 +29,10 @@ export default function MicroServicesGrid({ options }) {
 const Container = styled.div`
   background: var(--white2);
   padding: 5rem;
-  max-width: 1800px;
-  margin: 0 auto;
+  .inner {
+    max-width: 1800px;
+    margin: 0 auto;
+  }
 `;
 const StyledGrid = styled.div`
   width: fit-content;

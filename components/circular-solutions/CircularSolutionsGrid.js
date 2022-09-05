@@ -5,11 +5,7 @@ export default function CircularSolutionsGrid() {
     <StyledGrid>
       <ServiceCard
         title="Consult"
-        bullets={[
-          'Sustainability MBA',
-          ' Net zero marketplace',
-          'Opt-in value optimisation',
-        ]}
+        bullets={[' Net zero marketplace', 'Opt-in value optimisation']}
         link="/what-we-do/consultancy"
       />
       <ServiceCard
@@ -30,11 +26,11 @@ export default function CircularSolutionsGrid() {
       <ServiceCard
         title="Manufacture"
         bullets={[
-          'Fibre reinforced polymer',
-          'Fire doors',
-          'Panels and cladding',
-          'Structural beams',
-          'Logistic containers',
+          'Fibre reinforced polymers (FRP)',
+          'FRP Fire doors',
+          'FRP Panels and cladding',
+          'FRP Structural beams',
+          'FRP Logistic containers',
         ]}
         link="/what-we-do/manufacturing"
       />

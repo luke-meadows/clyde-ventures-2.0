@@ -87,10 +87,10 @@ const StyledContactForm = styled.form`
     font-weight: 500;
     color: var(--black);
     padding: 0.55rem 3rem;
-    transition: background 0.1s ease;
+    transition: all 0.3s ease;
     &:hover {
-      background: var(--grey);
-      /* color: var(--); */
+      background: var(--dark-grey);
+      color: var(--yellow2);
     }
   }
 `;

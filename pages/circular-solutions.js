@@ -6,6 +6,7 @@ export default function CircularSolutions() {
     <CircularSolutionsPage>
       <Container>
         <h1>Circular Solutions</h1>
+        <p>Sustainability is at the heart of everything we do.</p>
         <MainContainer>
           <div className="graphic">
             <CircularSolutionsGraphic />
@@ -29,6 +30,10 @@ const Container = styled.section`
     margin: 0 auto;
     font-size: 4rem;
     font-weight: 500;
+    margin-bottom: 1rem;
+  }
+  p {
+    font-size: 1.2rem;
   }
 `;
 

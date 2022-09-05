@@ -12,13 +12,13 @@ export default function OurStory() {
           We recruit 90% of our staff from the most deprived 10% of postcodes
           and train them with the necessary skills and behaviours to work as
           professional management consultants. Many of our staff begin with no
-          formal education: but we are adept at identifying capability and
+          formal education but we are adept at identifying capability and
           developing potential.
         </p>
         <p style={{ marginBottom: 0 }}>
           All of our staff own shares in the business. Consequently, we have a
           team that are engaged, loyal and keen to show our clients that our
-          recruitment model works, we are on a mission to encourage all
+          recruitment model works. We are on a mission to encourage all
           businesses to assess, build and develop talent like we do.
         </p>
       </AboutUsSectionContainer>
