@@ -6,12 +6,11 @@ export default function NavIcon({
   bgColor = 'var(--dark-grey)',
 }) {
   return (
-    <StyledNavIcon bgColor={bgColor}>
-      <div
-        id="nav-icon3"
-        onClick={() => setShowSidebar(!showSidebar)}
-        className={showSidebar && useAnimation ? 'open' : ''}
-      >
+    <StyledNavIcon
+      bgColor={bgColor}
+      onClick={() => setShowSidebar(!showSidebar)}
+    >
+      <div id="nav-icon3" className={showSidebar && useAnimation ? 'open' : ''}>
         <span></span>
         <span></span>
         <span></span>
@@ -23,6 +22,13 @@ export default function NavIcon({
 
 const StyledNavIcon = styled.div`
   /* Icon 1 */
+
+  height: 3rem;
+  width: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
   #nav-icon3 {
     width: 20px;
     height: 10px;
