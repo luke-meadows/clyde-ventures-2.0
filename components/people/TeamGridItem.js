@@ -45,7 +45,7 @@ export default function TeamGridItem({ teamMember }) {
           )}
           <div onClick={handleClick}>
             <div className="img-container">
-              <Image src={image} layout="fill" objectFit="cover" />
+              <Image src={image} layout="responsive" objectFit="cover" />
             </div>
             <div className="text">
               <h5>{name}</h5>
@@ -70,7 +70,6 @@ export default function TeamGridItem({ teamMember }) {
 const StyledTeamGridItem = styled.div`
   background: var(--white);
   position: relative;
-  aspect-ratio: 1;
   cursor: pointer;
   .outer {
     transition: all 0.3s ease;
@@ -99,6 +98,8 @@ const StyledTeamGridItem = styled.div`
     z-index: ${(props) => (props.teamMemberActive ? '3' : '1')};
   }
   .container {
+    height: 100%;
+
     position: relative;
     display: ${(props) => (props.teamMemberActive ? 'flex' : 'block')};
     .exit {
@@ -135,7 +136,7 @@ const StyledTeamGridItem = styled.div`
     margin-right: ${(props) => (props.teamMemberActive ? '2.5rem' : '0')};
   }
   .text {
-    padding: 0.75rem;
+    padding: 0.5rem;
     border-bottom-right-radius: 0.5rem;
     border-bottom-left-radius: 0.5rem;
     border-top: none;

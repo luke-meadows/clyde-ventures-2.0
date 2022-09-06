@@ -7,7 +7,11 @@ export default function Footer() {
       <div className="top">
         <div className="top-left">
           <nav>
-            <Link href="/about">About Clyde Ventures</Link>
+            <Link href="/about">
+              <a>
+                About <span className="clyde-ventures">Clyde Ventures</span>
+              </a>
+            </Link>
             <Link href="/people">People</Link>
             <Link href="/contact">Contact Us</Link>
           </nav>
@@ -92,5 +96,11 @@ const StyledFooter = styled.footer`
   }
   @media only screen and (min-width: 1600px) {
     padding: 2rem 5rem;
+  }
+  @media only screen and (max-width: 1170px) {
+    padding: 2rem;
+    .clyde-ventures {
+      display: none;
+    }
   }
 `;

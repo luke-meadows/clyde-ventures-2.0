@@ -53,7 +53,7 @@ const Container = styled.div`
   }
   @media only screen and (max-width: 1170px) {
     .inner {
-      padding: 5rem 2rem;
+      padding: 4rem 2rem;
     }
     .image-container {
       display: none;

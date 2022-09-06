@@ -127,7 +127,7 @@ const StyledContactForm = styled.form`
     margin-top: 2rem;
     border-radius: 0rem;
     box-shadow: none;
-
+    padding: 2rem 2rem 4rem 2rem;
     input,
     textarea,
     button {

@@ -13,16 +13,24 @@ export default function SideBarServicesDropdown({ setShowSidebar }) {
       onClick={() => setShowSidebar(false)}
     >
       <Link href="/what-we-do/consultancy">
-        <a href="">Consultancy</a>
+        <a className="dropdown-link" href="">
+          Consultancy
+        </a>
       </Link>
       <Link href="/what-we-do/integration">
-        <a href="">Integration</a>
+        <a className="dropdown-link" href="">
+          Integration
+        </a>
       </Link>
       <Link href="/what-we-do/manufacturing">
-        <a href="">Manufacturing</a>
+        <a className="dropdown-link" href="">
+          Manufacturing
+        </a>
       </Link>
       <Link href="/what-we-do/education">
-        <a href="">Education</a>
+        <a className="dropdown-link" href="">
+          Education
+        </a>
       </Link>
     </StyledDropdown>
   );
@@ -33,11 +41,16 @@ const StyledDropdown = styled(motion.div)`
   flex-direction: column;
   align-items: flex-end;
 
-  a {
+  .dropdown-link {
     font-size: 0.8rem !important;
     font-weight: 500;
     border-bottom: 1px solid var(--yellow2);
     width: fit-content;
     padding-right: 0.2rem;
+  }
+  @media only screen and (max-width: 900px) {
+    .dropdown-link {
+      font-size: 0.9rem !important;
+    }
   }
 `;

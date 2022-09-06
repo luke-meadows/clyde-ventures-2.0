@@ -50,4 +50,7 @@ const StyledBenefits = styled.div`
       font-size: 0.9rem;
     }
   }
+  @media only screen and (max-width: 1170px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
 `;

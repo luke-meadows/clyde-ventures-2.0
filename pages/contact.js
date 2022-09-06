@@ -56,7 +56,8 @@ const PageContainer = styled.main`
       padding: 10rem 2rem 5rem 2rem;
     }
     .section-container {
-      padding: 2.5rem 0 0 0;
+      padding: 1rem 0 0 0;
+      background-color: var(--white2);
     }
   }
 `;

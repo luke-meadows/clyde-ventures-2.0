@@ -68,6 +68,9 @@ const StyledHero = styled.div`
   @media only screen and (max-width: 1170px) {
     .hero {
       padding: 10rem 2rem 5rem 2rem;
+      h1 {
+        font-size: 3.3rem;
+      }
     }
   }
 `;

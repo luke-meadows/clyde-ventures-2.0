@@ -12,7 +12,6 @@ export const StyledServicePage = styled.section`
   overflow: hidden;
   position: relative;
   width: 100%;
-  margin-bottom: 3rem;
   .hero {
     padding: 12rem 5rem 5rem 5rem;
     position: relative;
@@ -84,7 +83,7 @@ export const StyledServicePage = styled.section`
     .hero {
       padding: 10rem 2rem 2.5rem 2rem;
       h1 {
-        font-size: 3rem;
+        font-size: 3.3rem;
       }
     }
     .lower-section {
