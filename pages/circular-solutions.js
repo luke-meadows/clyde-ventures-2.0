@@ -24,7 +24,6 @@ const CircularSolutionsPage = styled.section`
   @media only screen and (max-width: 1170px) {
     padding: 7.5rem 2rem 5rem 2rem;
   }
-  border: 1px solid black;
 `;
 
 const Container = styled.section`
