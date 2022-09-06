@@ -17,13 +17,13 @@ export default function HeaderSecondary({ setShowSidebar, showSidebar }) {
   }, []);
 
   return (
-    <Container operatingSystem={operatingSystem}>
+    <Container operatingsystem={operatingSystem}>
       <StyledHeaderSecondary
         variants={headerVariant}
         initial="initial"
         animate="enter"
         exit="exit"
-        operatingSystem={operatingSystem}
+        operatingsystem={operatingSystem}
       >
         <div onClick={() => setShowSidebar(false)}>
           <Logo width="8rem" variant={2} />
@@ -32,7 +32,7 @@ export default function HeaderSecondary({ setShowSidebar, showSidebar }) {
         <NavIcon
           setShowSidebar={setShowSidebar}
           showSidebar={showSidebar}
-          operatingSystem={operatingSystem}
+          useAnimation={true}
         />
       </StyledHeaderSecondary>
 
@@ -60,7 +60,6 @@ const Container = styled.div`
 `;
 
 const StyledHeaderSecondary = styled(motion.header)`
-  height: 5rem;
   background: var(--white2);
   padding: 0 5rem;
   height: 6rem;
@@ -72,7 +71,7 @@ const StyledHeaderSecondary = styled(motion.header)`
   top: 0;
   left: 0;
   width: ${(props) =>
-    props.operatingSystem === 'mac' ? '100vw' : 'calc(100vw - 17px)'};
+    props.operatingsystem === 'mac' ? '100vw' : 'calc(100vw - 17px)'};
   z-index: 2;
   border-bottom: var(--dark-grey);
   box-shadow: rgba(0, 0, 0, 0.025) 0px 4px 12px;
@@ -82,5 +81,9 @@ const StyledHeaderSecondary = styled(motion.header)`
   i {
     font-size: 1.2rem;
     color: var(--dark-grey);
+  }
+  @media only screen and (max-width: 1170px) {
+    padding: 0rem 2rem;
+    width: 100vw;
   }
 `;

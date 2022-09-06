@@ -40,7 +40,6 @@ const PageContainer = styled.main`
       font-size: 1.2rem;
       margin-bottom: 0;
       max-width: 70ch;
-      /* color: var(--dark-grey); */
       margin-left: 0.2rem;
     }
   }
@@ -50,6 +49,14 @@ const PageContainer = styled.main`
   @media only screen and (min-width: 1600px) {
     .hero {
       padding: 14rem 5rem 6rem 5rem;
+    }
+  }
+  @media only screen and (max-width: 1170px) {
+    .hero {
+      padding: 10rem 2rem 5rem 2rem;
+    }
+    .section-container {
+      padding: 2.5rem 0 0 0;
     }
   }
 `;

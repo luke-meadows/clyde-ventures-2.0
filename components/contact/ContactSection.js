@@ -69,7 +69,6 @@ const StyledContactSection = styled.section`
   h2 {
     font-weight: 500;
     margin-bottom: 1.2rem;
-    padding-top: 1rem;
     padding-right: 0.25rem;
     width: fit-content;
     padding-bottom: 0.25rem;
@@ -166,6 +165,20 @@ const StyledContactSection = styled.section`
     display: flex;
     p {
       max-width: 65ch;
+    }
+  }
+  @media only screen and (max-width: 1170px) {
+    flex-direction: column;
+    padding: 3rem 0 0 0;
+    background-color: white;
+    .container {
+      margin-right: 0;
+      width: 100%;
+      padding: 0 2rem;
+    }
+    .contact-info {
+      flex-direction: column;
+      gap: 1rem;
     }
   }
 `;

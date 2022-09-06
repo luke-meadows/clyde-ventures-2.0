@@ -1,29 +1,58 @@
 import Image from 'next/image';
 import styled from 'styled-components';
+import useForm from '../../lib/useForm';
 import Logo from '../../public/1.png';
 export default function ContactForm() {
+  const { inputs, handleChange, resetForm, clearForm } = useForm({
+    name: '',
+    email: '',
+    confEmail: '',
+    subject: '',
+    message: '',
+  });
+
   return (
     <StyledContactForm>
       <div className="logo-container">
         <Image src={Logo} layout="responsive" objectFit="contain" />
       </div>
       <div className="top">
-        <input name="name" value="" placeholder="Name" type="text" />
-        <input name="email" value="" placeholder="Email" type="text" />
+        <input
+          name="name"
+          value={inputs.name}
+          placeholder="Name"
+          type="text"
+          onChange={handleChange}
+        />
+        <input
+          name="email"
+          value={inputs.email}
+          placeholder="Email"
+          type="text"
+          onChange={handleChange}
+        />
         <input
           name="confEmail"
-          value=""
+          value={inputs.confEmail}
           placeholder="Confirm Email"
           type="text"
+          onChange={handleChange}
         />
-        <input name="subject" value="" placeholder="Subject" type="text" />
+        <input
+          name="subject"
+          value={inputs.subject}
+          placeholder="Subject"
+          type="text"
+          onChange={handleChange}
+        />
       </div>
       <textarea
         name="message"
-        value=""
+        value={inputs.message}
         placeholder="Type your message here"
         className="message"
         type="text"
+        onChange={handleChange}
       />
       <button type="submit">Send</button>
     </StyledContactForm>
@@ -34,7 +63,6 @@ const StyledContactForm = styled.form`
   width: 50%;
   margin-left: 2.5rem;
   background: var(--white2);
-  padding: 1.4rem 2rem 1.4rem 2rem;
   padding: 2rem;
   border-radius: 1rem;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 20px;
@@ -91,6 +119,26 @@ const StyledContactForm = styled.form`
     &:hover {
       background: var(--dark-grey);
       color: var(--yellow2);
+    }
+  }
+  @media only screen and (max-width: 1170px) {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 2rem;
+    border-radius: 0rem;
+    box-shadow: none;
+
+    input,
+    textarea,
+    button {
+      font-size: 16px;
+    }
+    .top {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 1.5rem;
+    }
+    .logo-container {
+      display: none;
     }
   }
 `;

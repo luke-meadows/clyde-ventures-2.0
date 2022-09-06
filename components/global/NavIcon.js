@@ -2,14 +2,15 @@ import styled from 'styled-components';
 export default function NavIcon({
   setShowSidebar,
   showSidebar,
-  operatingSystem,
+  useAnimation = false,
+  bgColor = 'var(--dark-grey)',
 }) {
   return (
-    <StyledNavIcon operatingSystem={operatingSystem}>
+    <StyledNavIcon bgColor={bgColor}>
       <div
         id="nav-icon3"
         onClick={() => setShowSidebar(!showSidebar)}
-        className={showSidebar ? 'open' : ''}
+        className={showSidebar && useAnimation ? 'open' : ''}
       >
         <span></span>
         <span></span>
@@ -22,7 +23,6 @@ export default function NavIcon({
 
 const StyledNavIcon = styled.div`
   /* Icon 1 */
-
   #nav-icon3 {
     width: 20px;
     height: 10px;
@@ -46,7 +46,9 @@ const StyledNavIcon = styled.div`
     position: absolute;
     height: 3px;
     width: 100%;
+
     background: var(--dark-grey);
+    background: ${(props) => props.bgColor};
     border-radius: 9rem;
     opacity: 1;
     left: 0;

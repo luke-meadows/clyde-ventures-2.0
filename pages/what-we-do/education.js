@@ -5,7 +5,7 @@ import { StyledServicePage } from '../../components/service/ServicePage';
 import img from '../../public/education.jpg';
 export default function Education() {
   return (
-    <StyledServicePage processGridCols={1}>
+    <StyledServicePage>
       <div className="hero">
         <h1>Education</h1>
         <p>
@@ -56,9 +56,15 @@ export default function Education() {
               'Supports career growth',
             ]}
           />
-          <button>
-            Download brochure <i className="icon-angle-down" />{' '}
-          </button>
+          <a
+            href="https://drive.google.com/file/d/1Hq-m2wLRYmnRJuoKoZLg7muoAR-irKz6/view?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button>
+              Download brochure <i className="icon-angle-down" />{' '}
+            </button>
+          </a>
         </div>
         <div className="img-container">
           <Image src={img} layout="fill" objectFit="cover" />

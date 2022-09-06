@@ -39,4 +39,7 @@ const StyledServiceCards = styled.div`
   @media only screen and (min-width: 1600px) {
     gap: 4rem;
   }
+  @media only screen and (max-width: 1170px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
 `;

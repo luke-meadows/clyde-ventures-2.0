@@ -8,10 +8,10 @@ export default function CircularSolutions() {
         <h1>Circular Solutions</h1>
         <p>Sustainability is at the heart of everything we do.</p>
         <MainContainer>
+          <CircularSolutionsGrid />
           <div className="graphic">
             <CircularSolutionsGraphic />
           </div>
-          <CircularSolutionsGrid />
         </MainContainer>
       </Container>
     </CircularSolutionsPage>

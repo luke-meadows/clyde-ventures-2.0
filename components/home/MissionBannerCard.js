@@ -31,6 +31,19 @@ const StyledBannerCard = styled.div`
       font-size: 1.2rem;
     }
   }
+  @media only screen and (max-width: 1170px) {
+    flex-direction: row;
+    padding: 0 2rem;
+    margin: 0.5rem 1rem;
+    padding: 0.75rem 1rem;
+    border-radius: 2rem;
+    p {
+      text-align: left;
+      margin: 0;
+      padding: 0;
+      line-height: 1.4;
+    }
+  }
 `;
 
 const TickContainer = styled.div`
@@ -46,5 +59,14 @@ const TickContainer = styled.div`
   i {
     font-size: 1rem;
     color: var(--dark-grey);
+  }
+  @media only screen and (max-width: 1170px) {
+    margin-bottom: 0;
+    height: 2rem;
+    min-width: 2rem;
+    margin-right: 1rem;
+    i {
+      font-size: 0.75rem;
+    }
   }
 `;

@@ -33,7 +33,6 @@ const StyledServiceCard = styled.div`
   flex-direction: column;
   justify-content: space-between;
   padding: 1rem 0;
-
   i {
     color: var(--dark-grey);
     font-size: 2rem;
@@ -72,5 +71,8 @@ const StyledServiceCard = styled.div`
     h4 {
       font-size: 1.5rem;
     }
+  }
+  @media only screen and (max-width: 1170px) {
+    padding: 1rem 0;
   }
 `;

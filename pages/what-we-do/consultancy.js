@@ -6,7 +6,7 @@ import img from '../../public/consultancy.jpg';
 
 export default function Consultancy() {
   return (
-    <ServicePage processGridCols={3}>
+    <ServicePage>
       <div className="hero">
         <h1>Consultancy</h1>
         <p>

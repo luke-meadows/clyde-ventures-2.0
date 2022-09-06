@@ -28,7 +28,7 @@ const StyledHero = styled.div`
 
 const HeroVideo = styled.video`
   height: 100%;
-  width: 100%;
+  width: 100vw;
   object-fit: cover;
   pointer-events: none;
 `;

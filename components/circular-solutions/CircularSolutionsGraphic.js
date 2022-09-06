@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import styled from 'styled-components';
-
+import TextOne from './TextOne';
 export default function CircularSolutionsGraphic() {
   return (
     <StyledGraphic>
@@ -8,7 +8,7 @@ export default function CircularSolutionsGraphic() {
         <div className="line one" />
         <div className="line two" />
         <div className="line three" />
-
+        <TextOne />
         <div className="educate service">
           <i className="icon-graduation-cap" />
           <h5>Educate</h5>
@@ -44,31 +44,6 @@ const StyledGraphic = styled.div`
     transform: translateY(40px);
   }
 
-  /* .box::before {
-    content: '';
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
-    border: 2px solid var(--yellow2);
-    background: var(--white);
-    animation: moveAround 8s linear infinite;
-    z-index: 2;
-  } */
-  @keyframes moveAround {
-    from {
-      transform: rotate(0deg) translate(98px);
-    }
-    to {
-      transform: rotate(360deg) translate(98px);
-    }
-  }
-
   .service {
     position: absolute;
     border-radius: 50%;
@@ -85,7 +60,6 @@ const StyledGraphic = styled.div`
     i {
       margin: 0rem;
       font-size: 1.5rem;
-      /* color: var(--yellow2); */
     }
     h5 {
       text-align: center;
@@ -133,5 +107,18 @@ const StyledGraphic = styled.div`
   }
   .three {
     transform: translate(-50%, -100%) rotate(240deg);
+  }
+  .text-container {
+    position: relative;
+    border: 1px solid black;
+    z-index: 20;
+    path {
+      fill: transparent;
+    }
+
+    text {
+      fill: #ff9800;
+      border: 1px solid black;
+    }
   }
 `;

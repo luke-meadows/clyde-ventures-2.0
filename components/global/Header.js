@@ -19,9 +19,12 @@ export default function Header({ setShowSidebar, showSidebar }) {
 
   return (
     <>
-      <HeaderPrimary />
+      <HeaderPrimary
+        setShowSidebar={setShowSidebar}
+        showSidebar={showSidebar}
+      />
       <AnimatePresence initial={true}>
-        {showHeaderSecondary && (
+        {(showHeaderSecondary || showSidebar) && (
           <HeaderSecondary
             path={router.asPath}
             setShowSidebar={setShowSidebar}

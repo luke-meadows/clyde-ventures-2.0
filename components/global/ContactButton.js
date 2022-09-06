@@ -16,7 +16,7 @@ export default function ContactButton() {
 }
 
 const StyledContactButton = styled.div`
-  flex: 2;
+  /* flex: 2; */
   display: flex;
   align-items: center;
   justify-content: flex-end;

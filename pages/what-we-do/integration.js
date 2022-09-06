@@ -7,7 +7,7 @@ import MicroServiceTicks from '../../components/service/MicroServiceTick';
 
 export default function Integration() {
   return (
-    <StyledServicePage processGridCols={1}>
+    <StyledServicePage>
       <div className="hero">
         <h1>Integration</h1>
         <p>
@@ -61,26 +61,26 @@ export default function Integration() {
         </div>
       </div>
 
-      <MicroServiceTicks
+      {/* <MicroServiceTicks
         text="Our proven delivery approach will have you benefitting from your CRM
       within weeks. Our existing clients score us highly in the following
       domains of delivery:"
         options={[
           {
             title: 'Energy, utilities and water',
-            text: 'Our integration services can impact your sector in these ways. Our integration services can impact your sector in these ways. Our integration services can impact your sector in these ways.',
+            // text: 'Our integration services can impact your sector in these ways. Our integration services can impact your sector in these ways. Our integration services can impact your sector in these ways.',
           },
           {
             title: 'Professional and legal services',
-            text: 'Our integration services can impact your sector in these ways. Our integration services can impact your sector in these ways. Our integration services can impact your sector in these ways.',
+            // text: 'Our integration services can impact your sector in these ways. Our integration services can impact your sector in these ways. Our integration services can impact your sector in these ways.',
           },
           {
             title: 'Third sector',
-            text: 'Our integration services can impact your sector in these ways. Our integration services can impact your sector in these ways. Our integration services can impact your sector in these ways.',
+            // text: 'Our integration services can impact your sector in these ways. Our integration services can impact your sector in these ways. Our integration services can impact your sector in these ways.',
             lineBreak: true,
           },
         ]}
-      />
+      /> */}
     </StyledServicePage>
   );
 }

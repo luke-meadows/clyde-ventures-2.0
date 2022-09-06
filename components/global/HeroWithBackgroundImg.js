@@ -65,9 +65,9 @@ const StyledHero = styled.div`
       margin-left: 0.2rem;
     }
   }
-  @media only screen and (min-width: 1600px) {
+  @media only screen and (max-width: 1170px) {
     .hero {
-      padding: 14rem 5rem 6rem 5rem;
+      padding: 10rem 2rem 5rem 2rem;
     }
   }
 `;

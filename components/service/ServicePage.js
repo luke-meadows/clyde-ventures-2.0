@@ -67,7 +67,6 @@ export const StyledServicePage = styled.section`
       border-radius: 0.3rem;
       overflow: hidden;
     }
-
     button {
       background: var(--yellow2);
       border: 2px solid var(--yellow2);
@@ -78,6 +77,23 @@ export const StyledServicePage = styled.section`
       margin-top: 1rem;
       i {
         margin-right: -0.6rem;
+      }
+    }
+  }
+  @media only screen and (max-width: 1170px) {
+    .hero {
+      padding: 10rem 2rem 2.5rem 2rem;
+      h1 {
+        font-size: 3rem;
+      }
+    }
+    .lower-section {
+      padding: 2.5rem 2rem;
+      .img-container {
+        display: none;
+      }
+      .text {
+        width: 100%;
       }
     }
   }

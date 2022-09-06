@@ -1,25 +1,22 @@
 import styled from 'styled-components';
 import { enableScroll, disableScroll } from '../../lib/scroll';
-import { motion } from 'framer-motion';
+import { AnimatePresence, motion } from 'framer-motion';
 import {
   sidebarImageVariant,
   sidebarInnerVariant,
   sidebarVariant,
 } from '../../framer-motion/variants';
 import Link from 'next/link';
-import { useEffect } from 'react';
-
-import SidebarImageEducation from '../../public/sidebar-image-education.jpg';
-import SidebarImageManufacturing from '../../public/sidebar-image-manufacturing.jpg';
-import SidebarImageIntegration from '../../public/sidebar-image-integration.jpg';
-import SidebarImageConsultation from '../../public/sidebar-image-consultation.jpg';
-import Image from 'next/image';
+import { useEffect, useState } from 'react';
+import SideBarServicesDropdown from './SideBarServicesDropdown';
 
 export default function SideBar({ setShowSidebar }) {
   useEffect(() => {
     disableScroll();
     return () => enableScroll();
   });
+
+  const [showDropdown, setShowDropdown] = useState(false);
 
   return (
     <StyledSideBar
@@ -28,46 +25,6 @@ export default function SideBar({ setShowSidebar }) {
       animate="enter"
       exit="exit"
     >
-      {/* <motion.div
-        className="image-container"
-        variants={sidebarImageVariant}
-        initial="initial"
-        animate="enter"
-        exit="exit"
-      >
-        <Image src={SidebarImageEducation} layout="fill" objectFit="cover" />
-      </motion.div>
-      <motion.div
-        className="image-container"
-        variants={sidebarImageVariant}
-        initial="initial"
-        animate="enter"
-        exit="exit"
-      >
-        <Image
-          src={SidebarImageManufacturing}
-          layout="fill"
-          objectFit="cover"
-        />
-      </motion.div>
-      <motion.div
-        className="image-container"
-        variants={sidebarImageVariant}
-        initial="initial"
-        animate="enter"
-        exit="exit"
-      >
-        <Image src={SidebarImageIntegration} layout="fill" objectFit="cover" />
-      </motion.div>
-      <motion.div
-        className="image-container"
-        variants={sidebarImageVariant}
-        initial="initial"
-        animate="enter"
-        exit="exit"
-      >
-        <Image src={SidebarImageConsultation} layout="fill" objectFit="cover" />
-      </motion.div> */}
       <motion.div
         variants={sidebarInnerVariant}
         initial="initial"
@@ -77,11 +34,20 @@ export default function SideBar({ setShowSidebar }) {
       >
         <h2>Menu</h2>
         <nav>
-          <Link href="/">
-            <a href="" onClick={() => setShowSidebar(false)}>
-              What we do <i className="icon-angle-down" />
-            </a>
-          </Link>
+          <p
+            onClick={() => setShowDropdown(!showDropdown)}
+            className="what-we-do"
+          >
+            What we do <i className="icon-angle-down" />
+          </p>
+          <AnimatePresence initial={false}>
+            {showDropdown && (
+              <SideBarServicesDropdown
+                key="sidebarDropdown"
+                setShowSidebar={setShowSidebar}
+              />
+            )}
+          </AnimatePresence>
           <Link href="/about">
             <a href="" onClick={() => setShowSidebar(false)}>
               About us
@@ -117,9 +83,8 @@ const StyledSideBar = styled(motion.div)`
   position: fixed;
   right: 0;
   top: 6rem;
-  height: calc(100vh - 5rem);
-  /* width: 100vw; */
-  width: 25rem;
+  height: calc(100vh - 6rem);
+  width: 20rem;
   display: flex;
   background: var(--white2);
   z-index: 2;
@@ -136,16 +101,22 @@ const StyledSideBar = styled(motion.div)`
   h2 {
     margin-left: 0;
     font-weight: 500;
+    padding-bottom: 0.25rem;
+    padding-right: 0.25rem;
+    margin-top: 1rem;
+    border-bottom: 3px solid var(--yellow2);
   }
   nav {
     display: flex;
     flex-direction: column;
     margin-top: 1rem;
     height: calc(100% - 10rem);
-    a {
+    a,
+    .what-we-do {
       font-size: 1.2rem;
       margin: 0.25rem 0;
       text-align: right;
+      cursor: pointer;
     }
   }
 
@@ -184,6 +155,21 @@ const StyledSideBar = styled(motion.div)`
           margin-left: 0.15rem;
         }
       }
+    }
+  }
+  @media only screen and (max-width: 900px) {
+    width: 100vw;
+    padding: 0 2rem;
+    .sidebar-inner {
+      padding-right: 0;
+      width: 100vw;
+    }
+    h2 {
+      font-size: 3rem;
+    }
+    a,
+    .what-we-do {
+      font-size: 1.4rem !important;
     }
   }
 `;

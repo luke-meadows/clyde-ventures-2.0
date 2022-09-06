@@ -50,6 +50,29 @@ export const sidebarInnerVariant = {
     transition: { duration: 0.5 },
   },
 };
+export const sidebarDropdownVariant = {
+  initial: {
+    height: 0,
+    opacity: 0,
+    marginBottom: 0,
+  },
+  enter: {
+    height: 'initial',
+    opacity: 1,
+    marginBottom: '.5rem',
+    transition: {
+      duration: 0.5,
+      type: 'spring',
+    },
+  },
+  exit: {
+    height: 0,
+    opacity: 0,
+    marginBottom: 0,
+
+    transition: { duration: 0.5, type: 'spring' },
+  },
+};
 
 export const headerVariant = {
   static: {

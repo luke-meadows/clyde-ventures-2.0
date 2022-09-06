@@ -51,4 +51,12 @@ const Container = styled.div`
       padding: 7.5rem 5rem;
     }
   }
+  @media only screen and (max-width: 1170px) {
+    .inner {
+      padding: 5rem 2rem;
+    }
+    .image-container {
+      display: none;
+    }
+  }
 `;

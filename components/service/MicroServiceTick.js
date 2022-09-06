@@ -43,6 +43,12 @@ const Container = styled.div`
   @media only screen and (min-width: 1600px) {
     gap: 3rem;
   }
+  @media only screen and (max-width: 1170px) {
+    .cards {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 1rem;
+    }
+  }
 `;
 const StyledMicroServiceTick = styled.div`
   border: 2px solid var(--light-grey);
