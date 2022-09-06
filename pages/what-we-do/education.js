@@ -43,7 +43,7 @@ export default function Education() {
         <div className="text">
           <h2>The Qualification</h2>
           <p>
-            The programmes is designed to fully engage participants in peer
+            The programme is designed to fully engage participants in peer
             to-peer learning and to provide access to relevant and impactful
             guest speakers, case studies and examples from the business world.
           </p>
