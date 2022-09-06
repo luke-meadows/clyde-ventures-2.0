@@ -7,7 +7,7 @@ export default function ContactSection() {
   return (
     <StyledContactSection>
       <div className="container">
-        <h2>Talk To Us</h2>
+        <h2>Talk to us</h2>
         <p>
           To find out more please fill in your details or call us using the
           number below.

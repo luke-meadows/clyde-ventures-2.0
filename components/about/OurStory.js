@@ -7,7 +7,7 @@ export default function OurStory() {
   return (
     <div>
       <AboutUsSectionContainer>
-        <h4>Our story</h4>
+        <h4>Our Story</h4>
         <p>
           We recruit 90% of our staff from the most deprived 10% of postcodes
           and train them with the necessary skills and behaviours to work as
@@ -15,7 +15,7 @@ export default function OurStory() {
           formal education but we are adept at identifying capability and
           developing potential.
         </p>
-        <p style={{ marginBottom: 0 }}>
+        <p className="last-paragraph">
           All of our staff own shares in the business. Consequently, we have a
           team that are engaged, loyal and keen to show our clients that our
           recruitment model works. We are on a mission to encourage all

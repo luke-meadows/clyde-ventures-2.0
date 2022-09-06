@@ -16,7 +16,7 @@ export default function ContactForm() {
       <div className="logo-container">
         <Image src={Logo} layout="responsive" objectFit="contain" />
       </div>
-      <h2>Send a Message</h2>
+      <h2>Send a message</h2>
       <div className="top">
         <input
           name="name"

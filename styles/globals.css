@@ -127,3 +127,7 @@ textarea {
   font-family: 'Montserrat', sans-serif;
   font-size: 1rem;
 }
+
+.last-paragraph {
+  margin-bottom: 0;
+}
