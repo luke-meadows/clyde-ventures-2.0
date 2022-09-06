@@ -3,14 +3,7 @@ export default function MicroServicesGrid({ options }) {
   return (
     <Container>
       <div className="inner">
-        <h3
-          style={{
-            paddingBottom: '2rem',
-            fontWeight: '500',
-          }}
-        >
-          Scope
-        </h3>
+        <h3>Scope</h3>
         <StyledGrid>
           {options.map((option, i) => {
             return (
@@ -32,6 +25,13 @@ const Container = styled.div`
   .inner {
     max-width: 1800px;
     margin: 0 auto;
+    h3 {
+      padding-bottom: 2rem;
+      font-weight: 500;
+    }
+  }
+  @media only screen and (max-width: 1170px) {
+    padding: 3rem 2rem;
   }
 `;
 const StyledGrid = styled.div`
@@ -51,5 +51,9 @@ const StyledGrid = styled.div`
     i {
       margin-right: -0.5rem;
     }
+  }
+  @media only screen and (max-width: 1170px) {
+    grid-template-columns: repeat(1, auto);
+    gap: 1rem 1rem;
   }
 `;

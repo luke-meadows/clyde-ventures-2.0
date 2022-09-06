@@ -46,7 +46,7 @@ const Container = styled.div`
   @media only screen and (max-width: 1170px) {
     .cards {
       grid-template-columns: repeat(1, 1fr);
-      gap: 1rem;
+      gap: 2rem;
     }
   }
 `;
@@ -83,7 +83,11 @@ const StyledMicroServiceTick = styled.div`
   }
   h4 {
     color: var(--dark-grey);
-
     font-weight: 500;
+  }
+  @media only screen and (max-width: 1170px) {
+    .top {
+      margin-bottom: 0rem;
+    }
   }
 `;

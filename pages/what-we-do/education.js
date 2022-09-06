@@ -19,7 +19,7 @@ export default function Education() {
           innovative strategies to create a better world, this course is aimed
           at the following professionals:
         </p>
-        <div style={{ padding: ' 1rem 0' }} />
+        <div style={{ padding: '0.5rem 0' }} />
         <MicroServiceTicks
           withPadding={false}
           options={[
