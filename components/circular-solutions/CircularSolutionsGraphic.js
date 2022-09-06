@@ -1,6 +1,5 @@
 import Image from 'next/image';
 import styled from 'styled-components';
-import TextOne from './TextOne';
 export default function CircularSolutionsGraphic() {
   return (
     <StyledGraphic>
