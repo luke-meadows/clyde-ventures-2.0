@@ -7,7 +7,7 @@ export default function CircularSolutionsGraphic() {
         <div className="line one" />
         <div className="line two" />
         <div className="line three" />
-        <TextOne />
+
         <div className="educate service">
           <i className="icon-graduation-cap" />
           <h5>Educate</h5>
