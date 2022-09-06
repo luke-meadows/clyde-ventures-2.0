@@ -71,7 +71,7 @@ const StyledContactForm = styled.form`
   height: fit-content;
   h2 {
     font-weight: 500;
-    margin-bottom: 2rem;
+    margin-bottom: 2.5rem;
     padding-right: 0.25rem;
     width: fit-content;
     padding-bottom: 0.25rem;

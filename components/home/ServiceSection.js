@@ -38,7 +38,7 @@ const StyledServiceSection = styled.section`
     margin: 5rem auto 0 auto;
   }
   @media only screen and (max-width: 1170px) {
-    padding: 2.5rem 2rem 5rem 2rem;
+    padding: 3rem 2rem 2.5rem 2rem;
     p {
       margin-bottom: 1.2rem;
     }
