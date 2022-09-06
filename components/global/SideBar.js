@@ -2,7 +2,6 @@ import styled from 'styled-components';
 import { enableScroll, disableScroll } from '../../lib/scroll';
 import { AnimatePresence, motion } from 'framer-motion';
 import {
-  sidebarImageVariant,
   sidebarInnerVariant,
   sidebarVariant,
 } from '../../framer-motion/variants';
@@ -70,9 +69,14 @@ export default function SideBar({ setShowSidebar }) {
           </Link>
         </nav>
         <div className="socials">
-          <div className="i-container">
-            <i className="icon-linkedin" />
-          </div>
+          <a
+            target="blank"
+            href="https://www.linkedin.com/company/clyde-ventures/"
+          >
+            <div className="i-container">
+              <i className="icon-linkedin" />
+            </div>
+          </a>
         </div>
       </motion.div>
     </StyledSideBar>
@@ -136,6 +140,7 @@ const StyledSideBar = styled(motion.div)`
     padding-right: 5rem;
     position: relative;
     text-align: right;
+
     .socials {
       position: absolute;
       right: 5rem;
@@ -163,6 +168,9 @@ const StyledSideBar = styled(motion.div)`
     .sidebar-inner {
       padding-right: 0;
       width: 100vw;
+      .socials {
+        right: 0;
+      }
     }
     h2 {
       font-size: 3rem;

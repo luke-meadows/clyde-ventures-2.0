@@ -26,7 +26,7 @@ const StyledTeamGrid = styled.section`
   @media only screen and (max-width: 1200px) {
     grid-template-columns: repeat(3, 1fr);
   }
-  @media only screen and (max-width: 900px) {
+  @media only screen and (max-width: 600px) {
     grid-template-columns: repeat(1, 1fr);
     gap: 2rem 0;
   }

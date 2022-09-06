@@ -40,6 +40,8 @@ const Container = styled.div`
       width: 50%;
       position: relative;
       height: 60vh;
+      overflow: hidden;
+      border-radius: 0.3rem;
     }
   }
   .our-story-section-3 {

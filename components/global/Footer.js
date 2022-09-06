@@ -17,8 +17,13 @@ export default function Footer() {
           </nav>
         </div>
         <div className="top-right">
-          <i className="icon-linkedin" />
-          <i className="icon-facebook" />
+          <a
+            target="blank"
+            href="https://www.linkedin.com/company/clyde-ventures/"
+          >
+            <i className="icon-linkedin" />
+          </a>
+          {/* <i className="icon-facebook" /> */}
         </div>
       </div>
       <div className="bottom">
@@ -101,6 +106,14 @@ const StyledFooter = styled.footer`
     padding: 2rem;
     .clyde-ventures {
       display: none;
+    }
+    .bottom-right {
+      width: 50%;
+      nav {
+        display: flex;
+        align-items: flex-end;
+        flex-direction: column;
+      }
     }
   }
 `;

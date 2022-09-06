@@ -16,6 +16,7 @@ export default function ContactForm() {
       <div className="logo-container">
         <Image src={Logo} layout="responsive" objectFit="contain" />
       </div>
+      <h2>Send a Message</h2>
       <div className="top">
         <input
           name="name"
@@ -68,6 +69,16 @@ const StyledContactForm = styled.form`
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 20px;
   position: relative;
   height: fit-content;
+  h2 {
+    font-weight: 500;
+    margin-bottom: 2rem;
+    padding-right: 0.25rem;
+    width: fit-content;
+    padding-bottom: 0.25rem;
+    border-bottom: 3px solid var(--yellow2);
+    display: none;
+  }
+
   .logo-container {
     position: relative;
     width: 4rem;
@@ -124,10 +135,13 @@ const StyledContactForm = styled.form`
   @media only screen and (max-width: 1170px) {
     width: 100%;
     margin-left: 0;
-    margin-top: 2rem;
+    margin-top: 1rem;
     border-radius: 0rem;
     box-shadow: none;
     padding: 2rem 2rem 4rem 2rem;
+    h2 {
+      display: block;
+    }
     input,
     textarea,
     button {

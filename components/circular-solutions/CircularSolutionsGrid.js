@@ -42,4 +42,10 @@ const StyledGrid = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 2.5rem;
+
+  @media only screen and (max-width: 1170px) {
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: -3rem;
+    width: 100%;
+  }
 `;

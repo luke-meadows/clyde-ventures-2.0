@@ -41,6 +41,13 @@ const StyledGraphic = styled.div`
     border-radius: 50%;
     position: relative;
     transform: translateY(40px);
+    @media only screen and (max-width: 1170px) {
+      width: 100vw;
+      .box {
+        width: 100%;
+        transform: translateY(0);
+      }
+    }
   }
 
   .service {

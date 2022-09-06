@@ -20,6 +20,11 @@ export default function CircularSolutions() {
 
 const CircularSolutionsPage = styled.section`
   padding: 9.5rem 5rem 5rem 5rem;
+  overflow-x: hidden;
+  @media only screen and (max-width: 1170px) {
+    padding: 7.5rem 2rem 5rem 2rem;
+  }
+  border: 1px solid black;
 `;
 
 const Container = styled.section`
@@ -35,6 +40,11 @@ const Container = styled.section`
   p {
     font-size: 1.2rem;
   }
+  @media only screen and (max-width: 1170px) {
+    h1 {
+      font-size: 3.3rem;
+    }
+  }
 `;
 
 const MainContainer = styled.div`
@@ -45,5 +55,14 @@ const MainContainer = styled.div`
   margin-top: 5rem;
   .graphic {
     width: 55rem;
+  }
+  @media only screen and (max-width: 1170px) {
+    flex-direction: column-reverse;
+    max-width: 100vw;
+    margin-top: -2rem;
+
+    .graphic {
+      transform: scale(0.7);
+    }
   }
 `;

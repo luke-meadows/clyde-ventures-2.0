@@ -15,7 +15,13 @@ export default function Hero() {
       />
       <MissionBanner />
       <Link href="/circular-solutions">
-        <LearnMore>Learn More</LearnMore>
+        <LearnMore>
+          Learn About Circular Solutions
+          <i
+            className={'icon-angle-right'}
+            style={{ marginRight: '-0.6rem' }}
+          />
+        </LearnMore>
       </Link>
     </StyledHero>
   );
