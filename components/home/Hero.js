@@ -52,4 +52,7 @@ const LearnMore = styled.button`
   font-size: 0.9rem;
   font-weight: 500;
   width: fit-content;
+  display: flex;
+  align-items: center;
+  padding: 0.8rem 2rem;
 `;

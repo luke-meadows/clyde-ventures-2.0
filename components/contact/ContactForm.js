@@ -71,7 +71,7 @@ const StyledContactForm = styled.form`
   height: fit-content;
   h2 {
     font-weight: 500;
-    margin-bottom: 1.8rem;
+    margin-bottom: 2rem;
     padding-right: 0.25rem;
     width: fit-content;
     padding-bottom: 0.25rem;
@@ -146,6 +146,10 @@ const StyledContactForm = styled.form`
     textarea,
     button {
       font-size: 16px;
+    }
+    input,
+    textarea {
+      border-radius: 0.5rem;
     }
     .top {
       grid-template-columns: repeat(1, 1fr);

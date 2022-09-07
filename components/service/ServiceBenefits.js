@@ -51,6 +51,9 @@ const StyledBenefits = styled.div`
     }
   }
   @media only screen and (max-width: 1170px) {
-    grid-template-columns: repeat(1, 1fr);
+    /* grid-template-columns: repeat(1, 1fr); */
+    gap: 2rem 2rem;
+    display: flex;
+    flex-wrap: wrap;
   }
 `;

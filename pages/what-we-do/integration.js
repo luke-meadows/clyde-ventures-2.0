@@ -3,7 +3,6 @@ import img from '../../public/integration.jpg';
 import MicroServicesGrid from '../../components/service/MicroServicesGrid';
 import ServiceBenefits from '../../components/service/ServiceBenefits';
 import { StyledServicePage } from '../../components/service/ServicePage';
-import MicroServiceTicks from '../../components/service/MicroServiceTick';
 
 export default function Integration() {
   return (

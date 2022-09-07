@@ -53,7 +53,9 @@ const StyledGrid = styled.div`
     }
   }
   @media only screen and (max-width: 1170px) {
-    grid-template-columns: repeat(1, auto);
-    gap: 1rem 1rem;
+    /* grid-template-columns: repeat(1, auto); */
+    gap: 2rem 2rem;
+    display: flex;
+    flex-wrap: wrap;
   }
 `;
