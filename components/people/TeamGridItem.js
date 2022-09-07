@@ -43,9 +43,9 @@ export default function TeamGridItem({ teamMember }) {
               </a>
             </>
           )}
-          <div onClick={handleClick}>
+          <div onClick={handleClick} className="image-and-name">
             <div className="img-container">
-              <Image src={image} layout="responsive" objectFit="cover" />
+              <Image src={image} layout="fill" objectFit="cover" />
             </div>
             <div className="text">
               <h5>{name}</h5>
@@ -103,9 +103,9 @@ const StyledTeamGridItem = styled.div`
     position: relative;
     display: ${(props) => (props.teamMemberActive ? 'flex' : 'block')};
     .exit {
-      position: absolute;
-      top: -1.6rem;
-      right: -1.2rem;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
       font-size: 1.2rem;
     }
   }
@@ -152,5 +152,40 @@ const StyledTeamGridItem = styled.div`
   }
   p {
     font-size: 0.9rem;
+  }
+
+  @media only screen and (max-width: 1170px) {
+    .inner {
+      border-radius: ${(props) => (props.teamMemberActive ? '0' : '0.5rem')};
+      width: ${(props) => (props.teamMemberActive ? 'calc(100%);' : '100%')};
+      height: ${(props) => (props.teamMemberActive ? 'calc(100%);' : '100%')};
+      padding: ${(props) => (props.teamMemberActive ? '2rem' : '0')};
+      overflow-y: ${(props) => (props.teamMemberActive ? 'scroll' : 'none')};
+    }
+    .container {
+      flex-direction: column;
+      .exit {
+        top: 1.2rem;
+        right: 2rem;
+      }
+    }
+    .text {
+      width: 100%;
+    }
+    .image-and-name {
+      width: ${(props) => (props.teamMemberActive ? 'fit-content' : '100%')};
+      margin-top: 2.5rem;
+    }
+    .img-container {
+      margin-right: 0;
+      width: calc(100vw - 4rem);
+    }
+    .linked-in {
+      top: -0.5rem;
+      left: 0rem;
+
+      height: fit-content;
+      bottom: initial;
+    }
   }
 `;

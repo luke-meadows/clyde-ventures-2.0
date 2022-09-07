@@ -49,8 +49,8 @@ export default function Integration() {
               'Efficiency tracking',
               'Front line staff delivery',
               'Empathetic roll out',
-              'ROI Focused',
               'Business process reviews',
+              'ROI Focused',
             ]}
           />
         </div>

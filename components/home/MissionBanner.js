@@ -33,13 +33,11 @@ const StyledMissionBanner = styled.div`
     margin: auto 0;
   }
   @media only screen and (max-width: 1170px) {
-    /* background-color: transparent; */
     .banner-inner {
-      padding-top: 1.8rem;
       display: grid;
       grid-template-columns: repeat(1, 1fr);
       grid-auto-rows: 1fr;
-      margin-bottom: 2rem;
+      margin: 2rem 0 2rem 0;
     }
     .spacer {
       display: none;

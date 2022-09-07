@@ -22,7 +22,7 @@ const CircularSolutionsPage = styled.section`
   padding: 9.5rem 5rem 5rem 5rem;
   overflow-x: hidden;
   @media only screen and (max-width: 1170px) {
-    padding: 7.5rem 2rem 5rem 2rem;
+    padding: 7.5rem 2rem 2.5rem 2rem;
   }
 `;
 
