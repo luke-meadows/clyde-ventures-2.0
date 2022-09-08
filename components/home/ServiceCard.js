@@ -37,7 +37,6 @@ const StyledServiceCard = styled.div`
   flex-direction: column;
   justify-content: ${(props) => (props.spaceBetween ? 'space-between' : '')};
   padding: 1rem 0;
-  min-width: 15rem;
   i {
     color: var(--dark-grey);
     font-size: 2rem;
