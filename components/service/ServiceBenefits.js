@@ -55,5 +55,8 @@ const StyledBenefits = styled.div`
     gap: 2rem 2rem;
     display: flex;
     flex-wrap: wrap;
+    .benefit {
+      min-width: 10rem;
+    }
   }
 `;

@@ -7,7 +7,7 @@ export default function ContactSection() {
   return (
     <StyledContactSection>
       <div className="container">
-        <h2>Talk to us</h2>
+        <h2 className="talk-to-us-header">Talk to us</h2>
         <p>
           To find out more please fill in your details or call us using the
           number below.
@@ -68,13 +68,14 @@ const StyledContactSection = styled.section`
   }
   h2 {
     font-weight: 500;
-    margin-bottom: 1.2rem;
     padding-right: 0.25rem;
     width: fit-content;
     padding-bottom: 0.25rem;
     border-bottom: 3px solid var(--yellow2);
   }
-
+  .talk-to-us-header {
+    margin-bottom: 1.2rem;
+  }
   p {
     font-size: 1.2rem;
     margin-bottom: 0;
@@ -169,7 +170,7 @@ const StyledContactSection = styled.section`
   }
   @media only screen and (max-width: 1170px) {
     flex-direction: column;
-    padding: 3rem 0 0 0;
+    padding: 2rem 0 0 0;
     background-color: white;
     .container {
       margin-right: 0;
