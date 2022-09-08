@@ -6,9 +6,13 @@ export default function ServiceCard({
   blurb = null,
   bullets = null,
   link,
+  spaceBetween = false,
 }) {
   return (
-    <StyledServiceCard>
+    <StyledServiceCard
+      lessThanTwo={bullets?.length > 2}
+      spaceBetween={spaceBetween}
+    >
       <div>
         <i className={icon} />
         <h4>{title}</h4>
@@ -31,8 +35,9 @@ export default function ServiceCard({
 const StyledServiceCard = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: ${(props) => (props.spaceBetween ? 'space-between' : '')};
   padding: 1rem 0;
+  min-width: 15rem;
   i {
     color: var(--dark-grey);
     font-size: 2rem;
@@ -49,14 +54,15 @@ const StyledServiceCard = styled.div`
     color: var(--dark-grey);
   }
   ul {
-    margin-bottom: 1rem;
-    min-width: 20rem;
     list-style-position: inside;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0 1.5rem;
+    margin-bottom: 1rem;
   }
   a {
     color: var(--dark-grey);
     font-size: 0.8rem;
-    background: var(--yellow2);
     background: var(--yellow2);
     border: 1px solid var(--yellow2);
     padding: 0.3rem 1.2rem;

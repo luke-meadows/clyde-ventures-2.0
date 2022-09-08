@@ -30,6 +30,9 @@ export default function Hero() {
 const StyledHero = styled.div`
   position: relative;
   height: calc(100vh - 3rem);
+  @media only screen and (max-width: 1170px) {
+    height: calc(50vh);
+  }
 `;
 
 const HeroVideo = styled.video`

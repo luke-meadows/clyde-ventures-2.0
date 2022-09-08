@@ -47,9 +47,6 @@ const PageContainer = styled.main`
     padding: 5rem 0;
   }
   @media only screen and (min-width: 1600px) {
-    .hero {
-      padding: 14rem 5rem 6rem 5rem;
-    }
   }
   @media only screen and (max-width: 1170px) {
     .hero {

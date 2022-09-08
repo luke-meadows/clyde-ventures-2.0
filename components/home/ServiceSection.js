@@ -14,11 +14,9 @@ export default function ServiceSection() {
 }
 
 const StyledServiceSection = styled.section`
-  margin-top: 5rem;
   padding: 5rem;
   max-width: 1800px;
-
-  margin: 2rem auto 0 auto;
+  margin: 0 auto;
   h1 {
     font-size: 2.4rem;
     font-weight: 500;
@@ -34,11 +32,11 @@ const StyledServiceSection = styled.section`
     margin-bottom: 2.5rem;
   }
 
-  @media only screen and (min-width: 1600px) {
-    margin: 5rem auto 0 auto;
+  @media only screen and (min-width: 1700px) {
+    margin: 2rem auto 0 auto;
   }
   @media only screen and (max-width: 1170px) {
-    padding: 3rem 2rem 2.5rem 2rem;
+    padding: 5rem 2rem 2.5rem 2rem;
     p {
       margin-bottom: 1.2rem;
     }

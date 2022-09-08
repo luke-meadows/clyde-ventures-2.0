@@ -32,7 +32,7 @@ export default function Nav() {
         </div>
         <Link href="/about">About us</Link>
         <Link href="/people">People</Link>
-        <Link href="/people">Community</Link>
+        {/* <Link href="/people">Community</Link> */}
         {subNavActive && (
           <>
             <SubNav />

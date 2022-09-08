@@ -33,6 +33,7 @@ const StyledMissionBanner = styled.div`
     margin: auto 0;
   }
   @media only screen and (max-width: 1170px) {
+    display: none;
     .banner-inner {
       display: grid;
       grid-template-columns: repeat(1, 1fr);

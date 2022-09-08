@@ -4,16 +4,6 @@ export default function CircularSolutionsGrid() {
   return (
     <StyledGrid>
       <ServiceCard
-        title="Consult"
-        bullets={[' Net zero marketplace', 'Opt-in value optimisation']}
-        link="/what-we-do/consultancy"
-      />
-      <ServiceCard
-        title="Educate"
-        bullets={['Sustainability MBA', ' Diversity recruitment']}
-        link="/what-we-do/education"
-      />
-      <ServiceCard
         title="Integrate"
         bullets={[
           'Systems integration',
@@ -22,6 +12,11 @@ export default function CircularSolutionsGrid() {
           'Data analytics',
         ]}
         link="/what-we-do/integration"
+      />
+      <ServiceCard
+        title="Consult"
+        bullets={[' Net zero marketplace', 'Opt-in value optimisation']}
+        link="/what-we-do/consultancy"
       />
       <ServiceCard
         title="Manufacture"
@@ -34,6 +29,11 @@ export default function CircularSolutionsGrid() {
         ]}
         link="/what-we-do/manufacturing"
       />
+      <ServiceCard
+        title="Educate"
+        bullets={['Sustainability MBA', ' Diversity recruitment']}
+        link="/what-we-do/education"
+      />
     </StyledGrid>
   );
 }
@@ -42,10 +42,9 @@ const StyledGrid = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 2.5rem;
-
+  width: 50%;
   @media only screen and (max-width: 1170px) {
     grid-template-columns: repeat(1, 1fr);
-    margin-top: -3rem;
     width: 100%;
   }
 `;

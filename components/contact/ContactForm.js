@@ -140,7 +140,7 @@ const StyledContactForm = styled.form`
     padding: 2rem 2rem 4rem 2rem;
     h2 {
       display: block;
-      margin-bottom: 2rem;
+      margin-bottom: 1.6rem;
     }
     input,
     textarea,

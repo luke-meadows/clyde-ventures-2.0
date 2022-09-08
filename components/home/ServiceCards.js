@@ -9,24 +9,28 @@ export default function ServiceCards() {
         title="Consult"
         blurb="Collaboratively opening new markets to create untapped revenue streams"
         link="/what-we-do/consultancy"
+        spaceBetween={true}
       />
       <ServiceCard
         icon="icon-graduation-cap"
         title="Educate"
         blurb="Bringing research led institutions and global brands together to develop tomorrow's leaders"
         link="/what-we-do/education"
+        spaceBetween={true}
       />
       <ServiceCard
         icon="icon-network"
         title="Integrate"
         blurb="Architecting technology solutions to reduce costs, improve service and deliver growth"
         link="/what-we-do/integration"
+        spaceBetween={true}
       />
       <ServiceCard
         icon="icon-cog-alt"
         title="Manufacture"
         blurb="Producing lightweight solutions for a cleaner future in the construction industry"
         link="/what-we-do/manufacturing"
+        spaceBetween={true}
       />
     </StyledServiceCards>
   );

@@ -8,10 +8,8 @@ export default function CircularSolutions() {
         <h1>Circular Solutions</h1>
         <p>Sustainability is at the heart of everything we do.</p>
         <MainContainer>
+          <CircularSolutionsGraphic />
           <CircularSolutionsGrid />
-          <div className="graphic">
-            <CircularSolutionsGraphic />
-          </div>
         </MainContainer>
       </Container>
     </CircularSolutionsPage>
@@ -50,18 +48,8 @@ const MainContainer = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 5rem;
-  margin-top: 5rem;
-  .graphic {
-    width: 55rem;
-  }
+  margin-top: 2.5rem;
   @media only screen and (max-width: 1170px) {
-    flex-direction: column-reverse;
-    max-width: 100vw;
-    margin-top: -2rem;
-
-    .graphic {
-      transform: scale(0.7);
-    }
+    flex-direction: column;
   }
 `;
