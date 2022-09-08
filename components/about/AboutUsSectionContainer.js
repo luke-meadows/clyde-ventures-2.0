@@ -32,6 +32,7 @@ const Container = styled.div`
   }
   .our-story-section-2 {
     display: flex;
+    align-items: center;
     gap: 5rem;
     .space {
       height: 2.5rem;
@@ -42,7 +43,12 @@ const Container = styled.div`
       height: 60vh;
       overflow: hidden;
       border-radius: 0.3rem;
+      max-width: 30rem;
+      max-height: 25rem;
     }
+  }
+  ul {
+    list-style-position: inside;
   }
   .our-story-section-3 {
     display: flex;

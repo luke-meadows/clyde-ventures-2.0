@@ -53,27 +53,39 @@ export default function OurStory() {
             <h4>A Brief History</h4>
             <p>
               We believe that hard work and honest endeavours always create
-              value. Our story is testimony to that. Our core team came together
-              in 2021 as the global energy crisis began to bite, the leadership
-              team were concerned about how businesses would respond and we
-              began to develop propositions to companies that would be impacted.
+              value - our story is testimony to that. Clyde Ventures core team
+              came together in 2021 just as the global energy crisis began to
+              bite. Our leadership team were concerned about how businesses
+              would respond and began to develop propositions to companies that
+              would be impacted.
             </p>
             <p>
               We have grown quickly and are now delivering solutions into the
-              energy sector, tech sector, charitable sector and professional
-              services. We take the best values and practices that our clients
-              have and enable them to utilise and open new markets.
+              energy and water utility sectors, tech sector, charitable sector
+              and professional services. We take the best values and practices
+              that our clients have and enable them to utilise and open new
+              markets.
             </p>
             <p>
-              We have developed a digital solution for a professional services
-              firm to double their growth within 6 months.We have delivered a
-              global route to market strategy for a global tier 1 technology
-              company, we have opened up new sectors and delivered new customers
-              in new continents within 6 months
-            </p>
-            <p>
-              We are digitising charities and supporting them in growing their
-              revenues.
+              <ul>
+                <li>
+                  We have developed a digital solution for a professional
+                  services firm to double their growth within 6 months.{' '}
+                </li>
+                <li>
+                  We have delivered a global route to market strategy for a
+                  major tier 1 technology company.{' '}
+                </li>
+
+                <li>
+                  We have opened up new sectors and delivered new customers in
+                  new continents within 6 months.
+                </li>
+                <li>
+                  We are digitising charities and supporting them in growing
+                  their revenues.
+                </li>
+              </ul>
             </p>
           </div>
         </div>

@@ -15,7 +15,12 @@ export default function CircularSolutionsGrid() {
       />
       <ServiceCard
         title="Consult"
-        bullets={[' Net zero marketplace', 'Opt-in value optimisation']}
+        bullets={[
+          'Net zero marketplace',
+          'Opt-in value optimisation',
+          'Developing new products to market',
+          'Price control optimisation',
+        ]}
         link="/what-we-do/consultancy"
       />
       <ServiceCard

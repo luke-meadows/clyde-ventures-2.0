@@ -9,10 +9,10 @@ export default function Education() {
       <div className="hero">
         <h1>Education</h1>
         <p>
-          We are proud to have supported the university delivering a first of
-          it&apos;s kind collaborative executive MBA programme that focuses on
-          delivering future leaders equipped to deal with the challenges of
-          delivering net zero and reversing global warming.
+          We are proud to have supported a leading university in creating a
+          first of it&apos;s kind collaborative executive MBA programme that
+          focuses on delivering future leaders equipped to deal with the
+          challenges of delivering net zero and reversing global warming.
         </p>
         <p>
           We have partnered with industry leaders who are trailblazing new and
@@ -29,7 +29,7 @@ export default function Education() {
             },
             {
               title: 'Non-profit',
-              text: 'Those who work in charities, think tanks and government bodies, who are responsible for setting regualtion and want to develop meaningful dialogue with corporations desgining climate change strategies.',
+              text: 'Those who work in charities, think tanks and government bodies, who are responsible for setting regulation and want to develop meaningful dialogue with corporations designing climate change strategies.',
             },
             {
               title: 'Innovators',
