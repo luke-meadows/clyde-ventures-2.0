@@ -41,7 +41,7 @@ export default function CircularSolutionsGrid() {
 const StyledGrid = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 2.5rem;
+  gap: 1rem 2.5rem;
   width: 50%;
   @media only screen and (max-width: 1170px) {
     grid-template-columns: repeat(1, 1fr);
