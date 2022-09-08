@@ -9,10 +9,7 @@ export default function ServiceCard({
   spaceBetween = false,
 }) {
   return (
-    <StyledServiceCard
-      lessThanTwo={bullets?.length > 2}
-      spaceBetween={spaceBetween}
-    >
+    <StyledServiceCard spaceBetween={spaceBetween}>
       <div>
         <i className={icon} />
         <h4>{title}</h4>

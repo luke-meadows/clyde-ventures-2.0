@@ -48,7 +48,7 @@ const MainContainer = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 2.5rem;
+  margin-top: 5rem;
   @media only screen and (max-width: 1170px) {
     flex-direction: column;
   }
