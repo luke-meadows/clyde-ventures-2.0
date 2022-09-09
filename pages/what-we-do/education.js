@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import Image from 'next/image';
 import MicroServiceTicks from '../../components/service/MicroServiceTick';
 import ServiceBenefits from '../../components/service/ServiceBenefits';
@@ -6,6 +7,10 @@ import img from '../../public/education.jpg';
 export default function Education() {
   return (
     <StyledServicePage>
+      <Head>
+        <title>Clyde Ventures - Education</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
       <div className="hero">
         <h1>Education</h1>
         <p>

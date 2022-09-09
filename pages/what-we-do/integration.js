@@ -3,10 +3,15 @@ import img from '../../public/integration.jpg';
 import MicroServicesGrid from '../../components/service/MicroServicesGrid';
 import ServiceBenefits from '../../components/service/ServiceBenefits';
 import { StyledServicePage } from '../../components/service/ServicePage';
+import Head from 'next/head';
 
 export default function Integration() {
   return (
     <StyledServicePage>
+      <Head>
+        <title>Clyde Ventures - Integration</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
       <div className="hero">
         <h1>Integration</h1>
         <p>

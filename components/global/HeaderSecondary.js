@@ -25,17 +25,18 @@ export default function HeaderSecondary({ setShowSidebar, showSidebar }) {
         exit="exit"
         operatingsystem={operatingSystem}
       >
-        <div onClick={() => setShowSidebar(false)}>
-          <Logo width="8rem" variant={2} />
+        <div className="header-inner">
+          <div onClick={() => setShowSidebar(false)}>
+            <Logo width="8rem" variant={2} />
+          </div>
+
+          <NavIcon
+            setShowSidebar={setShowSidebar}
+            showSidebar={showSidebar}
+            useAnimation={true}
+          />
         </div>
-
-        <NavIcon
-          setShowSidebar={setShowSidebar}
-          showSidebar={showSidebar}
-          useAnimation={true}
-        />
       </StyledHeaderSecondary>
-
       <motion.div
         className="box-to-cover-scrollbar"
         variants={headerVariant2}
@@ -81,6 +82,14 @@ const StyledHeaderSecondary = styled(motion.header)`
   i {
     font-size: 1.2rem;
     color: var(--dark-grey);
+  }
+  .header-inner {
+    margin: 0 auto;
+    max-width: 1600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
   }
   @media only screen and (max-width: 1170px) {
     padding: 0rem 2rem;

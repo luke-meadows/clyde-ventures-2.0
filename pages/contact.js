@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import Image from 'next/image';
 import styled from 'styled-components';
 import OurStory from '../components/about/OurStory';
@@ -8,6 +9,10 @@ import ContactBackground from '../public/contact-background.jpg';
 export default function Contact() {
   return (
     <PageContainer>
+      <Head>
+        <title>Clyde Ventures - Contact us</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
       <HeroWithBackgroundImg
         image={ContactBackground}
         header="Lets Talk"

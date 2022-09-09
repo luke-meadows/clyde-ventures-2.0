@@ -4,9 +4,14 @@ import ServiceBenefits from '../../components/service/ServiceBenefits';
 import img from '../../public/manufacturing.jpg';
 import ContactSection from '../../components/contact/ContactSection';
 import ServicePage from '../../components/service/ServicePage';
+import Head from 'next/head';
 export default function Manufacturing() {
   return (
     <ServicePage>
+      <Head>
+        <title>Clyde Ventures - Manufacturing</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
       <div className="hero">
         <h1>Manufacturing</h1>
         <p>

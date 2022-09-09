@@ -2,40 +2,50 @@ import styled from 'styled-components';
 import Nav from './Nav';
 import Logo from './Logo';
 import ContactButton from './ContactButton';
-import Link from 'next/link';
 import NavIcon from './NavIcon';
 export default function HeaderPrimary({ setShowSidebar, showSidebar }) {
   return (
     <StyledHeaderPrimary showSidebar={showSidebar}>
-      <div className="nav">
-        <Nav />
-      </div>
-      <Link href="/">
+      <div className="header-inner">
+        <div className="nav">
+          <Nav />
+        </div>
+
         <Logo width="11rem" style={{ flex: 1 }} variant={2} />
-      </Link>
-      <div className="contact-button">
-        <ContactButton />
-      </div>
-      <div className="menu-icon">
-        <NavIcon
-          setShowSidebar={setShowSidebar}
-          showSidebar={showSidebar}
-          bgColor="var(--black)"
-        />
+
+        <div className="contact-button">
+          <ContactButton />
+        </div>
+
+        <div className="menu-icon">
+          <NavIcon
+            setShowSidebar={setShowSidebar}
+            showSidebar={showSidebar}
+            bgColor="var(--black)"
+          />
+        </div>
       </div>
     </StyledHeaderPrimary>
   );
 }
 
 const StyledHeaderPrimary = styled.header`
-  display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 4rem 5rem;
-  height: 8rem;
   position: absolute;
+  left: 0;
   z-index: 2;
   width: 100%;
+  padding: 0 5rem;
+
+  .header-inner {
+    margin: 0 auto;
+    max-width: 1600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 8rem;
+    padding: 4rem 0;
+  }
   .menu-icon {
     display: none;
   }
@@ -43,6 +53,7 @@ const StyledHeaderPrimary = styled.header`
   .nav {
     flex: 2;
   }
+
   @media only screen and (max-width: 1170px) {
     height: 6rem;
     padding: 0rem 2rem;

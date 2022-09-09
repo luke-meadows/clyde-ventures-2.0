@@ -66,27 +66,26 @@ export default function OurStory() {
               that our clients have and enable them to utilise and open new
               markets.
             </p>
-            <p>
-              <ul>
-                <li>
-                  We have developed a digital solution for a professional
-                  services firm to double their growth within 6 months.{' '}
-                </li>
-                <li>
-                  We have delivered a global route to market strategy for a
-                  major tier 1 technology company.{' '}
-                </li>
 
-                <li>
-                  We have opened up new sectors and delivered new customers in
-                  new continents within 6 months.
-                </li>
-                <li>
-                  We are digitising charities and supporting them in growing
-                  their revenues.
-                </li>
-              </ul>
-            </p>
+            <ul>
+              <li>
+                We have developed a digital solution for a professional services
+                firm to double their growth within 6 months.{' '}
+              </li>
+              <li>
+                We have delivered a global route to market strategy for a major
+                tier 1 technology company.{' '}
+              </li>
+
+              <li>
+                We have opened up new sectors and delivered new customers in new
+                continents within 6 months.
+              </li>
+              <li>
+                We are digitising charities and supporting them in growing their
+                revenues.
+              </li>
+            </ul>
           </div>
         </div>
       </AboutUsSectionContainer>

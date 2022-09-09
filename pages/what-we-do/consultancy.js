@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import Image from 'next/image';
 import MicroServicesGrid from '../../components/service/MicroServicesGrid';
 import ServiceBenefits from '../../components/service/ServiceBenefits';
@@ -7,6 +8,10 @@ import img from '../../public/consultancy.jpg';
 export default function Consultancy() {
   return (
     <ServicePage>
+      <Head>
+        <title>Clyde Ventures - Consultancy</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
       <div className="hero">
         <h1>Consultancy</h1>
         <p>

@@ -101,7 +101,6 @@ const BackgroundImage = styled.div`
     position: relative;
     width: 100%;
     height: 100%;
-    opacity: 0.8;
   }
   @media only screen and (min-width: 1600px) {
     height: 100%;

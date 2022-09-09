@@ -1,8 +1,14 @@
+import Head from 'next/head';
 import styled from 'styled-components';
 import TeamGrid from '../components/people/TeamGrid';
 export default function People() {
+  console.log(process.env.NEXT_PUBLIC_TEST);
   return (
     <PageContainer className="people-page">
+      <Head>
+        <title>Clyde Ventures - People</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
       <div className="hero">
         <h1>Meet The Team</h1>
         <p>
@@ -38,7 +44,7 @@ const PageContainer = styled.main`
   }
   @media only screen and (min-width: 1600px) {
     .hero {
-      padding: 8rem 0 6rem 0;
+      padding: 6rem 0;
     }
   }
   @media only screen and (max-width: 1170px) {

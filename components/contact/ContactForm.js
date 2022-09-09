@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import { useRef } from 'react';
 import styled from 'styled-components';
 import useForm from '../../lib/useForm';
 import Logo from '../../public/1.png';
@@ -11,8 +12,47 @@ export default function ContactForm() {
     message: '',
   });
 
+  const nameRef = useRef();
+  const emailRef = useRef();
+  const confEmailRef = useRef();
+  const subjectRef = useRef();
+  const messageRef = useRef();
+
+  const refMap = {
+    name: nameRef,
+    email: emailRef,
+    confEmail: confEmailRef,
+    subject: subjectRef,
+    message: messageRef,
+  };
+
+  function submitForm() {
+    console.log('submitted');
+  }
+
+  function validateForm(e) {
+    e.preventDefault();
+    // Check if all fields are populated
+    let blankFields = [];
+    Object.keys(inputs).forEach((input) => {
+      if (!inputs[input].length) {
+        blankFields.push(refMap[input]);
+      }
+    });
+    // If not make red outline
+    if (blankFields.length) {
+      blankFields.forEach((field) => {
+        field.current.classList.add('warning');
+      });
+
+      // If so submit form
+    } else {
+      submitForm();
+    }
+  }
+
   return (
-    <StyledContactForm>
+    <StyledContactForm onSubmit={validateForm}>
       <div className="logo-container">
         <Image src={Logo} layout="responsive" objectFit="contain" />
       </div>
@@ -24,13 +64,15 @@ export default function ContactForm() {
           placeholder="Name"
           type="text"
           onChange={handleChange}
+          ref={nameRef}
         />
         <input
           name="email"
           value={inputs.email}
           placeholder="Email"
-          type="text"
+          type="email"
           onChange={handleChange}
+          ref={emailRef}
         />
         <input
           name="confEmail"
@@ -38,6 +80,7 @@ export default function ContactForm() {
           placeholder="Confirm Email"
           type="text"
           onChange={handleChange}
+          ref={confEmailRef}
         />
         <input
           name="subject"
@@ -45,6 +88,7 @@ export default function ContactForm() {
           placeholder="Subject"
           type="text"
           onChange={handleChange}
+          ref={subjectRef}
         />
       </div>
       <textarea
@@ -54,6 +98,7 @@ export default function ContactForm() {
         className="message"
         type="text"
         onChange={handleChange}
+        ref={messageRef}
       />
       <button type="submit">Send</button>
     </StyledContactForm>
@@ -94,15 +139,18 @@ const StyledContactForm = styled.form`
     color: var(--dark-grey);
     font-size: 0.9rem;
     border-radius: 2rem;
+    transition: all 0.5s ease;
+    &.warning {
+      ::placeholder {
+        color: var(--red);
+      }
+    }
     ::placeholder {
-      /* Chrome, Firefox, Opera, Safari 10.1+ */
       color: var(--medium-grey);
-      /* font-weight: 500; */
       opacity: 1; /* Firefox */
     }
   }
   input {
-    /* padding: 0 0.2rem 1.1rem 0.2rem; */
     padding: 0.5rem 1rem;
   }
   textarea {

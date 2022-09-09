@@ -8,10 +8,7 @@ export default function ContactSection() {
     <StyledContactSection>
       <div className="container">
         <h2 className="talk-to-us-header">Talk to us</h2>
-        <p>
-          To find out more please fill in your details or call us using the
-          number below.
-        </p>
+        <p>Please fill in your details or call us using the number below.</p>
 
         <div className="contact-info">
           <div className="contact-info-item">

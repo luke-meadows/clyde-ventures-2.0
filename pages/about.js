@@ -1,11 +1,15 @@
+import Head from 'next/head';
 import styled from 'styled-components';
 import OurStory from '../components/about/OurStory';
-import ContactSection from '../components/contact/ContactSection';
 import HeroWithBackgroundImg from '../components/global/HeroWithBackgroundImg';
 import AboutBackground from '../public/about-hero.jpg';
 export default function About() {
   return (
     <PageContainer>
+      <Head>
+        <title>Clyde Ventures - About us</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
       <HeroWithBackgroundImg
         image={AboutBackground}
         header="About us"

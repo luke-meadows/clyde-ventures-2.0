@@ -49,6 +49,9 @@ const Container = styled.div`
   }
   ul {
     list-style-position: inside;
+    li {
+      font-size: 1.2rem;
+    }
   }
   .our-story-section-3 {
     display: flex;
