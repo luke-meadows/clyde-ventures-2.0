@@ -3,6 +3,7 @@ import { useRef } from 'react';
 import styled from 'styled-components';
 import useForm from '../../lib/useForm';
 import Logo from '../../public/1.png';
+
 export default function ContactForm() {
   const { inputs, handleChange, resetForm, clearForm } = useForm({
     name: '',
@@ -26,8 +27,11 @@ export default function ContactForm() {
     message: messageRef,
   };
 
-  function submitForm() {
-    console.log('submitted');
+  function submitForm(inputs) {
+    fetch('/api/mail', {
+      method: 'post',
+      body: JSON.stringify(inputs),
+    });
   }
 
   function validateForm(e) {
@@ -44,10 +48,10 @@ export default function ContactForm() {
       blankFields.forEach((field) => {
         field.current.classList.add('warning');
       });
-
+      return;
       // If so submit form
     } else {
-      submitForm();
+      submitForm(inputs);
     }
   }
 
@@ -140,6 +144,7 @@ const StyledContactForm = styled.form`
     font-size: 0.9rem;
     border-radius: 2rem;
     transition: all 0.5s ease;
+    max-width: 40rem;
     &.warning {
       ::placeholder {
         color: var(--red);
@@ -166,6 +171,7 @@ const StyledContactForm = styled.form`
     margin-bottom: 1.4rem;
   }
   button {
+    display: block;
     margin-top: 1.1rem;
     background: var(--yellow2);
     border: none;
