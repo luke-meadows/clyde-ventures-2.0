@@ -18,18 +18,17 @@ export default async function handler(req, res) {
     subject: body.subject,
     text: messageText,
   };
-  //ES8
-  (async () => {
-    try {
-      await sgMail.send(msg);
-    } catch (error) {
+
+  await sgMail.send(msg).then(
+    () => {},
+    (error) => {
       console.error(error);
 
       if (error.response) {
         console.error(error.response.body);
       }
     }
-  })();
+  );
 
   res.status(200).json({ status: 'Ok' });
 }
