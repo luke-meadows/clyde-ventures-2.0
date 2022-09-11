@@ -31,6 +31,8 @@ export default function ContactForm() {
     fetch('/api/mail', {
       method: 'post',
       body: JSON.stringify(inputs),
+    }).then((res) => {
+      console.log(res);
     });
   }
 
