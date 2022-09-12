@@ -1,7 +1,12 @@
+import Head from 'next/head';
 import styled from 'styled-components';
 export default function PrivacyPolicy() {
   return (
     <StyledTerms>
+      <Head>
+        <title>Clyde Ventures - Privacy Policy</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
       <div className="inner-terms">
         <h1 className="">Privacy Policy</h1>
         <h4 className="font-bold font-sensibility text-1xl sm:text-1xl md:text-2xl lg:text-3xl leading-snug mt-12 mb-6 text-darkblue">
@@ -162,8 +167,9 @@ export default function PrivacyPolicy() {
           communications from us or have previously expressed an interest in our
           products and services and have not opted out. We will process your
           personal information (your name, address, contact details and other
-          personal information you’ve given us) to provide you with marketing
-          communications in line with any preferences you have told us about.
+          personal information you&apos;ve given us) to provide you with
+          marketing communications in line with any preferences you have told us
+          about.
         </p>
         <p className="text-xl mt-5 mb-5 pt-0 pb-0 break-words">
           Where you have opted to receive marketing communications, we rely on
@@ -326,10 +332,10 @@ export default function PrivacyPolicy() {
         </p>
         <p className="text-xl mt-5 mb-5 pt-0 pb-0 break-words">
           FPAs may send personal information to countries outside the European
-          Economic Area ('EEA'). When they do, there will be a contract in place
-          to make sure the recipient protects the data to the same standard as
-          the EEA. This may include following international frameworks for
-          making data sharing secure.
+          Economic Area &apos;EA&apos;. When they do, there will be a contract
+          in place to make sure the recipient protects the data to the same
+          standard as the EEA. This may include following international
+          frameworks for making data sharing secure.
         </p>
         <p className="text-xl mt-5 mb-5 pt-0 pb-0 break-words">
           To help identify theft of mains gas and/or electricity from the
