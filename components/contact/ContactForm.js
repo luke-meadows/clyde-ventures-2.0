@@ -31,6 +31,7 @@ export default function ContactForm() {
   const confEmailRef = useRef();
   const subjectRef = useRef();
   const messageRef = useRef();
+  const checkboxRef = useRef();
 
   const refMap = {
     name: nameRef,
@@ -41,13 +42,13 @@ export default function ContactForm() {
   };
 
   function submitForm(inputs) {
-    setButtonStatus({ ...buttonStatus, disabled: true });
+    setButtonStatus({ ...buttonStatus, content: 'Sending', disabled: true });
     fetch('/api/mail', {
       method: 'post',
       body: JSON.stringify(inputs),
     }).then((res) => {
+      checkboxRef.current.checked = false;
       if (res.status === 200) {
-        // see if we can get this to fade out in JS
         setButtonStatus({
           content: ButtonIcon('check'),
           bg: 'var(--green)',
@@ -74,7 +75,7 @@ export default function ContactForm() {
       }
     });
     // If not make red outline
-    if (blankFields.length) {
+    if (blankFields.length || !checkboxRef.current.checked) {
       blankFields.forEach((field) => {
         field.current.classList.add('warning');
       });
@@ -144,6 +145,17 @@ export default function ContactForm() {
         onChange={handleChange}
         ref={messageRef}
       />
+      <div className="privacy-checkbox">
+        <div className="checkbox-container">
+          <input ref={checkboxRef} type="checkbox" className="checkbox" />
+        </div>
+        <p>
+          By ticking this box you declare you accept our{' '}
+          <a href="www.clydeventures.com/privacy-policy" target="blank">
+            privacy policy
+          </a>
+        </p>
+      </div>
       <button type="submit" onClick={() => console.log('click')}>
         {buttonStatus.content}
       </button>
@@ -205,6 +217,30 @@ const StyledContactForm = styled.form`
     padding: 1rem;
     height: 12rem;
     border-radius: 1.2rem;
+  }
+  .privacy-checkbox {
+    display: flex;
+    margin-top: 1rem;
+    .checkbox-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100%;
+    }
+    .checkbox {
+      width: fit-content;
+      margin-right: 1rem;
+      margin-left: 0.2rem;
+      margin-top: -0.2rem;
+    }
+    p {
+      margin-bottom: 0;
+      font-size: 0.8rem;
+    }
+    a {
+      text-decoration: underline;
+      color: blue;
+    }
   }
   .top {
     display: grid;

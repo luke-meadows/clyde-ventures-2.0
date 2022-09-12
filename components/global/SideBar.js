@@ -69,10 +69,7 @@ export default function SideBar({ setShowSidebar }) {
           </Link>
         </nav>
         <div className="socials">
-          <a
-            target="blank"
-            href="https://www.linkedin.com/company/clyde-ventures/"
-          >
+          <a target="blank" href="https://www.linkedin.com/company/86046305">
             <div className="i-container">
               <i className="icon-linkedin" />
             </div>

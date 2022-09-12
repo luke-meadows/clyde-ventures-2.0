@@ -1,6 +1,5 @@
 import Link from 'next/link';
 import styled from 'styled-components';
-import Container from './Container';
 export default function Footer() {
   return (
     <StyledFooter>
@@ -36,15 +35,19 @@ export default function Footer() {
             <p>Glasgow</p>
             <p>G2 6HJ</p>
           </div>
-          <div className="email">
+          <a
+            className="email"
+            target="blank"
+            href="mailto:help@clydeventures.com"
+          >
             <i className="icon-mail" /> help@clydeventures.com
-          </div>
+          </a>
         </div>
         <div className="bottom-right">
           <nav>
-            <Link href="/">Privacy Policy</Link>
-            <Link href="/">Terms &amp; Conditions</Link>
-            <Link href="/">Governance Policies</Link>
+            <Link href="/privacy-policy">Privacy Policy</Link>
+            {/* <Link href="/">Terms &amp; Conditions</Link>
+            <Link href="/">Governance Policies</Link> */}
           </nav>
           <p className="copy">
             © Clyde Ventures 2022 | Registered in Scotland: SC723600
@@ -83,16 +86,21 @@ const StyledFooter = styled.footer`
     }
     .email {
       margin-top: 1rem;
+      display: block;
       font-size: 0.8rem;
-    }
-    a {
-      margin-left: 1.2rem;
     }
 
     .bottom-right {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+      align-items: flex-end;
+
+      a {
+        margin-left: 1.2rem;
+        margin-top: 0rem;
+        text-decoration: underline;
+      }
       .copy {
         text-align: right;
         color: var(--light-grey);
