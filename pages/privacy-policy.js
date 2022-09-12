@@ -1281,4 +1281,13 @@ const StyledTerms = styled.section`
       padding: 1rem;
     }
   }
+
+  @media only screen and (max-width: 1170px) {
+    .inner-terms {
+      padding: 10rem 2rem;
+    }
+    h1 {
+      font-size: 3.3rem;
+    }
+  }
 `;
