@@ -26,6 +26,7 @@ body {
   --white-transparent3: rgba(255, 255, 255, 0.5);
   --white-banner: rgba(255, 255, 255, 0.8);
   --sky-blue: #b4d3e8;
+  --sky-blue: #c9ebfd;
   --grey: #f2f2f2;
   --grey2: #e0e0e0;
   --medium-grey: #767676;
@@ -38,6 +39,7 @@ body {
   --yellow2: #f9c156;
   --yellow3: #f9c056a6;
   --red: #dc5252;
+  --green: #74cf4a;
 
   /* -- */
   font-weight: 400;

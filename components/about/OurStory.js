@@ -6,7 +6,7 @@ import AboutUsSectionContainer from './AboutUsSectionContainer';
 export default function OurStory() {
   return (
     <div>
-      <AboutUsSectionContainer>
+      <AboutUsSectionContainer background="var(--white2)">
         <h4>Our Story</h4>
         <p>
           We recruit 90% of our staff from the most deprived 10% of postcodes
@@ -23,7 +23,7 @@ export default function OurStory() {
         </p>
       </AboutUsSectionContainer>
 
-      <AboutUsSectionContainer background="var(--white2)">
+      <AboutUsSectionContainer background="var(--grey)">
         <div className="our-story-section-2">
           <div>
             <h4>Our Mission</h4>
@@ -47,7 +47,7 @@ export default function OurStory() {
         </div>
       </AboutUsSectionContainer>
 
-      <AboutUsSectionContainer>
+      <AboutUsSectionContainer background="var(--white2)">
         <div className="our-story-section-3">
           <div>
             <h4>A Brief History</h4>

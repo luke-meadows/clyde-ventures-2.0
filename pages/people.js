@@ -2,7 +2,6 @@ import Head from 'next/head';
 import styled from 'styled-components';
 import TeamGrid from '../components/people/TeamGrid';
 export default function People() {
-  console.log(process.env.NEXT_PUBLIC_TEST);
   return (
     <PageContainer className="people-page">
       <Head>
@@ -48,7 +47,7 @@ const PageContainer = styled.main`
     }
   }
   @media only screen and (max-width: 1170px) {
-    padding: 10rem 2rem 2rem 2rem;
+    padding: 12rem 2rem 2rem 2rem;
 
     .hero {
       padding: 0;

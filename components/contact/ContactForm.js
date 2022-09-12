@@ -1,17 +1,30 @@
 import Image from 'next/image';
-import { useRef } from 'react';
+import { useRef, useState } from 'react';
 import styled from 'styled-components';
 import useForm from '../../lib/useForm';
 import Logo from '../../public/1.png';
 
+const ButtonIcon = (variant) => {
+  return <i className={`icon-${variant}`} />;
+};
+
 export default function ContactForm() {
-  const { inputs, handleChange, resetForm, clearForm } = useForm({
-    name: '',
-    email: '',
-    confEmail: '',
-    subject: '',
-    message: '',
+  const [buttonStatus, setButtonStatus] = useState({
+    content: 'Send',
+    bg: 'var(--yellow2)',
+    disabled: false,
   });
+
+  const { inputs, handleChange, clearForm } = useForm(
+    {
+      name: '',
+      email: '',
+      confEmail: '',
+      subject: '',
+      message: '',
+    },
+    setButtonStatus
+  );
 
   const nameRef = useRef();
   const emailRef = useRef();
@@ -28,11 +41,26 @@ export default function ContactForm() {
   };
 
   function submitForm(inputs) {
+    setButtonStatus({ ...buttonStatus, disabled: true });
     fetch('/api/mail', {
       method: 'post',
       body: JSON.stringify(inputs),
     }).then((res) => {
-      console.log(res);
+      if (res.status === 200) {
+        // see if we can get this to fade out in JS
+        setButtonStatus({
+          content: ButtonIcon('check'),
+          bg: 'var(--green)',
+          disabled: true,
+        });
+        clearForm();
+      } else {
+        setButtonStatus({
+          content: ButtonIcon('cancel'),
+          bg: 'var(--red)',
+          disabled: true,
+        });
+      }
     });
   }
 
@@ -58,7 +86,17 @@ export default function ContactForm() {
   }
 
   return (
-    <StyledContactForm onSubmit={validateForm}>
+    <StyledContactForm
+      onSubmit={validateForm}
+      buttonStatus={buttonStatus}
+      onKeyDown={() =>
+        setButtonStatus({
+          content: 'Send',
+          bg: 'var(--yellow2)',
+          disabled: false,
+        })
+      }
+    >
       <div className="logo-container">
         <Image src={Logo} layout="responsive" objectFit="contain" />
       </div>
@@ -106,7 +144,9 @@ export default function ContactForm() {
         onChange={handleChange}
         ref={messageRef}
       />
-      <button type="submit">Send</button>
+      <button type="submit" onClick={() => console.log('click')}>
+        {buttonStatus.content}
+      </button>
     </StyledContactForm>
   );
 }
@@ -173,19 +213,18 @@ const StyledContactForm = styled.form`
     margin-bottom: 1.4rem;
   }
   button {
+    width: 8rem;
     display: block;
     margin-top: 1.1rem;
-    background: var(--yellow2);
+    background: ${(props) => props.buttonStatus.bg};
     border: none;
     font-size: 0.9rem;
     font-weight: 500;
     color: var(--black);
-    padding: 0.55rem 3rem;
-    transition: all 0.3s ease;
-    &:hover {
-      background: var(--dark-grey);
-      color: var(--yellow2);
-    }
+    padding: 0.55rem 0rem;
+    transition: all 1s ease;
+    pointer-events: ${(props) =>
+      props.buttonStatus.disabled ? 'none' : 'all'};
   }
   @media only screen and (max-width: 1170px) {
     width: 100%;

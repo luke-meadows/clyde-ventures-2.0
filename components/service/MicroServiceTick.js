@@ -29,7 +29,7 @@ const Container = styled.div`
   padding: ${(props) => (props.withPadding ? '5rem 5rem' : '')};
   width: 100%;
   max-width: 1800px;
-  margin: 0 auto 0rem auto;
+  margin: 2rem auto 0rem auto;
   p {
     font-size: 1.2rem;
     max-width: 100ch;
@@ -52,14 +52,13 @@ const Container = styled.div`
 `;
 const StyledMicroServiceTick = styled.div`
   border: 2px solid var(--light-grey);
-  background: var(--white);
   display: flex;
   flex-direction: column;
-  padding: 2.5rem 2rem;
+  padding: 1.8rem;
   border-radius: 0.4rem;
   .top {
     display: flex;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
   }
   i {
     color: var(--dark-grey);
@@ -77,12 +76,12 @@ const StyledMicroServiceTick = styled.div`
   }
   p {
     font-size: 1rem !important;
+    /* color: white !important; */
 
-    color: var(--dark-grey);
+    /* color: var(--dark-grey); */
     margin-bottom: 0;
   }
   h4 {
-    color: var(--dark-grey);
     font-weight: 500;
   }
   @media only screen and (max-width: 1170px) {
