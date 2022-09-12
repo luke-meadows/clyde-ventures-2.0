@@ -151,7 +151,7 @@ export default function ContactForm() {
         </div>
         <p>
           By ticking this box you declare you accept our{' '}
-          <a href="www.clydeventures.com/privacy-policy" target="blank">
+          <a href="https://www.clydeventures.com/privacy-policy" target="blank">
             privacy policy
           </a>
         </p>
