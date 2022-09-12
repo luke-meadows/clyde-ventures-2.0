@@ -47,14 +47,13 @@ const PageContainer = styled.main`
     }
   }
   @media only screen and (max-width: 1170px) {
-    padding: 12rem 2rem 2rem 2rem;
-
+    padding: 10rem 2rem 2rem 2rem;
     .hero {
       padding: 0;
       h1 {
         font-size: 3.3rem;
       }
-      padding-bottom: 2.4rem;
+      padding-bottom: 1rem;
     }
   }
 `;

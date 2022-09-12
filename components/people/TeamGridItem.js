@@ -126,6 +126,7 @@ const StyledTeamGridItem = styled.div`
     }
   }
   .img-container {
+    margin-top: ${(props) => (props.teamMemberActive ? ' 2rem' : '0')};
     overflow: hidden;
     position: relative;
     aspect-ratio: 1;
@@ -182,6 +183,7 @@ const StyledTeamGridItem = styled.div`
     .img-container {
       margin-right: 0;
       width: calc(100vw - 4rem);
+      margin-top: 0;
     }
     .linked-in {
       top: 2.2rem;

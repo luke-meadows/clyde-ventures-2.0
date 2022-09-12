@@ -289,5 +289,8 @@ const StyledContactForm = styled.form`
     .logo-container {
       display: none;
     }
+    .checkbox {
+      margin-right: 0.5rem !important;
+    }
   }
 `;
