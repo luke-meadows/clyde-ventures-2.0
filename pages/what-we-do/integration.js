@@ -31,7 +31,7 @@ export default function Integration() {
       <MicroServicesGrid
         options={[
           'Implementation',
-          ' Migration',
+          'Migration',
           'Automation',
           'Consulting',
           'Support',

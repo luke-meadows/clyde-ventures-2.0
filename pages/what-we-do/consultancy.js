@@ -30,7 +30,6 @@ export default function Consultancy() {
           'Short and long term business planning',
           'Product Design',
           'Regulatory Strategies',
-          'Customer acquisition to profit',
           'Scaling products globally',
           'Debt Management',
           'Entering new markets',
@@ -38,6 +37,7 @@ export default function Consultancy() {
           'Target operating models',
           'OPEX reduction',
           'Fundraising',
+          'Customer acquisition to profit',
         ]}
       />
 

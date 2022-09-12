@@ -198,7 +198,7 @@ const StyledContactForm = styled.form`
     font-size: 0.9rem;
     border-radius: 2rem;
     transition: all 0.5s ease;
-    max-width: 40rem;
+    max-width: 45rem;
     &.warning {
       ::placeholder {
         color: var(--red);
@@ -229,7 +229,7 @@ const StyledContactForm = styled.form`
     }
     .checkbox {
       width: fit-content;
-      margin-right: 1rem;
+      margin-right: 0.5rem;
       margin-left: 0.2rem;
       margin-top: -0.2rem;
     }

@@ -32,14 +32,13 @@ export default function HeaderPrimary({ setShowSidebar, showSidebar }) {
 const StyledHeaderPrimary = styled.header`
   align-items: center;
   position: absolute;
-  left: 0;
   z-index: 2;
   width: 100%;
   padding: 0 5rem;
 
   .header-inner {
     margin: 0 auto;
-    max-width: 1600px;
+    max-width: 1610px;
     display: flex;
     justify-content: space-between;
     align-items: center;

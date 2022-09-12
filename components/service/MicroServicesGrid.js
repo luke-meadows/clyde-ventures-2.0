@@ -23,7 +23,7 @@ const Container = styled.div`
   background: var(--white2);
   padding: 5rem;
   .inner {
-    max-width: 1800px;
+    max-width: 1600px;
     margin: 0 auto;
     h3 {
       padding-bottom: 2rem;

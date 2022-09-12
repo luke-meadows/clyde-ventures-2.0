@@ -56,7 +56,6 @@ const StyledNav = styled.nav`
   justify-content: center;
   height: fit-content;
   width: fit-content;
-
   a,
   .services-dropdown {
     margin-right: 1.5rem;

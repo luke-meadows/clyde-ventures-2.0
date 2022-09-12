@@ -126,7 +126,7 @@ const StyledTeamGridItem = styled.div`
     }
   }
   .img-container {
-    margin-top: ${(props) => (props.teamMemberActive ? ' 2rem' : '0')};
+    margin-top: ${(props) => (props.teamMemberActive ? ' 1rem' : '0')};
     overflow: hidden;
     position: relative;
     aspect-ratio: 1;
