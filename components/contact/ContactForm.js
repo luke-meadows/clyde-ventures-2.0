@@ -150,7 +150,7 @@ export default function ContactForm() {
           <input ref={checkboxRef} type="checkbox" className="checkbox" />
         </div>
         <p>
-          By ticking this box you declare you accept our{' '}
+          I confirm I accept the Clyde Ventures{' '}
           <a href="https://www.clydeventures.com/privacy-policy" target="blank">
             privacy policy
           </a>
