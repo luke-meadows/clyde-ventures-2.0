@@ -276,7 +276,7 @@ export default function PrivacyPolicy() {
               <a
                 href="https://www.experian.co.uk/legal/crain/"
                 className="underline"
-                target="_blank"
+                target="blank"
               >
                 https://www.experian.co.uk/legal/crain/
               </a>
@@ -290,7 +290,7 @@ export default function PrivacyPolicy() {
               <a
                 href="http://www.equifax.co.uk/crain"
                 className="underline"
-                target="_blank"
+                target="blank"
               >
                 www.equifax.co.uk/crain
               </a>
@@ -304,7 +304,7 @@ export default function PrivacyPolicy() {
               <a
                 href="http://www.experian.co.uk/crain"
                 className="underline"
-                target="_blank"
+                target="blank"
               >
                 www.experian.co.uk/crain
               </a>
@@ -414,7 +414,7 @@ export default function PrivacyPolicy() {
           <a
             href="https://support.google.com/analytics/answer/2790010"
             className="underline"
-            target="_blank"
+            target="blank"
           >
             here
           </a>
