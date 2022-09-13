@@ -56,8 +56,8 @@ function MyApp({ Component, pageProps }) {
           type: 'website',
         }}
         twitter={{
-          image: '/1.png',
-          site: '@lukemeadows1111',
+          image: 'https://www.clydeventures.com/1.png',
+          site: '@clydeventures',
           card: 'summary',
         }}
       />
