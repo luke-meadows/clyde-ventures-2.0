@@ -15,7 +15,7 @@ function MyApp({ Component, pageProps }) {
     <Page>
       <SEO
         title="Clyde Ventures"
-        description="Circular solutions for the world"
+        description="Circular solutions for the world. Consult, Integrate, Educate, Manufacture"
         keywords={[
           'consultancy',
           'consult',
@@ -56,7 +56,7 @@ function MyApp({ Component, pageProps }) {
           type: 'website',
         }}
         twitter={{
-          image: '/og-logo.png',
+          image: '/1.png',
           site: '@clydeventures',
           card: 'summary',
         }}
