@@ -10,7 +10,7 @@ export default function Home() {
     <div>
       {/* <Head>
         <title>Clyde Ventures</title>
-        <meta name="description" content="" />
+        <meta name="description" content="Circular solutions for the world" />
         <link rel="icon" href="/favicon.ico" />
       </Head> */}
       <Hero />

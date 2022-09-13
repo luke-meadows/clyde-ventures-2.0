@@ -56,9 +56,9 @@ function MyApp({ Component, pageProps }) {
           type: 'website',
         }}
         twitter={{
-          image: 'https://www.clydeventures.com/1.png',
+          image: '/1.png',
           site: '@clydeventures',
-          card: 'summary',
+          card: 'summary_large_image',
         }}
       />
       <Header setShowSidebar={setShowSidebar} showSidebar={showSidebar} />
