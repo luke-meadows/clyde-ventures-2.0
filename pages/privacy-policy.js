@@ -1,12 +1,13 @@
-import Head from 'next/head';
+import SEO from '@bradgarropy/next-seo';
 import styled from 'styled-components';
 export default function PrivacyPolicy() {
   return (
     <StyledTerms>
-      <Head>
-        <title>Clyde Ventures - Privacy Policy</title>
-        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-      </Head>
+      <SEO
+        title="Clyde Ventures - Privacy Policy"
+        description="Our policy on privacy."
+      />
+
       <div className="inner-terms">
         <h1 className="">Privacy Policy</h1>
         <h4 className="font-bold font-sensibility text-1xl sm:text-1xl md:text-2xl lg:text-3xl leading-snug mt-12 mb-6 text-darkblue">

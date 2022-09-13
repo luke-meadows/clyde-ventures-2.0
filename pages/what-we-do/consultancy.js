@@ -1,4 +1,4 @@
-import Head from 'next/head';
+import SEO from '@bradgarropy/next-seo';
 import Image from 'next/image';
 import MicroServicesGrid from '../../components/service/MicroServicesGrid';
 import ServiceBenefits from '../../components/service/ServiceBenefits';
@@ -8,10 +8,10 @@ import img from '../../public/consultancy.jpg';
 export default function Consultancy() {
   return (
     <ServicePage>
-      <Head>
-        <title>Clyde Ventures - Consultancy</title>
-        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-      </Head>
+      <SEO
+        title="Clyde Ventures - Consultancy"
+        description="Learn about our consultancy service."
+      />
       <div className="hero">
         <h1>Consultancy</h1>
         <p>

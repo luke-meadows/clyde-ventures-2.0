@@ -177,4 +177,11 @@ const StyledSideBar = styled(motion.div)`
       font-size: 1.4rem !important;
     }
   }
+  @media only screen and (min-width: 1800px) {
+    width: 31rem;
+    a,
+    .what-we-do {
+      font-size: 1.6rem !important;
+    }
+  }
 `;

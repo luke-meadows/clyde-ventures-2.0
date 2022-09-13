@@ -1,16 +1,17 @@
-import Head from 'next/head';
+import SEO from '@bradgarropy/next-seo';
 import Image from 'next/image';
 import MicroServiceTicks from '../../components/service/MicroServiceTick';
 import ServiceBenefits from '../../components/service/ServiceBenefits';
 import { StyledServicePage } from '../../components/service/ServicePage';
 import img from '../../public/education.jpg';
+
 export default function Education() {
   return (
     <StyledServicePage>
-      <Head>
-        <title>Clyde Ventures - Education</title>
-        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-      </Head>
+      <SEO
+        title="Clyde Ventures - Education"
+        description="Learn about our MBA in sustainability."
+      />
       <div className="hero">
         <h1>Education</h1>
         <p>

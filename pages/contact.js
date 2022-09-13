@@ -1,20 +1,18 @@
-import Head from 'next/head';
-import Image from 'next/image';
+import SEO from '@bradgarropy/next-seo';
 import styled from 'styled-components';
-import OurStory from '../components/about/OurStory';
 import ContactSection from '../components/contact/ContactSection';
 import HeroWithBackgroundImg from '../components/global/HeroWithBackgroundImg';
-import ContactBackground from '../public/contact-background.jpg';
+import ContactBackgroundImage from '../public/contact-background.jpg';
 
 export default function Contact() {
   return (
     <PageContainer>
-      <Head>
-        <title>Clyde Ventures - Contact us</title>
-        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-      </Head>
+      <SEO
+        title="Clyde Ventures - Contact us"
+        description="Our contact information."
+      />
       <HeroWithBackgroundImg
-        image={ContactBackground}
+        image={ContactBackgroundImage}
         header="Lets Talk"
         blurb="What can we do to help?"
         buttonText={'Submit your information'}

@@ -1,9 +1,14 @@
+import SEO from '@bradgarropy/next-seo';
 import styled from 'styled-components';
 import CircularSolutionsGraphic from '../components/circular-solutions/CircularSolutionsGraphic';
 import CircularSolutionsGrid from '../components/circular-solutions/CircularSolutionsGrid';
 export default function CircularSolutions() {
   return (
     <CircularSolutionsPage>
+      <SEO
+        title="Clyde Ventures - Circular Solutions"
+        description="How we operate with a sustainable approach."
+      />
       <Container>
         <h1>Circular Solutions</h1>
         <p>Sustainability is at the heart of everything we do.</p>

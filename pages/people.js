@@ -1,13 +1,14 @@
-import Head from 'next/head';
+import SEO from '@bradgarropy/next-seo';
 import styled from 'styled-components';
 import TeamGrid from '../components/people/TeamGrid';
+
 export default function People() {
   return (
     <PageContainer className="people-page">
-      <Head>
-        <title>Clyde Ventures - People</title>
-        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-      </Head>
+      <SEO
+        title="Clyde Ventures - People"
+        description="Learn who our team are."
+      />
       <div className="hero">
         <h1>Meet The Team</h1>
         <p>

@@ -1,15 +1,16 @@
-import Head from 'next/head';
+import SEO from '@bradgarropy/next-seo';
 import styled from 'styled-components';
 import OurStory from '../components/about/OurStory';
 import HeroWithBackgroundImg from '../components/global/HeroWithBackgroundImg';
 import AboutBackground from '../public/about-hero.jpg';
+
 export default function About() {
   return (
     <PageContainer>
-      <Head>
-        <title>Clyde Ventures - About us</title>
-        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-      </Head>
+      <SEO
+        title="Clyde Ventures - About us"
+        description="Learn about the company and how we started."
+      />
       <HeroWithBackgroundImg
         image={AboutBackground}
         header="About us"
