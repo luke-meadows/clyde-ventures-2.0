@@ -51,12 +51,12 @@ function MyApp({ Component, pageProps }) {
         themeColor="#f9c156"
         colorScheme="light"
         facebook={{
-          image: '/logo2.png',
+          image: '/og-logo.png',
           url: 'https://clydeventures.com',
           type: 'website',
         }}
         twitter={{
-          image: '/logo2.png',
+          image: '/og-logo.png',
           site: '@clydeventures',
           card: 'summary',
         }}
