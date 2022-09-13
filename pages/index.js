@@ -8,11 +8,11 @@ import ServiceSection from '../components/home/ServiceSection';
 export default function Home() {
   return (
     <div>
-      <Head>
+      {/* <Head>
         <title>Clyde Ventures</title>
-        <meta name="description" content="Circular solutions for the world" />
+        <meta name="description" content="" />
         <link rel="icon" href="/favicon.ico" />
-      </Head>
+      </Head> */}
       <Hero />
       <ServiceSection />
       {/* <GetToKnowOurPeople /> */}

@@ -229,7 +229,7 @@ const StyledContactForm = styled.form`
     }
     .checkbox {
       width: fit-content;
-      margin-right: 0.5rem;
+      margin-right: 0.3rem;
       margin-left: 0.2rem;
       margin-top: -0.2rem;
     }
