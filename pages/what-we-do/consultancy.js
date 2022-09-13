@@ -20,7 +20,7 @@ export default function Consultancy() {
           faceted change projects and developing high potential teams often in
           challenging environments.
         </p>
-        <p>
+        <p className="last-paragraph">
           We approach each stage of an engagement with the following values at
           the forefront: Speed, Agility, Authenticity, Empathy.
         </p>

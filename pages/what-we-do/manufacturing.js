@@ -11,7 +11,7 @@ export default function Manufacturing() {
       />
       <div className="hero">
         <h1>Manufacturing</h1>
-        <p>
+        <p className="last-paragraph">
           We are working on several sustainable and innovative products for the
           transport and construction industry. We will be testing these products
           against British Standards in early October. We are excited about

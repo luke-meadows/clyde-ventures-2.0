@@ -84,8 +84,6 @@ const StyledHeaderSecondary = styled(motion.header)`
     color: var(--dark-grey);
   }
   .header-inner {
-    margin: 0 auto;
-    max-width: 1600px;
     display: flex;
     justify-content: space-between;
     align-items: center;

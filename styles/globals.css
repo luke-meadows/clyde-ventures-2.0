@@ -38,7 +38,7 @@ body {
   --yellow: #f5cb85;
   --yellow2: #f9c156;
   --yellow3: #f9c056a6;
-  --red: #dc5252;
+  --red: #ca6060;
   --green: #4acf79;
 
   /* -- */
@@ -132,5 +132,5 @@ textarea {
 }
 
 .last-paragraph {
-  margin-bottom: 0;
+  margin-bottom: 0 !important;
 }

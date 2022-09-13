@@ -43,6 +43,7 @@ export default function TeamGridItem({ teamMember }) {
               </a>
             </>
           )}
+
           <div onClick={handleClick} className="image-and-name">
             <div className="img-container">
               <Image src={image} layout="fill" objectFit="cover" />
@@ -52,13 +53,16 @@ export default function TeamGridItem({ teamMember }) {
               <p>{role}</p>
             </div>
           </div>
+
           {teamMemberActive && (
-            <div style={{ marginTop: '1.5rem' }}>
-              {description.map((p, i) => (
-                <p key={i} style={{ marginBottom: '1rem' }}>
-                  {p}
-                </p>
-              ))}
+            <div className="description-container-outer">
+              <div className="description-container">
+                {description.map((p, i) => (
+                  <p key={i} style={{ marginBottom: '1rem' }}>
+                    {p}
+                  </p>
+                ))}
+              </div>
             </div>
           )}
         </div>
@@ -70,7 +74,7 @@ export default function TeamGridItem({ teamMember }) {
 const StyledTeamGridItem = styled.div`
   background: var(--white);
   position: relative;
-  cursor: pointer;
+  cursor: ${(props) => (props.teamMemberActive ? 'initial' : 'pointer')};
   .outer {
     transition: all 0.3s ease;
     background: var(--dark-grey-transparent);
@@ -94,26 +98,27 @@ const StyledTeamGridItem = styled.div`
     width: ${(props) =>
       props.teamMemberActive ? 'calc(100% - 12rem);' : '100%'};
     max-width: calc(1200px);
-    padding: ${(props) => (props.teamMemberActive ? '3rem' : '0')};
+    padding: ${(props) => (props.teamMemberActive ? '6rem 3rem' : '0')};
     z-index: ${(props) => (props.teamMemberActive ? '3' : '1')};
   }
   .container {
     height: 100%;
-
     position: relative;
     display: ${(props) => (props.teamMemberActive ? 'flex' : 'block')};
     .exit {
       position: fixed;
-      top: 1rem;
-      right: 1rem;
+      top: 1.5rem;
+      right: 2rem;
       font-size: 1.4rem;
+      cursor: pointer;
     }
   }
 
   .linked-in {
+    cursor: pointer;
     position: fixed;
-    bottom: 1.6rem;
-    right: 2rem;
+    bottom: 2rem;
+    right: 3rem;
     width: 5rem;
     a {
       width: fit-content;
@@ -126,7 +131,6 @@ const StyledTeamGridItem = styled.div`
     }
   }
   .img-container {
-    margin-top: ${(props) => (props.teamMemberActive ? ' 1rem' : '0')};
     overflow: hidden;
     position: relative;
     aspect-ratio: 1;
@@ -151,8 +155,33 @@ const StyledTeamGridItem = styled.div`
       margin-bottom: 0;
     }
   }
-  p {
-    font-size: 0.9rem;
+  .description-container-outer {
+    position: relative;
+  }
+  .description-container {
+    background: var(--grey);
+    max-height: 24.5rem;
+    width: 100%;
+    overflow-y: scroll;
+    padding-bottom: 2rem;
+    p {
+      font-size: 0.9rem;
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      z-index: 1;
+      bottom: 0;
+      left: 0;
+      pointer-events: none;
+      background-image: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0),
+        var(--grey) 90%
+      );
+      width: 100%;
+      height: 4em;
+    }
   }
 
   @media only screen and (max-width: 1170px) {
@@ -189,6 +218,16 @@ const StyledTeamGridItem = styled.div`
       top: 2.2rem;
       left: 2.1rem;
       width: 6rem;
+    }
+    .description-container-outer {
+      margin-top: 2rem;
+    }
+    .description-container {
+      max-height: none;
+      width: 100%;
+      &:after {
+        background-image: none;
+      }
     }
   }
 `;
