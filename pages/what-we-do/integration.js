@@ -13,19 +13,21 @@ export default function Integration() {
         description="Learn about our systems integration service."
       />
       <div className="hero">
-        <h1>Integration</h1>
-        <p>
-          We integrate your business processes into modern technology platforms
-          in order to maximise customer engagement. Clyde Ventures will deliver
-          quick and meaningful results that will expedite the ROI in your
-          strategic decision to use a CRM platform. We are specialists of
-          implementation in the following domains:
-        </p>
-        <ul>
-          <li>Energy, utilities and water</li>
-          <li>Professional and legal services</li>
-          <li>Third sector</li>
-        </ul>
+        <div className="hero-inner">
+          <h1>Integration</h1>
+          <p>
+            We integrate your business processes into modern technology
+            platforms in order to maximise customer engagement. Clyde Ventures
+            will deliver quick and meaningful results that will expedite the ROI
+            in your strategic decision to use a CRM platform. We are specialists
+            of implementation in the following domains:
+          </p>
+          <ul>
+            <li>Energy, utilities and water</li>
+            <li>Professional and legal services</li>
+            <li>Third sector</li>
+          </ul>
+        </div>
       </div>
 
       <MicroServicesGrid

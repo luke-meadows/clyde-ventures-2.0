@@ -3,17 +3,18 @@ sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
 export default async function handler(req, res) {
   const body = JSON.parse(req.body);
+  console.log(body);
 
   const messageText = `
   Name: ${body.name}\r\n\
   Email: ${body.email}\r\n\
-  Message: ${body.message}
+  Telephone: ${body.telephone}
   `;
 
   const email = {
-    to: 'help@clydeventures.com',
+    to: 'danny@clydeventures.com',
     from: 'help@clydeventures.com',
-    subject: body.subject,
+    subject: 'Brochure Download',
     text: messageText,
   };
 

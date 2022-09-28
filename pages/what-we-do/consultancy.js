@@ -13,18 +13,21 @@ export default function Consultancy() {
         description="Learn about our consultancy service."
       />
       <div className="hero">
-        <h1>Consultancy</h1>
-        <p>
-          We don&apos;t believe in career consultants. Born from operations, our
-          team are experienced in managing complex P&L&apos;s, delivering multi
-          faceted change projects and developing high potential teams often in
-          challenging environments.
-        </p>
-        <p className="last-paragraph">
-          We approach each stage of an engagement with the following values at
-          the forefront: Speed, Agility, Authenticity, Empathy.
-        </p>
+        <div className="hero-inner">
+          <h1>Consultancy</h1>
+          <p>
+            We don&apos;t believe in career consultants. Born from operations,
+            our team are experienced in managing complex P&L&apos;s, delivering
+            multi faceted change projects and developing high potential teams
+            often in challenging environments.
+          </p>
+          <p className="last-paragraph">
+            We approach each stage of an engagement with the following values at
+            the forefront: Speed, Agility, Authenticity, Empathy.
+          </p>
+        </div>
       </div>
+
       <MicroServicesGrid
         options={[
           'Short and long term business planning',

@@ -7,7 +7,8 @@ export default function People() {
     <PageContainer className="people-page">
       <SEO
         title="Clyde Ventures - People"
-        description="Learn who our team are."
+        description="Get to know us and learn what we're about. We are serious about
+        our work and love to get stuck into a challenge."
       />
       <div className="hero">
         <h1>Meet The Team</h1>

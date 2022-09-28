@@ -8,29 +8,30 @@ export default function ServicePage({ children, processGridCols }) {
 }
 
 export const StyledServicePage = styled.section`
-  background: var(--white);
+  background: var(--white2);
   overflow: hidden;
   position: relative;
   width: 100%;
   .hero {
-    padding: 12rem 5rem 5rem 5rem;
+    background: var(--white);
+    color: var(--dark-grey);
+    padding: 12rem 5rem 10rem 5rem;
     position: relative;
-    width: 100%;
-    max-width: 1800px;
-    margin: 0 auto 0 auto;
+    .hero-inner {
+      max-width: 1600px;
+      margin: 0 auto;
+    }
     h1 {
       z-index: 1;
       font-size: 4rem;
       margin-bottom: 1rem;
       font-weight: 500;
-      color: var(--dark-grey);
     }
     p {
       font-size: 1.2rem;
 
       margin: 1rem 0 1rem 0.2rem;
       max-width: 100ch;
-      color: var(--dark-grey);
     }
     li {
       list-style-position: inside;
@@ -41,14 +42,15 @@ export const StyledServicePage = styled.section`
 
   .lower-section {
     display: flex;
-    align-items: center;
-    padding: 5rem 5rem;
+    gap: 2.5rem;
+    padding-left: 5rem;
     max-width: 1800px;
     margin: 0 auto;
     .text {
-      width: 60%;
+      width: calc(50% - 5rem);
     }
     .text {
+      padding: 5rem 0;
       h2 {
         font-weight: 500;
         font-size: 2.4rem;
@@ -60,11 +62,12 @@ export const StyledServicePage = styled.section`
     }
     .img-container {
       position: relative;
-      height: 22rem;
-      width: 40%;
+      width: calc(50% + 5rem);
+
+      min-height: 100%;
       margin-left: 5rem;
-      border-radius: 0.3rem;
       overflow: hidden;
+      margin: 0;
     }
     button {
       background: var(--yellow2);
@@ -81,7 +84,7 @@ export const StyledServicePage = styled.section`
   }
   @media only screen and (max-width: 1170px) {
     .hero {
-      padding: 10rem 2rem 2.5rem 2rem;
+      padding: 10rem 2rem 8rem 2rem;
       h1 {
         font-size: 3.3rem;
       }
