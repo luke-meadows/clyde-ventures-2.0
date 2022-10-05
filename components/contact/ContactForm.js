@@ -11,20 +11,17 @@ const ButtonIcon = (variant) => {
 export default function ContactForm() {
   const [buttonStatus, setButtonStatus] = useState({
     content: 'Send',
-    bg: 'var(--yellow2)',
+    className: 'unsent-button-bg',
     disabled: false,
   });
 
-  const { inputs, handleChange, clearForm } = useForm(
-    {
-      name: '',
-      email: '',
-      confEmail: '',
-      subject: '',
-      message: '',
-    },
-    setButtonStatus
-  );
+  const { inputs, handleChange, clearForm } = useForm({
+    name: '',
+    email: '',
+    confEmail: '',
+    subject: '',
+    message: '',
+  });
 
   const nameRef = useRef();
   const emailRef = useRef();
@@ -51,14 +48,14 @@ export default function ContactForm() {
       if (res.status === 200) {
         setButtonStatus({
           content: ButtonIcon('check'),
-          bg: 'var(--green)',
+          className: 'sent-button-bg',
           disabled: true,
         });
         clearForm();
       } else {
         setButtonStatus({
           content: ButtonIcon('cancel'),
-          bg: 'var(--red)',
+          className: 'error-button-bg',
           disabled: true,
         });
       }
@@ -94,7 +91,7 @@ export default function ContactForm() {
       onKeyDown={() =>
         setButtonStatus({
           content: 'Send',
-          bg: 'var(--yellow2)',
+          className: 'unsent-button-bg',
           disabled: false,
         })
       }
@@ -157,7 +154,7 @@ export default function ContactForm() {
           </a>
         </p>
       </div>
-      <button type="submit" onClick={() => console.log('click')}>
+      <button type="submit" className={buttonStatus.className}>
         {buttonStatus.content}
       </button>
     </StyledContactForm>
@@ -253,7 +250,6 @@ const StyledContactForm = styled.form`
     width: 8rem;
     display: block;
     margin-top: 1.1rem;
-    background: ${(props) => props.buttonStatus.bg};
     border: none;
     font-size: 0.9rem;
     font-weight: 500;
@@ -262,6 +258,15 @@ const StyledContactForm = styled.form`
     transition: all 1s ease;
     pointer-events: ${(props) =>
       props.buttonStatus.disabled ? 'none' : 'all'};
+  }
+  .unsent-button-bg {
+    background: var(--yellow2);
+  }
+  .sent-button-bg {
+    background: var(--green);
+  }
+  .error-button-bg {
+    background: var(--red);
   }
   @media only screen and (max-width: 1170px) {
     width: 100%;
