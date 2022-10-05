@@ -88,6 +88,7 @@ export default function ContactForm() {
 
   return (
     <StyledContactForm
+      id="contact_us"
       onSubmit={validateForm}
       buttonStatus={buttonStatus}
       onKeyDown={() =>
