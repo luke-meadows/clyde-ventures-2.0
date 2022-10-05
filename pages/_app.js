@@ -8,6 +8,7 @@ import { AnimatePresence } from 'framer-motion';
 import { useState } from 'react';
 import SEO from '@bradgarropy/next-seo';
 import { nextSeoConfig } from '../seo/config';
+import Script from 'next/script';
 
 function MyApp({ Component, pageProps }) {
   const [showSidebar, setShowSidebar] = useState(false);
@@ -15,6 +16,22 @@ function MyApp({ Component, pageProps }) {
   return (
     <Page>
       <SEO {...nextSeoConfig} />
+      <Script
+        strategy="lazyOnload"
+        src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
+      />
+
+      <Script strategy="lazyOnload">
+        {`
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){dataLayer.push(arguments);}
+                    gtag('js', new Date());
+                    gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}', {
+                    page_path: window.location.pathname,
+                    });
+                `}
+      </Script>
+
       <Header setShowSidebar={setShowSidebar} showSidebar={showSidebar} />
       <AnimatePresence initial={false}>
         {showSidebar && (
