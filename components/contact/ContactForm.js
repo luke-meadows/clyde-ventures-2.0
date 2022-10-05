@@ -157,7 +157,7 @@ export default function ContactForm() {
       <button type="submit" className={buttonStatus.className}>
         {buttonStatus.content}
       </button>
-      {buttonStatus.className === 'sent-button-bg' && <div id="form-sent" />}
+      <div id="form-sent" />
     </StyledContactForm>
   );
 }
