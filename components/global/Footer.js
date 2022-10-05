@@ -19,6 +19,7 @@ export default function Footer() {
           <a
             target="blank"
             href="https://www.linkedin.com/company/clyde-ventures/"
+            alt="LinkedIn"
           >
             <i className="icon-linkedin" />
           </a>
@@ -45,7 +46,9 @@ export default function Footer() {
         </div>
         <div className="bottom-right">
           <nav>
-            <Link href="/privacy-policy">Privacy Policy</Link>
+            <Link href="/privacy-policy" alt="Privacy Policy">
+              Privacy Policy
+            </Link>
             {/* <Link href="/">Terms &amp; Conditions</Link>
             <Link href="/">Governance Policies</Link> */}
           </nav>

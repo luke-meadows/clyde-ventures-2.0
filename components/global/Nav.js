@@ -30,8 +30,12 @@ export default function Nav() {
         >
           What we do <i className="icon-angle-down" />
         </div>
-        <Link href="/about">About us</Link>
-        <Link href="/people">People</Link>
+        <Link href="/about" alt="About Page">
+          About us
+        </Link>
+        <Link href="/people" alt="People Page">
+          People
+        </Link>
         {/* <Link href="/people">Community</Link> */}
         {subNavActive && (
           <>

@@ -33,6 +33,7 @@
   ],
   "title": "Clyde Ventures",
   "description": "Circular solutions for the world. Consult, Integrate, Educate, Manufacture",
+  "canonical": "https://www.clydeventures.com/",
   "version": "0.1.0",
   "private": true,
   "scripts": {

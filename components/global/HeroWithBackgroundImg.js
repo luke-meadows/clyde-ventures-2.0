@@ -28,7 +28,7 @@ export default function HeroWithBackgroundImg({
         </div>
       </div>
       {buttonUrl && (
-        <Link href={buttonUrl}>
+        <Link href={buttonUrl} alt="sub-page">
           <LearnMore>
             {buttonText}
             <i

@@ -32,7 +32,12 @@ export default function TeamGridItem({ teamMember }) {
                 onClick={() => setTeamMemberActive(false)}
               />
 
-              <a target="blank" href={linkedIn} className="linked-in">
+              <a
+                target="blank"
+                href={linkedIn}
+                className="linked-in"
+                alt="Linked In"
+              >
                 <div>
                   <Image
                     src={LinkedInLogo}
@@ -46,10 +51,10 @@ export default function TeamGridItem({ teamMember }) {
 
           <div onClick={handleClick} className="image-and-name">
             <div className="img-container">
-              <Image src={image} layout="fill" objectFit="cover" />
+              <Image src={image} layout="fill" objectFit="cover" alt={name} />
             </div>
             <div className="text">
-              <h5>{name}</h5>
+              <h2>{name}</h2>
               <p>{role}</p>
             </div>
           </div>
@@ -148,7 +153,7 @@ const StyledTeamGridItem = styled.div`
     text-align: center;
     background: var(--yellow2);
     margin-right: ${(props) => (props.teamMemberActive ? '2.5rem' : '0')};
-    h5 {
+    h2 {
       font-size: 1.3rem;
     }
     p {
@@ -207,11 +212,10 @@ const StyledTeamGridItem = styled.div`
     }
     .image-and-name {
       width: ${(props) => (props.teamMemberActive ? 'fit-content' : '100%')};
-      margin-top: 2.5rem;
+      margin-top: ${(props) => (props.teamMemberActive ? '2.5rem' : '0')};
     }
     .img-container {
       margin-right: 0;
-      width: calc(100vw - 4rem);
       margin-top: 0;
     }
     .linked-in {
@@ -227,6 +231,11 @@ const StyledTeamGridItem = styled.div`
       width: 100%;
       &:after {
         background-image: none;
+      }
+    }
+    @media only screen and (max-width: 00px) {
+      .img-container {
+        width: calc(100vw - 4rem);
       }
     }
   }

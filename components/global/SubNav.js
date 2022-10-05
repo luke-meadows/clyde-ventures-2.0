@@ -4,25 +4,25 @@ export default function SubNav() {
   return (
     <StyledSubNav>
       <nav>
-        <Link href="/what-we-do/consultancy">
+        <Link href="/what-we-do/consultancy" alt="Consultancy Page">
           <a href="">
             Consultancy
             <i className="icon-angle-right" />
           </a>
         </Link>
-        <Link href="/what-we-do/integration">
+        <Link href="/what-we-do/integration" alt="Integration Page">
           <a href="">
             Integration
             <i className="icon-angle-right" />
           </a>
         </Link>
-        <Link href="/what-we-do/manufacturing">
+        <Link href="/what-we-do/manufacturing" alt="Manufacturing Page">
           <a href="">
             Manufacturing
             <i className="icon-angle-right" />
           </a>
         </Link>
-        <Link href="/what-we-do/education">
+        <Link href="/what-we-do/education" alt="Education Page">
           <a href="">
             Education
             <i className="icon-angle-right" />

@@ -6,13 +6,14 @@ import logo3 from '../../public/logo3.png';
 export default function Logo({ width, variant = 1 }) {
   return (
     <StyledLogo>
-      <Link href="/">
+      <Link href="/" alt="logo">
         <a href="">
           <ImageContainer width={width}>
             <Image
               src={variant === 1 ? logo : logo3}
               layout="responsive"
               objectFit="contain"
+              alt="logo"
             />
           </ImageContainer>
         </a>

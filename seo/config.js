@@ -3,6 +3,7 @@ import pkg from '../package.json';
 export const nextSeoConfig = {
   title: pkg.title,
   description: pkg.description,
+  canonical: 'https://www.clydeventures.com/',
   keywords: [
     'consultancy',
     'consult',

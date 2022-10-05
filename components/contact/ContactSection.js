@@ -69,6 +69,7 @@ const StyledContactSection = styled.section`
     width: fit-content;
     padding-bottom: 0.25rem;
     border-bottom: 3px solid var(--yellow2);
+    font-size: 2.4rem;
   }
   .talk-to-us-header {
     margin-bottom: 1.2rem;
