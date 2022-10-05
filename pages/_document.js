@@ -30,35 +30,15 @@ export default class MyDocument extends Document {
   render() {
     return (
       <Html lang="en-GB">
-        <Head>
-          {/* <meta
-            name="google-site-verification"
-            content="gQIh5NhrodmW9E8bJemSH2R1jB42DWs_0HM-WKzmIGI"
-          />
-          <link rel="icon" href="/favicon.ico" />
-          <link
-            rel="preload"
-            src="/static/Nimbus-Sans-D-OT-Light-Extended_32750.ttf"
-            as="font"
-            type="font/woff2"
-            crossOrigin=""
-          />
-          <link
-            rel="preload"
-            src="/static/Nimbus-Sans-D-OT-Regular-Extended_32755.ttf"
-            as="font"
-            type="font/woff2"
-            crossOrigin=""
-          />
-          <link
-            rel="preload"
-            src="/static/Nimbus-Sans-D-OT-Bold-Extended_32745.ttf"
-            as="font"
-            type="font/woff2"
-            crossOrigin=""
-          /> */}
-        </Head>
+        <Head></Head>
         <body>
+          <noscript>
+            dangerouslySetInnerHTML=
+            {{
+              __html: `<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T43JJP9"
+              height="0" width="0" style="display:none;visibility:hidden"></iframe>`,
+            }}
+          </noscript>
           <Main />
           <NextScript />
         </body>
