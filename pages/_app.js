@@ -18,7 +18,7 @@ function MyApp({ Component, pageProps }) {
       <SEO {...nextSeoConfig} />
       <Script
         strategy="lazyOnload"
-        src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
+        src={`https://www.googletagmanager.com/gtag/js?id=GTM-T43JJP9`}
         id="google-analytics"
       />
 
@@ -27,7 +27,7 @@ function MyApp({ Component, pageProps }) {
                     window.dataLayer = window.dataLayer || [];
                     function gtag(){dataLayer.push(arguments);}
                     gtag('js', new Date());
-                    gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}', {
+                    gtag('config', 'GTM-T43JJP9', {
                     page_path: window.location.pathname,
                     });
                 `}
