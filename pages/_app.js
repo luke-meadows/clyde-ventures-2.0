@@ -18,7 +18,7 @@ function MyApp({ Component, pageProps }) {
       <SEO {...nextSeoConfig} />
       <Script
         strategy="lazyOnload"
-        src={`https://www.googletagmanager.com/gtag/js?id=GTM-T43JJP9`}
+        src={`https://www.googletagmanager.com/gtag/js?id=G-FYR84LJVTR`}
         id="google-analytics"
       />
 
@@ -27,7 +27,7 @@ function MyApp({ Component, pageProps }) {
                     window.dataLayer = window.dataLayer || [];
                     function gtag(){dataLayer.push(arguments);}
                     gtag('js', new Date());
-                    gtag('config', 'GTM-T43JJP9', {
+                    gtag('config', 'G-FYR84LJVTR', {
                     page_path: window.location.pathname,
                     });
                 `}
