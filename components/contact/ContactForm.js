@@ -166,7 +166,7 @@ const StyledContactForm = styled.form`
   margin-left: 2.5rem;
   background: var(--white2);
   padding: 2rem;
-  border-radius: 1rem;
+  border-radius: 3px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 20px;
   position: relative;
   height: fit-content;
@@ -194,7 +194,7 @@ const StyledContactForm = styled.form`
     background: var(--white);
     color: var(--dark-grey);
     font-size: 0.9rem;
-    border-radius: 2rem;
+    /* border-radius: 2rem; */
     transition: all 0.5s ease;
     max-width: 45rem;
     &.warning {
@@ -214,7 +214,6 @@ const StyledContactForm = styled.form`
     margin: 0;
     padding: 1rem;
     height: 12rem;
-    border-radius: 1.2rem;
   }
   .privacy-checkbox {
     display: flex;
