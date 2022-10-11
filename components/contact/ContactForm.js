@@ -164,7 +164,7 @@ export default function ContactForm() {
 const StyledContactForm = styled.form`
   width: 50%;
   margin-left: 2.5rem;
-  background: var(--yellow2);
+  background: var(--white2);
   padding: 2rem;
   border-radius: 3px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 20px;
