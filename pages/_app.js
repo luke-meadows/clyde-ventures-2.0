@@ -17,11 +17,12 @@ function MyApp({ Component, pageProps }) {
     <Page>
       <SEO {...nextSeoConfig} />
       <Script
+        id="googleAnalytics"
         strategy="lazyOnload"
         src={`https://www.googletagmanager.com/gtag/js?id=G-FYR84LJVTR`}
       />
 
-      <Script strategy="lazyOnload">
+      <Script strategy="lazyOnload" id="googleAnalyticsDataLayer">
         {`
                     window.dataLayer = window.dataLayer || [];
                     function gtag(){dataLayer.push(arguments);}
