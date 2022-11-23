@@ -146,18 +146,21 @@ const StyledTeamGridItem = styled.div`
     margin-right: ${(props) => (props.teamMemberActive ? '2.5rem' : '0')};
   }
   .text {
-    padding: 0.5rem;
+    padding: 1rem 0.5rem;
     border-bottom-right-radius: 0.5rem;
     border-bottom-left-radius: 0.5rem;
     border-top: none;
     text-align: center;
     background: var(--yellow2);
     margin-right: ${(props) => (props.teamMemberActive ? '2.5rem' : '0')};
+    height: auto;
     h2 {
       font-size: 1.3rem;
+      margin-bottom: 0.2rem;
     }
     p {
       margin-bottom: 0;
+      font-size: 0.9rem;
     }
   }
   .description-container-outer {
@@ -233,10 +236,17 @@ const StyledTeamGridItem = styled.div`
         background-image: none;
       }
     }
-    @media only screen and (max-width: 00px) {
+    @media only screen and (max-width: 600px) {
       .img-container {
         width: calc(100vw - 4rem);
       }
+      .text {
+        h2 {
+          font-size: 2rem;
+        }
+        p {
+          font-size: 1.2rem;
+        }
     }
   }
 `;
