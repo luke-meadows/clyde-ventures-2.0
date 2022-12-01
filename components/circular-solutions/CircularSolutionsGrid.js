@@ -26,7 +26,7 @@ export default function CircularSolutionsGrid() {
       <ServiceCard
         title="Manufacture"
         bullets={[
-          'Fibre reinforced polymers (FRP)',
+          'Fiber reinforced polymers (FRP)',
           'FRP Fire doors',
           'FRP Panels and cladding',
           'FRP Structural beams',
