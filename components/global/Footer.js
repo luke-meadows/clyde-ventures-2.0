@@ -49,8 +49,8 @@ export default function Footer() {
             <Link href="/privacy-policy" alt="Privacy Policy">
               Privacy Policy
             </Link>
-            {/* <Link href="/">Terms &amp; Conditions</Link>
-            <Link href="/">Governance Policies</Link> */}
+            <Link href="/modern-slavery">Modern Slavery Statement</Link>
+            {/* <Link href="/">Governance Policies</Link> */}
           </nav>
           <p className="copy">
             © Clyde Ventures 2022 | Registered in Scotland: SC723600
