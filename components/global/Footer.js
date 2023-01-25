@@ -49,9 +49,7 @@ export default function Footer() {
             <Link href="/privacy-policy" alt="Privacy Policy">
               Privacy Policy
             </Link>
-            <Link href="/modern-slavery-statement">
-              Modern Slavery Statement
-            </Link>
+            <Link href="/modern-slavery">Modern Slavery Statement</Link>
             {/* <Link href="/">Governance Policies</Link> */}
           </nav>
           <p className="copy">
