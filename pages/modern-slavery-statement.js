@@ -1,11 +1,11 @@
 import SEO from '@bradgarropy/next-seo';
 import styled from 'styled-components';
-export default function PrivacyPolicy() {
+export default function ModernSlaveryStatement() {
   return (
     <StyledTerms>
       <SEO
-        title="Clyde Ventures - Privacy Policy"
-        description="Our policy on privacy."
+        title="Clyde Ventures - Modern Slavery Statement"
+        description="Our policy on preventing modern slavery."
       />
 
       <div className="inner-terms">
