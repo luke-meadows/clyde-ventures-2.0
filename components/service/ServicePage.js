@@ -38,6 +38,22 @@ export const StyledServicePage = styled.section`
       font-size: 1.2rem;
       font-weight: 500;
     }
+    .header-container-education {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    button {
+      background: var(--yellow2);
+      border: 2px solid var(--yellow2);
+      font-size: 1rem;
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+      font-size: 0.9rem;
+      font-weight: 500;
+      i {
+        margin-right: -0.6rem;
+      }
+    }
   }
 
   .lower-section {
@@ -97,6 +113,12 @@ export const StyledServicePage = styled.section`
       .text {
         width: 100%;
       }
+    }
+    .header-container-education {
+      gap: 1rem;
+      flex-direction: column;
+      padding-bottom: 1rem;
+      align-items: flex-start !important;
     }
   }
 `;

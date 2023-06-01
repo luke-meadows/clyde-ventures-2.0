@@ -65,8 +65,13 @@ export default function DownloadBrochureModal({ setDownloadModalActive }) {
     }
   }
 
+  function handleClose(e) {
+    if (e.target.id !== 'outer-modal') return;
+    setDownloadModalActive(false);
+  }
+
   return (
-    <StyledModal>
+    <StyledModal onClick={handleClose} id="outer-modal">
       <div className="inner-modal">
         <h3>Download the course brochure</h3>
         <form onSubmit={validateForm}>

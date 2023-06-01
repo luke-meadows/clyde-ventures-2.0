@@ -16,18 +16,26 @@ export default function Education() {
         description="Learn about our MBA in sustainability."
       />
       <div className="hero">
-        <div className="hero-inner">
-          <h1>Education</h1>
+        <div className="hero-inner" style={{ marginBottom: '-4rem' }}>
+          <div className="header-container-education">
+            <h1>Education</h1>
+            <button type="button" onClick={() => setDownloadModalActive(true)}>
+              Download brochure <i className="icon-angle-down" />{' '}
+            </button>
+          </div>
           <p>
-            We are proud to have supported a leading university in creating a
-            first of it&apos;s kind collaborative executive MBA programme that
-            focuses on delivering future leaders equipped to deal with the
-            challenges of delivering net zero and reversing global warming.
+            We are proud to have supported Strathclyde Business School, a
+            leading university, in creating a first-of-its-kind collaborative
+            executive MBA program This innovative MBA focuses on equipping
+            future leaders with the necessary skills to address the challenges
+            of delivering net-zero emissions and reversing global warming.
           </p>
           <p>
-            We have partnered with industry leaders who are trailblazing new and
-            innovative strategies to create a better world, this course is aimed
-            at the following professionals:
+            In collaboration with Strathclyde Business School, we have formed
+            strategic partnerships with industry leaders who are at the
+            forefront of trailblazing new and innovative strategies to create a
+            better world. This course is specifically designed for professionals
+            who aspire to make a significant impact in their respective fields.
           </p>
           <div style={{ padding: '0.5rem 0' }} />
           <MicroServiceTicks
