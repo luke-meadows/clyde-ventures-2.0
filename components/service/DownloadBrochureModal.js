@@ -10,20 +10,26 @@ export default function DownloadBrochureModal({ setDownloadModalActive }) {
   }, []);
 
   const { inputs, handleChange, clearForm } = useForm({
-    name: '',
+    firstName: '',
+    lastName: '',
     email: '',
     telephone: '',
+    industry: '',
   });
-  const nameRef = useRef();
+  const firstNameRef = useRef();
+  const lastNameRef = useRef();
   const emailRef = useRef();
   const telephoneRef = useRef();
   const checkboxRef = useRef();
   const buttonRef = useRef();
+  const industryRef = useRef();
 
   const refMap = {
-    name: nameRef,
+    firstName: firstNameRef,
+    lastName: lastNameRef,
     email: emailRef,
     telephone: telephoneRef,
+    industry: industryRef,
   };
 
   function submitForm(inputs) {
@@ -76,12 +82,20 @@ export default function DownloadBrochureModal({ setDownloadModalActive }) {
         <h3>Download the course brochure</h3>
         <form onSubmit={validateForm}>
           <input
-            name="name"
-            value={inputs.name}
-            placeholder="Name"
+            name="firstName"
+            value={inputs.firstName}
+            placeholder="First Name"
             type="text"
             onChange={handleChange}
-            ref={nameRef}
+            ref={firstNameRef}
+          />
+          <input
+            name="lastName"
+            value={inputs.lastName}
+            placeholder="Surname"
+            type="text"
+            onChange={handleChange}
+            ref={lastNameRef}
           />
           <input
             name="email"
@@ -98,6 +112,14 @@ export default function DownloadBrochureModal({ setDownloadModalActive }) {
             type="telephone"
             onChange={handleChange}
             ref={telephoneRef}
+          />
+          <input
+            name="industry"
+            value={inputs.industry}
+            placeholder="Industry"
+            type="text"
+            onChange={handleChange}
+            ref={industryRef}
           />
           <div className="privacy-checkbox">
             <div className="checkbox-container">

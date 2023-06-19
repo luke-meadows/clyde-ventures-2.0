@@ -6,9 +6,11 @@ export default async function handler(req, res) {
   console.log(body);
 
   const messageText = `
-  Name: ${body.name}\r\n\
+  First Name: ${body.firstName}\r\n\
+  Surname: ${body.lastName}\r\n\
   Email: ${body.email}\r\n\
-  Telephone: ${body.telephone}
+  Telephone: ${body.telephone}\r\n\
+  Industry: ${body.industry}
   `;
 
   const email = {
