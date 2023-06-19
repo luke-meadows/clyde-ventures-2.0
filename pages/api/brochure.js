@@ -10,7 +10,7 @@ export default async function handler(req, res) {
   Surname: ${body.lastName}\r\n\
   Email: ${body.email}\r\n\
   Telephone: ${body.telephone}\r\n\
-  Industry: ${body.industry}
+  Company: ${body.company}
   `;
 
   const email = {

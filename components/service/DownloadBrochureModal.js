@@ -14,7 +14,7 @@ export default function DownloadBrochureModal({ setDownloadModalActive }) {
     lastName: '',
     email: '',
     telephone: '',
-    industry: '',
+    company: '',
   });
   const firstNameRef = useRef();
   const lastNameRef = useRef();
@@ -22,14 +22,14 @@ export default function DownloadBrochureModal({ setDownloadModalActive }) {
   const telephoneRef = useRef();
   const checkboxRef = useRef();
   const buttonRef = useRef();
-  const industryRef = useRef();
+  const companyRef = useRef();
 
   const refMap = {
     firstName: firstNameRef,
     lastName: lastNameRef,
     email: emailRef,
     telephone: telephoneRef,
-    industry: industryRef,
+    company: companyRef,
   };
 
   function submitForm(inputs) {
@@ -114,12 +114,12 @@ export default function DownloadBrochureModal({ setDownloadModalActive }) {
             ref={telephoneRef}
           />
           <input
-            name="industry"
-            value={inputs.industry}
-            placeholder="Industry"
+            name="company"
+            value={inputs.company}
+            placeholder="Company"
             type="text"
             onChange={handleChange}
-            ref={industryRef}
+            ref={companyRef}
           />
           <div className="privacy-checkbox">
             <div className="checkbox-container">
