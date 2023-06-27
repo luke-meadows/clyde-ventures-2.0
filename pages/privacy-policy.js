@@ -814,8 +814,8 @@ export default function PrivacyPolicy() {
           one ground has been set out in the table below.{' '}
         </p>
         <p className="text-xl mt-5 mb-5 pt-0 pb-0 break-words">
-          For more information on the common legal basis relied on by Together
-          Energy:
+          For more information on the common legal basis relied on by Clyde
+          Ventures:
         </p>
         <p className="text-xl mt-5 mb-5 pt-0 pb-0 break-words">
           Legitimate Interest means the interest of our business in conducting
@@ -1166,9 +1166,8 @@ export default function PrivacyPolicy() {
         </p>
         <p className="text-xl mt-5 mb-5 pt-0 pb-0 break-words">
           Right to withdraw consent &#8209; You can also withdraw consent if you
-          have provided it and if this is relied on as the legal basis for
-          Together Energy using your personal data &#8209; as previously
-          described.
+          have provided it and if this is relied on as the legal basis for Clyde
+          Ventures using your personal data &#8209; as previously described.
         </p>
         <h4 className="font-bold font-sensibility text-1xl sm:text-1xl md:text-2xl lg:text-3xl leading-snug mt-12 mb-6 text-darkblue">
           Changes To This Privacy Policy?
