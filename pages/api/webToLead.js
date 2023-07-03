@@ -7,17 +7,9 @@ export default async function handler(req, res) {
   };
 
   const recordTypeIds = {
-    Consultancy: '0128d000000MGwCAAW',
-    Integration: '0128d000000MGwDAAW',
-    Education: '0128d000000MGwBAAW',
-  };
-  const ownerUserIds = {
-    //Ross
-    Consultancy: '2F0058d000006RwNj',
-    // Graham
-    Integration: '0058d0000051c5f',
-    // Danny
-    Education: '0058d000006RwNI',
+    Consultancy: '0128d000000MGwC',
+    Integration: '0128d000000MGwD',
+    Education: '0128d000000MGwB',
   };
 
   const oid = process.env.SALESFORCE_OID;
@@ -27,13 +19,11 @@ export default async function handler(req, res) {
   const email = body.email;
   const telephone = body.telephone;
   const company = body.company;
-  const ownerId = '0058d000006RwNI';
-  // const recordTypeId = '0128d000000MGwDAAW';
-  //   const recordTypeId = recordTypeIds[body.interest];
-  //   const ownerId = ownerUserIds[body.interest];
+  const recordTypeId = recordTypeIds[body.interest];
+  const description = body.message;
 
   await fetch(
-    `https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&oid=${oid}&retURL=${retUrl}&first_name=${firstName}&last_name=${lastName}&company=${company}&email=${email}&phone=${telephone}&recordOwner=${ownerId}`,
+    `https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&oid=${oid}&retURL=${retUrl}&first_name=${firstName}&last_name=${lastName}&company=${company}&email=${email}&phone=${telephone}&recordType=${recordTypeId}&description=${description}`,
     requestOptions
   )
     .then((response) => response.text())

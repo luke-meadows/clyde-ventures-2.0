@@ -16,25 +16,31 @@ export default function ContactForm() {
   });
 
   const { inputs, handleChange, clearForm } = useForm({
-    name: '',
+    firstName: '',
+    surname: '',
     email: '',
-    confEmail: '',
-    subject: '',
+    company: '',
+    telephone: '',
+    interest: 'Area of Interest',
     message: '',
   });
 
-  const nameRef = useRef();
+  const firstNameRef = useRef();
+  const surnameRef = useRef();
   const emailRef = useRef();
-  const confEmailRef = useRef();
-  const subjectRef = useRef();
+  const companyRef = useRef();
+  const interestRef = useRef();
+  const telephoneRef = useRef();
   const messageRef = useRef();
   const checkboxRef = useRef();
 
   const refMap = {
-    name: nameRef,
+    firstName: firstNameRef,
+    surname: surnameRef,
     email: emailRef,
-    confEmail: confEmailRef,
-    subject: subjectRef,
+    company: companyRef,
+    telephone: telephoneRef,
+    interest: interestRef,
     message: messageRef,
   };
 
@@ -51,6 +57,15 @@ export default function ContactForm() {
           className: 'sent-button-bg',
           disabled: true,
         });
+        if (
+          inputs.interest !== 'Other' &&
+          inputs.interest !== 'Manufacturing'
+        ) {
+          fetch('/api/webToLead', {
+            method: 'post',
+            body: JSON.stringify(inputs),
+          });
+        }
         clearForm();
       } else {
         setButtonStatus({
@@ -62,12 +77,27 @@ export default function ContactForm() {
     });
   }
 
+  function handleSelectChange(e) {
+    console.log(e.target.value);
+    if (e.target.value === 'Area of Interest') {
+      e.target.classList.add('default-value');
+      e.target.classList.remove('selected-value');
+    }
+    if (e.target.value !== 'Area of Interest') {
+      e.target.classList.add('selected-value');
+      e.target.classList.remove('default-value');
+    }
+    handleChange(e);
+  }
+
   function validateForm(e) {
     e.preventDefault();
     // Check if all fields are populated
     let blankFields = [];
+
     Object.keys(inputs).forEach((input) => {
-      if (!inputs[input].length) {
+      if (input === 'telephone') return;
+      if (!inputs[input].length || inputs[input] === 'Area of Interest') {
         blankFields.push(refMap[input]);
       }
     });
@@ -102,37 +132,61 @@ export default function ContactForm() {
       <h2>Send a message</h2>
       <div className="top">
         <input
-          name="name"
-          value={inputs.name}
-          placeholder="Name"
+          name="firstName"
+          value={inputs.firstName}
+          placeholder="First Name (required)"
           type="text"
           onChange={handleChange}
-          ref={nameRef}
+          ref={firstNameRef}
+        />
+        <input
+          name="surname"
+          value={inputs.surname}
+          placeholder="Surname (required)"
+          type="text"
+          onChange={handleChange}
+          ref={surnameRef}
         />
         <input
           name="email"
           value={inputs.email}
-          placeholder="Email"
+          placeholder="Email (required)"
           type="email"
           onChange={handleChange}
           ref={emailRef}
         />
         <input
-          name="confEmail"
-          value={inputs.confEmail}
-          placeholder="Confirm Email"
+          name="company"
+          value={inputs.company}
+          placeholder="Company (required)"
           type="text"
           onChange={handleChange}
-          ref={confEmailRef}
+          ref={companyRef}
         />
+
         <input
-          name="subject"
-          value={inputs.subject}
-          placeholder="Subject"
-          type="text"
+          name="telephone"
+          value={inputs.telephone}
+          placeholder="Telephone (optional)"
+          type="tel"
           onChange={handleChange}
-          ref={subjectRef}
+          ref={telephoneRef}
         />
+        <select
+          name="interest"
+          value={inputs.interest}
+          placeholder="Area of Interest (required)"
+          type="dropdown"
+          onChange={handleSelectChange}
+          ref={interestRef}
+        >
+          <option>Area of Interest (required)</option>
+          <option>Consultancy</option>
+          <option>Integration</option>
+          <option>Manufacturing</option>
+          <option>Education</option>
+          <option>Other</option>
+        </select>
       </div>
       <textarea
         name="message"
@@ -151,7 +205,8 @@ export default function ContactForm() {
           I confirm I accept the Clyde Ventures{' '}
           <a href="https://www.clydeventures.com/privacy-policy" target="blank">
             privacy policy
-          </a>
+          </a>{' '}
+          <span style={{ color: 'red' }}>*</span>
         </p>
       </div>
       <button type="submit" className={buttonStatus.className}>
@@ -185,7 +240,8 @@ const StyledContactForm = styled.form`
     margin-bottom: 1.2rem;
   }
   input,
-  textarea {
+  textarea,
+  select {
     border: none;
     outline: none;
     width: 100%;
@@ -194,10 +250,11 @@ const StyledContactForm = styled.form`
     background: var(--white);
     color: var(--dark-grey);
     font-size: 0.9rem;
-    /* border-radius: 2rem; */
     transition: all 0.5s ease;
     max-width: 45rem;
+    border-radius: 4px;
     &.warning {
+      color: var(--red);
       ::placeholder {
         color: var(--red);
       }
@@ -209,6 +266,18 @@ const StyledContactForm = styled.form`
   }
   input {
     padding: 0.5rem 1rem;
+  }
+  select {
+    padding: 0.5rem 0.75rem;
+    color: #767676;
+    transition: all 0s ease;
+
+    &.default-value {
+      color: #767676;
+    }
+    &.selected-value {
+      color: #404040;
+    }
   }
   textarea {
     margin: 0;
@@ -280,7 +349,8 @@ const StyledContactForm = styled.form`
     }
     input,
     textarea,
-    button {
+    button,
+    select {
       font-size: 16px;
     }
     input,
