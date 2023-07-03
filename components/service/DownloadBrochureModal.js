@@ -11,13 +11,13 @@ export default function DownloadBrochureModal({ setDownloadModalActive }) {
 
   const { inputs, handleChange, clearForm } = useForm({
     firstName: '',
-    lastName: '',
+    surname: '',
     email: '',
     telephone: '',
     company: '',
   });
   const firstNameRef = useRef();
-  const lastNameRef = useRef();
+  const surnameRef = useRef();
   const emailRef = useRef();
   const telephoneRef = useRef();
   const checkboxRef = useRef();
@@ -26,7 +26,7 @@ export default function DownloadBrochureModal({ setDownloadModalActive }) {
 
   const refMap = {
     firstName: firstNameRef,
-    lastName: lastNameRef,
+    surname: surnameRef,
     email: emailRef,
     telephone: telephoneRef,
     company: companyRef,
@@ -34,15 +34,21 @@ export default function DownloadBrochureModal({ setDownloadModalActive }) {
 
   function submitForm(inputs) {
     buttonRef.current.disabled = true;
+    buttonRef.current.innerHTML = 'Loading';
     fetch('/api/brochure', {
       method: 'post',
       body: JSON.stringify(inputs),
     }).then((res) => {
       if (res.status === 200) {
         checkboxRef.current.checked = false;
+        fetch('/api/webToLead', {
+          method: 'post',
+          body: JSON.stringify(inputs),
+        });
         clearForm();
         setDownloadModalActive(false);
         downloadFile();
+        buttonRef.current.innerHTML = 'Done';
       } else {
         buttonRef.current.innerHTML = 'Please refresh and try again';
         buttonRef.current.style.background = 'var(--red)';
@@ -90,12 +96,12 @@ export default function DownloadBrochureModal({ setDownloadModalActive }) {
             ref={firstNameRef}
           />
           <input
-            name="lastName"
-            value={inputs.lastName}
+            name="surname"
+            value={inputs.surname}
             placeholder="Surname"
             type="text"
             onChange={handleChange}
-            ref={lastNameRef}
+            ref={surnameRef}
           />
           <input
             name="email"

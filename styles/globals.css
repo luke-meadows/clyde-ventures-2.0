@@ -127,7 +127,8 @@ button {
 }
 
 input,
-textarea {
+textarea,
+select {
   font-family: 'Montserrat', sans-serif;
   font-size: 1rem;
 }
