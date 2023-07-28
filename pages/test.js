@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import Img from '../public/Email_Logo.png';
+import Image from 'next/image';
 export default function test() {
   return (
     <StyledTest>
