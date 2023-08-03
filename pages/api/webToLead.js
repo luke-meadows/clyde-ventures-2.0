@@ -24,7 +24,7 @@ export default async function handler(req, res) {
   const leadSource = 'Website';
 
   await fetch(
-    `https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&oid=${oid}&retURL=${retUrl}&first_name=${firstName}&last_name=${lastName}&company=${company}&email=${email}&phone=${telephone}&recordType=${recordTypeId}&description=${description}&leadSource=${leadSource}`,
+    `https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&oid=${oid}&retURL=${retUrl}&first_name=${firstName}&last_name=${lastName}&company=${company}&email=${email}&phone=${telephone}&recordType=${recordTypeId}&description=${description}&lead_source=${leadSource}`,
     requestOptions
   )
     .then((response) => response.text())
