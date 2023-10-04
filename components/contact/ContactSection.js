@@ -27,7 +27,7 @@ export default function ContactSection() {
 
         <div className="location">
           <p className="address">
-            <i className="icon-location" /> Suite 505 , Baltic Chambers , 50
+            <i className="icon-location" /> Suite 405-407 , Baltic Chambers , 50
             Wellington Street , Glasgow, G2 6HJ.
           </p>
           {!showMap && (
@@ -38,7 +38,7 @@ export default function ContactSection() {
           {showMap && (
             <div className="map-container">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2239.1857617219857!2d-4.262758483768697!3d55.85944338058209!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4888469c4ab77db9%3A0x6832134b166626db!2sBaltic%20Chambers!5e0!3m2!1sen!2suk!4v1660838655068!5m2!1sen!2suk"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1366.5072134739378!2d-4.261696877197055!3d55.85944262609022!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4888469c4a915fdb%3A0xc7ff2fc91b9c4e!2sBaltic%20Chambers%2C%20Glasgow!5e0!3m2!1sen!2suk!4v1696427281858!5m2!1sen!2suk"
                 className="map"
                 allowFullScreen=""
                 loading="lazy"

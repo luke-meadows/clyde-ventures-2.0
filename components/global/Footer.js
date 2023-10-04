@@ -30,7 +30,7 @@ export default function Footer() {
         <div className="bottom-left">
           <div className="address">
             <p>Clyde Ventures Ltd</p>
-            <p>Suite 505</p>
+            <p>Suite 405-407</p>
             <p>Baltic Chambers</p>
             <p>50 Wellington Street</p>
             <p>Glasgow</p>
