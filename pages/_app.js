@@ -32,7 +32,7 @@ function MyApp({ Component, pageProps }) {
                     });
                 `}
       </Script>
-      <Script type="text/javascript">
+      {/* <Script type="text/javascript">
         {`
          piAId = '1050802'; piCId = ''; piHostname = 'go.pardot.com';
                     (function() {
@@ -45,7 +45,7 @@ function MyApp({ Component, pageProps }) {
                       else { window.addEventListener('load', async_load, false); }
                     })();
                 `}
-      </Script>
+      </Script> */}
       <Header setShowSidebar={setShowSidebar} showSidebar={showSidebar} />
       <AnimatePresence initial={false}>
         {showSidebar && (
