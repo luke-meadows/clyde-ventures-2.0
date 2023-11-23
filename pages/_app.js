@@ -31,7 +31,7 @@ function MyApp({ Component, pageProps }) {
                     });
                 `}
       </Script>
-      <Script type="text/javascript">
+      <Script type="text/javascript" id="accountEngagement">
         {` piAId = '1050802'; piCId = ''; piHostname = 'go.pardot.com';
                     (function() {
                       function async_load(){
