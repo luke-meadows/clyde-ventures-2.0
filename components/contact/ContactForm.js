@@ -3,14 +3,12 @@ import { useRef, useState } from 'react';
 import styled from 'styled-components';
 import useForm from '../../lib/useForm';
 import Logo from '../../public/1.png';
-import { useRouter } from 'next/router';
 
 const ButtonIcon = (variant) => {
   return <i className={`icon-${variant}`} />;
 };
 
 export default function ContactForm() {
-  const router = useRouter();
   const [buttonStatus, setButtonStatus] = useState({
     content: 'Send',
     className: 'unsent-button-bg',
@@ -60,10 +58,11 @@ export default function ContactForm() {
           disabled: true,
         });
         if (inputs.interest !== 'Other') {
-          fetch('/api/webToLead', {
-            method: 'post',
-            body: JSON.stringify(inputs),
-          });
+          window.location.href = `https://go.clydeventures.com/l/1049802/2023-11-24/6r5?email=${inputs.email}&firstname=${inputs.firstName}&lastname=${inputs.surname}&company=${inputs.company}&phone=${inputs.telephone}`;
+          // fetch('/api/webToLead', {
+          //   method: 'post',
+          //   body: JSON.stringify(inputs),
+          // });
         }
         clearForm();
       } else {
