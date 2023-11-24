@@ -32,7 +32,7 @@ function MyApp({ Component, pageProps }) {
                 `}
       </Script>
       <Script type="text/javascript" id="accountEngagement">
-        {` piAId = '1050802'; piCId = ''; piHostname = 'go.pardot.com';
+        {` piAId = '1050802'; piCId = ''; piHostname = 'go.clydeventures.com';
                     (function() {
                       function async_load(){
                         var s = document.createElement('script'); s.type = 'text/javascript';
