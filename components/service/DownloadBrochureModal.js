@@ -41,13 +41,14 @@ export default function DownloadBrochureModal({ setDownloadModalActive }) {
     }).then((res) => {
       if (res.status === 200) {
         checkboxRef.current.checked = false;
-        fetch('/api/webToLead', {
-          method: 'post',
-          body: JSON.stringify(inputs),
-        });
+        // fetch('/api/webToLead', {
+        //   method: 'post',
+        //   body: JSON.stringify(inputs),
+        // });
+        downloadFile();
         clearForm();
         setDownloadModalActive(false);
-        downloadFile();
+        window.location.href = `https://go.clydeventures.com/l/1049802/2023-11-24/6r5?email=${inputs.email}&firstname=${inputs.firstName}&lastname=${inputs.surname}&company=${inputs.company}&phone=${inputs.telephone}&interest="Education"&message="Prospect downloaded brochure"`;
         buttonRef.current.innerHTML = 'Done';
       } else {
         buttonRef.current.innerHTML = 'Please refresh and try again';
