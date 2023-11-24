@@ -57,7 +57,7 @@ export default function ContactForm() {
           className: 'sent-button-bg',
           disabled: true,
         });
-        window.location.href = `https://go.clydeventures.com/l/1049802/2023-11-24/6r5?email=${inputs.email}&firstname=${inputs.firstName}&lastname=${inputs.surname}&company=${inputs.company}&phone=${inputs.telephone}&interest=${inputs.interest}`;
+        window.location.href = `https://go.clydeventures.com/l/1049802/2023-11-24/6r5?email=${inputs.email}&firstname=${inputs.firstName}&lastname=${inputs.surname}&company=${inputs.company}&phone=${inputs.telephone}&interest=${inputs.interest}&message=${inputs.message}`;
         // fetch('/api/webToLead', {
         //   method: 'post',
         //   body: JSON.stringify(inputs),
