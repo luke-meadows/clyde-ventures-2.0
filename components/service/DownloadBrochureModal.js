@@ -48,7 +48,7 @@ export default function DownloadBrochureModal({ setDownloadModalActive }) {
         downloadFile();
         clearForm();
         setDownloadModalActive(false);
-        window.location.href = `https://go.clydeventures.com/l/1049802/2023-11-24/6r5?email=${inputs.email}&firstname=${inputs.firstName}&lastname=${inputs.surname}&company=${inputs.company}&phone=${inputs.telephone}&interest="Education"&message="Prospect downloaded brochure"`;
+        window.location.href = `https://go.clydeventures.com/l/1049802/2023-11-24/6r5?email=${inputs.email}&firstname=${inputs.firstName}&lastname=${inputs.surname}&company=${inputs.company}&phone=${inputs.telephone}&interest=Education&message=Prospect downloaded brochure`;
         buttonRef.current.innerHTML = 'Done';
       } else {
         buttonRef.current.innerHTML = 'Please refresh and try again';
