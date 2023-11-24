@@ -60,10 +60,10 @@ export default function ContactForm() {
           disabled: true,
         });
         if (inputs.interest !== 'Other') {
-          // fetch('/api/webToLead', {
-          //   method: 'post',
-          //   body: JSON.stringify(inputs),
-          // });
+          fetch('/api/webToLead', {
+            method: 'post',
+            body: JSON.stringify(inputs),
+          });
         }
         clearForm();
       } else {
