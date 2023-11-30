@@ -164,5 +164,8 @@ const StyledInsightsPage = styled.section`
     .spacer {
       padding-top: 3rem;
     }
+    .insight-content-container {
+      padding: 2rem 5rem 0 2rem;
+    }
   }
 `;
