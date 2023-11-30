@@ -18,7 +18,7 @@ export default function InsightGrid() {
         <InsightGridItem
           insightId="2"
           thumbnail={DomesticImage}
-          heading="£1.95M in Domestic Sales Benefits"
+          heading="£1.95M in domestic sales benefits without the need for technology investment"
           date="29/11/2023"
           author="Amber Morton"
           url="insights/domestic-sales"

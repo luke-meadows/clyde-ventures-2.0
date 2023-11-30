@@ -87,7 +87,7 @@ const StyledInsightGridItem = styled.div`
     }
     h5 {
       font-weight: 600;
-      font-size: 1.2rem;
+      font-size: 1.1rem;
     }
   }
   button {

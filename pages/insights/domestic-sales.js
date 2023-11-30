@@ -23,14 +23,20 @@ export default function InsightPage() {
         </div>
         <br />
         <h2>
-          Identified £1.95m of benefits opportunity within the Domestic Sales
-          function of a UK wide fuel distributor as part of a revenue growth
-          programme through:
+          Cash is King for all Utility companies and increasing Revenue is the
+          fastest way to improve your cash position.{' '}
         </h2>
+        <br />
+        <h4>
+          We identified £1.95m of benefits opportunity within the Domestic Sales
+          function of a UK wide fuel distributor as part of a revenue growth
+          programme. Without the need for any technology investment, we
+          delivered:
+        </h4>
         <ul>
-          <li>Improving call abandonment rate by 13% </li>
-          <li>Reducing failure demand by 20% </li>
-          <li>Improving FCR by 15% without adding to AHT </li>
+          <li>Improved call abandonment rate by 13% </li>
+          <li>Reduced failure demand by 20% </li>
+          <li>Improved FCR by 15% without adding to AHT </li>
           <li>Equivalent of 8 FTE released through capacity creation </li>
         </ul>
         <br />
@@ -132,7 +138,7 @@ const StyledInsightsPage = styled.section`
   ul {
     list-style-position: inside;
     margin-bottom: 1rem;
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
   .small-bullets {
     font-size: 1rem;
