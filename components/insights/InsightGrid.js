@@ -19,7 +19,7 @@ export default function InsightGrid() {
           insightId="2"
           thumbnail={DomesticImage}
           heading="£1.95M in domestic sales benefits without the need for technology investment"
-          date="29/11/2023"
+          date="01/12/2023"
           author="Amber Morton"
           url="insights/domestic-sales"
           tags={['Revenue Generation', 'Customer Experience']}
