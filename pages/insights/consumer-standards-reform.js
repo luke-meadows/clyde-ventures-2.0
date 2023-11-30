@@ -28,7 +28,7 @@ export default function InsightPage() {
         </h2>
         <p>
           &lsquo;Energy is the lowest performing sector in the UK for customer
-          satisfaction levelsl&squor; as rated by the institute of customer
+          satisfaction levels&rsquo; as rated by the institute of customer
           service (July 23). A drop of 5.3 points in the last 12-months saw the
           industry earn this undesirable crown. This, coupled with less than
           impressive customer service ratings in the latest publication by
