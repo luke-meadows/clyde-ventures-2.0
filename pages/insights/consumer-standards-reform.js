@@ -87,7 +87,7 @@ export default function InsightPage() {
           approach that encompasses both the practicalities of fulfilling this
           obligation and providing quality support and solutions to this
           customer base. To achieve this, there must be an awareness of
-          &lsquo;who&squor; these customers are, leveraging data to develop a
+          &lsquo;who&rsquo; these customers are, leveraging data to develop a
           comprehensive view of customers who may be in, or at risk of,
           financial vulnerability. This is key to both offering proactive
           support and communications, and supporting the quality of
