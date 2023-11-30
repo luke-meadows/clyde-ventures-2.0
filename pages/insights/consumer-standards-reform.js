@@ -179,6 +179,7 @@ export default function InsightPage() {
           href="mailto:Kerry.moran@clydeventures.com"
           target="_blank"
           className="link"
+          rel="noreferrer" 
         >
           Kerry.moran@clydeventures.com
         </a>
@@ -186,6 +187,7 @@ export default function InsightPage() {
         <a
           href="mailto:Amber.morton@clydeventures.com"
           target="_blank"
+          rel="noreferrer" 
           className="link"
         >
           Amber.morton@clydeventures.com
