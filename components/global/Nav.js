@@ -27,25 +27,17 @@ export default function Nav({ setShowServices }) {
         >
           What we do <i className="icon-angle-down" />
         </div>
-        <Link
-          href="/about"
-          alt="About Page"
-          onMouseEnter={() => setShowServices(false)}
-        >
+        <Link href="/about" alt="About Page">
           <a href="" onMouseEnter={() => setShowServices(false)}>
             About us
           </a>
         </Link>
-        <Link
-          href="/people"
-          alt="People Page"
-          onMouseEnter={() => setShowServices(false)}
-        >
+        <Link href="/people" alt="People Page">
           <a href="" onMouseEnter={() => setShowServices(false)}>
             People
           </a>
         </Link>
-        <Link href="/insights" onMouseEnter={() => setShowServices(false)}>
+        <Link href="/insights">
           <a href="" onMouseEnter={() => setShowServices(false)}>
             Insights
           </a>

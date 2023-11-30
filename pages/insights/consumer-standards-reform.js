@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import ContactSection from '../../components/contact/ContactSection';
 import InsightBackgroundImage from '../../public/consumer-standards-background.jpeg';
 import HeroWithBackgroundImg from '../../components/global/HeroWithBackgroundImg';
-import PaulAvatar from '../../public/paul-avatar.png';
+import KerryAvatar from '../../public/kerry-avatar.png';
 import Image from 'next/image';
 import Link from 'next/link';
 export default function InsightPage() {
@@ -17,14 +17,14 @@ export default function InsightPage() {
       <div className="insight-content-container">
         <div className="author-and-date">
           <div className="avatar-container">
-            <Image src={PaulAvatar} layout="fill" objectFit="cover" />
+            <Image src={KerryAvatar} layout="fill" objectFit="cover" />
           </div>
-          <p>Paul Richards - 29/11/2023</p>
+          <p>Kerry Moran - 29/11/2023</p>
         </div>
         <br />
         <h2>
           Consumer Standards Reform: What tactical changes can suppliers make to
-          increase customer confidence in the Energy industry?
+          improve customer experience in the Energy industry?
         </h2>
         <p>
           &lsquo;Energy is the lowest performing sector in the UK for customer
@@ -179,7 +179,7 @@ export default function InsightPage() {
           href="mailto:Kerry.moran@clydeventures.com"
           target="_blank"
           className="link"
-          rel="noreferrer" 
+          rel="noreferrer"
         >
           Kerry.moran@clydeventures.com
         </a>
@@ -187,7 +187,7 @@ export default function InsightPage() {
         <a
           href="mailto:Amber.morton@clydeventures.com"
           target="_blank"
-          rel="noreferrer" 
+          rel="noreferrer"
           className="link"
         >
           Amber.morton@clydeventures.com
