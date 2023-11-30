@@ -58,9 +58,4 @@ const LearnMore = styled.button`
   display: flex;
   align-items: center;
   padding: 0.8rem 2rem;
-  /* @media only screen and (max-width: 1170px) {
-    left: 2rem;
-    bottom: 2rem;
-    transform: translateX(0%) translateY(0%);
-  } */
 `;

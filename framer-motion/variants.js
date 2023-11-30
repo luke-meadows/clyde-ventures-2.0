@@ -85,7 +85,7 @@ export const headerVariant = {
     y: '0',
     transition: {
       duration: 0.5,
-      when: 'beforeChildren',
+      // when: 'beforeChildren',
     },
   },
   exit: {
@@ -93,19 +93,20 @@ export const headerVariant = {
     transition: { duration: 0.3 },
   },
 };
-export const headerVariant2 = {
+export const navOptionsVariant = {
   initial: {
-    y: '-100%',
+    opacity: '0',
   },
   enter: {
-    y: '0',
+    opacity: 1,
     transition: {
-      duration: 1,
-      when: 'beforeChildren',
+      duration: 0.1,
+      delay: 0.2,
+      when: 'afterParent',
     },
   },
   exit: {
-    y: '-100%',
+    opacity: '0',
     transition: { duration: 0.1 },
   },
 };

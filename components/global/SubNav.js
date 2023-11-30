@@ -1,9 +1,21 @@
 import Link from 'next/link';
 import styled from 'styled-components';
+import { headerVariant, navOptionsVariant } from '../../framer-motion/variants';
+import { motion } from 'framer-motion';
 export default function SubNav() {
   return (
-    <StyledSubNav>
-      <nav>
+    <StyledSubNav
+      variants={headerVariant}
+      initial="initial"
+      animate="enter"
+      exit="exit"
+    >
+      <motion.nav
+        variants={navOptionsVariant}
+        initial="initial"
+        animate="enter"
+        exit="exit"
+      >
         <Link href="/what-we-do/consultancy" alt="Consultancy Page">
           <a href="">
             Consultancy
@@ -28,25 +40,22 @@ export default function SubNav() {
             <i className="icon-angle-right" />
           </a>
         </Link>
-      </nav>
+      </motion.nav>
     </StyledSubNav>
   );
 }
 
-const StyledSubNav = styled.div`
-  position: absolute;
+const StyledSubNav = styled(motion.div)`
   width: fit-content;
   height: fit-content;
-  left: 0;
-  bottom: 0;
-  transform: translateY(100%);
+  padding-bottom: 2rem;
+  z-index: 3;
   nav {
-    padding: 0.5rem 0 2rem 0;
     display: flex;
     width: fit-content;
     flex-direction: column;
     a {
-      margin: 0 1.2rem 0.2rem 0.2rem;
+      margin: 0 1.2rem 0.2rem 0;
       width: fit-content;
       display: flex;
       align-items: center;

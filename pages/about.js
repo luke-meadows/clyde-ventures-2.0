@@ -11,6 +11,8 @@ export default function About() {
         title="Clyde Ventures - About us"
         description="Learn about the company and how we started."
       />
+      <div className="spacer"></div>
+
       <HeroWithBackgroundImg
         image={AboutBackground}
         header="About us"

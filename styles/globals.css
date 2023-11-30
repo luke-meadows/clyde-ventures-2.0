@@ -136,3 +136,6 @@ select {
 .last-paragraph {
   margin-bottom: 0 !important;
 }
+.spacer {
+  padding-top: 7.5rem;
+}

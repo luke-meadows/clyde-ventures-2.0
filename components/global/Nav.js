@@ -1,9 +1,9 @@
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import styled from 'styled-components';
-import SubNav from './SubNav';
+
 import { useRouter } from 'next/router';
-export default function Nav() {
+export default function Nav({ setShowServices }) {
   const [subNavActive, setSubNavActive] = useState(false);
   const [isOnHomepage, setIsOnHomepage] = useState();
   const router = useRouter();
@@ -19,29 +19,37 @@ export default function Nav() {
   }, [router.asPath]);
 
   return (
-    <NavOuter
-      subNavActive={subNavActive}
-      onMouseLeave={() => setSubNavActive(false)}
-    >
+    <NavOuter subNavActive={subNavActive} setShowServices={setShowServices}>
       <StyledNav isOnHomepage={isOnHomepage} subNavActive={subNavActive}>
         <div
           className="services-dropdown"
-          onMouseEnter={() => setSubNavActive(true)}
+          onMouseEnter={() => setShowServices(true)}
         >
           What we do <i className="icon-angle-down" />
         </div>
-        <Link href="/about" alt="About Page">
-          About us
+        <Link
+          href="/about"
+          alt="About Page"
+          onMouseEnter={() => setShowServices(false)}
+        >
+          <a href="" onMouseEnter={() => setShowServices(false)}>
+            About us
+          </a>
         </Link>
-        <Link href="/people" alt="People Page">
-          People
+        <Link
+          href="/people"
+          alt="People Page"
+          onMouseEnter={() => setShowServices(false)}
+        >
+          <a href="" onMouseEnter={() => setShowServices(false)}>
+            People
+          </a>
         </Link>
-        {/* <Link href="/people">Community</Link> */}
-        {subNavActive && (
-          <>
-            <SubNav />
-          </>
-        )}
+        <Link href="/insights" onMouseEnter={() => setShowServices(false)}>
+          <a href="" onMouseEnter={() => setShowServices(false)}>
+            Insights
+          </a>
+        </Link>
       </StyledNav>
     </NavOuter>
   );
@@ -51,6 +59,7 @@ const NavOuter = styled.div`
   flex: 2;
   display: flex;
   align-items: center;
+  background: #fff;
 `;
 
 const StyledNav = styled.nav`
@@ -60,6 +69,7 @@ const StyledNav = styled.nav`
   justify-content: center;
   height: fit-content;
   width: fit-content;
+
   a,
   .services-dropdown {
     margin-right: 1.5rem;

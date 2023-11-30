@@ -8,9 +8,11 @@ export default function HeroWithBackgroundImg({
   blurb,
   iconDirection = 'down',
   buttonUrl = null,
+  bg = false,
+  center = false,
 }) {
   return (
-    <StyledHero>
+    <StyledHero bg={bg} center={center}>
       <BackgroundImage>
         <div className="inner-background">
           <Image
@@ -43,26 +45,33 @@ export default function HeroWithBackgroundImg({
 }
 
 const StyledHero = styled.div`
-  height: 30rem;
+  height: 24rem;
   position: relative;
   .hero {
-    padding: 12rem 5rem 5rem 5rem;
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 24rem;
+
     .hero-inner {
       max-width: 1600px;
-      margin: 0 auto;
+      text-align: center;
     }
     h1 {
-      margin: 0 auto;
       font-size: 4rem;
       margin-bottom: 1rem;
       font-weight: 500;
+      background: ${(props) => (props.bg ? 'rgba(255, 255, 255, 1)' : '')};
+      margin-bottom: ${(props) => (props.bg ? '0rem' : '1rem')};
+      padding: ${(props) => (props.bg ? '1rem 2rem' : '0')};
+      border-radius: 50rem;
     }
     p {
       font-size: 1.2rem;
       margin-bottom: 0;
       max-width: 90ch;
-      margin-left: 0.2rem;
+      margin: 0 auto;
     }
   }
   @media only screen and (max-width: 1170px) {
@@ -71,6 +80,10 @@ const StyledHero = styled.div`
       h1 {
         font-size: 3.3rem;
       }
+    }
+    padding-top: 0rem;
+    p {
+      display: none;
     }
   }
 `;
@@ -92,9 +105,9 @@ const LearnMore = styled.button`
 const BackgroundImage = styled.div`
   position: absolute;
   left: 0;
-  top: 0;
+  bottom: 0;
   width: 100%;
-  height: 30rem;
+  height: 24rem;
   z-index: 0;
   background: var(--sky-blue);
   .inner-background {

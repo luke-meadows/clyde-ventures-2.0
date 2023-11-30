@@ -3,6 +3,7 @@ import Nav from './Nav';
 import Logo from './Logo';
 import StrathclydeLogo from './StrathclydeLogo';
 import ContactButton from './ContactButton';
+import SubNav from './SubNav';
 import NavIcon from './NavIcon';
 import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
@@ -37,17 +38,18 @@ export default function HeaderPrimary({ setShowSidebar, showSidebar }) {
           />
         </div>
       </div>
+      <SubNav />
     </StyledHeaderPrimary>
   );
 }
 
 const StyledHeaderPrimary = styled.header`
   align-items: center;
-  position: absolute;
+  position: fixed;
   z-index: 2;
   width: 100%;
   padding: 0 5rem;
-
+  background: white;
   .header-inner {
     margin: 0 auto;
     max-width: 1610px;

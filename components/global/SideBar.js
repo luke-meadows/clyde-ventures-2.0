@@ -57,11 +57,11 @@ export default function SideBar({ setShowSidebar }) {
               People
             </a>
           </Link>
-          {/* <Link href="/people">
+          <Link href="/insights">
             <a href="" onClick={() => setShowSidebar(false)}>
-              Community
+              Insights
             </a>
-          </Link> */}
+          </Link>
           <Link href="/contact">
             <a href="" onClick={() => setShowSidebar(false)}>
               Contact us

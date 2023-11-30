@@ -13,7 +13,7 @@ export default function Contact() {
       />
       <HeroWithBackgroundImg
         image={ContactBackgroundImage}
-        header="Lets Talk"
+        header="Let's Talk"
         blurb="What can we do to help?"
         buttonText={'Submit your information'}
       />
@@ -47,7 +47,6 @@ const PageContainer = styled.main`
     }
   }
   .section-container {
-    padding: 5rem 0;
   }
   @media only screen and (min-width: 1600px) {
   }

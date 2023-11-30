@@ -234,7 +234,7 @@ const StyledContactForm = styled.form`
   .logo-container {
     position: relative;
     width: 4rem;
-    margin-bottom: 1.2rem;
+    margin: 0 auto 2rem auto;
   }
   input,
   textarea,
