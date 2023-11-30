@@ -9,7 +9,7 @@ export default function InsightGrid() {
         <InsightGridItem
           insightId="1"
           thumbnail={ConsumerImage}
-          heading="Energy: How suppliers can improve customer confidence"
+          heading="Energy: How suppliers can improve customer experience"
           date="29/11/2023"
           author="Kerry Moran"
           url="insights/consumer-standards-reform"

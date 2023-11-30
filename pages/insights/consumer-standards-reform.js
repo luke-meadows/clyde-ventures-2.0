@@ -13,6 +13,7 @@ export default function InsightPage() {
         image={InsightBackgroundImage}
         header="Consumer Standards Reform"
         bg={true}
+        smallOnPhone={true}
       />
       <div className="insight-content-container">
         <div className="author-and-date">

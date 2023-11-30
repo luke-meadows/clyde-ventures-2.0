@@ -12,6 +12,7 @@ export default function InsightPage() {
         image={InsightBackgroundImage}
         header="£1.95M in Domestic Sales Benefits"
         bg={true}
+        smallOnPhone={true}
       />
       <div className="insight-content-container">
         <div className="author-and-date">

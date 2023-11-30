@@ -10,9 +10,10 @@ export default function HeroWithBackgroundImg({
   buttonUrl = null,
   bg = false,
   center = false,
+  smallOnPhone = false,
 }) {
   return (
-    <StyledHero bg={bg} center={center}>
+    <StyledHero bg={bg} center={center} smallOnPhone={smallOnPhone}>
       <BackgroundImage>
         <div className="inner-background">
           <Image
@@ -78,7 +79,7 @@ const StyledHero = styled.div`
     .hero {
       padding: 10rem 2rem 5rem 2rem;
       h1 {
-        font-size: 3.3rem;
+        font-size: ${(props) => (props.smallOnPhone ? '2rem' : '3.3rem')};
       }
     }
     padding-top: 0rem;
