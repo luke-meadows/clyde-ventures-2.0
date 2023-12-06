@@ -105,4 +105,15 @@ const StyledInsightGridItem = styled.div`
   i {
     margin-right: -8px;
   }
+  @media only screen and (max-width: 1250px) {
+    .title-box {
+      h5 {
+        font-size: 1rem;
+      }
+      button {
+        font-size: 0.8rem;
+        padding: 6px 12px;
+      }
+    }
+  }
 `;

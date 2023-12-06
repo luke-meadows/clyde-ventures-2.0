@@ -44,9 +44,15 @@ const StyledInsightGrid = styled.div`
   margin: 0 auto;
   .grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 2rem;
   }
+  @media only screen and (max-width: 1910px) {
+    .grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
   @media only screen and (max-width: 1170px) {
     padding: 2rem;
 
