@@ -23,7 +23,7 @@ export default function InsightPage() {
         </div>
         <br />
         <h2>
-          Cash is King for all Utility companies and increasing Revenue is the
+          Cash is King for all Utility companies and increasing Revenwue is the
           fastest way to improve your cash position.{' '}
         </h2>
         <br />

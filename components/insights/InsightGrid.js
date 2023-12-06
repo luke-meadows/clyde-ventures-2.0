@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import InsightGridItem from './InsightGridItem';
 import ConsumerImage from '../../public/consumer-standards-thumbnail.jpg';
 import DomesticImage from '../../public/domestic-sales-thumbnail.jpg';
+import DebtImage from '../../public/debt-value-thumbnail.jpg';
 export default function InsightGrid() {
   return (
     <StyledInsightGrid>
@@ -23,6 +24,15 @@ export default function InsightGrid() {
           author="Amber Morton"
           url="insights/domestic-sales"
           tags={['Revenue Generation', 'Customer Experience']}
+        />
+        <InsightGridItem
+          insightId="2"
+          thumbnail={DebtImage}
+          heading="For Utility companies, understanding the value of your debt is key"
+          date="06/12/2023"
+          author="Ross Bern"
+          url="insights/debt-value"
+          tags={['Utilities', 'Debt']}
         />
       </div>
     </StyledInsightGrid>

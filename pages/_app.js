@@ -16,7 +16,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <Page>
       <SEO {...nextSeoConfig} />
-      <Script
+      {/* <Script
         id="googleAnalytics"
         strategy="lazyOnload"
         src={`https://www.googletagmanager.com/gtag/js?id=G-FYR84LJVTR`}
@@ -30,8 +30,8 @@ function MyApp({ Component, pageProps }) {
                     page_path: window.location.pathname,
                     });
                 `}
-      </Script>
-      <Script type="text/javascript" id="accountEngagement">
+      </Script> */}
+      {/* <Script type="text/javascript" id="accountEngagement">
         {` piAId = '1050802'; piCId = ''; piHostname = 'go.clydeventures.com';
                     (function() {
                       function async_load(){
@@ -42,7 +42,7 @@ function MyApp({ Component, pageProps }) {
                       if(window.attachEvent) { window.attachEvent('onload', async_load); }
                       else { window.addEventListener('load', async_load, false); }
                     })();`}
-      </Script>
+      </Script> */}
       <Header setShowSidebar={setShowSidebar} showSidebar={showSidebar} />
       <AnimatePresence initial={false}>
         {showSidebar && (
