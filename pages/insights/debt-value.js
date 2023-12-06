@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import ContactSection from '../../components/contact/ContactSection';
-import InsightBackgroundImage from '../../public/consumer-standards-background.jpeg';
+import InsightBackgroundImage from '../../public/debt-value-background.jpg';
 import HeroWithBackgroundImg from '../../components/global/HeroWithBackgroundImg';
 import RossAvatar from '../../public/ross-avatar.png';
 import Image from 'next/image';
