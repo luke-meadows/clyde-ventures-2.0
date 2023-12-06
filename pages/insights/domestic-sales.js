@@ -29,7 +29,7 @@ export default function InsightPage() {
         <br />
         <h4>
           We identified £1.95m of benefits opportunity within the Domestic Sales
-          function of a UK wxide fuel distributor as part of a revenue growth
+          function of a UK wide fuel distributor as part of a revenue growth
           programme. Without the need for any technology investment, we
           delivered:
         </h4>
