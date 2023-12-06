@@ -26,12 +26,12 @@ export default function InsightPage() {
         <h2>
           For Utility companies, understanding the value of your debt is key.
         </h2>
-        <br />
-        <h4>
+
+        <p>
           Do you know the value of your Debt? Although debt is an asset on the
           balance sheet, too much customer debt is a serious indicator of
           technical and operational challenges.{' '}
-        </h4>
+        </p>
         <p>
           Utility companies face the further challenge of driving debt
           collection in a sector that is known to have data issues, exacerbated
