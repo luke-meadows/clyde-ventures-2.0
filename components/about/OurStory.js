@@ -1,11 +1,11 @@
 import Image from 'next/image';
 import styled from 'styled-components';
-
 import OurStoryImage from '../../public/our-story2.jpg';
+import LivingWageImg from '../../public/living-wage-employer.png';
 import AboutUsSectionContainer from './AboutUsSectionContainer';
 export default function OurStory() {
   return (
-    <div>
+    <StyledOurStory>
       <AboutUsSectionContainer background="var(--white2)">
         <h4>Our Story</h4>
         <p>
@@ -21,6 +21,20 @@ export default function OurStory() {
           recruitment model works. We are on a mission to encourage all
           businesses to assess, build and develop talent like we do.
         </p>
+        <br />
+        <div className="living-wage">
+          <strong>
+            <p>We are a living wage employer!</p>
+          </strong>
+          <div className="living-image-container">
+            <Image
+              src={LivingWageImg}
+              layout="responsive"
+              objectFit="contain"
+              alt="logo"
+            />
+          </div>
+        </div>
       </AboutUsSectionContainer>
 
       <AboutUsSectionContainer background="var(--grey)">
@@ -41,7 +55,7 @@ export default function OurStory() {
               attract the brightest people.
             </p>
           </div>
-          <div className="image-container">
+          <div className="living-image-container">
             <Image src={OurStoryImage} layout="fill" objectFit="cover" />
           </div>
         </div>
@@ -89,6 +103,14 @@ export default function OurStory() {
           </div>
         </div>
       </AboutUsSectionContainer>
-    </div>
+    </StyledOurStory>
   );
 }
+
+const StyledOurStory = styled.div`
+  .living-image-container {
+    margin-top: 2rem;
+    position: relative;
+    width: 10rem;
+  }
+`;
