@@ -403,7 +403,7 @@ const StyledInsightsPage = styled.section`
     padding-top: 1.5rem;
   }
   .insight-content-container {
-    padding: 3rem 5rem 0 3rem;
+    padding: 3rem 3rem 0 3rem;
     max-width: 1000px;
     margin: 0 auto;
   }
@@ -484,7 +484,7 @@ const StyledInsightsPage = styled.section`
       padding-top: 3rem;
     }
     .insight-content-container {
-      padding: 2rem 5rem 0 2rem;
+      padding: 2rem 2rem 0 2rem;
     }
     .graphic-three-container {
       width: 100%;
