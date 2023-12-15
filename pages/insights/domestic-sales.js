@@ -133,7 +133,6 @@ const StyledInsightsPage = styled.section`
   }
   h2 {
     font-weight: 500;
-    margin-bottom: 1.2rem;
   }
   ul {
     list-style-position: inside;
