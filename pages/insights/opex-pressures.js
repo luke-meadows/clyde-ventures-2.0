@@ -322,7 +322,7 @@ export default function InsightPage() {
           <li>Cost to Serve challenge: Service and Complaints.</li>
           <li>Cost to Serve challenge: Metering and Settlement. </li>
           <li>Cost to Serve challenge: Billing & Back Billing.</li>
-          <li>Cost to Serve challenge: Vulnerable Customers.</li>
+          <li>Cost to Serve challenge: Servicing Vulnerable Customers.</li>
         </ul>
         <p>
           For more information on how we can help you reduce your cost while
