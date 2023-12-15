@@ -13,7 +13,7 @@ export default function InsightPage() {
       <div className="spacer"></div>
       <HeroWithBackgroundImg
         image={InsightBackgroundImage}
-        header="Energy Retailers: OPEX pressures"
+        header="Energy Retailers: Delivering a trusted service whilst managing OPEX pressures"
         bg={true}
         smallOnPhone={true}
       />
@@ -26,14 +26,11 @@ export default function InsightPage() {
         </div>
         <br />
         <h2>
-          Energy Retailers: Delivering a trusted service whilst managing OPEX
-          pressures.
-        </h2>
-        <br />
-        <h4>
           Exploring how to deliver for consumers whilst managing the operating
           cost cap and mitigating downside pressures to margin.
-        </h4>
+        </h2>
+        <br />
+
         <p>
           The first of a series of blogs that seeks to support suppliers in
           answering this question, this blog sets out the context and the
