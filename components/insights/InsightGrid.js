@@ -3,6 +3,7 @@ import InsightGridItem from './InsightGridItem';
 import ConsumerImage from '../../public/consumer-standards-thumbnail.jpg';
 import DomesticImage from '../../public/domestic-sales-thumbnail.jpg';
 import DebtImage from '../../public/debt-value-thumbnail.jpg';
+import OpexImage from '../../public/blog-energy-retailers/opex-thumbnail-background.jpg';
 export default function InsightGrid() {
   return (
     <StyledInsightGrid>
@@ -33,6 +34,15 @@ export default function InsightGrid() {
           author="Ross Bern"
           url="insights/debt-value"
           tags={['Utilities', 'Debt']}
+        />
+        <InsightGridItem
+          insightId="2"
+          thumbnail={OpexImage}
+          heading="Energy Retailers: Delivering a trusted service whilst managing OPEX pressures"
+          date="18/12/2023"
+          author="Kerry Moran"
+          url="insights/opex-pressures"
+          tags={['Utilities', 'OPEX', 'Energy', 'Consumer Standards']}
         />
       </div>
     </StyledInsightGrid>

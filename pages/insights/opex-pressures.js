@@ -22,7 +22,7 @@ export default function InsightPage() {
           <div className="avatar-container">
             <Image src={KerryAvatar} layout="fill" objectFit="cover" />
           </div>
-          <p>Kerry Moran - 15/12/2023</p>
+          <p>Kerry Moran - 18/12/2023</p>
         </div>
         <br />
         <h2>
@@ -277,7 +277,7 @@ export default function InsightPage() {
           of suppliers less than 3.5/5 for overall service and more than half of
           suppliers rated 1/5 for complaints, coupled with a sharp decline in
           consumer trust in the industry to &lsquo;do the right thing&rsquo;
-          &#8308;, this reform is welcome. There is no denying there is a need
+          &#178;, this reform is welcome. There is no denying there is a need
           for a shake up in the level of service given to consumers as we look
           to rebuild trust in the industry, although it could be argued that a
           review of current CAB bandings is needed against a backdrop of
@@ -376,16 +376,7 @@ export default function InsightPage() {
         >
           &#179; Default Tariff Cap update (ofgem.gov.uk)
         </a>
-        <br />
-        <a
-          href="https://www.instituteofcustomerservice.com/product/ukcsi-the-state-of-customer-satisfaction-uk-jul-23/"
-          target="_blank"
-          rel="noreferrer"
-          className="link"
-        >
-          &#8308; UKCSI - The state of customer satisfaction in the UK - July
-          2023 ⋆ Institute of Customer Service
-        </a>
+
         <div className="spacer"></div>
       </div>
       <ContactSection />
