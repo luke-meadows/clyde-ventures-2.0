@@ -30,8 +30,9 @@ function MyApp({ Component, pageProps }) {
                     page_path: window.location.pathname,
                     });
                 `}
-      </Script> */}
-      {/* <Script type="text/javascript" id="accountEngagement">
+      </Script>{' '}
+      */ /*{' '}
+      <Script type="text/javascript" id="accountEngagement">
         {` piAId = '1050802'; piCId = ''; piHostname = 'go.clydeventures.com';
                     (function() {
                       function async_load(){
