@@ -142,8 +142,8 @@ export default function InsightPage() {
             <tr>
               <td>
                 <li>
-                  <strong>Sales and marketing</strong>: Meter rental,
-                  installation, maintenance, reading (including smart metering).
+                  <strong>Sales and marketing</strong>: Sales activities,
+                  advertising and branding, third party costs.
                 </li>
               </td>
               <td>
