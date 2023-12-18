@@ -30,8 +30,7 @@ function MyApp({ Component, pageProps }) {
                     page_path: window.location.pathname,
                     });
                 `}
-      </Script>{' '}
-      */ /*{' '}
+      </Script>
       <Script type="text/javascript" id="accountEngagement">
         {` piAId = '1050802'; piCId = ''; piHostname = 'go.clydeventures.com';
                     (function() {
