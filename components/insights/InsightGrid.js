@@ -4,6 +4,7 @@ import ConsumerImage from '../../public/consumer-standards-thumbnail.jpg';
 import DomesticImage from '../../public/domestic-sales-thumbnail.jpg';
 import DebtImage from '../../public/debt-value-thumbnail.jpg';
 import OpexImage from '../../public/blog-energy-retailers/opex-thumbnail-background.jpg';
+import TrilemmaImage from '../../public/blog-debt-trilemma/debt-trilemma-thumbnail.jpg';
 export default function InsightGrid() {
   return (
     <StyledInsightGrid>
@@ -27,7 +28,7 @@ export default function InsightGrid() {
           tags={['Revenue Generation', 'Customer Experience']}
         />
         <InsightGridItem
-          insightId="2"
+          insightId="3"
           thumbnail={DebtImage}
           heading="For Utility companies, understanding the value of your debt is key"
           date="06/12/2023"
@@ -36,13 +37,22 @@ export default function InsightGrid() {
           tags={['Utilities', 'Debt']}
         />
         <InsightGridItem
-          insightId="2"
+          insightId="4"
           thumbnail={OpexImage}
           heading="Energy Retailers: Delivering a trusted service whilst managing OPEX pressures"
           date="18/12/2023"
           author="Kerry Moran"
           url="insights/opex-pressures"
           tags={['Utilities', 'OPEX', 'Energy', 'Consumer Standards']}
+        />
+        <InsightGridItem
+          insightId="5"
+          thumbnail={TrilemmaImage}
+          heading="Energy Retailers: Addressing the Debt Trilemma."
+          date="18/12/2023"
+          author="Kerry Moran"
+          url="insights/debt-trilemma"
+          tags={['Utilities', 'Debt', 'Energy']}
         />
       </div>
     </StyledInsightGrid>
