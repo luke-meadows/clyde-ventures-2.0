@@ -49,7 +49,7 @@ export default function InsightGrid() {
           insightId="5"
           thumbnail={TrilemmaImage}
           heading="Energy Retailers: Addressing the Debt Trilemma"
-          date="18/12/2023"
+          date="08/01/2024"
           author="Kerry Moran"
           url="insights/debt-trilemma"
           tags={['Utilities', 'Debt', 'Energy']}
