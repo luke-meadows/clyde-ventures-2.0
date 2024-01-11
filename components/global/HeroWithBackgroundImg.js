@@ -11,9 +11,15 @@ export default function HeroWithBackgroundImg({
   bg = false,
   center = false,
   smallOnPhone = false,
+  transparent = false,
 }) {
   return (
-    <StyledHero bg={bg} center={center} smallOnPhone={smallOnPhone}>
+    <StyledHero
+      bg={bg}
+      center={center}
+      smallOnPhone={smallOnPhone}
+      transparent={transparent}
+    >
       <BackgroundImage>
         <div className="inner-background">
           <Image
@@ -60,10 +66,14 @@ const StyledHero = styled.div`
       text-align: center;
     }
     h1 {
-      font-size: 4rem;
-      margin-bottom: 1rem;
+      font-size: 3rem;
+      margin: 0 5rem 1rem 5rem;
       font-weight: 500;
-      background: ${(props) => (props.bg ? 'rgba(255, 255, 255, 1)' : '')};
+
+      background: ${(props) =>
+        props.transparent
+          ? 'rgba(255, 255, 255, 0.8)'
+          : 'rgba(255, 255, 255, 1)'};
       margin-bottom: ${(props) => (props.bg ? '0rem' : '1rem')};
       padding: ${(props) => (props.bg ? '1rem 2rem' : '0')};
       border-radius: 50rem;
@@ -80,6 +90,7 @@ const StyledHero = styled.div`
       padding: 10rem 2rem 5rem 2rem;
       h1 {
         font-size: ${(props) => (props.smallOnPhone ? '2rem' : '3.3rem')};
+        padding: 1rem;
       }
     }
     padding-top: 0rem;

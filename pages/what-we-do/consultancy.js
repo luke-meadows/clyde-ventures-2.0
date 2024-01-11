@@ -4,6 +4,7 @@ import MicroServicesGrid from '../../components/service/MicroServicesGrid';
 import ServiceBenefits from '../../components/service/ServiceBenefits';
 import ServicePage from '../../components/service/ServicePage';
 import img from '../../public/consultancy.jpg';
+import CaseStudyGrid from '../../components/CaseStudyGrid';
 
 export default function Consultancy() {
   return (
@@ -30,16 +31,12 @@ export default function Consultancy() {
 
       <MicroServicesGrid
         options={[
-          'Short and long term business planning',
           'Product Design',
           'Regulatory Strategies',
-          'Scaling products globally',
           'Debt Management',
-          'Entering new markets',
           'Cashflow management',
           'Target operating models',
           'OPEX reduction',
-          'Fundraising',
           'Customer acquisition to profit',
         ]}
       />
@@ -76,6 +73,7 @@ export default function Consultancy() {
           <Image src={img} layout="fill" objectFit="cover" />
         </div>
       </div>
+      <CaseStudyGrid />
     </ServicePage>
   );
 }
