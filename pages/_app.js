@@ -16,7 +16,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <Page>
       <SEO {...nextSeoConfig} />
-      {/* <Script
+      <Script
         id="googleAnalytics"
         strategy="lazyOnload"
         src={`https://www.googletagmanager.com/gtag/js?id=G-FYR84LJVTR`}
@@ -42,7 +42,7 @@ function MyApp({ Component, pageProps }) {
                       if(window.attachEvent) { window.attachEvent('onload', async_load); }
                       else { window.addEventListener('load', async_load, false); }
                     })();`}
-      </Script> */}
+      </Script>
       <Header setShowSidebar={setShowSidebar} showSidebar={showSidebar} />
       <AnimatePresence initial={false}>
         {showSidebar && (
