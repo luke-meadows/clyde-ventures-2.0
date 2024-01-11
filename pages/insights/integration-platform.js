@@ -27,13 +27,13 @@ export default function InsightPage() {
         <h3>Background</h3>
         <p>
           Our client provides leading utilities across the world with innovative
-          cleantech solutions. Working with some of the world's biggest energy
-          and water companies, as well as innovative challenger brands, they
-          help companies reshape what it means to be a utilities business. They
-          have been unsuccessful in breaking into the UK water retail market as
-          their proposition didn&apos;t resonate with the operational and
-          strategic considerations of potential customers by linking the product
-          to Outcome Delivery Incentives and PR24 Price Control.
+          cleantech solutions. Working with some of the world&apos;s biggest
+          energy and water companies, as well as innovative challenger brands,
+          they help companies reshape what it means to be a utilities business.
+          They have been unsuccessful in breaking into the UK water retail
+          market as their proposition didn&apos;t resonate with the operational
+          and strategic considerations of potential customers by linking the
+          product to Outcome Delivery Incentives and PR24 Price Control.
         </p>
 
         <br />
