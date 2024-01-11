@@ -4,6 +4,7 @@ import ConsumerImage from '../../public/consumer-standards-thumbnail.jpg';
 import DomesticImage from '../../public/domestic-sales-thumbnail.jpg';
 import DebtImage from '../../public/debt-value-thumbnail.jpg';
 import OpexImage from '../../public/blog-energy-retailers/opex-thumbnail-background.jpg';
+import ServiceStandardsImage from '../../public/service-standards-thumbnail.jpg';
 import TrilemmaImage from '../../public/blog-debt-trilemma/debt-trilemma-thumbnail.jpg';
 export default function InsightGrid() {
   return (
@@ -53,6 +54,15 @@ export default function InsightGrid() {
           author="Kerry Moran"
           url="insights/debt-trilemma"
           tags={['Utilities', 'Debt', 'Energy']}
+        />
+        <InsightGridItem
+          insightId="6"
+          thumbnail={ServiceStandardsImage}
+          heading="Energy Retailers: Elevating service standards while controlling downside risk to margin"
+          date="11/01/2024"
+          author="Kerry Moran"
+          url="insights/service-standards"
+          tags={['Utilities', 'Consumer Standards', 'Energy']}
         />
       </div>
     </StyledInsightGrid>
