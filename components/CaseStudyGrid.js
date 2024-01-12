@@ -83,7 +83,7 @@ export default function CaseStudyGrid() {
         </div>
         <div className="row">
           <div className="row-left">
-            Assess the viability of investing in a Technology start up
+            Assess the viability of investing in a Technology start up.
           </div>
           <div className="row-right">
             Conducted financial and operational Due Diligence on a technology
