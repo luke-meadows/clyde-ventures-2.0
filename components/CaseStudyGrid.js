@@ -72,7 +72,9 @@ export default function CaseStudyGrid() {
           </div>
         </div>
         <div className="row">
-          <div className="row-left">Target Operating Model development</div>
+          <div className="row-left">
+            Develop Target Operating Model development
+          </div>
           <div className="row-right">
             Implemented operational excellence and developed a new Target
             Operating Model to reduce headcount by 25%{' '}
@@ -132,6 +134,6 @@ const StyledCaseStudyGrid = styled.div`
     }
   }
   @media only screen and (max-width: 900px) {
-    padding: 0rem 1.5rem 2rem 1.5rem;
+    padding: 3rem 1.5rem 3rem 1.5rem;
   }
 `;

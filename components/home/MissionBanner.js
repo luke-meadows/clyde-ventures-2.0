@@ -4,11 +4,11 @@ export default function MissionBanner() {
   return (
     <StyledMissionBanner>
       <div className="banner-inner">
-        <MissionBannerCard blurb="Designing and delivering innovative revenue streams..." />
+        <MissionBannerCard blurb="Designing and delivering innovative revenue streams" />
         <div className="spacer" />
-        <MissionBannerCard blurb="Opening new markets..." />
+        <MissionBannerCard blurb="Opening new markets" />
         <div className="spacer" />
-        <MissionBannerCard blurb="Creating sustainable value from waste..." />
+        <MissionBannerCard blurb="Creating sustainable value and eliminating waste" />
       </div>
     </StyledMissionBanner>
   );

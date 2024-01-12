@@ -1,10 +1,11 @@
 import SEO from '@bradgarropy/next-seo';
 import Image from 'next/image';
-import MicroServicesGrid from '../../components/service/MicroServicesGrid';
+
 import ServiceBenefits from '../../components/service/ServiceBenefits';
 import ServicePage from '../../components/service/ServicePage';
 import img from '../../public/consultancy.jpg';
 import CaseStudyGrid from '../../components/CaseStudyGrid';
+import MicroServicesGrid2 from '../../components/service/MicroServicesGrid2';
 
 export default function Consultancy() {
   return (
@@ -29,7 +30,7 @@ export default function Consultancy() {
         </div>
       </div>
 
-      <MicroServicesGrid
+      <MicroServicesGrid2
         options={[
           'Product Design',
           'Regulatory Strategies',
@@ -44,7 +45,7 @@ export default function Consultancy() {
 
       <div className="lower-section">
         <div className="text">
-          <h2>The Process</h2>
+          <h2>Our Process</h2>
           <p>
             Our team have deep expertise and are accredited across multiple
             domains of tools and methodologies. We don&apos;t believe in a

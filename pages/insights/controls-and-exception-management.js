@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import ContactSection from '../../components/contact/ContactSection';
 import InsightBackgroundImage from '../../public/case-study-background.jpg';
 import HeroWithBackgroundImg from '../../components/global/HeroWithBackgroundImg';
-import KerryAvatar from '../../public/kerry-avatar.png';
+import RossAvatar from '../../public/ross-avatar.png';
 import Image from 'next/image';
 import CaseStudyGrid from '../../components/CaseStudyGrid';
 export default function InsightPage() {
@@ -19,9 +19,9 @@ export default function InsightPage() {
       <div className="insight-content-container">
         <div className="author-and-date">
           <div className="avatar-container">
-            <Image src={KerryAvatar} layout="fill" objectFit="cover" />
+            <Image src={RossAvatar} layout="fill" objectFit="cover" />
           </div>
-          <p>Kerry Moran</p>
+          <p>Ross Bern</p>
         </div>
         <br />
         <h3>Background</h3>

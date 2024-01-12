@@ -67,7 +67,7 @@ const StyledHero = styled.div`
     }
     h1 {
       font-size: 3rem;
-      margin: 0 5rem 1rem 5rem;
+      margin: 0 1rem 1rem 1rem;
       font-weight: 500;
 
       background: ${(props) =>
@@ -87,10 +87,10 @@ const StyledHero = styled.div`
   }
   @media only screen and (max-width: 1170px) {
     .hero {
-      padding: 10rem 2rem 5rem 2rem;
+      padding: 10rem 0rem 5rem 0rem;
       h1 {
-        font-size: ${(props) => (props.smallOnPhone ? '2rem' : '3.3rem')};
-        padding: 1rem;
+        font-size: ${(props) => (props.smallOnPhone ? '1.6rem' : '3.3rem')};
+        padding: 2rem;
       }
     }
     padding-top: 0rem;

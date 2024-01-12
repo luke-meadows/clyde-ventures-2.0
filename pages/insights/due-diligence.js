@@ -77,7 +77,7 @@ export default function InsightPage() {
     </StyledInsightsPage>
   );
 }
-const StyledInsightsPage = styled.section`
+export const StyledInsightsPage = styled.section`
   .spacer {
     padding-top: 7.5rem;
   }
