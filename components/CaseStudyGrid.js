@@ -72,9 +72,7 @@ export default function CaseStudyGrid() {
           </div>
         </div>
         <div className="row">
-          <div className="row-left">
-            Develop Target Operating Model development
-          </div>
+          <div className="row-left">Develop Target Operating Model.</div>
           <div className="row-right">
             Implemented operational excellence and developed a new Target
             Operating Model to reduce headcount by 25%{' '}
