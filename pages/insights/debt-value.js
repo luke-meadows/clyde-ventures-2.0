@@ -11,7 +11,7 @@ export default function InsightPage() {
       <div className="spacer"></div>
       <HeroWithBackgroundImg
         image={InsightBackgroundImage}
-        header="For Utility companies, understanding the value of your debt is key"
+        header="Confirmed the level of debt associated with leakage and segmented the cleansed portfolio to deliver a £2m upside"
         bg={true}
         smallOnPhone={true}
       />
