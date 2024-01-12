@@ -14,7 +14,7 @@ export default function InsightPage() {
       <div className="spacer"></div>
       <HeroWithBackgroundImg
         image={InsightBackgroundImage}
-        header="Conducted financial and operational Due Diligence on a technology
+        header="Conducted financial and operational due diligence on a technology
         led, energy retailer to provide assurance to support our client’s
         proposed $20m investment"
         bg={true}

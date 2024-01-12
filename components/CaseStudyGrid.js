@@ -86,7 +86,7 @@ export default function CaseStudyGrid() {
             Assess the viability of investing in a Technology start up.
           </div>
           <div className="row-right">
-            Conducted financial and operational Due Diligence on a technology
+            Conducted financial and operational due diligence on a technology
             led, energy retailer to provide assurance to support our
             client&apos;s proposed $20m investment{' '}
             <Link href="/insights/due-diligence">
