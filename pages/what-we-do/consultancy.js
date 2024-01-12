@@ -34,10 +34,11 @@ export default function Consultancy() {
           'Product Design',
           'Regulatory Strategies',
           'Debt Management',
-          'Cashflow management',
-          'Target operating models',
-          'OPEX reduction',
-          'Customer acquisition to profit',
+          'Cashflow Management',
+          'Target Operating Models',
+          'OPEX Reduction',
+          'Customer Acquisition to Profit',
+          'Due Diligence',
         ]}
       />
 
