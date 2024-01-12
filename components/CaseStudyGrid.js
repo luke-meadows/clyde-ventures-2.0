@@ -76,7 +76,7 @@ export default function CaseStudyGrid() {
           <div className="row-left">Target Operating Model development</div>
           <div className="row-right">
             Implemented operational excellence and developed a new Target
-            Operating Model.{' '}
+            Operating Model to reduce headcount by 25%.{' '}
             <Link href="/insights/operating-model">
               <a href="">Case Study</a>
             </Link>
