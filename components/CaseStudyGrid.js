@@ -11,17 +11,22 @@ export default function CaseStudyGrid() {
         </div>
         {/* BREAK */}
         <div className="row">
-          <div className="row-left">Cleanse Data and Improve Reputation</div>
+          <div className="row-left">
+            Analyse a portfolio of legacy accounts to optimise the returns on a
+            proposed debt sale.
+          </div>
           <div className="row-right">
-            Reduced Unbilled resulting in collections uplift of £20m over 18
-            months{' '}
+            Confirmed the level of debt associated with leakage and segmented
+            the cleansed portfolio to deliver a £2m upside.
             <Link href="/insights/data-cleanse">
               <a href="">Case Study</a>
             </Link>
           </div>
         </div>
         <div className="row">
-          <div className="row-left">First Time Revenue</div>
+          <div className="row-left">
+            Analyse a portfolio of legacy accounts to optimise
+          </div>
           <div className="row-right">
             Created a data quality framework to facilitate Account Maintenance
             and reduce Debt write off{' '}
@@ -42,8 +47,8 @@ export default function CaseStudyGrid() {
         <div className="row">
           <div className="row-left">Single Customer View</div>
           <div className="row-right">
-            Qualified Lean practitioners and system Integrators adept at
-            Customer centric process redesign{' '}
+            Qualified Lean practitioners and adept customer customer centric
+            service design{' '}
             <Link href="/insights/domestic-sales">
               <a href="">Case Study</a>
             </Link>
@@ -51,22 +56,19 @@ export default function CaseStudyGrid() {
         </div>
 
         <div className="row">
-          <div className="row-left">Integration Platform</div>
+          <div className="row-left">Operational Excellence</div>
           <div className="row-right">
-            Experienced with 3rd party integrations within the Salesforce
-            ecosystem, including billing and industry data{' '}
+            Experienced consultants uniquely positioned to deliver value from
+            ODI activity alignment{' '}
             <Link href="/insights/integration-platform">
               <a href="">Case Study</a>
             </Link>
           </div>
         </div>
         <div className="row">
-          <div className="row-left">
-            Operational Excellence and Operating Model
-          </div>
+          <div className="row-left">Operating Model Design</div>
           <div className="row-right">
-            Experienced Consultants uniquely positioned to deliver value from
-            ODI activity alignment and TOM optimisation{' '}
+            Operational experts skilled in TOM optimisation{' '}
             <Link href="/insights/operating-model">
               <a href="">Case Study</a>
             </Link>
