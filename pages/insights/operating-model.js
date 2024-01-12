@@ -5,13 +5,14 @@ import HeroWithBackgroundImg from '../../components/global/HeroWithBackgroundImg
 import Image from 'next/image';
 import Link from 'next/link';
 import ContactButton from '../../components/global/ContactButton';
+import CaseStudyGrid from '../../components/CaseStudyGrid';
 export default function InsightPage() {
   return (
     <StyledInsightsPage>
       <div className="spacer"></div>
       <HeroWithBackgroundImg
         image={InsightBackgroundImage}
-        header="Experienced Consultants uniquely positioned to deliver value from ODI activity alignment and TOM optimisation "
+        header="Target Operating Model development"
         bg={true}
         smallOnPhone={true}
         transparent={true}
@@ -98,7 +99,9 @@ export default function InsightPage() {
             management team restructuring.
           </li>
         </ul>
-        <div className="button-container"></div>
+        <div className="button-container">
+          <CaseStudyGrid />
+        </div>
       </div>
       <ContactSection />
     </StyledInsightsPage>
@@ -153,8 +156,7 @@ const StyledInsightsPage = styled.section`
     text-decoration: underline;
   }
   .button-container {
-    margin: 2rem 0;
-    width: fit-content;
+    border: 1px solid black;
   }
   .left-indent {
     margin-left: 2rem;

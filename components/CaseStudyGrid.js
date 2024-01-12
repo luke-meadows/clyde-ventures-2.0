@@ -12,12 +12,11 @@ export default function CaseStudyGrid() {
         {/* BREAK */}
         <div className="row">
           <div className="row-left">
-            Analyse a portfolio of legacy accounts to optimise the returns on a
-            proposed debt sale.
+            Improve data quality and optimise debt recovery.
           </div>
           <div className="row-right">
-            Confirmed the level of debt associated with leakage and segmented
-            the cleansed portfolio to deliver a £2m upside.
+            Reduced Unbilled resulting in collections uplift of £20m over 18
+            months{' '}
             <Link href="/insights/data-cleanse">
               <a href="">Case Study</a>
             </Link>
@@ -25,30 +24,36 @@ export default function CaseStudyGrid() {
         </div>
         <div className="row">
           <div className="row-left">
-            Analyse a portfolio of legacy accounts to optimise
+            Analyse a portfolio of legacy accounts to optimise the returns on a
+            proposed debt sale.
           </div>
           <div className="row-right">
-            Created a data quality framework to facilitate Account Maintenance
-            and reduce Debt write off{' '}
+            Confirmed the level of debt associated with leakage and segmented
+            the cleansed portfolio to deliver a £2m upside.{' '}
             <Link href="/insights/debt-value">
               <a href="">Case Study</a>
             </Link>
           </div>
         </div>
         <div className="row">
-          <div className="row-left">Controls and Exception Management</div>
+          <div className="row-left">
+            Improve operational controls and enhance exceptions management.
+          </div>
           <div className="row-right">
-            Developed a process control and exceptions management framework{' '}
+            Developed a process control and exceptions management framework to
+            facilitate the collection of over £13M in debt{' '}
             <Link href="/insights/controls-and-exception-management">
               <a href="">Case Study</a>
             </Link>
           </div>
         </div>
         <div className="row">
-          <div className="row-left">Single Customer View</div>
+          <div className="row-left">
+            Improve operational resilience during peak demand.
+          </div>
           <div className="row-right">
-            Qualified Lean practitioners and adept customer customer centric
-            service design{' '}
+            Conducted a LEAN review across a client's operations to deliver
+            £1.95M in benefits{' '}
             <Link href="/insights/domestic-sales">
               <a href="">Case Study</a>
             </Link>
@@ -56,19 +61,24 @@ export default function CaseStudyGrid() {
         </div>
 
         <div className="row">
-          <div className="row-left">Operational Excellence</div>
+          <div className="row-left">
+            Develop a value proposition to facilitate market entry.
+          </div>
           <div className="row-right">
-            Experienced consultants uniquely positioned to deliver value from
-            ODI activity alignment{' '}
+            Developed a value model linking operational activities to optimise
+            regulatory outcome delivery incentives{' '}
             <Link href="/insights/integration-platform">
               <a href="">Case Study</a>
             </Link>
           </div>
         </div>
         <div className="row">
-          <div className="row-left">Operating Model Design</div>
+          <div className="row-left">
+            Implement operational excellence and develop a new Target Operating
+            Model.
+          </div>
           <div className="row-right">
-            Operational experts skilled in TOM optimisation{' '}
+            Target Operating Model development{' '}
             <Link href="/insights/operating-model">
               <a href="">Case Study</a>
             </Link>

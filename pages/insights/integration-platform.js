@@ -11,7 +11,7 @@ export default function InsightPage() {
       <div className="spacer"></div>
       <HeroWithBackgroundImg
         image={InsightBackgroundImage}
-        header="Experienced with 3rd party integrations within the Salesforce ecosystem, including billing and industry data "
+        header="Developed a value model linking operational activities to optimise regulatory outcome delivery incentives"
         bg={true}
         smallOnPhone={true}
         transparent={true}
@@ -80,12 +80,6 @@ export default function InsightPage() {
         </p>
         {/* BREAK */}
         <br />
-        <p>
-          With our combination of data expertise, thorough understanding of
-          utilities customer and billing data gained over many years, Clyde
-          Ventures can help you to transform your billing operation unlocking
-          potential revenue and minimising regulatory risk.
-        </p>
         <div className="button-container"></div>
       </div>
       <ContactSection />

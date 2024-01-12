@@ -10,7 +10,7 @@ export default function InsightPage() {
       <div className="spacer"></div>
       <HeroWithBackgroundImg
         image={InsightBackgroundImage}
-        header="£1.95M in Domestic Sales Benefits"
+        header="Conducted a LEAN review across a client's operations to deliver £1.95M in benefits"
         bg={true}
         smallOnPhone={true}
       />

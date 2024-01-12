@@ -11,7 +11,7 @@ export default function InsightPage() {
       <div className="spacer"></div>
       <HeroWithBackgroundImg
         image={InsightBackgroundImage}
-        header="Developed a process control and exceptions management framework "
+        header="Developed a process control and exceptions management framework to facilitate the collection of over £13M in debt"
         bg={true}
         smallOnPhone={true}
         transparent={true}
@@ -19,7 +19,7 @@ export default function InsightPage() {
       <div className="insight-content-container">
         <h3>Background</h3>
         <p>
-          Our team were engaged by one of the UK’s largest specialists in
+          Our team were engaged by one of the UK&apos;s largest specialists in
           corporate restructuring to support in their task of processing the
           insolvency of a mid-sized energy company in administration. There
           existed a core of customers with complex data issues and legacy data
