@@ -5,6 +5,7 @@ import HeroWithBackgroundImg from '../../components/global/HeroWithBackgroundImg
 import RossAvatar from '../../public/ross-avatar.png';
 import Image from 'next/image';
 import Link from 'next/link';
+import CaseStudyGrid from '../../components/CaseStudyGrid';
 export default function InsightPage() {
   return (
     <StyledInsightsPage>
@@ -133,6 +134,7 @@ export default function InsightPage() {
         </p>
         <br />
       </div>
+      <CaseStudyGrid />
       <ContactSection />
     </StyledInsightsPage>
   );

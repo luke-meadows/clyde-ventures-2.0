@@ -2,9 +2,9 @@ import styled from 'styled-components';
 import ContactSection from '../../components/contact/ContactSection';
 import InsightBackgroundImage from '../../public/case-study-background.jpg';
 import HeroWithBackgroundImg from '../../components/global/HeroWithBackgroundImg';
+import KerryAvatar from '../../public/kerry-avatar.png';
 import Image from 'next/image';
-import Link from 'next/link';
-import ContactButton from '../../components/global/ContactButton';
+import CaseStudyGrid from '../../components/CaseStudyGrid';
 export default function InsightPage() {
   return (
     <StyledInsightsPage>
@@ -17,6 +17,13 @@ export default function InsightPage() {
         transparent={true}
       />
       <div className="insight-content-container">
+        <div className="author-and-date">
+          <div className="avatar-container">
+            <Image src={KerryAvatar} layout="fill" objectFit="cover" />
+          </div>
+          <p>Kerry Moran</p>
+        </div>
+        <br />
         <h3>Background</h3>
         <p>
           Our team were engaged by one of the UK&apos;s largest specialists in
@@ -85,6 +92,8 @@ export default function InsightPage() {
         </p>
         <div className="button-container"></div>
       </div>
+      <CaseStudyGrid />
+
       <ContactSection />
     </StyledInsightsPage>
   );

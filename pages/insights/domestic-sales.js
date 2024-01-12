@@ -4,6 +4,7 @@ import InsightBackgroundImage from '../../public/domestic-sales-background.jpeg'
 import HeroWithBackgroundImg from '../../components/global/HeroWithBackgroundImg';
 import AmberAvatar from '../../public/amber-avatar.png';
 import Image from 'next/image';
+import CaseStudyGrid from '../../components/CaseStudyGrid';
 export default function InsightPage() {
   return (
     <StyledInsightsPage>
@@ -118,6 +119,7 @@ export default function InsightPage() {
           Amber.morton@clydeventures.com
         </a>
       </div>
+      <CaseStudyGrid />
       <ContactSection />
     </StyledInsightsPage>
   );

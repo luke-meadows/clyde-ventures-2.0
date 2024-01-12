@@ -15,7 +15,7 @@ export default function CaseStudyGrid() {
             Improve data quality and optimise debt recovery.
           </div>
           <div className="row-right">
-            Reduced Unbilled debt resulting in collections uplift of £20m over
+            Reduced unbilled debt resulting in collections uplift of £20m over
             18 months{' '}
             <Link href="/insights/data-cleanse">
               <a href="">Case Study</a>
@@ -59,7 +59,6 @@ export default function CaseStudyGrid() {
             </Link>
           </div>
         </div>
-
         <div className="row">
           <div className="row-left">
             Develop a value proposition to facilitate market entry.
@@ -76,7 +75,7 @@ export default function CaseStudyGrid() {
           <div className="row-left">Target Operating Model development</div>
           <div className="row-right">
             Implemented operational excellence and developed a new Target
-            Operating Model to reduce headcount by 25%.{' '}
+            Operating Model to reduce headcount by 25%{' '}
             <Link href="/insights/operating-model">
               <a href="">Case Study</a>
             </Link>

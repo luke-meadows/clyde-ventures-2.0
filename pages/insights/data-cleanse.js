@@ -5,25 +5,27 @@ import HeroWithBackgroundImg from '../../components/global/HeroWithBackgroundImg
 import Image from 'next/image';
 import Link from 'next/link';
 import ContactButton from '../../components/global/ContactButton';
+import GrahamAvatar from '../../public/graham-avatar.png';
+import CaseStudyGrid from '../../components/CaseStudyGrid';
+
 export default function InsightPage() {
   return (
     <StyledInsightsPage>
       <div className="spacer"></div>
       <HeroWithBackgroundImg
         image={InsightBackgroundImage}
-        header="Reduced Unbilled debt resulting in collections uplift of £20m over 18 months"
+        header="Reduced unbilled debt resulting in collections uplift of £20m over 18 months"
         bg={true}
         smallOnPhone={true}
         transparent={true}
       />
       <div className="insight-content-container">
-        {/* <div className="author-and-date">
+        <div className="author-and-date">
           <div className="avatar-container">
-            <Image src={KerryAvatar} layout="fill" objectFit="cover" />
+            <Image src={GrahamAvatar} layout="fill" objectFit="cover" />
           </div>
-          <p>Kerry Moran - 29/11/2023</p>
+          <p>Graham Mathie</p>
         </div>
-        <br /> */}
         <h3>Background</h3>
         <p>
           Our client a mid-sized, multi brand Utility company supplying energy
@@ -114,6 +116,9 @@ export default function InsightPage() {
           potential revenue and minimising regulatory risk.
         </p>
         <div className="button-container"></div>
+      </div>
+      <div className="button-container">
+        <CaseStudyGrid />
       </div>
       <ContactSection />
     </StyledInsightsPage>

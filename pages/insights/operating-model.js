@@ -4,7 +4,7 @@ import InsightBackgroundImage from '../../public/case-study-background.jpg';
 import HeroWithBackgroundImg from '../../components/global/HeroWithBackgroundImg';
 import Image from 'next/image';
 import Link from 'next/link';
-import ContactButton from '../../components/global/ContactButton';
+import KerryAvatar from '../../public/kerry-avatar.png';
 import CaseStudyGrid from '../../components/CaseStudyGrid';
 export default function InsightPage() {
   return (
@@ -19,13 +19,13 @@ export default function InsightPage() {
         transparent={true}
       />
       <div className="insight-content-container">
-        {/* <div className="author-and-date">
+        <div className="author-and-date">
           <div className="avatar-container">
             <Image src={KerryAvatar} layout="fill" objectFit="cover" />
           </div>
-          <p>Kerry Moran - 29/11/2023</p>
+          <p>Kerry Moran</p>
         </div>
-        <br /> */}
+        <br />
         <h3>Background</h3>
         <p>
           Our client, a U.K wide fuel distributor, was running an inefficient
@@ -100,9 +100,9 @@ export default function InsightPage() {
             management team restructuring.
           </li>
         </ul>
-        <div className="button-container">
-          <CaseStudyGrid />
-        </div>
+      </div>
+      <div className="button-container">
+        <CaseStudyGrid />
       </div>
       <ContactSection />
     </StyledInsightsPage>
@@ -155,9 +155,6 @@ const StyledInsightsPage = styled.section`
   .link {
     color: blue;
     text-decoration: underline;
-  }
-  .button-container {
-    border: 1px solid black;
   }
   .left-indent {
     margin-left: 2rem;

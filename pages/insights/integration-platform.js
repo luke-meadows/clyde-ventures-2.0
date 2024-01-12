@@ -2,9 +2,12 @@ import styled from 'styled-components';
 import ContactSection from '../../components/contact/ContactSection';
 import InsightBackgroundImage from '../../public/case-study-background.jpg';
 import HeroWithBackgroundImg from '../../components/global/HeroWithBackgroundImg';
+import DavidAvatar from '../../public/david-avatar.png';
+
 import Image from 'next/image';
 import Link from 'next/link';
 import ContactButton from '../../components/global/ContactButton';
+import CaseStudyGrid from '../../components/CaseStudyGrid';
 export default function InsightPage() {
   return (
     <StyledInsightsPage>
@@ -17,13 +20,13 @@ export default function InsightPage() {
         transparent={true}
       />
       <div className="insight-content-container">
-        {/* <div className="author-and-date">
+        <div className="author-and-date">
           <div className="avatar-container">
-            <Image src={KerryAvatar} layout="fill" objectFit="cover" />
+            <Image src={DavidAvatar} layout="fill" objectFit="cover" />
           </div>
-          <p>Kerry Moran - 29/11/2023</p>
+          <p>David Philipson</p>
         </div>
-        <br /> */}
+        <br />
         <h3>Background</h3>
         <p>
           Our client provides leading utilities across the world with innovative
@@ -82,6 +85,7 @@ export default function InsightPage() {
         <br />
         <div className="button-container"></div>
       </div>
+      <CaseStudyGrid />
       <ContactSection />
     </StyledInsightsPage>
   );
