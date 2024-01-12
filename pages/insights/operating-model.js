@@ -88,16 +88,14 @@ export default function InsightPage() {
         <h3>Benefits Realised</h3>
         <ul>
           <li>
-            Standardisation across teams and the wider operation, creating
-            efficiencies that contributed to a reduction in failure demand by
-            20%.
+            We identified an opportunity to reduce headcount by 10% through the
+            target operating model through improved spans of control and
+            redesigning role activities
           </li>
-          <li>An equivalent of 8 FTE released through capacity creation.</li>
           <li>
-            Advisor influenced performance improvement in key metrics such as15%
-            increased FCR with no increase to AHT, due to a blend of process
-            improvement, increased autonomy and robust spans of control with
-            management team restructuring.
+            Further opportunity to reduce headcount by 15% via increasing
+            standardisation a reduction in failure demand by 20% and 15%
+            increase in FCR with no increase to AHT.
           </li>
         </ul>
       </div>
