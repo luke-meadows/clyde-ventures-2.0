@@ -11,7 +11,7 @@ export default function InsightPage() {
       <div className="spacer"></div>
       <HeroWithBackgroundImg
         image={InsightBackgroundImage}
-        header="Reduced Unbilled resulting in collections uplift of £20m over 18 months"
+        header="Reduced Unbilled debt resulting in collections uplift of £20m over 18 months"
         bg={true}
         smallOnPhone={true}
         transparent={true}

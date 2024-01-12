@@ -12,7 +12,8 @@ export default function InsightPage() {
       <div className="spacer"></div>
       <HeroWithBackgroundImg
         image={InsightBackgroundImage}
-        header="Target Operating Model development"
+        header="Implemented operational excellence and developed a new Target
+        Operating Model to reduce headcount by 25%"
         bg={true}
         smallOnPhone={true}
         transparent={true}
