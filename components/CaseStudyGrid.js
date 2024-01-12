@@ -52,7 +52,7 @@ export default function CaseStudyGrid() {
             Improve operational resilience during peak demand.
           </div>
           <div className="row-right">
-            Conducted a LEAN review across a client's operations to deliver
+            Conducted a LEAN review across a client&apos;s operations to deliver
             £1.95M in benefits{' '}
             <Link href="/insights/domestic-sales">
               <a href="">Case Study</a>
