@@ -81,6 +81,19 @@ export default function CaseStudyGrid() {
             </Link>
           </div>
         </div>
+        <div className="row">
+          <div className="row-left">
+            Assess the viability of investing in a Technology start up
+          </div>
+          <div className="row-right">
+            Conducted financial and operational Due Diligence on a technology
+            led, energy retailer to provide assurance to support our
+            client&apos;s proposed $20m investment{' '}
+            <Link href="/insights/due-diligence">
+              <a href="">Case Study</a>
+            </Link>
+          </div>
+        </div>
       </div>
     </StyledCaseStudyGrid>
   );
