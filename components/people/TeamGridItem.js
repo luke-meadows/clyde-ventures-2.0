@@ -51,7 +51,13 @@ export default function TeamGridItem({ teamMember }) {
 
           <div onClick={handleClick} className="image-and-name">
             <div className="img-container">
-              <Image src={image} layout="fill" objectFit="cover" alt={name} />
+              <Image
+                src={image}
+                layout="fill"
+                objectFit="cover"
+                objectPosition="top"
+                alt={name}
+              />
             </div>
             <div className="text">
               <h2>{name}</h2>
@@ -138,25 +144,33 @@ const StyledTeamGridItem = styled.div`
   .img-container {
     overflow: hidden;
     position: relative;
-    aspect-ratio: 1;
+    height: 30rem;
     border-bottom: none;
     border-top-right-radius: 0.5rem;
     border-top-left-radius: 0.5rem;
     width: ${(props) => (props.teamMemberActive ? '20rem' : '100%')};
     margin-right: ${(props) => (props.teamMemberActive ? '2.5rem' : '0')};
+    img {
+      transition: scale 0.4s ease-in-out;
+      pointer-events: none;
+    }
+    &:hover {
+      img {
+        ${(props) => (props.teamMemberActive ? '' : 'scale: 1.1')}
+      }
+    }
   }
   .text {
-    padding: 1rem 0.5rem;
+    padding: 1rem 0rem;
     border-bottom-right-radius: 0.5rem;
     border-bottom-left-radius: 0.5rem;
     border-top: none;
-    text-align: center;
-    background: var(--yellow2);
     margin-right: ${(props) => (props.teamMemberActive ? '2.5rem' : '0')};
     height: auto;
     h2 {
       font-size: 1.3rem;
       margin-bottom: 0.2rem;
+      font-weight: 500;
     }
     p {
       margin-bottom: 0;
@@ -247,6 +261,7 @@ const StyledTeamGridItem = styled.div`
         p {
           font-size: 1.2rem;
         }
+      }
     }
   }
 `;
