@@ -3,60 +3,62 @@ import styled from 'styled-components';
 export default function Footer() {
   return (
     <StyledFooter>
-      <div className="top">
-        <div className="top-left">
-          <nav>
-            <Link href="/about">
-              <a>
-                About <span className="clyde-ventures">Clyde Ventures</span>
-              </a>
-            </Link>
-            <Link href="/people">People</Link>
-            <Link href="/contact">Contact Us</Link>
-          </nav>
-        </div>
-        <div className="top-right">
-          <a
-            target="blank"
-            href="https://www.linkedin.com/company/clyde-ventures/"
-            alt="LinkedIn"
-          >
-            <i className="icon-linkedin" />
-          </a>
-          {/* <i className="icon-facebook" /> */}
-        </div>
-      </div>
-      <div className="bottom">
-        <div className="bottom-left">
-          <div className="address">
-            <p>Clyde Ventures Ltd</p>
-            <p>Suite 405-407</p>
-            <p>Baltic Chambers</p>
-            <p>50 Wellington Street</p>
-            <p>Glasgow</p>
-            <p>G2 6HJ</p>
+      <div className="inner">
+        <div className="top">
+          <div className="top-left">
+            <nav>
+              <Link href="/about">
+                <a>
+                  About <span className="clyde-ventures">Clyde Ventures</span>
+                </a>
+              </Link>
+              <Link href="/people">People</Link>
+              <Link href="/contact">Contact Us</Link>
+            </nav>
           </div>
-          <a
-            className="email"
-            target="blank"
-            href="mailto:help@clydeventures.com"
-          >
-            <i className="icon-mail" /> help@clydeventures.com
-          </a>
+          <div className="top-right">
+            <a
+              target="blank"
+              href="https://www.linkedin.com/company/clyde-ventures/"
+              alt="LinkedIn"
+            >
+              <i className="icon-linkedin" />
+            </a>
+            {/* <i className="icon-facebook" /> */}
+          </div>
         </div>
-        <div className="bottom-right">
-          <nav>
-            <Link href="/privacy-policy" alt="Privacy Policy">
-              Privacy Policy
-            </Link>
-            <Link href="/modern-slavery-statement">
-              Modern Slavery Statement
-            </Link>
-            {/* <Link href="/">Governance Policies</Link> */}
-          </nav>
-          <p className="copy">
-            © Clyde Ventures 2022 | Registered in Scotland: SC723600
-          </p>
+        <div className="bottom">
+          <div className="bottom-left">
+            <div className="address">
+              <p>Clyde Ventures Ltd</p>
+              <p>Suite 405-407</p>
+              <p>Baltic Chambers</p>
+              <p>50 Wellington Street</p>
+              <p>Glasgow</p>
+              <p>G2 6HJ</p>
+            </div>
+            <a
+              className="email"
+              target="blank"
+              href="mailto:help@clydeventures.com"
+            >
+              <i className="icon-mail" /> help@clydeventures.com
+            </a>
+          </div>
+          <div className="bottom-right">
+            <nav>
+              <Link href="/privacy-policy" alt="Privacy Policy">
+                Privacy Policy
+              </Link>
+              <Link href="/modern-slavery-statement">
+                Modern Slavery Statement
+              </Link>
+              {/* <Link href="/">Governance Policies</Link> */}
+            </nav>
+            <p className="copy">
+              © Clyde Ventures 2022 | Registered in Scotland: SC723600
+            </p>
+          </div>
         </div>
       </div>
     </StyledFooter>
@@ -68,6 +70,10 @@ const StyledFooter = styled.footer`
   color: var(--grey);
   padding: 2.5rem 5rem;
   font-weight: 300;
+  .inner {
+    max-width: 1600px;
+    margin: 0 auto;
+  }
   .top {
     display: flex;
     justify-content: space-between;

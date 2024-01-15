@@ -23,13 +23,14 @@ const StyledTeamGrid = styled.section`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 3rem;
-  margin: 2.5rem auto 1rem auto;
+  margin: 0rem auto auto;
   max-width: 1600px;
   width: 100%;
   @media only screen and (min-width: 1600px) {
     grid-template-columns: repeat(4, 1fr);
   }
   @media only screen and (max-width: 1000px) {
+    margin-top: 1rem;
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
   }

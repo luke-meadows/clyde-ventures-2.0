@@ -225,10 +225,6 @@ const StyledTeamGridItem = styled.div`
     }
     .text {
       width: 100%;
-      padding: 1rem 0;
-      text-align: center;
-      border-left: none;
-      padding-left: 0;
     }
     .image-and-name {
       width: ${(props) => (props.teamMemberActive ? 'fit-content' : '100%')};
