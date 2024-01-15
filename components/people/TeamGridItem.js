@@ -161,19 +161,19 @@ const StyledTeamGridItem = styled.div`
     }
   }
   .text {
-    padding: 1rem 0rem;
-    border-bottom-right-radius: 0.5rem;
-    border-bottom-left-radius: 0.5rem;
+    margin: 1rem 0rem;
     border-top: none;
     margin-right: ${(props) => (props.teamMemberActive ? '2.5rem' : '0')};
     height: auto;
+    border-left: 2px solid var(--dark-grey);
+    padding-left: 0.5rem;
     h2 {
       font-size: 1.3rem;
-      margin-bottom: 0.2rem;
       font-weight: 500;
+      margin: 0;
     }
     p {
-      margin-bottom: 0;
+      margin: 0;
       font-size: 0.9rem;
     }
   }
@@ -225,7 +225,10 @@ const StyledTeamGridItem = styled.div`
     }
     .text {
       width: 100%;
-      padding: 2rem 0;
+      padding: 1rem 0;
+      text-align: center;
+      border-left: none;
+      padding-left: 0;
     }
     .image-and-name {
       width: ${(props) => (props.teamMemberActive ? 'fit-content' : '100%')};
@@ -234,6 +237,11 @@ const StyledTeamGridItem = styled.div`
     .img-container {
       margin-right: 0;
       margin-top: 0;
+      &:hover {
+        img {
+          scale: 1;
+        }
+      }
     }
     .linked-in {
       top: 2.2rem;

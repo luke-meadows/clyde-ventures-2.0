@@ -9,9 +9,12 @@ export default function TeamGrid() {
       <TeamGridItem teamMember={teamData.amberMorton} />
       <TeamGridItem teamMember={teamData.rossBern} />
       <TeamGridItem teamMember={teamData.leanneMcguigan} />
-      {/* <TeamGridItem teamMember={teamData.joshMontgomery} />
-      <TeamGridItem teamMember={teamData.davePhilipson} /> */}
       <TeamGridItem teamMember={teamData.grahamMathie} />
+      <TeamGridItem teamMember={teamData.kerryMoran} />
+      <TeamGridItem teamMember={teamData.davePhilipson} />
+      <TeamGridItem teamMember={teamData.kateDavis} />
+      <TeamGridItem teamMember={teamData.cameronSmith} />
+      <TeamGridItem teamMember={teamData.lukeMeadows} />
     </StyledTeamGrid>
   );
 }
