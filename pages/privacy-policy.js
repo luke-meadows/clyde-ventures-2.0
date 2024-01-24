@@ -1,4 +1,5 @@
 import SEO from '@bradgarropy/next-seo';
+import Link from 'next/link';
 import styled from 'styled-components';
 export default function PrivacyPolicy() {
   return (
@@ -49,8 +50,8 @@ export default function PrivacyPolicy() {
         <p>
           You will be deemed to have accepted and understood this policy through
           your choice to continue to use the website,{' '}
-          <a href="/">www.clydeventures.com</a>, and/or submit your personal
-          data to us.
+          <Link href="/">www.clydeventures.com</Link>, and/or submit your
+          personal data to us.
         </p>
         <p>
           This privacy policy was last updated on 22nd January 2024 and this
