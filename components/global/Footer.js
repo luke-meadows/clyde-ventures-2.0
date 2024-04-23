@@ -55,6 +55,7 @@ export default function Footer() {
               </Link>
               <a
                 target="_blank"
+                rel="noopener noreferrer"
                 href="https://go.clydeventures.com/l/1049802/2024-04-23/5hqy/1049802/1713861915hAcJzvpp/Clyde_Ventures_Carbon_Accounting_PDF.pdf"
               >
                 Carbon Accounting
