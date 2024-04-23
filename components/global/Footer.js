@@ -53,7 +53,12 @@ export default function Footer() {
               <Link href="/modern-slavery-statement">
                 Modern Slavery Statement
               </Link>
-              {/* <Link href="/">Governance Policies</Link> */}
+              <a
+                target="_blank"
+                href="https://go.clydeventures.com/l/1049802/2024-04-23/5hqy/1049802/1713861915hAcJzvpp/Clyde_Ventures_Carbon_Accounting_PDF.pdf"
+              >
+                Carbon Accounting
+              </a>
             </nav>
             <p className="copy">
               © Clyde Ventures 2022 | Registered in Scotland: SC723600
